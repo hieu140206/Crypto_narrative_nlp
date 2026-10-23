@@ -3,9 +3,9 @@
 Mục đích
     Đọc file CryptoVision (Mendeley) và tạo MỘT bảng văn bản sạch: mỗi dòng là một
     bài, không trùng, giờ UTC, có cột use_date cho biết bài được dùng cho ngày nào.
-    Đầu ra giao cho TV3 chạy sentiment. Khung mẫu và quy tắc theo file kế hoạch
-    của nhóm trưởng (Excel): cửa sổ 01/01/2024 -> 31/12/2025, train 2024-01 ->
-    2025-06, test 2025-07 -> 2025-12.
+    Đầu ra giao cho TV3 chạy sentiment. Khung thời gian lấy dữ liệu: 01/01/2020 ->
+    17/08/2025 (ngày cuối có dữ liệu thật của CryptoVision). Việc chia train/valid/test
+    nằm ở config của bước mô hình, không nằm trong file này.
 
 Cách chạy (cần: pip install pandas pyarrow rapidfuzz). Không có rapidfuzz vẫn chạy
 được nhưng bước so tiêu đề gần giống chậm hơn nhiều (có thể hàng chục phút):
@@ -17,10 +17,18 @@ Quy định của nhóm:
     - Không import vào master_pipeline.ipynb.
     - Đường dẫn lấy từ config/paths.yaml (khóa: cryptovision_path, text_clean_path);
       thiếu thì dùng mặc định bên dưới. Seed 42.
-    - Không bao giờ đọc 10 cột rò rỉ (Open, High, Low, Close, Volume,
-      Movement_OpenClose_%, Movement_HighLow_%, Market_Move, sentiment_label,
-      sentiment_score): script chỉ nạp các cột cần dùng và kiểm tra lại ở cuối
-      (milestone 1 của file Excel).
+    - Không bao giờ đọc các cột giá và Market_Move (Open, High, Low, Close, Volume,
+      Movement_OpenClose_%, Movement_HighLow_%, Market_Move).
+    - Hai cột sentiment có sẵn của CryptoVision (sentiment_label, sentiment_score) được
+      giữ lại với TIỀN TỐ cv_ref_ (cv_ref_sentiment_label, cv_ref_sentiment_score,
+      cv_ref_coin_type) CHỈ để đối chiếu với điểm sentiment nhóm tự tính. Các cột cv_ref_*
+      KHÔNG được dùng làm đặc trưng hay biến giải thích trong bất kỳ mô hình nào, và
+      phải bị loại khỏi bảng đưa vào mô hình. Kiểm tra cuối: mọi cột có chữ "sentiment"
+      phải bắt đầu bằng cv_ref_.
+    - Nhãn lấy từ dòng sớm nhất của mỗi URL (bài bị nhân bản theo coin); cv_ref_coin_type
+      cho biết dòng đó thuộc coin nào, nhãn có thể khác giữa các coin.
+    - Dữ liệu 2019-2020 của CryptoPanic/CoinDesk có thể lệch giờ ~6 tiếng: xem cờ
+      ts_regime_risk.
 
 Các bước (theo thứ tự):
     1. Đọc theo từng khối, chỉ lấy cột cần dùng, đổi giờ về UTC, ghi Max date,
@@ -52,13 +60,13 @@ import pandas as pd
 random.seed(42)
 
 # ---- Tham số (nhóm trưởng chốt; có thể chuyển sang config/params.yaml) ------
-# Khung mẫu theo file Excel của nhóm trưởng: 01/01/2024 -> 31/12/2025.
+# Khung lấy dữ liệu: 01/01/2020 -> 17/08/2025.
 # CryptoVision chỉ có dữ liệu thật đến cuối 08/2025, nên theo dòng rủi ro trong Excel
 # ("cắt mẫu ở ngày cuối cùng có dữ liệu thật, ghi rõ trong Limitations") T_END đặt
 # ở 2025-08-17: đây là tuần đầy đủ cuối cùng theo hướng dẫn nguồn dữ liệu (tuần
 # 18-24/08 chỉ có 41 bài, 25-27/08 chỉ có 12 bài). Muốn giữ đến hết dữ liệu thì
 # đổi thành "2025-12-31"; bộ lọc tự dừng ở ngày cuối có trong file (Max date).
-SAMPLE_START = "2024-01-01"
+SAMPLE_START = "2020-01-01"
 T_END = "2025-08-17"                 # tính hết ngày này (đến 23:59:59 UTC)
 ROBUSTNESS_START = None              # ví dụ "2021-01-01" để giữ thêm các năm trước làm robustness
 COIN_KEEP = {"bitcoin", "ethereum", "btc", "eth"}  # so khớp chữ thường, cột Coin Type
@@ -79,7 +87,12 @@ DEFAULT_OUT = "data/interim/text_clean.parquet"
 # Excel yêu cầu tối thiểu URL, Title, Date_Time, Coin_Type. Giữ thêm Description và
 # Full Text (thành nlp_text_body) để TV3 tự chọn dùng tiêu đề hay cả bài.
 USE_COLS = ["URL", "Title", "Description", "Full Text", "Date Time", "Coin Type"]
-LEAK_COLS = {"Open", "High", "Low", "Close", "Volume", "Movement_OpenClose_%",
+# Hai cột sentiment có sẵn: giữ với tiền tố cv_ref_ chỉ để đối chiếu, KHÔNG làm đặc trưng
+REF_COLS = ["sentiment_label", "sentiment_score"]
+REF_RENAME = {"sentiment_label": "cv_ref_sentiment_label",
+              "sentiment_score": "cv_ref_sentiment_score"}
+REF_OUT_COLS = ["cv_ref_sentiment_label", "cv_ref_sentiment_score", "cv_ref_coin_type"]
+LEAK_COLS ={"Open", "High", "Low", "Close", "Volume", "Movement_OpenClose_%",
              "Movement_HighLow_%", "Market_Move", "sentiment_label", "sentiment_score",
              "Sentiment_Label"}
 
@@ -169,8 +182,10 @@ def step_read(csv_path, log):
     missing = [c for c in USE_COLS if c not in header]
     if missing:
         sys.exit("File thiếu cột: %s. Cột hiện có: %s" % (missing, header))
+    ref_cols = [c for c in REF_COLS if c in header]  # thiếu cột sentiment thì bỏ qua, không dừng
+    log["has_reference_sentiment_cols"] = ref_cols
     parts, total, coin_counts, max_ts, min_ts = [], 0, {}, None, None
-    for chunk in pd.read_csv(csv_path, usecols=USE_COLS, dtype=str, chunksize=CHUNK_ROWS):
+    for chunk in pd.read_csv(csv_path, usecols=USE_COLS + ref_cols, dtype=str, chunksize=CHUNK_ROWS):
         total += len(chunk)
         chunk["published_at_utc"] = parse_utc(chunk["Date Time"])
         c_max, c_min = chunk["published_at_utc"].max(), chunk["published_at_utc"].min()
@@ -185,7 +200,7 @@ def step_read(csv_path, log):
     log["max_date_in_file"] = str(max_ts)   # điền vào source log (Max date)
     log["min_date_in_file"] = str(min_ts)
     log["coin_type_counts_in_window"] = dict(sorted(coin_counts.items(), key=lambda kv: -kv[1])[:15])
-    df = pd.concat(parts, ignore_index=True) if parts else pd.DataFrame(columns=USE_COLS)
+    df = pd.concat(parts, ignore_index=True) if parts else pd.DataFrame(columns=USE_COLS + ref_cols)
     log["rows_after_window_and_coin"] = len(df)
     return df
 
@@ -271,18 +286,29 @@ def clean(csv_path):
 
     # Bước 7: id, ngày dùng, cột đầu ra
     df["doc_id"] = df["_url_norm"].map(lambda u: hashlib.sha1(u.encode("utf-8")).hexdigest())
+    # Cột tham chiếu sentiment có sẵn, tiền tố cv_ref_. Mỗi URL chỉ giữ dòng sớm nhất nên nhãn
+    # lấy từ dòng đó; cv_ref_coin_type cho biết dòng đó thuộc coin nào (nhãn có thể khác giữa các coin).
+    present = [c for c in REF_COLS if c in df.columns]
+    if present:
+        df = df.rename(columns=REF_RENAME)
+        df["cv_ref_coin_type"] = df["Coin Type"]
+        if "cv_ref_sentiment_score" in df.columns:
+            df["cv_ref_sentiment_score"] = pd.to_numeric(df["cv_ref_sentiment_score"], errors="coerce")
+    ref_out = [c for c in REF_OUT_COLS if c in df.columns]
     df["use_date"] = (ts.dt.normalize() + pd.Timedelta(days=1)).dt.tz_localize(None)
     df["in_main_sample"] = ts >= pd.Timestamp(SAMPLE_START, tz="UTC")
     df["dataset_origin"] = "cryptovision"
     df = df.rename(columns={"URL": "url"})
     cols = ["doc_id", "url", "source", "published_at_utc", "use_date", "title", "description",
             "nlp_text", "nlp_text_body", "currencies", "non_en", "ts_regime_risk",
-            "ts_bulk_flag", "ts_minute_only", "in_main_sample", "dataset_origin"]
+            "ts_bulk_flag", "ts_minute_only", "in_main_sample", "dataset_origin"] + ref_out
     df = df[cols].sort_values("published_at_utc").reset_index(drop=True)
 
     # Kiểm tra cuối: không có cột rò rỉ, giờ không rỗng, URL không trùng
     leaked = LEAK_COLS & set(df.columns)
     assert not leaked, "Còn cột rò rỉ: %s" % leaked
+    bad_sent = [c for c in df.columns if "sentiment" in c.lower() and not c.startswith("cv_ref_")]
+    assert not bad_sent, "Cột sentiment phải có tiền tố cv_ref_: %s" % bad_sent
     assert df["published_at_utc"].notna().all(), "Có published_at_utc rỗng"
     assert df["doc_id"].is_unique, "Còn doc_id trùng"
     log["rows_final"] = len(df)
@@ -292,6 +318,8 @@ def clean(csv_path):
     log["rows_by_year"] = df["published_at_utc"].dt.year.value_counts().sort_index().to_dict()
     log["ts_flags"] = {c: int(df[c].sum()) for c in ("ts_regime_risk", "ts_bulk_flag", "ts_minute_only")}
     log["sample"] = {"start": ROBUSTNESS_START or SAMPLE_START, "main_start": SAMPLE_START, "t_end": T_END}
+    if "cv_ref_sentiment_label" in df.columns:
+        log["reference_label_counts"] = df["cv_ref_sentiment_label"].value_counts(dropna=False).to_dict()
     return df, log
 
 
