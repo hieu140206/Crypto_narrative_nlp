@@ -1,0 +1,198 @@
+﻿id,batch,headline,label_A,pricemove_A,label_B,pricemove_B,label_final,pricemove_final
+L0004,pilot,Tokenized U.S. Treasuries Arrive to XDC Network as Digital Bond Market Grows,neutral,0,positive,0,positive,0
+L0008,pilot,Mining Bitcoin for Profit Is Getting Harder. Here's Why,neutral,0,negative,0,negative,0
+L0016,pilot,KYC hook for Uniswap v4 stirs community controversy,neutral,0,negative,0,negative,0
+L0022,pilot,Bitcoin slips to $86K — Is the bull run over?,negative,0,negative,1,negative,1
+L0024,pilot,Metaverse Scarcity Isn’t Real,neutral,0,negative,0,negative,0
+L0030,pilot,Unstoppable Domains and Polygon Launch New User-Owned Digital ID,neutral,0,positive,0,neutral,0
+L0033,pilot,Stacks’ smart contracts reach record high ahead of Nakamoto upgrade,neutral,0,positive,0,positive,0
+L0041,pilot,New analysis sheds light on DOJ Bitcoin seizure as JBS pays massive $11M ransom,negative,0,neutral,0,negative,0
+L0042,pilot,Final Fantasy Maker Square Enix Reaffirms Focus on Blockchain Games,neutral,0,positive,0,positive,0
+L0043,pilot,Ark 21Shares amends spot ether ETF proposal to include staking language,neutral,0,positive,0,neutral,0
+L0052,main,LayerZero’s ‘Gas Station’ will simplify cross-chain NFT swaps,neutral,0,positive,0,neutral,0
+L0066,main,"Arbitrum Builder Offchain Labs Buys Prysmatic Labs, a Core Team Behind Ethereum’s Merge",neutral,0,positive,0,neutral,0
+L0069,main,12 Bitcoin ETFs Have 'Brief Window' for SEC Approval Starting Tomorrow,neutral,0,positive,0,positive,0
+L0072,main,Bitcoin Runes Coming to Magic Eden After Ordinals Bet Pays Off,neutral,0,positive,0,positive,0
+L0074,main,Civitai Turns to Crypto After Credit Card Processor Ban Over AI Explicit Content,neutral,0,positive,0,neutral,0
+L0084,main,$2T and Counting: Some Friday Perspective,neutral,0,positive,0,positive,0
+L0087,main,'Treeverse' Studio Endless Clouds Picks Immutable zkEVM for Its NFT Games,neutral,0,positive,0,neutral,0
+L0089,main,"Uniswap wants to launch mobile wallet, but Apple won’t greenlight its launch",neutral,0,negative,0,negative,0
+L0097,main,Bitcoin Holding Support; Resistance at $43K,neutral,0,neutral,1,neutral,1
+L0105,main,First Mover Americas: SEC Delays Spot Bitcoin ETF Decision for All Applicants,neutral,0,negative,0,negative,0
+L0114,main,Circle Issues Euro-Backed Stablecoin EURC Natively on the Solana Blockchain,neutral,0,positive,0,neutral,0
+L0115,main,"Bitcoin price targets include $50K as Nvidia crash shakes Nikkei, gold",negative,0,neutral,0,negative,0
+L0120,main,Trump promises to release Silk Road founder Ross Ulbricht if re-elected,positive,0,neutral,0,neutral,0
+L0121,main,BNB Chain introduces gasless stablecoin payments initiative,neutral,0,positive,0,neutral,0
+L0122,main,Blockchain.com introduces username-based crypto transactions,neutral,0,positive,0,neutral,0
+L0140,main,"Ethereum’s Dencun Upgrade Goes Live, But Fails to Finalize on Testnet",neutral,0,negative,0,neutral,0
+L0145,main,Musician 3LAU Sells Album for $11 Million—Using NFTs,neutral,0,positive,0,positive,0
+L0160,main,Synthetix commence debt pool merger to enhance liquidity and staking capabilities,neutral,0,positive,0,neutral,0
+L0165,main,File-Sharing Service WeTransfer Partners With Blockchain Platform Minima on Mobile NFT Solution,neutral,0,positive,0,neutral,0
+L0167,main,Ethereum network congestion temporarily shuts down crypto gaming casino,neutral,0,negative,0,negative,0
+L0175,main,Ava Labs Launches 'No-Code' Web3 Launchpad AvaCloud,neutral,0,positive,0,neutral,0
+L0186,main,Bitcoin Reclaims Over 50% Market Dominance Following BlackRock ETF Filing,positive,0,positive,1,positive,1
+L0189,main,Bitcoin whales push ‘choreographed’ BTC price as Ether nears $2K,neutral,0,neutral,1,neutral,1
+L0190,main,"Aoki, Alameda Back Algorithmic Stablecoin on Arbitrum at $200M Valuation",neutral,0,positive,0,neutral,0
+L0191,main,Cheatsheet: MicroStrategy has now outperformed Nvidia this year,positive,0,positive,1,positive,1
+L0202,main,‘The social benefits are huge’: Web3 gaming to shift digital ownership,neutral,0,positive,0,neutral,0
+L0204,main,South Korea's National Pension Service Invested $20M in Coinbase Shares in Q3,neutral,0,positive,0,positive,0
+L0218,main,Dune partners with Snowflake to make blockchain data more accessible,neutral,0,positive,0,neutral,0
+L0224,main,Ronin Adds 'Kaidro' Role-Playing Game Following 'Pixels' Ethereum Token Launch,neutral,0,positive,0,neutral,0
+L0228,main,NY Fed: Stablecoins Are Not the Future of Payments,neutral,0,negative,0,negative,0
+L0229,main,Cathie Wood's Ark Invest Refiles Bitcoin ETF Application—Here's What's New,neutral,0,positive,0,neutral,0
+L0231,main,"S&P Faults Biggest Stablecoin, Tether's USDT, as It Debuts New Industry Ranking",neutral,0,negative,0,negative,0
+L0233,main,Why the NFT Boom Feels So Much Like Gambling,neutral,0,negative,0,negative,0
+L0250,main,Investment Firm Kryptoin Files for Ether ETF,neutral,0,positive,0,neutral,0
+L0252,main,Warner Bros. is Creating 6 Million DC Comics Trading Cards With Redeemable NFTs,neutral,0,positive,0,neutral,0
+L0258,main,China Central Television airs crypto segment in rare move,positive,0,neutral,0,neutral,0
+L0264,main,Crypto Crystal Ball 2024: Bitcoin Meets TradFi—For Real,neutral,0,positive,0,neutral,0
+L0265,main,Bitcoin hash rate marks all-time high as BTC price drops below $25K,negative,1,neutral,1,neutral,1
+L0266,main,Bitcoin social sentiment decline may signal market bottom,neutral,0,positive,0,neutral,0
+L0268,main,"Bitcoin, Ether Diverging Paths Show Resilience and Opportunity",neutral,0,positive,0,positive,0
+L0274,main,Bitcoin Miner Iris Energy Signs Up to $100M Equity Deal With B. Riley,neutral,0,positive,0,neutral,0
+L0275,main,Texas proof-of-reserve bill passes through the Senate,neutral,0,positive,0,neutral,0
+L0287,main,Bitcoin's Options Market Has Overtaken Its Futures Market in a Sign of Growing Sophistication,neutral,0,positive,0,positive,0
+L0289,main,Mango Markets Faces Regulatory 'Inquiry' Ahead of Eisenberg Crypto Fraud Trial,negative,0,neutral,0,negative,0
+L0294,main,Binance Releases Wallet Addresses of $69B Crypto Reserve,neutral,0,positive,0,positive,0
+L0296,main,Ether Overshadows Bitcoin in Volume on HyperLiquid as Platform Activity Hits $500B Milestone,neutral,0,positive,0,neutral,0
+L0300,main,"Lend Ethereum, Earn Stablecoins With New Vesper Finance Update",neutral,0,positive,0,neutral,0
+L0306,main,Unstoppable Domains adds .eth domains through Ethereum Name Service,neutral,0,positive,0,neutral,0
+L0310,main,Bitcoin bulls aim for $25K price on Friday's $510M options expiry,neutral,0,positive,0,neutral,0
+L0311,main,"Trump isn’t the only ‘story’ driving Bitcoin’s price higher, says exec",positive,0,positive,1,positive,1
+L0314,main,Grayscale Eyeing Expansion Into European Crypto Fund Market: Report,neutral,0,positive,0,neutral,0
+L0315,main,Hash-based zero-knowledge tech can quantum-proof Ethereum — XinXin Fan,neutral,0,positive,0,neutral,0
+L0319,main,Stablecoin Issuer Tether Invests in Sustainable Bitcoin Mining in Uruguay,neutral,0,positive,0,neutral,0
+L0326,main,Bitcoin price skirts $19.3K amid fear over ‘mother of all rug pulls’,neutral,1,negative,1,negative,1
+L0329,main,Mark Cuban Loses Nearly $1M to Crypto Scam,neutral,0,negative,0,negative,0
+L0331,main,"Bitcoin Slides Below $62K as Consolidation Drags on, but Traders Eye Possible Parabolic Rally",neutral,1,negative,1,negative,1
+L0337,main,BTC ETFs Finally Snap Eight-Day $3.2B Outflow Streak With $94.3M Inflows,neutral,0,positive,0,positive,0
+L0338,main,MicroStrategy Targeting $2B Perpetual Preferred Stock Offering: Benchmark,positive,0,neutral,0,neutral,0
+L0339,main,"TRUMP, Dogecoin and Cardano Down Bad as Market Continues to Bleed",neutral,0,negative,1,negative,1
+L0340,main,Ex-Ethereum Miners Token Hop to Stay Alive After the Merge,negative,1,neutral,0,neutral,0
+L0341,main,"JPMorgan, Apollo Tokenize Funds in 'Proof of Concept' With Axelar, Oasis, Provenance",neutral,0,positive,0,positive,0
+L0342,main,Tornado Cash ban could spell disaster for other privacy protocols — Manta co-founder,neutral,0,negative,0,negative,0
+L0343,main,Greenidge Generation Shares Jump 30% After Analyst Sees Potential 200% Upside,negative,0,positive,1,positive,1
+L0344,main,"Allianz, Germany’s biggest insurer, buys 24% of MicroStrategy’s $600M notes",positive,1,positive,0,positive,0
+L0346,main,Crypto set for a new era of apps over infrastructure,positive,1,neutral,0,neutral,0
+L0347,main,Bitcoin macro indicator that predicted 2022 bottom flashes 'buy signal',neutral,0,positive,0,positive,0
+L0348,main,"Bitcoin at $26.4K Set for Weekly Gain, but Rallies Might Continue to be Sold",positive,0,neutral,1,neutral,1
+L0351,main,Let’s pour one out for the first-day spot bitcoin ETF investors,neutral,0,negative,0,negative,0
+L0352,main,Fed’s Powell says US on ‘unsustainable fiscal path’ as debt burden grows,negative,0,neutral,0,neutral,0
+L0353,main,Bitcoin bulls overtake the $40K barrier ahead of Friday’s $625M options expiry,neutral,0,positive,1,positive,1
+L0354,main,Bitcoin Shrugs Off Fed Decision to Keep Rates Unchanged,positive,1,neutral,1,positive,1
+L0355,main,Ethereum Is No Longer a One-Chain Ecosystem,neutral,1,neutral,0,neutral,0
+L0356,main,Morgan Creek Digital to Raise up to $500M for New Web3 Venture Capital Fund,neutral,0,positive,0,positive,0
+L0357,main,Meme Coin Frenzy Drives Ethereum Network Fees to Nearly 2-Year High: IntoTheBlock,positive,0,neutral,0,positive,0
+L0359,main,"As BTC passes $66K, is ‘Uptober’ finally upon us?",neutral,0,positive,1,positive,1
+L0360,main,DeFi Project Aave to Launch Decentralized Social Media Platform on Polygon,positive,1,positive,0,neutral,0
+L0361,main,Bitcoin Tumbles to $26.9K on Hawkish Remarks by Federal Reserve's Powell,neutral,0,negative,1,negative,1
+L0362,main,"BTC, ETH, XRP Set for a Near-Term Bounce as Attention Turns to Rate Cuts",negative,1,positive,0,positive,0
+L0363,main,"Web3 Watch: Rarible Revamps Marketplace, ApeCoin DAO Adds Bug Bounty",positive,0,neutral,0,neutral,0
+L0364,main,Bitcoin On-chain Pattern Shows Potential for Further Price Gains,neutral,0,positive,0,positive,0
+L0365,main,Bitcoin Maxi Jack Dorsey Slams Facebook Over 'Wasted Effort and Time' on Diem,positive,0,neutral,0,neutral,0
+L0367,main,"SEC expands Binance lawsuit: AXS, FIL, ATOM now securities",neutral,0,negative,0,negative,0
+L0368,main,"Bitcoin Price Falls Under $60,000 as $150 Million in Crypto Longs Get Rekt",negative,0,negative,1,negative,1
+L0369,main,NFT Marketplace Nifty Gateway Plans to Go Carbon Neutral,negative,1,neutral,0,neutral,0
+L0370,main,What Are Moonbirds? These Ethereum Owl NFTs Are Soaring,neutral,0,positive,1,positive,1
+L0371,main,DBS Launches Crypto Trust in a First for Asia,neutral,0,positive,0,positive,0
+L0373,main,Did regulators intentionally cause a run on banks?,positive,0,neutral,0,neutral,0
+L0375,main,Silicon Valley: The Mecca for Venture Capital May Be Cooling on Crypto,neutral,0,negative,0,negative,0
+L0376,main,When meme? Top crypto memes and their meaning,negative,0,neutral,0,neutral,0
+L0377,main,Stablecoin dominance slides as market cap falls to near 2-year lows: CCData,neutral,0,negative,0,negative,1
+L0379,main,US Senate Majority Leader to speak at crypto event for Kamala Harris,neutral,0,positive,0,neutral,0
+L0380,main,"Enforcement goes on with Bitzlato action: Law Decoded, Jan. 16–23",neutral,0,negative,0,negative,0
+L0381,main,"ConsenSys Acquires MyCrypto, Plans to Merge It With Ethereum Wallet MetaMask",negative,0,positive,0,neutral,0
+L0382,main,Aptos Token Price Doubles in Two Weeks Amid Strong NFT Interest,positive,0,positive,1,positive,1
+L0383,main,Digital-Asset Funds Reach $50B Despite Outflows,positive,1,neutral,0,neutral,0
+L0385,main,"Fireblocks, Zodia Markets Partner to Improve Cross-Border Payments",neutral,0,positive,0,neutral,0
+L0386,main,Bitcoin ETFs Remove Nearly Five Times Daily Supply as Ethereum ETFs See Strong Rebound,neutral,0,positive,0,positive,0
+L0387,main,VanEck Joins Bitcoin ETF Ad War With New Teaser Trailer,positive,0,neutral,0,neutral,0
+L0391,main,Judge Orders Tether to Produce Records Showing Backing of USDT,neutral,0,negative,0,negative,0
+L0394,main,Derivatives data highlights crypto traders’ positive sentiment and belief in further upside,neutral,0,positive,0,positive,0
+L0395,main,You Can Now Trade Bitcoin Mining Hashpower on Arbitrum,positive,0,neutral,0,neutral,0
+L0396,main,"Crypto whales suffer huge losses due to USDC depeg, SVB collapse",neutral,0,negative,0,negative,0
+L0397,main,First Mover Americas: Binance Sells Russian Unit,negative,0,neutral,0,neutral,0
+L0398,main,"Bitcoin miner CleanSpark purchases 45,000 ASICs for $145M",neutral,0,positive,0,neutral,0
+L0400,main,Bitcoin price could hit $63K amid $3.9B futures expiry,neutral,0,positive,0,neutral,0
+L0401,main,U.S. SEC Said to Open Talks with Grayscale on Spot Bitcoin ETF Push,neutral,0,positive,0,positive,0
+L0402,main,"Bitcoin Falls After 517,000 Jobs Added in January, Beating Expectations",positive,0,negative,1,negative,1
+L0403,main,"Fidelity reportedly amends Ether ETF S-1 filing, removes ETH staking",negative,1,negative,0,negative,0
+L0405,main,What is Celestia (TIA)? The Coin Created by a CIA Hacker Spikes 800%,neutral,0,positive,1,positive,1
+L0406,main,"Compound adds Ethena, Mantle tokens to lending platform",positive,1,neutral,0,neutral,0
+L0407,main,"Verkle trees promise superior Ethereum solo staking benefits, says Vitalik Buterin",neutral,0,positive,0,neutral,0
+L0408,main,"BlackRock, VanEck, Valkyrie file last-minute Bitcoin ETF amendments",neutral,0,positive,0,neutral,0
+L0410,main,Bitcoin (BTC) Price in Standstill at $85K as Trump Increases Pressure on Fed's Powell,neutral,0,neutral,1,neutral,1
+L0411,main,Solo miner bags entire block reward with just 1PH of power,neutral,1,neutral,0,neutral,0
+L0412,main,Whales Grab $50M of Chainlink’s LINK as Price Climbs 40% in a Month,neutral,0,positive,1,positive,1
+L0413,main,"For Millennials, Bitcoin Is the New Real Estate",positive,1,positive,0,positive,0
+L0414,main,Budweiser Launching Ethereum NFTs as ‘Key to the Budverse’,neutral,0,positive,0,neutral,0
+L0421,main,BlackRock Launches Bitcoin Fund in Europe Following Roaring IBIT Success,neutral,0,positive,0,positive,0
+L0422,main,Vitalik Buterin offers rosy views on Twitter’s Community Notes,positive,0,neutral,0,neutral,0
+L0424,main,Binance reaches 200M users with $100B in assets under custody,neutral,0,positive,0,positive,0
+L0425,main,Bitcoin Billionaire Arthur Hayes Is Bearish on the Halving—Here's Why,positive,0,negative,0,negative,0
+L0426,main,"Former Kraken execs acquire real estate firm Janover, disclose SOL treasury plans",negative,0,neutral,0,neutral,0
+L0427,main,Canada to Prohibit Crypto Firms From Offering Leveraged Trading to Citizens,neutral,0,negative,0,negative,0
+L0428,main,New DeFi protocol Nudge aims to unlock hidden value in users’ wallets,negative,0,neutral,0,neutral,0
+L0430,main,"DeFi Tokens Curve, Lido, ChainLink Jump Double Digits as Crypto Market Rebounds",neutral,0,positive,1,positive,1
+L0431,main,The limitations of the EU’s new cryptocurrency regulations,positive,1,neutral,0,neutral,0
+L0432,main,The biggest Ethereum upgrade ever goes live,neutral,0,positive,0,positive,0
+L0433,main,"Bitcoin Slips Below $45K as S&P 500 Futures Drop, Stablecoin Regulation Fears Resurface",positive,0,negative,1,negative,1
+L0434,main,A semi-centralized exchange to provide a ‘trade-to-own’ feature to engage users,negative,1,neutral,0,neutral,0
+L0440,main,"Bitcoin Retests $35,000 as Dogecoin, XRP Prices Jump 10%",neutral,0,neutral,1,neutral,1
+L0441,main,"Why are BTC, ETH, XRP, SOL Down Today? Traders Eye $70,000 Bitcoin as U.S. Treasuries Nosedive",positive,1,negative,1,negative,1
+L0442,main,First Mover Asia: Some Bitcoin Whales Appear Content to Wait for the Next Price Catalyst,negative,1,neutral,0,neutral,0
+L0443,main,Bitcoin L2s set to explode as Runes congest BTC network,neutral,0,positive,0,neutral,0
+L0444,main,Cardano price fake-out? ADA's 45% rebound in two days could trap bulls,neutral,0,neutral,1,neutral,1
+L0445,main,Jailhouse Block: Elvis Digital Art Collection Will Inscribe on the Bitcoin Network,neutral,1,neutral,0,neutral,0
+L0446,main,Terra’s Bitcoin purchase and BlackRock comments back ETH’s surge to $3.1K,neutral,0,positive,1,positive,1
+L0447,main,Connext founder proposes ‘Sovereign Bridged Token’ standard after Multichain incident,positive,1,neutral,0,neutral,0
+L0448,main,"Weeks Before Trial, Tornado Cash’s Roman Storm Sounds Alarm: ‘If I Lose, DeFi Dies With Me’",neutral,0,negative,0,negative,0
+L0449,main,Ledger hardware wallet provider sees 500% revenue surge in Q1,negative,0,positive,0,positive,0
+L0452,main,Namibia signs crypto exchange regulation bill into law,neutral,0,positive,0,neutral,0
+L0453,main,Riot Platforms (RIOT) Up 6% After Starboard Takes Stake,neutral,0,neutral,1,positive,1
+L0454,main,ICO Hype Man Ian Balina Launches GoFundMe to Tackle SEC Lawsuit,positive,1,neutral,0,neutral,0
+L0455,main,Why Is Everyone Suddenly Bearish About Bitcoin?,neutral,0,negative,0,negative,0
+L0456,main,It’s Vitalik’s birthday today — and he’s optimistic on crypto-AI integrations,negative,0,positive,0,positive,0
+L0458,main,The Asia-Pacific market is heating up for Bitcoin and Ethereum ETFs,neutral,0,positive,0,positive,0
+L0459,main,BurgerSwap Hit by Flash Loan Attack Netting Over $7M,positive,0,negative,0,negative,0
+L0460,main,Bitcoin options traders say $80K is a given as Trump victory odds spike,negative,0,positive,0,positive,0
+L0461,main,"Bitcoin Sinks Below $27K as Federal Reserve, Powell Keep Focus on Inflation",positive,0,negative,1,negative,1
+L0462,main,"Immutable, King River Capital, Polygon Labs Set Up $100M Web3 Gaming Fund",negative,1,positive,0,positive,0
+L0463,main,Bitcoin price hits $70K all-time high as US jobs data squashes US dollar,positive,0,positive,1,positive,1
+L0464,main,Nike Unveils First .Swoosh NFT Digital Sneaker Drop,positive,1,positive,0,neutral,0
+L0466,main,Strategy Adds $180 Million in Bitcoin Ahead of Expanding BTC Push,neutral,0,positive,0,positive,0
+L0467,main,Nifty News: BAYC hodler loses 100 ETH in ‘joke’ domain sale gone wrong,positive,0,neutral,0,neutral,0
+L0469,main,Voyager Digital Issues Default Notice to Three Arrows Capital,neutral,0,negative,0,negative,0
+L0470,main,Interactive Brokers Reveals Plan to Offer Crypto Trading,neutral,0,positive,0,positive,0
+L0471,main,"Inflation Rate, Closely Tracked by Bitcoin Traders, Probably Accelerated in February",positive,0,neutral,0,neutral,0
+L0473,main,Shanghai Update Could Brighten Outlook for Coinbase: JP Morgan,neutral,0,positive,0,positive,0
+L0474,main,"CrowdStrike, Windows BSoD Meme Tokens Populate Solana and Ethereum Amid Global Internet Outage",positive,0,neutral,0,neutral,0
+L0475,main,Bitcoin Loses 10% on the Week as Memecoins Tumble,neutral,0,negative,1,negative,1
+L0476,main,Binance Exec May Be Called to Testify in Brazil Over Alleged Pyramid Schemes,negative,1,negative,0,negative,0
+L0477,main,First Mover Americas: Bitcoin Stays Near $17K Ahead of Jobs Report,negative,0,neutral,1,neutral,1
+L0478,main,"State digital currency to get more trust than crypto, says Russian ex-PM",neutral,1,negative,0,negative,0
+L0505,main,Bitcoin Rangebound Between $55K Support and $60K Resistance,neutral,0,neutral,1,neutral,1
+L0506,main,World Cup Shocker Sinks Argentina Football Fan Token,negative,1,neutral,1,negative,1
+L0532,main,"Bitcoin Rangebound, Support Between $58K-$60K Could Stabilize Pullback",neutral,0,neutral,1,neutral,1
+L0533,main,"Bitcoin Edges Towards $28,000 as Grayscale's ETF Hopes Stay Alive",neutral,1,positive,1,positive,1
+L0542,main,"Russian crypto market worth $500B despite bad regulation, says exec",positive,0,neutral,0,neutral,0
+L0543,main,"Compound, Celer attack may have been caused by faulty migration system — DNS experts",neutral,0,negative,0,negative,0
+L0549,main,Societe Generale Introduces Services for Asset Managers Developing Crypto Funds,neutral,0,positive,0,positive,0
+L0555,main,OKX to Offer Ordinals Trading Within its Wallet by June,neutral,0,positive,0,neutral,0
+L0557,main,Developer Inserts 'Bug' in Bitcoin Ordinals—How Bad Is It?,neutral,0,negative,0,negative,0
+L0574,main,US banks experience volatility and trading halts amid bank failures and presidential assurances,neutral,0,negative,0,negative,0
+L0578,main,"Coinbase, Kraken Back Crypto Lending Platform CLST Seed Round",neutral,0,positive,0,neutral,0
+L0586,main,"Bitcoin Ordinals Token Ecosystem Emerges as Latest Crypto Play, Led by ORDI Hype",neutral,0,positive,0,neutral,0
+L0594,main,Largest ‘illicit online marketplace’ has grown 51% in 6 months: Elliptic,neutral,0,negative,0,negative,0
+L0598,main,Bitcoin mining company follows Tesla by setting up shop in Austin,neutral,0,positive,0,neutral,0
+L0601,main,Asset Manager VanEck Joins Tokenization Race With U.S. Treasury Fund Token,neutral,0,positive,0,neutral,0
+L0603,main,Nayib Bukele Is Not the Bitcoin Hero We Need,neutral,0,negative,0,negative,0
+L0604,main,Aave’s proposal to launch on zkEVM passes ‘temperature check’ vote,neutral,0,positive,0,neutral,0
+L0607,main,Voyager Digital’s Estimated Quarterly Revenue Doubles to $165M,neutral,0,positive,0,positive,0
+L0608,main,Paradigm releases 'Ethereum for Rust' to help ensure network stability,neutral,0,positive,0,neutral,0
+L0609,main,"Stronghold Digital wants to burn tires for fuel, environmental groups strike back",neutral,0,negative,0,negative,0
+L0612,main,‘Kwontitative easing’ — BTC price hits $43K in UST as Terra empties $2.2B BTC bag,neutral,1,positive,1,neutral,1
+L0615,main,Samson Mow’s new company JAN3 helping build Bitcoin City in El Salvador,neutral,0,positive,0,neutral,0
+L0618,main,First Mover Asia: Mark Karpeles’ UnGox Wants to Help Investors Assess the Risks of Crypto Products; Bitcoin Drops Below $40K,negative,1,negative,0,negative,1
+L0625,main,First Mover Americas: Bitcoin Flat as Crypto Winter Deepens,negative,1,negative,0,negative,1
+L0630,main,OpenBazaar marketplace says it’s set to ‘grow again from the ashes’,neutral,0,positive,0,neutral,0
