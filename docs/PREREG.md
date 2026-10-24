@@ -79,3 +79,4 @@ Biến thể `nlp_text`; loại Decrypt; loại bài `price_desc`; loại ngày 
 
 ## 8. Sai khác so với PREREG
 (để trống, ghi ngày + lý do + tác động)
+Sai khác 1 (2026-10-25). Baseline HAR của họ 5 được bổ sung biến giả ngày trong tuần (UTC) của ngày gốc t. Lý do: trong lúc phát triển pipeline trên validation 2023 (chưa chạm test), biến attention (AbnAttention) cho kết quả có ý nghĩa ở h=3 và h=7 (BTC, Holm p = 0,016 và 0,043), nhưng tín hiệu biến mất khi baseline có biến giả ngày trong tuần (p = 0,08 / 0,73 / 0,40). Nguyên nhân: số bài tin giảm khoảng 1,7 đơn vị log vào cuối tuần, trùng với biến động thấp cuối tuần mà HAR thuần bỏ sót. Baseline HAR+DOW tăng R²_OOS 25% ở h=1 và 17% ở h=3. Tác động: mọi so sánh văn bản-so-với-baseline (RQ5) dùng HAR+DOW; kết quả với HAR thuần vẫn báo cáo như độ bền. 18 phép thử trên HAR thuần đã được ghi trong outputs/tables/test_registry.csv.
