@@ -83,3 +83,58 @@ Sai khác 1 (2026-10-25). Baseline HAR của họ 5 được bổ sung biến gi
 Sai khác 2 (2026-10-25). Khối ml: được thêm vào config/params.yaml theo đúng yêu cầu của PREREG (lưới Elastic Net và XGBoost khai báo trước khi chạy). Các tham số khác không đổi. Hash mới của params.yaml: cc7ff1f8…6610. Hash cũ trong phần đầu tài liệu (f02edc93…) là trạng thái trước khi thêm khối ml:. Hai file config/narratives.yaml và config/params.yaml được commit lần đầu lúc ghi nhận sai khác này. Từ điển narrative (v4, đã đóng băng từ 2026-10-25) không đổi so với hash đã ghi.
 Sai khác 3 (2026-10-25). Ở lần chạy validation 2023 với lưới ML v1 (commit ef7b09f, params.yaml sha256 cc7ff1f8…6610), siêu tham số chọn bởi CV trên tập train nằm ở biên lưới ở cả 12 ô (Elastic Net alpha = 0,1 là giá trị lớn nhất; XGBoost depth 2, n = 200, lr 0,03 là tổ hợp ít phức tạp nhất). Do đó khối ml_v2 được thêm vào config/params.yaml (sha256 4fe733cf…19b3) với lưới mở rộng; features, CV, refit và seed không đổi. Mở rộng này được quyết định sau khi đã xem kết quả validation v1, vì vậy là sai khác post-hoc. Tập test chưa được chạm. Kết quả validation của cả hai lưới đều được báo cáo; 36 phép thử của lưới v1 vẫn nằm trong registry, và mọi phép thử bổ sung được cộng vào tổng số phép thử công bố. Thêm một phân tích độ nhạy macro_mode=diff (bỏ mức của VIX, DGS10, DTWEXBGS, chỉ giữ biến sai phân 5 ngày), gắn nhãn thăm dò.
 Sai khác 4 (2026-10-25). Cấu hình ML dùng cho lần chạy duy nhất trên tập test là: lưới v2 (ml_v2, sha256 params.yaml 4fe733cf…19b3), macro_mode = level, hai mô hình học (Elastic Net, XGBoost), bản market và bản market+text, h ∈ {1,3,7}. Lý do chọn v2 thay v1: lưới v1 chọn ở biên ở cả 12 ô trên CV tập train (xem Sai khác 3). Trên validation 2023, không phép thử nào của họ 5-ML đạt p Holm < 0,05 ở cả ba lượt (v1, v2 level, v2 diff); p Holm nhỏ nhất của v2 level là 0,50. Kết quả v1 và macro_mode = diff chỉ báo cáo ở validation, không chạy lại trên test. Tổng số phép thử text-vs-market trong họ ML đã thực hiện trên validation là 36 (3 lượt × 12); lượt chạy test sẽ thêm 12.
+## 9. Kết quả xác nhận trên tập test (chạy một lần, 25-10-2026)
+
+Quy trình: `ALLOW_TEST=1 python -m models.run_test_once`, chạy đúng một lần, khóa `outputs/TEST_LOCK` ghi trước khi đọc dữ liệu test (trạng thái `completed`). Commit mã `fb6e3a6`; HEAD lúc chạy `82ee530`; `params.yaml` sha256 `4fe733cf…19b3`; seed 42; lưới ML v2, `macro_mode = level` (Sai khác 3 và 4). Tập test 2024-01-01 → 2025-06-30, n_oos = 547 cho mọi ô. Kết quả đầy đủ: `outputs/test/`; registry `outputs/tables/test_registry.csv` (433 dòng sau lần chạy). Mọi con số dưới đây lấy nguyên từ file kết quả, không chỉnh sửa.
+
+### 9.1 Họ 5, văn bản so với HAR+DOW (CW một phía, Holm 9 phép mỗi tài sản)
+
+| Tài sản | h | Mô hình | R²_OOS so với HAR+DOW | p thô | p Holm |
+|---|---|---|---|---|---|
+| BTC | 1 | AbnAttention | 0,0070 | 0,031 | 0,279 |
+| BTC | 1 | FinBERT (Sent) | -0,0006 | 0,692 | 1,000 |
+| BTC | 1 | VADER (Sent) | 0,0000 | 0,455 | 1,000 |
+| BTC | 3 | AbnAttention | 0,0005 | 0,324 | 1,000 |
+| BTC | 3 | FinBERT (Sent) | 0,0053 | 0,064 | 0,509 |
+| BTC | 3 | VADER (Sent) | -0,0010 | 0,827 | 1,000 |
+| BTC | 7 | AbnAttention | -0,0051 | 0,684 | 1,000 |
+| BTC | 7 | FinBERT (Sent) | 0,0032 | 0,155 | 1,000 |
+| BTC | 7 | VADER (Sent) | -0,0016 | 0,803 | 1,000 |
+| ETH | 1 | AbnAttention | 0,0045 | 0,047 | 0,426 |
+| ETH | 1 | FinBERT (Sent) | -0,0011 | 0,542 | 1,000 |
+| ETH | 1 | VADER (Sent) | -0,0006 | 0,630 | 1,000 |
+| ETH | 3 | AbnAttention | -0,0008 | 0,654 | 1,000 |
+| ETH | 3 | FinBERT (Sent) | -0,0001 | 0,303 | 1,000 |
+| ETH | 3 | VADER (Sent) | -0,0001 | 0,473 | 1,000 |
+| ETH | 7 | AbnAttention | -0,0059 | 0,641 | 1,000 |
+| ETH | 7 | FinBERT (Sent) | -0,0010 | 0,547 | 1,000 |
+| ETH | 7 | VADER (Sent) | -0,0017 | 0,801 | 1,000 |
+
+Kết quả: 0/18 phép thử có p Holm < 0,05; p Holm nhỏ nhất là 0,279 (BTC, h=1, AbnAttention). Không có bằng chứng rằng các đặc trưng văn bản bổ sung dự báo log biến động thực hiện ngoài HAR+DOW.
+
+### 9.2 Họ 5-ML, market+text so với market (Clark–West cho Elastic Net, DM-HLN cho XGBoost; Holm 6 phép mỗi tài sản)
+
+| Tài sản | h | Mô hình | R²_OOS (text so với market) | p thô | p Holm | R²_OOS bản market so với HAR+DOW | R²_OOS bản text so với HAR+DOW |
+|---|---|---|---|---|---|---|---|
+| BTC | 1 | Elastic Net | 0,0000 | 0,281 | 1,000 | -0,0263 | -0,0262 |
+| BTC | 1 | XGBoost | 0,0098 | 0,212 | 1,000 | 0,0100 | 0,0197 |
+| BTC | 3 | Elastic Net | -0,0010 | 0,832 | 1,000 | -0,0631 | -0,0641 |
+| BTC | 3 | XGBoost | 0,0585 | 4,3e-06 | 2,6e-05 | -0,1358 | -0,0693 |
+| BTC | 7 | Elastic Net | 0,0001 | 0,408 | 1,000 | -0,0400 | -0,0399 |
+| BTC | 7 | XGBoost | -0,0011 | 0,555 | 1,000 | -0,0573 | -0,0585 |
+| ETH | 1 | Elastic Net | -0,0348 | 0,963 | 1,000 | 0,0056 | -0,0290 |
+| ETH | 1 | XGBoost | 0,0323 | 0,012 | 0,074 | 0,0274 | 0,0588 |
+| ETH | 3 | Elastic Net | 0,0017 | 0,110 | 0,551 | -0,0021 | -0,0003 |
+| ETH | 3 | XGBoost | 0,0011 | 0,456 | 1,000 | 0,0168 | 0,0179 |
+| ETH | 7 | Elastic Net | -0,0006 | 0,221 | 0,885 | -0,0318 | -0,0324 |
+| ETH | 7 | XGBoost | -0,0035 | 0,955 | 1,000 | 0,0134 | 0,0099 |
+
+Kết quả: 1/12 phép thử có p Holm < 0,05: **BTC, h=3, XGBoost** (R²_OOS +5,85%, p thô 4,3×10⁻⁶, p Holm 2,6×10⁻⁵). 11/12 phép thử không có ý nghĩa; ETH h=1 XGBoost có p Holm 0,074.
+
+### 9.3 Giải thích và giới hạn (phần dưới đây là phân tích hậu nghiệm trên file OOS đã lưu, không phải kiểm định đăng ký trước)
+
+- Ở ô BTC h=3 XGBoost, bản text tốt hơn bản market ở cả 6 quý của tập test; 10 ngày có chênh lệch bình phương sai số lớn nhất chiếm 12% tổng chênh lệch tuyệt đối. Chiều của hiệu ứng khớp với validation (+2,3%, p thô 0,32).
+- Hiệu ứng **không** xuất hiện ở các mô hình tuyến tính cùng ô: Elastic Net (p thô 0,83) và HAR+text (p thô 0,32).
+- Bản XGBoost market là baseline yếu: R²_OOS so với HAR+DOW là −13,6%. Bản text vẫn kém HAR+DOW (−6,9%; chênh lệch không có ý nghĩa, DM = 1,53). Do đó kết quả nói rằng đặc trưng văn bản cải thiện một mô hình ML thị trường yếu ở một ô, không nói rằng văn bản giúp vượt HAR+DOW.
+- Tổng số phép thử text-vs-market của họ ML đã thực hiện là 48 (36 trên validation, 12 trên test). p của ô trên vẫn rất nhỏ sau khi chỉnh theo 48 phép thử (≈ 2×10⁻⁴), nên kết luận không phụ thuộc vào cách đếm. Tuy vậy đây là 1 ô trên 12, chỉ ở một mô hình học và một tài sản; báo cáo trình bày nó cùng với 11 ô không có ý nghĩa.
+- Họ 1 đến 4 là phân tích mô tả đồng thời, ước lượng trên train+valid; chúng không được ước lượng lại trên tập test. Tập test đã được dùng một lần và không được dùng lại để chọn mô hình.
