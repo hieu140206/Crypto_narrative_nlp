@@ -397,6 +397,14 @@ def main() -> None:
         choices=["title", "fulltext", "nlp_text", "noprice"],
         help="title=bản chính; fulltext/nlp_text=độ bền; noprice=loại price_desc",
     )
+    parser.add_argument(
+        "--exclude-sources", nargs="*", default=None,
+        help="Nhãn LOSO (panel/narr đã lọc). Cần --panel-path --narr-path --out-a --out-b.",
+    )
+    parser.add_argument("--panel-path", default=None, help="Override daily panel parquet")
+    parser.add_argument("--narr-path", default=None, help="Override daily narratives parquet")
+    parser.add_argument("--out-a", default=None, help="Override model_table_A out")
+    parser.add_argument("--out-b", default=None, help="Override model_table_B out")
     args = parser.parse_args()
 
     root = project_root()
@@ -420,16 +428,36 @@ def main() -> None:
         out_a_key = "model_table_A_path"
         out_b_key = "model_table_B_path"
 
-    panel = pd.read_parquet(abs_path(root, paths[panel_key]))
-    narr = pd.read_parquet(abs_path(root, paths["daily_narratives_path"]))
+    default_a = abs_path(root, paths[out_a_key])
+    default_b = abs_path(root, paths[out_b_key])
+    if args.exclude_sources is not None:
+        missing = [
+            f for f, v in (
+                ("--panel-path", args.panel_path),
+                ("--narr-path", args.narr_path),
+                ("--out-a", args.out_a),
+                ("--out-b", args.out_b),
+            ) if not v
+        ]
+        if missing:
+            sys.exit("--exclude-sources cần " + " ".join(missing) + " (không ghi đè model_table mặc định)")
+
+    panel_path = abs_path(root, args.panel_path) if args.panel_path else abs_path(root, paths[panel_key])
+    narr_path = abs_path(root, args.narr_path) if args.narr_path else abs_path(root, paths["daily_narratives_path"])
+    panel = pd.read_parquet(panel_path)
+    narr = pd.read_parquet(narr_path)
     market = pd.read_parquet(abs_path(root, paths["market_daily_path"]))
     fred = pd.read_parquet(abs_path(root, paths["fred_path"]))
 
     table_a = build_model_table_A(panel, narr, market, fred, params)
     table_b = build_model_table_B(panel, narr, market, fred, params)
 
-    out_a = abs_path(root, paths[out_a_key])
-    out_b = abs_path(root, paths[out_b_key])
+    out_a = abs_path(root, args.out_a) if args.out_a else default_a
+    out_b = abs_path(root, args.out_b) if args.out_b else default_b
+    if args.exclude_sources is not None and (
+        out_a.resolve() == default_a.resolve() or out_b.resolve() == default_b.resolve()
+    ):
+        sys.exit("exclude_sources: từ chối ghi đè model_table_{A,B}.parquet mặc định")
     out_a.parent.mkdir(parents=True, exist_ok=True)
     table_a.to_parquet(out_a, index=False)
     table_b.to_parquet(out_b, index=False)
@@ -476,6 +504,9 @@ def main() -> None:
         "embargo_drop_counts_B": embargo_counts,
         "out_A": str(out_a),
         "out_B": str(out_b),
+        "exclude_sources": args.exclude_sources,
+        "panel_path": str(panel_path),
+        "narr_path": str(narr_path),
     }
     log_path = out_a.with_name(out_a.stem + "_build.log.json")
     log_path.write_text(json.dumps(log, ensure_ascii=False, indent=2, default=str), encoding="utf-8")

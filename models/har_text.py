@@ -345,6 +345,10 @@ def run_all(
     stage: str = "valid",
     split_override: dict[str, tuple[str, str]] | None = None,
     registry_path: Path | None = None,
+    table_b_path: Path | str | None = None,
+    registry_family: str | None = None,
+    registry_note: str | None = None,
+    exclude_sources: list[str] | None = None,
 ) -> pd.DataFrame:
     root = root or project_root()
     params = load_params(root)
@@ -360,12 +364,18 @@ def run_all(
     random.seed(seed)
     np.random.seed(seed)
 
+    if exclude_sources is not None and registry_note is None:
+        registry_note = "loso:" + (",".join(exclude_sources) if exclude_sources else "full")
     out_dir = out_dir or (root / "outputs" / "tables")
     out_dir.mkdir(parents=True, exist_ok=True)
     # registry_path tách khỏi out_dir (vd. real → outputs/test, registry → tables/)
     reg_path = Path(registry_path) if registry_path is not None else (out_dir / "test_registry.csv")
     if register:
         ensure_registry_baseline_column(reg_path)
+
+    _load_kw: dict = {"root": root, "panel": panel}
+    if table_b_path is not None:
+        _load_kw["table_path"] = table_b_path
 
     if split_override is not None:
         sp0 = load_splits_with_override(
@@ -375,8 +385,8 @@ def run_all(
         train0, valid0 = sp0["train"], sp0["valid"]
         assert_no_hard_cap_dates(pd.concat([train0, valid0, sp0["test"]], ignore_index=True))
     else:
-        train0 = load_model_table("B", "train", horizon=1, drop_embargo=True, root=root, panel=panel)
-        valid0 = load_model_table("B", "valid", horizon=1, drop_embargo=True, root=root, panel=panel)
+        train0 = load_model_table("B", "train", horizon=1, drop_embargo=True, **_load_kw)
+        valid0 = load_model_table("B", "valid", horizon=1, drop_embargo=True, **_load_kw)
     abn_note = check_abn_attention_identical(train0, valid0)
     print("AbnAttention vader vs finbert (all):", abn_note)
 
@@ -394,11 +404,11 @@ def run_all(
             train, valid, test = sp["train"], sp["valid"], sp["test"]
             assert_no_hard_cap_dates(pd.concat([train, valid, test], ignore_index=True))
         else:
-            train = load_model_table("B", "train", horizon=h, drop_embargo=True, root=root, panel=panel)
-            valid = load_model_table("B", "valid", horizon=h, drop_embargo=True, root=root, panel=panel)
+            train = load_model_table("B", "train", horizon=h, drop_embargo=True, **_load_kw)
+            valid = load_model_table("B", "valid", horizon=h, drop_embargo=True, **_load_kw)
             test = None
             if stage == "test":
-                test = load_model_table("B", "test", horizon=h, drop_embargo=True, root=root, panel=panel)
+                test = load_model_table("B", "test", horizon=h, drop_embargo=True, **_load_kw)
         run_models = dict(models)
         # Deseason robust chỉ trên valid (train↔valid); không áp cho stage=test / override
         if include_deseason_robust and stage == "valid" and split_override is None and "M_att" in models:
@@ -420,7 +430,7 @@ def run_all(
                 oos = oos.assign(model=model_name, asset=asset, h=h)
                 oos_by_key.setdefault((asset, h), []).append(oos)
                 summaries.append(summary)
-                registry_rows.append({
+                reg_row = {
                     "timestamp": ts,
                     "script": "models/har_text.py",
                     "model": model_name,
@@ -430,7 +440,12 @@ def run_all(
                     "n_oos": summary["n_oos"],
                     "p_raw": summary["cw_pvalue_raw"],
                     "baseline": "har_dow",
-                })
+                }
+                if registry_family:
+                    reg_row["family"] = registry_family
+                if registry_note:
+                    reg_row["note"] = registry_note
+                registry_rows.append(reg_row)
                 print(
                     "%s %s h=%d | n_oos=%d R2vsDOW=%.4f R2vsPlain=%.4f "
                     "CW_dow=%.4g CW_plain=%.4g coef=%.4f(%.4f)"
@@ -454,7 +469,7 @@ def run_all(
                 oos = oos.assign(model=name, asset=asset, h=h)
                 oos_by_key.setdefault((asset, h), []).append(oos)
                 summaries.append(summary)
-                registry_rows.append({
+                reg_row = {
                     "timestamp": ts,
                     "script": "models/har_text.py",
                     "model": name,
@@ -464,7 +479,12 @@ def run_all(
                     "n_oos": summary["n_oos"],
                     "p_raw": summary["cw_pvalue_raw"],
                     "baseline": "har_dow",
-                })
+                }
+                if registry_family:
+                    reg_row["family"] = registry_family
+                if registry_note:
+                    reg_row["note"] = registry_note
+                registry_rows.append(reg_row)
                 print(
                     "%s %s h=%d [robust] | R2vsDOW=%.4f CW=%.4g"
                     % (asset, name, h, summary["r2_oos_vs_har_dow"], summary["cw_pvalue_raw"])

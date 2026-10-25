@@ -63,6 +63,11 @@ COL_VAD_MEAN = "all_vader_MeanProb_t"
 COL_POS = "all_finbert_PosSent"
 COL_NEG = "all_finbert_NegSent"
 COL_NVOL = "all_finbert_NewsVolume_t"
+OUTCOMES_A: tuple[str, ...] = ("y_ret", "y_log_rv", "y_abvol")
+SENT_VS_MARKET: dict[str, str] = {
+    "finbert": COL_FIN_SENT,
+    "vader": COL_VAD_SENT,
+}
 
 
 def load_params(root: Path | None = None) -> dict:
@@ -78,16 +83,25 @@ def load_train_valid(
     panel: str = "title",
     horizon: int | None = None,
     drop_embargo: bool = False,
+    table_path: Path | str | None = None,
+    exclude_sources: list[str] | None = None,
 ) -> pd.DataFrame:
-    """Chỉ train+valid; Spec B có thể drop embargo_drop_h."""
+    """Chỉ train+valid; Spec B có thể drop embargo_drop_h.
+
+    table_path: parquet LOSO / override. exclude_sources chỉ metadata
+    (lọc nguồn đã làm ở panel); không đọc split=test.
+    """
+    del exclude_sources  # lọc ở panel; giữ chữ ký cho LOSO
     root = root or project_root()
     train = load_model_table(
         spec, "train", root=root, panel=panel,
         horizon=horizon, drop_embargo=drop_embargo,
+        table_path=table_path,
     )
     valid = load_model_table(
         spec, "valid", root=root, panel=panel,
         horizon=horizon, drop_embargo=drop_embargo,
+        table_path=table_path,
     )
     out = pd.concat([train, valid], ignore_index=True)
     if "split" in out.columns and (out["split"].astype(str) == "test").any():
@@ -165,6 +179,57 @@ def bootstrap_delta_r2_adj(
     return {
         "r2_adj_F": r2_f,
         "r2_adj_V": r2_v,
+        "delta_r2_adj": float(delta),
+        "ci_lo": ci_lo,
+        "ci_hi": ci_hi,
+        "p_boot": p_boot,
+        "p_boot_raw": p_raw0,
+        "p_boot_label": p_boot_label,
+        "n_boot": int(n_boot),
+        "block_len": int(block_len),
+        "scale": "1sd",
+    }
+
+
+def bootstrap_delta_r2_vs_baseline(
+    y: np.ndarray,
+    X_ctrl: np.ndarray,
+    x_sent: np.ndarray,
+    *,
+    n_boot: int = N_BOOT,
+    block_len: int = BLOCK_LEN,
+    seed: int = SEED,
+) -> dict:
+    """ΔR²_adj = R²_adj(ctrl+sent) − R²_adj(ctrl); MBB CI + two-sided p."""
+    y = np.asarray(y, dtype=float)
+    X_ctrl = np.asarray(X_ctrl, dtype=float)
+    x_sent = np.asarray(x_sent, dtype=float).reshape(-1, 1)
+    n = len(y)
+    r2_full = _ols_r2_adj(y, np.hstack([X_ctrl, x_sent]))
+    r2_base = _ols_r2_adj(y, X_ctrl)
+    delta = r2_full - r2_base
+
+    rng = np.random.default_rng(seed)
+    boots = np.empty(n_boot, dtype=float)
+    for b in range(n_boot):
+        idx = moving_block_indices(n, block_len, rng)
+        yb = y[idx]
+        Cb = X_ctrl[idx]
+        boots[b] = (
+            _ols_r2_adj(yb, np.hstack([Cb, x_sent[idx]]))
+            - _ols_r2_adj(yb, Cb)
+        )
+    ci_lo = float(np.percentile(boots, 2.5))
+    ci_hi = float(np.percentile(boots, 97.5))
+    p_le = float(np.mean(boots <= 0.0))
+    p_ge = float(np.mean(boots >= 0.0))
+    p_raw0 = float(min(1.0, 2.0 * min(p_le, p_ge)))
+    p_floor = 1.0 / (float(n_boot) + 1.0)
+    p_boot = float(max(p_raw0, p_floor))
+    p_boot_label = ("<%d/%d" % (1, n_boot)) if p_raw0 <= 0.0 else ("%.6g" % p_boot)
+    return {
+        "r2_adj_full": r2_full,
+        "r2_adj_baseline": r2_base,
         "delta_r2_adj": float(delta),
         "ci_lo": ci_lo,
         "ci_hi": ci_hi,
@@ -279,6 +344,56 @@ def run_rq1_for_asset(
     out = pd.DataFrame(rows)
     out["p_holm"] = holm_adjust(out["p_boot"].astype(float).tolist())
     out["confirmed"] = out["p_holm"] < 0.05
+    return out
+
+
+def run_rq1_vs_market(
+    df_a: pd.DataFrame,
+    asset: str,
+    *,
+    family: str = "robust_loso",
+    label: str = "loso",
+    sent_cols: dict[str, str] | None = None,
+    n_boot: int = N_BOOT,
+    seed: int = SEED,
+    holm: bool = True,
+) -> pd.DataFrame:
+    """ΔR²_adj (market+Sent vs market) — FinBERT và VADER; y ∈ ret, log_rv, abvol."""
+    sent_cols = sent_cols or dict(SENT_VS_MARKET)
+    rows = []
+    for y_col in OUTCOMES_A:
+        for model_name, sent_col in sent_cols.items():
+            work = common_sample(df_a, y_col, [sent_col], CONTROL_A)
+            boot = bootstrap_delta_r2_vs_baseline(
+                work[y_col].to_numpy(),
+                work[list(CONTROL_A)].to_numpy(dtype=float),
+                work[sent_col].to_numpy(dtype=float),
+                n_boot=n_boot,
+                seed=seed,
+            )
+            bw = nw_bandwidth(None)
+            coef, se = sent_coefs_1sd(work, y_col, sent_col, CONTROL_A, bw)
+            rows.append({
+                "asset": asset,
+                "family": family,
+                "label": label,
+                "hypothesis": f"A_{model_name}_{y_col}",
+                "spec": "A",
+                "h": "",
+                "y": y_col,
+                "model": model_name,
+                "sent_col": sent_col,
+                "n": int(len(work)),
+                "coef_1sd": coef,
+                "se_nw": se,
+                "nw_bandwidth": bw,
+                **boot,
+            })
+    out = pd.DataFrame(rows)
+    if holm and not out.empty:
+        out["p_holm"] = holm_adjust(out["p_boot"].astype(float).tolist())
+    else:
+        out["p_holm"] = np.nan
     return out
 
 
@@ -430,6 +545,11 @@ def run_all(
     seed: int = SEED,
     n_boot: int = N_BOOT,
     include_robust: bool = True,
+    table_a_path: Path | str | None = None,
+    table_b_path: Path | str | None = None,
+    exclude_sources: list[str] | None = None,
+    register: bool = True,
+    registry_family: str | None = None,
 ) -> dict[str, pd.DataFrame]:
     root = root or project_root()
     params = load_params(root)
@@ -441,9 +561,15 @@ def run_all(
     out_dir.mkdir(parents=True, exist_ok=True)
     ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
-    raw_a = load_train_valid("A", root=root, panel="title")
+    raw_a = load_train_valid(
+        "A", root=root, panel="title", table_path=table_a_path,
+        exclude_sources=exclude_sources,
+    )
     raw_b = {
-        h: load_train_valid("B", root=root, panel="title", horizon=h, drop_embargo=True)
+        h: load_train_valid(
+            "B", root=root, panel="title", horizon=h, drop_embargo=True,
+            table_path=table_b_path, exclude_sources=exclude_sources,
+        )
         for h in HORIZONS_B
     }
 
@@ -487,7 +613,9 @@ def run_all(
 
         # (b) nlp_text / fulltext panel
         try:
-            raw_a_ft = load_train_valid("A", root=root, panel="fulltext")
+            raw_a_ft = load_train_valid(
+                "A", root=root, panel="fulltext", exclude_sources=exclude_sources,
+            )
             df_ft = prepare_asset_frame(raw_a_ft, "BTC")
             r1_ft = run_rq1_for_asset(
                 df_ft, "BTC", family="rq1_robust", label="robust_nlp_text",
@@ -518,9 +646,14 @@ def run_all(
 
         # (d) panel noprice — ngoài Holm chính
         try:
-            raw_a_np = load_train_valid("A", root=root, panel="noprice")
+            raw_a_np = load_train_valid(
+                "A", root=root, panel="noprice", exclude_sources=exclude_sources,
+            )
             raw_b_np = {
-                h: load_train_valid("B", root=root, panel="noprice", horizon=h, drop_embargo=True)
+                h: load_train_valid(
+                    "B", root=root, panel="noprice", horizon=h, drop_embargo=True,
+                    exclude_sources=exclude_sources,
+                )
                 for h in HORIZONS_B
             }
             df_np = prepare_asset_frame(raw_a_np, "BTC")
@@ -549,8 +682,12 @@ def run_all(
     sum_path = out_dir / "rq1_rq2_summary.csv"
     summary.to_csv(sum_path, index=False)
 
+    if registry_family:
+        for r in reg_rows:
+            r["family"] = registry_family
     reg_path = out_dir / "test_registry.csv"
-    append_registry(reg_rows, reg_path)
+    if register:
+        append_registry(reg_rows, reg_path)
 
     meta = {
         "seed": seed,
@@ -558,14 +695,21 @@ def run_all(
         "block_len": BLOCK_LEN,
         "rq1_holm": "2 tests (H1a,H1b) per asset family",
         "rq2_holm": "4 tests (A + B×3) per asset family",
-        "n_registry_appended": len(reg_rows),
+        "n_registry_appended": len(reg_rows) if register else 0,
         "summary_path": str(sum_path),
+        "exclude_sources": exclude_sources,
+        "table_a_path": str(table_a_path) if table_a_path else None,
+        "table_b_path": str(table_b_path) if table_b_path else None,
+        "register": register,
     }
     (out_dir / "rq1_rq2_summary.meta.json").write_text(
         json.dumps(meta, indent=2, ensure_ascii=False), encoding="utf-8"
     )
     print("Summary ->", sum_path)
-    print("Registry appended", len(reg_rows), "->", reg_path)
+    if register:
+        print("Registry appended", len(reg_rows), "->", reg_path)
+    else:
+        print("Registry skipped (register=False)")
     return {"rq1": rq1_all, "rq2": rq2_all, "summary": summary}
 
 

@@ -263,6 +263,20 @@ def build_scope_narratives(
     return base
 
 
+def filter_exclude_sources(
+    docs: pd.DataFrame,
+    exclude_sources: list[str] | None = None,
+) -> pd.DataFrame:
+    """Bỏ nguồn (không phân biệt hoa/thường). None = không lọc; [] = giữ hết."""
+    if not exclude_sources:
+        return docs.reset_index(drop=True) if hasattr(docs, "reset_index") else docs
+    if "source" not in docs.columns:
+        raise KeyError("exclude_sources yêu cầu cột source")
+    excl = {s.lower() for s in exclude_sources}
+    out = docs.loc[~docs["source"].astype(str).str.lower().isin(excl)]
+    return out.reset_index(drop=True)
+
+
 def build_daily_narratives(
     docs: pd.DataFrame,
     start: str | pd.Timestamp,
@@ -270,10 +284,12 @@ def build_daily_narratives(
     narrative_names: list[str],
     abn_window: int = 30,
     flag_names: list[str] | None = None,
+    exclude_sources: list[str] | None = None,
 ) -> pd.DataFrame:
     start = pd.Timestamp(start).tz_localize(None).normalize()
     end = pd.Timestamp(end).tz_localize(None).normalize()
     calendar = pd.date_range(start, end, freq="D")
+    docs = filter_exclude_sources(docs, exclude_sources)
     docs = docs.copy()
     docs["news_date"] = pd.to_datetime(docs["news_date"]).dt.tz_localize(None).dt.normalize()
     docs = docs[(docs["news_date"] >= start) & (docs["news_date"] <= end)]
@@ -375,6 +391,12 @@ def write_samples(
 def main() -> None:
     parser = argparse.ArgumentParser(description="Build narrative features from titles (v4)")
     parser.add_argument("--skip-samples", action="store_true")
+    parser.add_argument(
+        "--exclude-sources", nargs="*", default=None,
+        help="Bỏ nguồn khỏi daily narratives (LOSO). Cần --output-daily.",
+    )
+    parser.add_argument("--output-daily", default=None, help="Override daily_narratives.parquet")
+    parser.add_argument("--output-doc", default=None, help="Override narrative_doc.parquet")
     args = parser.parse_args()
 
     root = project_root()
@@ -402,15 +424,28 @@ def main() -> None:
         columns=["doc_id", "title", "news_date", "currencies", "in_main_sample", "source"],
     )
     main_df = text.loc[text["in_main_sample"]].copy().reset_index(drop=True)
+    main_df = filter_exclude_sources(main_df, args.exclude_sources)
     assigned = assign_doc_narratives(main_df["title"], narr_for_assign, flags=flags)
     doc = pd.concat([main_df[["doc_id"]], assigned], axis=1)
 
-    doc_out = abs_path(root, paths.get("narrative_doc_path", "data/interim/narrative_doc.parquet"))
+    default_doc = abs_path(root, paths.get("narrative_doc_path", "data/interim/narrative_doc.parquet"))
+    default_daily = abs_path(root, paths.get("daily_narratives_path", "data/processed/daily_narratives.parquet"))
+    if args.exclude_sources is not None:
+        if not args.output_daily:
+            sys.exit("--exclude-sources cần --output-daily (không ghi đè daily_narratives.parquet)")
+        if not args.output_doc:
+            sys.exit("--exclude-sources cần --output-doc (không ghi đè narrative_doc.parquet)")
+    doc_out = abs_path(root, args.output_doc) if args.output_doc else default_doc
+    daily_out = abs_path(root, args.output_daily) if args.output_daily else default_daily
+    if args.exclude_sources is not None and (
+        doc_out.resolve() == default_doc.resolve() or daily_out.resolve() == default_daily.resolve()
+    ):
+        sys.exit("exclude_sources: từ chối ghi đè narrative mặc định")
     doc_out.parent.mkdir(parents=True, exist_ok=True)
     doc.to_parquet(doc_out, index=False)
 
     docs_daily = pd.concat([
-        main_df[["doc_id", "news_date", "currencies", "title"]],
+        main_df[["doc_id", "news_date", "currencies", "title", "source"]],
         assigned,
     ], axis=1)
 
@@ -419,10 +454,10 @@ def main() -> None:
     abn_window = int(params.get("abn_attention_window", 30))
     # Att_price_desc từ cờ price_desc (đã gồm template)
     daily = build_daily_narratives(
-        docs_daily, start, end, names, abn_window=abn_window, flag_names=["price_desc"]
+        docs_daily, start, end, names, abn_window=abn_window, flag_names=["price_desc"],
+        exclude_sources=args.exclude_sources,
     )
 
-    daily_out = abs_path(root, paths.get("daily_narratives_path", "data/processed/daily_narratives.parquet"))
     daily_out.parent.mkdir(parents=True, exist_ok=True)
     daily.to_parquet(daily_out, index=False)
 
@@ -469,6 +504,7 @@ def main() -> None:
         "overlap_core_row_norm": overlap.round(4).to_dict(),
         "doc_path": str(doc_out),
         "daily_path": str(daily_out),
+        "exclude_sources": args.exclude_sources,
     }
     log_path = daily_out.with_suffix(".log.json")
     log_path.write_text(json.dumps(log, ensure_ascii=False, indent=2, default=str), encoding="utf-8")

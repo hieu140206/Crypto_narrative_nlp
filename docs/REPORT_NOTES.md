@@ -31,3 +31,12 @@ Nguồn số: `outputs/tables/` (train+valid), `outputs/test/` (test, chạy m�
 - Commit các file chưa theo dõi của đợt CryptoBERT/RSS-cryptonews và `docs/PREREG.md`, `docs/REPORT_NOTES.md`.
 - Nhờ TV6 sửa "RQ1–RQ6" thành RQ1–RQ5.
 - Nếu còn thời gian: loại lần lượt từng nguồn (coindesk, cointelegraph, decrypt, blockworks) và chạy lại HAR+text trên validation; tái hiện độc lập một ô ML.
+
+## 5. Độ bền theo nguồn tin (loại lần lượt từng nguồn, train+valid; `outputs/tables/robust_loso_*`)
+
+- Kiểm tra tái tạo: với `exclude_sources=[]` pipeline dựng lại đúng `model_table_B` (2072 dòng, 89 cột, sai khác tối đa 0); dòng "full" của bảng B trùng tuyệt đối với kết quả validation đã công bố.
+- **FinBERT và lợi suất đồng thời: bền với mọi nguồn.** ΔR²adj BTC 0,053–0,072 và ETH 0,048–0,062 sau khi loại bất kỳ nguồn nào (đầy đủ: 0,079 và 0,068), p Holm 0,0012 ở cả 10 ô. Coindesk là nguồn đóng góp nhiều nhất (loại nó làm ΔR²adj giảm nhiều nhất) nhưng kết quả vẫn rất có ý nghĩa. VADER null ở mọi ô.
+- **Liên hệ FinBERT với biến động: không bền.** ETH log_rv đạt p Holm < 0,05 chỉ ở mẫu đầy đủ (0,022) và khi loại Coindesk (0,012); loại Cointelegraph, Decrypt hay Blockworks thì p Holm 0,096–0,438. BTC log_rv và abvol không có ý nghĩa ở nhóm nào (p Holm ≥ 0,18). Báo cáo: không xem liên hệ với biến động là kết quả vững.
+- **Dự báo (họ 5, validation 2023): null bền.** 0/90 phép thử có p thô < 0,05 (5 cấu hình × 18); p Holm nhỏ nhất 0,551 (BTC h=1, AbnAttention, loại Cointelegraph).
+- Độ phủ: loại Cointelegraph để lại trung vị 28 bài mỗi ngày và 6,8% ngày dưới 3 bài (đầy đủ: 45 bài, 1,9%), đây là cấu hình nhiễu nhất.
+- Ghi chú vận hành: lần chạy `robust_loso` đầu bị ngắt giữa chừng; 150 dòng trùng của lần đó đã bị xóa khỏi registry trước khi ghi lần chạy hoàn chỉnh (cấu hình và mã giống nhau, nên không có kết quả nào bị loại). Mọi dòng khác trong registry giữ nguyên về giá trị.

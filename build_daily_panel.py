@@ -401,6 +401,10 @@ def main() -> None:
         noprice=noprice, noprice_min_n=args.noprice_min_n,
     )
 
+    default_title = abs_path(root, paths["daily_panel_path"])
+    if args.exclude_sources is not None and not args.output and not args.out_suffix:
+        sys.exit("--exclude-sources cần --output hoặc --out-suffix (không ghi đè daily_panel.parquet)")
+
     if args.output:
         out_path = abs_path(root, args.output)
     elif noprice:
@@ -415,6 +419,8 @@ def main() -> None:
         out_path = abs_path(root, paths["daily_panel_path"])
     if args.out_suffix:
         out_path = out_path.with_name(out_path.stem + args.out_suffix + out_path.suffix)
+    if args.exclude_sources is not None and out_path.resolve() == default_title.resolve():
+        sys.exit("exclude_sources: từ chối ghi đè daily_panel.parquet mặc định")
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     panel.to_parquet(out_path, index=False)
