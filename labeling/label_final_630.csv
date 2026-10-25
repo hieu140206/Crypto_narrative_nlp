@@ -1,0 +1,631 @@
+﻿id,batch,headline,label_A,pricemove_A,label_B,pricemove_B,disagree,label_final,pm_final,src,document_id,source_group,period
+L0001,pilot,"Ontario Securities Commission Cracks Down on Crypto Exchanges, Starting With Poloniex",negative,0,negative,0,False,negative,0.0,human100,5dfc2426fa3c1bef421f1d4b5b4663143318b9f7,other,2021-2022
+L0002,pilot,Australia crypto miner further bolsters US presence with a $110M fundraise,positive,0,positive,0,False,positive,0.0,ai_agree,496ffb7a454945ea2f7b2dc2d4c8fa33c590d21f,other,2023
+L0003,pilot,From 'Bitcoin Billionaires' to SEC Charges: A Brief Crypto History of the Winklevoss Twins,neutral,0,neutral,0,False,neutral,0.0,ai_agree,99210eef7c814eedfa77c1e9710d62d0c10f291a,other,2023
+L0004,pilot,Tokenized U.S. Treasuries Arrive to XDC Network as Digital Bond Market Grows,neutral,0,positive,0,True,positive,0.0,adjudicated,40b6b353c48eb2cb3b7950e70a845453ccfaaac9,coindesk,2023
+L0005,pilot,"SEC Adds Dogecoin, Hedera ETFs to Growing List of Delayed Decisions",neutral,0,neutral,0,False,neutral,0.0,ai_agree,f26cd9c4e69869ecc4b8eb5aca3d92d10505d91c,other,2024-2025
+L0006,pilot,Venezuelans Can Now Buy Crypto With State Stimulus Checks,positive,0,positive,0,False,positive,0.0,ai_agree,2390a107ec6e6855f1caf5c283ffed7190c62e9b,other,2021-2022
+L0007,pilot,Bitcoin ‘debasement trade’ is here to stay: JPMorgan,positive,0,positive,0,False,positive,0.0,human100,110812810f71e520a2d85e753f147a5d02ef8bae,cointelegraph,2024-2025
+L0008,pilot,Mining Bitcoin for Profit Is Getting Harder. Here's Why,neutral,0,negative,0,True,negative,0.0,adjudicated,c96d3dacfda84c25bdb295d91292f6412a8641dd,other,2021-2022
+L0009,pilot,"Crypto Mining Stocks Extend Declines as Bitcoin, Ether Prices Fall",negative,1,negative,1,False,negative,1.0,ai_agree,1d7b7e99332bd9fa691a242d306def10f1db83c4,coindesk,2021-2022
+L0010,pilot,Bitcoin Leads Rally Over Ether as Banks Teeter,positive,1,positive,1,False,positive,1.0,ai_agree,6a91ccc416c054a139b0c24a4f66d8dc9e76f14d,other,2023
+L0011,pilot,Central African Republic eyes legal framework for crypto adoption,positive,0,positive,0,False,positive,0.0,ai_agree,7a5014753b3f22b70f03550838625467ebd38b2f,cointelegraph,2023
+L0012,pilot,"Bitcoin Holds Above $30K as Investors Await Historically Strong July, Eye Options Expiry",neutral,1,neutral,1,False,neutral,1.0,human100,f556ace8ea8baa17945410152b4cdeb0e67f5e30,coindesk,2023
+L0013,pilot,"Stablecoin Market Cap Hits $140B, Highest Since 2022 Amid USDC Resurgence, Tether Growth",positive,0,positive,0,False,positive,0.0,ai_agree,de9a9e0e358ea0be955d2c19666ae4d96ad9dd21,coindesk,2024-2025
+L0014,pilot,First Mover Americas: Tokenization Might Be a $5T Opportunity: Bernstein,positive,0,positive,0,False,positive,0.0,ai_agree,3561248661681bd2ffc3ed76bfd8187c2afcaa44,coindesk,2023
+L0015,pilot,Tron Founder Justin Sun Rebuts Bombshell Accusations About Poloniex,neutral,0,neutral,0,False,neutral,0.0,ai_agree,07a42c2d15af23a317a269ebbe5fbf55530727dd,other,2021-2022
+L0016,pilot,KYC hook for Uniswap v4 stirs community controversy,neutral,0,negative,0,True,negative,0.0,adjudicated,436f54307da490533baa8aec8590aa4fcb1f3a08,cointelegraph,2023
+L0017,pilot,MetaMask adds fiat off-ramp for 10 blockchains to improve crypto accessibility,positive,0,positive,0,False,positive,0.0,ai_agree,88fba2a3ea6ae8b1e0b35567a68a80e99946610b,cointelegraph,2024-2025
+L0018,pilot,Is $4.5K the next stop for Ethereum? — Why ETH price is up today,positive,1,positive,1,False,positive,1.0,ai_agree,306718dc336fee135cd6ebc184ec37eb6d717e7a,cointelegraph,2024-2025
+L0019,pilot,Bitcoin Long-Term Holders Control 75% of Circulating Supply: Glassnode,neutral,0,neutral,0,False,positive,0.0,human100,af1dc8f9a26bdc08aedd15ea4058fd46db55ced7,coindesk,2023
+L0020,pilot,Wormhole Counter-exploit Forces Scrutiny of Multisigs in DeFi,neutral,0,neutral,0,False,neutral,0.0,ai_agree,cc927beeb8da90fb6fcec2a926667e08853b4f97,other,2023
+L0021,pilot,Bitcoin Pizza (Store) Day: California Pizza Store Sold for BTC,neutral,0,neutral,0,False,neutral,0.0,human100,62d44d890f94b9202b08a784554af8859ac2303b,other,2021-2022
+L0022,pilot,Bitcoin slips to $86K — Is the bull run over?,negative,0,negative,1,False,negative,1.0,adjudicated,9ff556d9575392e424ba21c6fcee72332d46dc05,other,2024-2025
+L0023,pilot,"Bitcoin Is Up 70% a Year After FTX Debacle, but 'Alameda Gap' in Liquidity Persists",positive,1,positive,1,False,positive,1.0,ai_agree,c7533c8378f4ac452ba9ce4d316af7cd3cdf03b4,coindesk,2023
+L0024,pilot,Metaverse Scarcity Isn’t Real,neutral,0,negative,0,True,negative,0.0,adjudicated,d7e4680a4c10edae31d874d9377efc8bb5f064dc,coindesk,2021-2022
+L0025,pilot,"Price analysis 4/28: BTC, ETH, BNB, XRP, ADA, DOGE, DOT, UNI, LTC, BCH",neutral,0,neutral,0,False,neutral,0.0,human100,6498c4c1afcc5a88c6326c2733663d8f4806f2d4,cointelegraph,2021-2022
+L0026,pilot,"KPMG touts ESG benefits from Bitcoin, counters misperceptions in new report",positive,0,positive,0,False,positive,0.0,ai_agree,2435a413fd216f10cde1b3e758413452b25344cc,cointelegraph,2023
+L0027,pilot,CME Group to add ether/bitcoin ratio futures in July pending regulatory approval,neutral,0,neutral,0,False,neutral,0.0,ai_agree,46c5a84271a583701e1278220af26f815512adf3,other,2023
+L0028,pilot,US Marshals Service Chooses Anchorage Digital for Custody of Seized Digital Assets,neutral,0,neutral,0,False,positive,0.0,human100,6630f81eceb68b6b0c2e206d544743b208891855,coindesk,2021-2022
+L0029,pilot,Bitcoin price bounces after Amazon stock gains 15% in US tech comeback,positive,1,positive,1,False,positive,1.0,ai_agree,6e4a6043ff37b4f4224a52a42e62818e1f08ca56,cointelegraph,2021-2022
+L0030,pilot,Unstoppable Domains and Polygon Launch New User-Owned Digital ID,neutral,0,positive,0,True,neutral,0.0,adjudicated,7cbd6b05a32264b5ce76b527bdae17f1e3e687e6,other,2023
+L0031,pilot,"Gaming Tokens Keep Rising as Axie Infinity, Ronin, and Illuvium Pump",positive,1,positive,1,False,positive,1.0,human100,fe61da2a93f7922f19d043b1a8fb202eba950214,other,2023
+L0032,pilot,Ukraine Central Bank Suspends Use of Electronic Money Following Russian Invasion,negative,0,negative,0,False,negative,0.0,human100,ec31d87c4bbc6805cdbbfe485376ffea8ac69500,coindesk,2021-2022
+L0033,pilot,Stacks’ smart contracts reach record high ahead of Nakamoto upgrade,neutral,0,positive,0,True,positive,0.0,adjudicated,440c6686002641d7e47e804c3879b42720377813,cointelegraph,2024-2025
+L0034,pilot,MATIC Surges 10% as Polygon's 2.0 Upgrade Draws Closer,positive,1,positive,1,False,positive,1.0,ai_agree,ac68e6c7ad3d19b0a15edb6b50dbe32c3faef679,coindesk,2023
+L0035,pilot,"Bullish on Bitcoin, US Senator Ted Cruz wants Texas to be a crypto oasis",positive,0,positive,0,False,positive,0.0,ai_agree,a95a04316fae590255dbc526682baebb7fce8177,cointelegraph,2021-2022
+L0036,pilot,"BigCommerce to Offer Crypto Payments For Merchants With BitPay, CoinPayments",positive,0,positive,0,False,positive,0.0,ai_agree,3bd9ca0fac5725922efc72bbd507726eadd23f3a,coindesk,2021-2022
+L0037,pilot,Why Is Bitcoin's Price Rising Today?,positive,1,positive,1,False,positive,1.0,ai_agree,25518a141bcd75942a550871909eb451c2f00a98,other,2024-2025
+L0038,pilot,Ethereum Staking Platform Kiln Raises $17M for Global Expansion,positive,0,positive,0,False,positive,0.0,human100,03aab4e788825fddd31185deade930be5240352c,coindesk,2024-2025
+L0039,pilot,Successful Hong Kong crypto ETF flows would pale in comparison to US funds,neutral,0,neutral,0,False,neutral,0.0,human100,69bd8ee4dac7b196548bd46d12d69d84fdd88188,other,2024-2025
+L0040,pilot,Privacy Focused Monero Plans Hard Fork in July; XMR Surges 11% on ‘Monerun’,positive,1,positive,1,False,positive,1.0,ai_agree,a759e17cf81188e6011e6a7764043998fb06cba8,coindesk,2021-2022
+L0041,pilot,New analysis sheds light on DOJ Bitcoin seizure as JBS pays massive $11M ransom,negative,0,neutral,0,True,negative,0.0,adjudicated,b24feda4aa06189e08fb166dd53e7ff51624ce5d,cointelegraph,2021-2022
+L0042,pilot,Final Fantasy Maker Square Enix Reaffirms Focus on Blockchain Games,neutral,0,positive,0,True,positive,0.0,adjudicated,9b36a30c48b05800347df9f9d36df4c812dc6040,other,2023
+L0043,pilot,Ark 21Shares amends spot ether ETF proposal to include staking language,neutral,0,positive,0,True,neutral,0.0,adjudicated,11e7dd3c555feb12919cd5c7369804a44d64750b,other,2024-2025
+L0044,pilot,European blockchain sandbox onboards 41 regulators in second cohort,neutral,0,neutral,0,False,neutral,0.0,human100,900dd3680b5d7fe5a38dec898a6b39c3086c1a79,cointelegraph,2024-2025
+L0045,pilot,Federal Reserve Leaves Rates Unchanged; Bitcoin Flat at $34.5K,neutral,1,neutral,1,False,neutral,1.0,ai_agree,98cc6a36035b10ce3614a22d9c65be1bf96ac54d,coindesk,2023
+L0046,main,"Investors might have avoided FTX if the SEC had addressed Bitcoin ETFs, says BitGo CEO",neutral,0,neutral,0,False,neutral,0.0,ai_agree,6626aa1737ee2ffad58234c31c955f34fec67acd,cointelegraph,2023
+L0047,main,"Bitcoin Hits Lowest Price Since November as Dogecoin, XRP and Solana Fall",negative,1,negative,1,False,negative,1.0,ai_agree,76d460f95b5494b226b73087935bec80787077cf,other,2024-2025
+L0048,main,MicroStrategy Bitcoin (BTC) Holdings Rise to 461K,positive,0,positive,0,False,positive,0.0,ai_agree,808f01ecb50b119aba1be5cc12148c888755eef7,coindesk,2024-2025
+L0049,main,"Tether Is Going on a Bitcoin Buying Spree, but It Should Be Holding Cash",neutral,0,neutral,0,False,neutral,0.0,ai_agree,a66d24110815c04b373fabc7f9c1453ad0e25300,coindesk,2023
+L0050,main,"Supercycle may propel Bitcoin over $1 million, Kraken’s Dan Held says",positive,0,positive,0,False,positive,0.0,human100,7ca9007e78c69736c51c4aa6630bb65b9eabbd68,cointelegraph,2021-2022
+L0051,main,Not all new coins are pointless pump and dumps,neutral,0,neutral,0,False,neutral,0.0,ai_agree,9cb399261672b328cdd7819c67d577bb794c0190,other,2024-2025
+L0052,main,LayerZero’s ‘Gas Station’ will simplify cross-chain NFT swaps,neutral,0,positive,0,True,neutral,0.0,adjudicated,40f65163a7527a420acda92c54a998856d65a262,other,2023
+L0053,main,DeFi adoption on Binance Smart Chain reaches new highs,positive,0,positive,0,False,positive,0.0,ai_agree,14a7f15cb034c9edde7361d0ae4278a85f25c90f,cointelegraph,2021-2022
+L0054,main,Bitcoin Price Retreats as Rejection at $23.5K Continues,negative,1,negative,1,False,negative,1.0,human100,aa7e70b174139ae469cc6b5715802444488a0e5e,other,2023
+L0055,main,"Bitcoin price fails to hold $20K again, but there is a silver lining",negative,1,negative,1,False,negative,1.0,ai_agree,c49c7ebd6a6e0a11978c51ec1dd7cf8cc8496d0f,cointelegraph,2021-2022
+L0056,main,The DTCC Collateral Appchain wants to rewrite the rules of TradFi settlement,neutral,0,neutral,0,False,neutral,0.0,ai_agree,e7ae6ff8612901a7bda30ffc24aa92a2f013427e,other,2024-2025
+L0057,main,Art Trading Platform LiveArt Announces NFT Membership Card Linked to Exclusive Drops,neutral,0,neutral,0,False,neutral,0.0,human100,1309727c1aa08b683e99b136301f13e104ffe5ee,coindesk,2023
+L0058,main,"Bitcoin Dips Below $40,000",negative,1,negative,1,False,negative,1.0,human100,172ef06b01c23f495e10b2e7c1e70b657c68a6a0,other,2021-2022
+L0059,main,"Bitcoin, Ether Could Witness Upside Volatility as $15B Options Expiry Looms",neutral,0,neutral,0,False,neutral,0.0,ai_agree,c84e1eff3ee7c1d535bb86f199e3f385d8ce598b,coindesk,2024-2025
+L0060,main,"Banks Must Disclose Crypto Exposures, Global Regulator Says",neutral,0,neutral,0,False,neutral,0.0,ai_agree,eb4ff4c3b8e95df1a18f2617f07222f7703f0637,coindesk,2023
+L0061,main,Justin Sun's Weibo Account Among 7 That Seem to Be Blocked,neutral,0,neutral,0,False,neutral,0.0,ai_agree,26113d321f2bcfb22f4a1ca3c4b2f4316feaa1b1,coindesk,2021-2022
+L0062,main,Hong Kong Investment Firm Victory Securities Obtains Retail Crypto Trading License,positive,0,positive,0,False,positive,0.0,ai_agree,f4e054eaa8bf8fd560b9bf90c33a3090eea41aea,coindesk,2023
+L0063,main,"Solana, Avalanche Tokens Slide as Bitcoin Traders Target Eye Support at $38K",negative,1,negative,1,False,negative,1.0,ai_agree,a57f797fbf0bf6132c1c39228df280852c6b40c4,coindesk,2024-2025
+L0064,main,Altcoin Roundup: Analysts give their take on the impact of the Ethereum Merge delay,neutral,0,neutral,0,False,neutral,0.0,ai_agree,d183708a66f7d725077908c6e060bec9dedb609c,cointelegraph,2021-2022
+L0065,main,Bitcoin Year-End Price Target Raised to $90K at Bernstein,positive,0,positive,0,False,positive,0.0,ai_agree,544ad0405f52ee4957ce2d2b99b5fadb93ec130a,coindesk,2024-2025
+L0066,main,"Arbitrum Builder Offchain Labs Buys Prysmatic Labs, a Core Team Behind Ethereum’s Merge",neutral,0,positive,0,True,neutral,0.0,adjudicated,584b77dab1ec01eae6679da4f660db729309bb35,coindesk,2021-2022
+L0067,main,FTX 'Reboot' Talks Begin and Send FTT Token Soaring 15%,positive,1,positive,1,False,positive,1.0,ai_agree,b3368a3d8a5b6fc63282c0f003adfca27c64be3a,other,2023
+L0068,main,Argentina plans to adopt AI to predict and prevent ‘future crimes’,neutral,0,neutral,0,False,neutral,0.0,human100,5dea9c77f25d629a8994a95322d80561a6de41aa,cointelegraph,2024-2025
+L0069,main,12 Bitcoin ETFs Have 'Brief Window' for SEC Approval Starting Tomorrow,neutral,0,positive,0,True,positive,0.0,adjudicated,463c8ae086664ce0bd2a87ab61b8a69bafcdacb0,other,2023
+L0070,main,"Revolut launches business offering in Australia, seeks banking license",neutral,0,neutral,0,False,neutral,0.0,human100,96928f09cb862b3d7df2e547b647b98228688987,cointelegraph,2023
+L0071,main,What Prediction Markets Are Forecasting for Crypto in 2024,neutral,0,neutral,0,False,neutral,0.0,human100,376be0a1dfd78548d2e58236cc0dcca4a3357af0,coindesk,2023
+L0072,main,Bitcoin Runes Coming to Magic Eden After Ordinals Bet Pays Off,neutral,0,positive,0,True,positive,0.0,adjudicated,17d382124a5742af5763518a39f3092e63c07d4e,other,2024-2025
+L0073,main,MicroStrategy's Next Bitcoin Purchase Is Likely to Take Its Holdings Above Grayscale's GBTC,positive,0,positive,0,False,positive,0.0,ai_agree,82b94ed8a451e0dd1e8285ae5cbf0428f49e77c4,coindesk,2024-2025
+L0074,main,Civitai Turns to Crypto After Credit Card Processor Ban Over AI Explicit Content,neutral,0,positive,0,True,neutral,0.0,adjudicated,b3bb961cfc7d25781430fd08d835bc14419c48e2,other,2024-2025
+L0075,main,"Ether Could Hit $4,000 With Likely Spot ETH ETF Approval in May: Standard Chartered",positive,0,positive,0,False,positive,0.0,ai_agree,95480ceb2c3734000c1ff3a1ee33957fd8f3d138,coindesk,2024-2025
+L0076,main,Payments provider Affirm to sunset crypto program after 19% staff cut,negative,0,negative,0,False,negative,0.0,ai_agree,c24421175b5f3e03943fd7592d623ccf3e860967,cointelegraph,2023
+L0077,main,NYC Mayor doubles down on crypto push ahead of city summit,positive,0,positive,0,False,positive,0.0,ai_agree,f9f187177408ff26894f1eaadc2059b387d3f1f3,cointelegraph,2024-2025
+L0078,main,Nvidia RTX 3060 mines Ether at full power as miners allegedly bypass hash limits,neutral,0,neutral,0,False,neutral,0.0,ai_agree,cd1181cf732a01c871cbead29795b92b3a6c4a64,cointelegraph,2021-2022
+L0079,main,Kyrgyzstan cryptocurrency mining tax collection falls 50% YoY in 2024,neutral,0,neutral,0,False,neutral,0.0,ai_agree,0dc3de0fcd75e0532b40f9bf1030d105f78fa430,cointelegraph,2024-2025
+L0080,main,Brad Sherman’s Crazed Bitcoin Attack Isn’t Quite Lawsuit-worthy,neutral,0,neutral,0,False,neutral,0.0,ai_agree,027044a1786acf0435c5c8c70aa90aba4cd9ae5f,other,2023
+L0081,main,Nayib Bukele steps down as El Salvador’s President ahead of re-election bid,neutral,0,neutral,0,False,neutral,0.0,ai_agree,19707abd81eea46a60a579cf30afff44ffbd1095,cointelegraph,2023
+L0082,main,Where crypto can grow: Digital asset regulations around the world,neutral,0,neutral,0,False,neutral,0.0,human100,e730cba2270de44d8b084e14e108ca00ce2c1785,cointelegraph,2023
+L0083,main,AMC Theatres Begin Accepting Dogecoin for Gift Cards,positive,0,positive,0,False,positive,0.0,ai_agree,c76209ad375d153e2f2979afff28d277f7e04de7,other,2021-2022
+L0084,main,$2T and Counting: Some Friday Perspective,neutral,0,positive,0,True,positive,0.0,adjudicated,41c8b4a542eead64cb9199ee3990134a98008ca2,coindesk,2021-2022
+L0085,main,"Hacker of 1inch resolver returns stolen funds after negotiation, keeps bounty",neutral,0,neutral,0,False,neutral,0.0,ai_agree,b5d53305dfb65662756dcf2f4aa481d0a572c315,cointelegraph,2024-2025
+L0086,main,"‘We do think we can win’ SEC lawsuit, Coinbase says",neutral,0,neutral,0,False,neutral,0.0,ai_agree,0822c122146545c5bd457eb1b4d50bbd1fa34980,other,2023
+L0087,main,'Treeverse' Studio Endless Clouds Picks Immutable zkEVM for Its NFT Games,neutral,0,positive,0,True,neutral,0.0,adjudicated,1d400ed0e4144a49cd84f184bb6b8e914d7e5929,other,2024-2025
+L0088,main,"‘Strap yourselves in’ — Bull market coming early 2024, say crypto exchange heads",positive,0,positive,0,False,positive,0.0,human100,6b26dddd5c2833d818eded520e15d87fefead830,cointelegraph,2023
+L0089,main,"Uniswap wants to launch mobile wallet, but Apple won’t greenlight its launch",neutral,0,negative,0,True,negative,0.0,adjudicated,6bff6bb5534f2d8c6cd30f8153c859d8329d6934,cointelegraph,2023
+L0090,main,Bitwise lists four crypto ETPs on London stock exchange,positive,0,positive,0,False,positive,0.0,ai_agree,750177e580aa84551a4175de4047a7552c767c2c,cointelegraph,2024-2025
+L0091,main,DeFi on Bitcoin: Jack Dorsey says Square’s new division will make it happen,positive,0,positive,0,False,positive,0.0,human100,ce162fde71b2be82e2da98d48a0b39f5e20facc4,cointelegraph,2021-2022
+L0092,main,"Olive Branch From Kamala Harris to Crypto Is 'A Tad Late', Says Bernstein",neutral,0,neutral,0,False,neutral,0.0,human100,a5d97ef641141c7f03a1b8f6b75c1730fb391711,other,2024-2025
+L0093,main,Nexo-labeled address withdraws $153M in Wrapped BTC from MakerDAO,neutral,0,neutral,0,False,neutral,0.0,ai_agree,5fe91395835b17914dd8a75b2d5bf83bed72ee8a,cointelegraph,2021-2022
+L0094,main,Bitcoin poised for potential rally as FTX payout looms and Fed shifts,positive,0,positive,0,False,positive,0.0,human100,c5c8f8132682f41c3e0fc82300530dc41b29215e,cointelegraph,2024-2025
+L0095,main,Coinbase Trading Volume Increases in January While Other Exchanges See Declines: JPMorgan,neutral,0,neutral,0,False,positive,0.0,human100,8243afd033fd8efc2c008e9591446f9fd0169123,coindesk,2023
+L0096,main,First Mover Americas: Investors Pile Into Bitcoin ETPs Following BlackRock ETF Filing,positive,0,positive,0,False,positive,0.0,human100,490ea42310d70260eae8590954eec766159bca3b,coindesk,2023
+L0097,main,Bitcoin Holding Support; Resistance at $43K,neutral,0,neutral,1,False,neutral,1.0,adjudicated,f9575dde1b89d5a83473672be9c7b686cebe6220,coindesk,2021-2022
+L0098,main,Bitcoin Price Crash to $50K Dashes Carry Traders' Hopes,negative,1,negative,1,False,negative,1.0,human100,51ecd20e9e092094450374ae726d008c4b81133a,coindesk,2024-2025
+L0099,main,Key BTC price levels emerge as Bitcoin hits $58K on ‘sticky’ US PPI,neutral,1,neutral,1,False,neutral,1.0,human100,a7273579edc0d219a3a6a3e78f1f3eef52baf66c,cointelegraph,2024-2025
+L0100,main,"Lazarus Group Moves 41,000 Ethereum Nabbed From Harmony Bridge Hack",negative,0,negative,0,False,negative,0.0,ai_agree,34fab3f6f616ebe94ac1c578d5d52b1195a9318a,other,2023
+L0101,main,Decentralized Exchange Camelot Crosses $100M in TVL Ahead of Arbitrum Airdrop,positive,0,positive,0,False,positive,0.0,ai_agree,be8d39b59370549d2ba5763a654012fb41404c39,coindesk,2023
+L0102,main,Eqonex CEO Steps Down Amid Talks of Potential Merger Options,neutral,0,neutral,0,False,negative,0.0,human100,0c3b694e99d4880d7386df3cb4e0e2b81adbc9f7,coindesk,2021-2022
+L0103,main,MiCA-compliant stablecoins dominate European market — Kaiko,neutral,0,neutral,0,False,neutral,0.0,ai_agree,4b5325ee4cf4821d27131f3da9492791d0aa414f,cointelegraph,2024-2025
+L0104,main,$450M Raise Values Ethereum Builder ConsenSys at $7B as MetaMask Tops 30M Users,positive,0,positive,0,False,positive,0.0,human100,343da03dff477fec9b00fdaccd8aa718628c16f3,coindesk,2021-2022
+L0105,main,First Mover Americas: SEC Delays Spot Bitcoin ETF Decision for All Applicants,neutral,0,negative,0,True,negative,0.0,adjudicated,0a7840dcbfbdba6c815296ee97fa5498fab3216b,coindesk,2023
+L0106,main,"As Bitcoin nears $25K, questions about rally’s sustainability remain",neutral,1,neutral,1,False,neutral,1.0,ai_agree,087b4dfe80fec5c6704682f48e81ba69072f7de6,cointelegraph,2023
+L0107,main,This crypto trading bot empowers users to seize market opportunities,neutral,0,neutral,0,False,neutral,0.0,ai_agree,223ad5fe42ab6128e5e565f4420484d75b6f3540,cointelegraph,2023
+L0108,main,"Big Banks, NY Fed Start to Test Digital Tokens for 'Wholesale' Transactions",neutral,0,neutral,0,False,neutral,0.0,ai_agree,fa00adb31ecd9fc984b3ee949373461755463efc,coindesk,2021-2022
+L0109,main,Hardware crypto wallet sales increase as centralized exchanges scramble,neutral,0,neutral,0,False,neutral,0.0,ai_agree,f9f43c8c533802501314e0cc65836b58403c1a71,cointelegraph,2021-2022
+L0110,main,"Bitcoin’s transition to a risk-off asset will propel it to $100K in 2022, says Bloomberg analyst",positive,0,positive,0,False,positive,0.0,ai_agree,e0a0a57d6f6b835c187fddc8d4e608815313e419,cointelegraph,2021-2022
+L0111,main,First Mover Asia: Expect Bitcoin to Hit $25.2K Soon: Strategist,positive,0,positive,0,False,positive,0.0,human100,b44f6d3f80074d9049f553c8865fdb41a70884b7,coindesk,2023
+L0112,main,Coinbase Ventures backing DeFi in the Polkadot ecosystem,positive,0,positive,0,False,positive,0.0,ai_agree,76c504b290b9793b43236584e0cf74b29037de02,cointelegraph,2021-2022
+L0113,main,Bank of America permite el trading de futuros de bitcoin para algunos clientes,positive,0,positive,0,False,positive,0.0,ai_agree,56c3c78285611e33de280ce57cbe86f229429faa,coindesk,2021-2022
+L0114,main,Circle Issues Euro-Backed Stablecoin EURC Natively on the Solana Blockchain,neutral,0,positive,0,True,neutral,0.0,adjudicated,bdeb32c4de9311875dc941bf14bbcdccd4ad8224,coindesk,2023
+L0115,main,"Bitcoin price targets include $50K as Nvidia crash shakes Nikkei, gold",negative,0,neutral,0,True,negative,0.0,adjudicated,f057da170df0bf198e1b8991203903a51e26d774,cointelegraph,2024-2025
+L0116,main,"Finance Redefined: 83% of 7-figure Millennials own crypto, Sen. Warren criticizes DeFi, Dec. 10–17",neutral,0,neutral,0,False,neutral,0.0,human100,29515b97a5899586f32f618c3f1b1dc43d7b98c1,cointelegraph,2021-2022
+L0117,main,"Bitcoin Rally Stalls; Support at $40K, Resistance at $46K",neutral,1,neutral,1,False,neutral,1.0,human100,90168f6d60c27e26f28e37ab502425547749c5b5,coindesk,2021-2022
+L0118,main,Billionaire Bill Miller calls Bitcoin ‘insurance’ against financial catastrophe,positive,0,positive,0,False,positive,0.0,ai_agree,300d3cfe3c60bef18a3a2e1e8b1ac036d887474f,cointelegraph,2021-2022
+L0119,main,"TRX's Justin Sun on Mars, Tropico, Game of Thrones, and That Banana",neutral,0,neutral,0,False,neutral,0.0,ai_agree,46c303fe281c08bfcacf9c223c076a80c5bf000c,coindesk,2024-2025
+L0120,main,Trump promises to release Silk Road founder Ross Ulbricht if re-elected,positive,0,neutral,0,True,neutral,0.0,adjudicated,2552e8e60c82d0a7975f03a274048fc427bab3c3,cointelegraph,2024-2025
+L0121,main,BNB Chain introduces gasless stablecoin payments initiative,neutral,0,positive,0,True,neutral,0.0,adjudicated,0891e00f9fab36eb145acc85acc574a136b4609a,cointelegraph,2024-2025
+L0122,main,Blockchain.com introduces username-based crypto transactions,neutral,0,positive,0,True,neutral,0.0,adjudicated,05813052067614a3a706b0f5f3e3165b3d9ffb2a,cointelegraph,2021-2022
+L0123,main,U.S. Spot BTC ETF Inflows Surge Over 175% Year-Over-Year,positive,0,positive,0,False,positive,0.0,ai_agree,3c4b31ae6a06841e19a4987ea78b04d7a76265db,coindesk,2024-2025
+L0124,main,Ambire Launches First Onchain Game for Smart Wallets,neutral,0,neutral,0,False,neutral,0.0,ai_agree,2104f4beed50cf242a7773315a43088b8b54575c,other,2024-2025
+L0125,main,Here’s how much was lost to crypto hacks and exploits in Q1 2023,negative,0,negative,0,False,negative,0.0,ai_agree,0629b1714934c43244c0b66c97bdbb83896a2cc7,cointelegraph,2023
+L0126,main,"Nifty News: Vitalik Buterin becomes NFT, Neopets transitions into non-crypto game and more",neutral,0,neutral,0,False,neutral,0.0,ai_agree,2fb4c7f3ab2e944fc9a31ab39fd4a4e982502396,cointelegraph,2023
+L0127,main,Rare Signal Hinting at Bitcoin Price Bottom Emerges,positive,0,positive,0,False,positive,0.0,ai_agree,b8b2a57d0fbd1b3342e6a3404da19a2bf0df48df,coindesk,2021-2022
+L0128,main,Blockworks and Bankless announce Permissionless III: The event for crypto natives,neutral,0,neutral,0,False,neutral,0.0,ai_agree,8136fce1605b7ddeda2b67c49dd5a361486050c5,other,2024-2025
+L0129,main,"Fed Rate Cut Could Crash Crypto Markets, but Era of Central Banks Is Over: Arthur Hayes",neutral,0,neutral,0,False,neutral,0.0,ai_agree,afe17756301a70f2696b29fcc14ee9c1d0191c53,coindesk,2024-2025
+L0130,main,Ordinalized Again: Gensler's Bitcoin ETF Retreat Immortalized As Inscription,neutral,0,neutral,0,False,neutral,0.0,human100,a11cba75c069192172d57bf55d509a05c6d37ece,other,2024-2025
+L0131,main,The benefits of trading Forex pairs in decentralized finance,neutral,0,neutral,0,False,neutral,0.0,ai_agree,2f18dcb365cbe4ddf614804c484dc3769c330046,cointelegraph,2023
+L0132,main,US Inflation Data Could Test Bitcoin’s Rally,neutral,0,neutral,0,False,neutral,0.0,ai_agree,a7606f70f1eaca5a6023ea30dfa398d882e80d27,coindesk,2021-2022
+L0133,main,"Hidden as colors, crypto seed phrases could hide in plain sight, says dev",neutral,0,neutral,0,False,neutral,0.0,ai_agree,215d6ced8ba2c6ffb392486e0054d7f8cbe18d10,cointelegraph,2023
+L0134,main,"Dogecoin Marks 10th Anniversary, Hits $0.10 For First Time in a Year",positive,1,positive,1,False,positive,1.0,ai_agree,2b7ffb80660b3825b71311e393317ac615a19c39,other,2023
+L0135,main,Andreessen Horowitz ‘Temporarily’ Helping Elon Musk With Twitter,neutral,0,neutral,0,False,neutral,0.0,ai_agree,72922f70d6c4abf90e7d7d3542b8afe5f800a3dc,other,2021-2022
+L0136,main,"Time to switch from LinkedIn to MetaMask? Not yet, but soon",neutral,0,neutral,0,False,neutral,0.0,ai_agree,c41b4d84eb69f0e2572d09b9c41a5ae0a1e6a551,cointelegraph,2021-2022
+L0137,main,Professor Coin: Do Managed Crypto Funds Outperform the Market?,neutral,0,neutral,0,False,neutral,0.0,ai_agree,573da8418671100999cccb3c94c224e00866b639,other,2024-2025
+L0138,main,"Where Traditional Public Financing Fails, Blockchain Steps in",neutral,0,neutral,0,False,neutral,0.0,ai_agree,11fce39308ea81f109e56b3d4ba8d8d767760bf1,coindesk,2021-2022
+L0139,main,Why Kevin O’Leary thinks NFTs could become bigger than Bitcoin,neutral,0,neutral,0,False,neutral,0.0,human100,ff64c996ae0a62942401d707aaff2a517ec33fcc,cointelegraph,2021-2022
+L0140,main,"Ethereum’s Dencun Upgrade Goes Live, But Fails to Finalize on Testnet",neutral,0,negative,0,True,neutral,0.0,adjudicated,9e944335663746a5e8ee34514d81f5655ec2f6ac,coindesk,2024-2025
+L0141,main,Limited generative AI usage to be allowed in Japanese schools,neutral,0,neutral,0,False,neutral,0.0,ai_agree,a2692b9a52b38ef8572ed6eba1ac8f3b0eda7807,cointelegraph,2023
+L0142,main,"Core Scientific strikes digital gold: Revenue up 800%, gross profit up 2500%",positive,0,positive,0,False,positive,0.0,ai_agree,2e48d48efddf4afe665a48d995bde5f1e04550a1,cointelegraph,2021-2022
+L0143,main,Bitcoin 'looks exhausted' as next bear market yields $69K target,negative,0,negative,0,False,negative,0.0,human100,c4c572811a9dfb46234a92933982d074346b80f3,cointelegraph,2024-2025
+L0144,main,LocalBitcoins Transformed Crypto Finances in Venezuela—Now What?,neutral,0,neutral,0,False,neutral,0.0,ai_agree,260afc63648ca0dae65cb3ff320ce8feef1e7c5f,other,2023
+L0145,main,Musician 3LAU Sells Album for $11 Million—Using NFTs,neutral,0,positive,0,True,positive,0.0,adjudicated,56c5a45998ae8da1d4464f00aa104853805742a0,other,2021-2022
+L0146,main,Stablecoin fever: 5 major stablecoins are growing crypto adoption,positive,0,positive,0,False,positive,0.0,ai_agree,946e7497e13ec10f10d429b8bed527e6e826684e,cointelegraph,2024-2025
+L0147,main,What the Warren/Satoshi Flag Moment Means,neutral,0,neutral,0,False,neutral,0.0,ai_agree,93f13ef4e18adc82c97e5dfda11cfee6de139446,coindesk,2024-2025
+L0148,main,Bitcoin long-term hodlers begin ‘distribution’ which preceded BTC price bottoms,neutral,0,neutral,0,False,neutral,0.0,ai_agree,eb6f75e982ebca8a23c59af9604a4c7d4ccdd3af,cointelegraph,2021-2022
+L0149,main,Binance’s NFT Marketplace Adds Support for Bitcoin NFTs,positive,0,positive,0,False,positive,0.0,ai_agree,2a57add6b2d53de84835d7f571a817d9474372c6,coindesk,2023
+L0150,main,Core Scientific’s bankruptcy plan includes equity stake for Bitmain and Anchorage,neutral,0,neutral,0,False,neutral,0.0,ai_agree,84b98607e8c2b481ad737abe00ee29f8add9dfea,cointelegraph,2023
+L0151,main,Framework to ban members of Congress and SCOTUS from trading stocks includes crypto provision,neutral,0,neutral,0,False,neutral,0.0,ai_agree,f578340a1c607654e8b8d275baadc3009aa1d1cf,cointelegraph,2021-2022
+L0152,main,"Shaking Off Bears, Investors Drive Year’s Biggest Crypto Inflows",positive,0,positive,0,False,positive,0.0,human100,e24cc529bce01deefff128d92ed2bae7d040d983,other,2021-2022
+L0153,main,Samsung investment arm to launch Bitcoin Futures ETF amid rising crypto interest,positive,0,positive,0,False,positive,0.0,ai_agree,296cde225c5af60de1c894d7dc904d90b8e1dcee,cointelegraph,2023
+L0154,main,"At anniversary of 2016 BTC halving, a look to the next one",neutral,0,neutral,0,False,neutral,0.0,human100,50d68622fa9fe64abbbe6ba86f5782f143f22b3f,other,2023
+L0155,main,Coinbase stock falls 5% pre-Wall Street as Bitcoin price dip adds to Super Bowl woes,negative,1,negative,1,False,negative,1.0,ai_agree,39b828f0a48543d3d32abafc6897178d1e0a9034,cointelegraph,2021-2022
+L0156,main,"Bitcoin (BTC) Dips Below $96K, Ethereum's ETH, Cardano's ADA, Dogecoin Tumble Over 10% in Crypto Correction",negative,1,negative,1,False,negative,1.0,ai_agree,c71d1d889e3bd0b932491366681e29b875de810a,coindesk,2024-2025
+L0157,main,"This Week in Coins: Bitcoin, Ethereum, Dogecoin, and Shiba Inu Surged",positive,1,positive,1,False,positive,1.0,ai_agree,2b148b1dc83e74535924364d1bec6b6ec122f2aa,other,2021-2022
+L0158,main,Charlie Munger: Crypto Is 'Like Some Venereal Disease',negative,0,negative,0,False,negative,0.0,ai_agree,b73ede18cea1793f04057bdd13a414614b8cc0e5,other,2021-2022
+L0159,main,El Salvador Doubles Down on Bitcoin,positive,0,positive,0,False,positive,0.0,ai_agree,caf882acca31edd3f32de43e59b7845e4f5ca3bc,coindesk,2024-2025
+L0160,main,Synthetix commence debt pool merger to enhance liquidity and staking capabilities,neutral,0,positive,0,True,neutral,0.0,adjudicated,805cac05aeb4d63fefb0759b433c395c4e3399f4,cointelegraph,2021-2022
+L0161,main,How to buy Bitcoin with Apple Pay?,neutral,0,neutral,0,False,neutral,0.0,human100,413419daf7dac49bf9bb2973523b7fd8a4cd14f1,cointelegraph,2023
+L0162,main,"Goldman Sachs Doubles Down on Bitcoin ETFs, Increases Holdings by 120% in Q4",positive,0,positive,0,False,positive,0.0,ai_agree,81b9d2df76930abe3920c8fb151ffac0e71e9020,other,2024-2025
+L0163,main,Arbitrum’s first governance proposal sparks controversy with $1B at stake,neutral,0,neutral,0,False,neutral,0.0,ai_agree,eaf96d75d1dd91d21ea0affd1d3630e0a6fb5673,cointelegraph,2023
+L0164,main,Harvard-led Study Reveals Bitcoin Mining Spreads Air Pollution Interstate,negative,0,negative,0,False,negative,0.0,ai_agree,800ea08158d828e0f302e9fd1b8d6198243430dd,other,2024-2025
+L0165,main,File-Sharing Service WeTransfer Partners With Blockchain Platform Minima on Mobile NFT Solution,neutral,0,positive,0,True,neutral,0.0,adjudicated,2345dabfb2e75ef74c34efffe0f4a4e9b4c1da99,coindesk,2023
+L0166,main,Israel kicks off live tests for its tokenized digital bonds,neutral,0,neutral,0,False,neutral,0.0,ai_agree,e931e7af3a71be4a06d5108c35bc8a4035e2d231,cointelegraph,2021-2022
+L0167,main,Ethereum network congestion temporarily shuts down crypto gaming casino,neutral,0,negative,0,True,negative,0.0,adjudicated,106d9ff66b0088f5b3b28a874ecb83e4bd673614,cointelegraph,2021-2022
+L0168,main,"IMF optimism in Central African Republic, despite Bitcoin adoption",neutral,0,neutral,0,False,neutral,0.0,ai_agree,dc5867f5656a38d9b95dce7488f9781745b16fad,cointelegraph,2023
+L0169,main,Polymarket Bettors Punt $1.1B in Volume on Superbowl Champions,neutral,0,neutral,0,False,neutral,0.0,ai_agree,513ef9734b75c7f7f8319ada35f2accc627d007f,coindesk,2024-2025
+L0170,main,Bitcoin-Friendly El Salvador Pitches Tokenized Real Estate 'Sandbox' to Trump's SEC,neutral,0,neutral,0,False,neutral,0.0,ai_agree,d91b4b3750c8215e7491ab4902a507239372d392,other,2024-2025
+L0171,main,Crypto Twitter is not happy with the name and logo of Jamaica’s CBDC,neutral,0,neutral,0,False,neutral,0.0,human100,dc3d60a2816035acc6a15c6405cb26cffb61ac23,cointelegraph,2021-2022
+L0172,main,‘Moon’ or ‘Doom’? OKX Launches Bitcoin Price Guessing Game on Telegram,neutral,0,neutral,0,False,neutral,0.0,ai_agree,5037a0ab10cf660f855ba1715b014667ef1d46d0,other,2024-2025
+L0173,main,Silvergate Bank's Q4 Earnings Misses Estimates,negative,0,negative,0,False,negative,0.0,ai_agree,6b8716ca581e2a4bf82ee9b5046fa804c67b00e1,coindesk,2021-2022
+L0174,main,Ethereum's weekly blob fees hit 2025 lows,neutral,0,neutral,0,False,neutral,0.0,ai_agree,4af88845e6b4c35a4ed2fb0a5f2fdb86e4d27a29,cointelegraph,2024-2025
+L0175,main,Ava Labs Launches 'No-Code' Web3 Launchpad AvaCloud,neutral,0,positive,0,True,neutral,0.0,adjudicated,ce73de9ab5849bb64f8a401d0ec756be662a3f8b,coindesk,2023
+L0176,main,Bitcoin Ordinals creator Casey Rodarmor pitches BRC-20 alternative ‘Runes’,neutral,0,neutral,0,False,neutral,0.0,ai_agree,348e19e3b76f60e06625428d9cdc3cc0e8657c27,cointelegraph,2023
+L0177,main,The $300K Bitcoin Lottery Grows Even Bigger as BTC Traders Chase Upside – Time to Step Back?,neutral,0,neutral,0,False,neutral,0.0,ai_agree,21e9432cdb863c9de5242030a12aed6d2b8da070,coindesk,2024-2025
+L0178,main,"Price predictions 4/18: BTC, ETH, XRP, BNB, SOL, DOGE, ADA, LEO, LINK, AVAX",neutral,0,neutral,0,False,neutral,0.0,ai_agree,f06ad82622f839ccd9d54d5f9cd4aa9b5199c57b,cointelegraph,2024-2025
+L0179,main,"Market Wrap: Crypto Sentiment Improves, Though Risk Remains as Russia Plays Down Peace Talks",neutral,0,neutral,0,False,neutral,0.0,ai_agree,c94589fd9346bb780c71703d82d74263ee3df6b5,coindesk,2021-2022
+L0180,main,Ethereum Price Flat as Merge Event Is Hours Away,neutral,1,neutral,1,False,neutral,1.0,human100,7b8071364584903405a2c40d601e99f829d6d9ea,other,2021-2022
+L0181,main,"Scott Minerd says Bitcoin price will drop to $8K, but technical analysis says otherwise",neutral,0,neutral,0,False,neutral,0.0,ai_agree,8411b75da280a086a1ed84abd13f6fa745945bc4,cointelegraph,2021-2022
+L0182,main,Brazilian Crypto Unicorn 2TM Raises $50M in Series B Round Extension,positive,0,positive,0,False,positive,0.0,ai_agree,f1ce180f591e635a2bb55e5ea56bc9df8e2abadb,coindesk,2021-2022
+L0183,main,Solana Enjoys 7% Boost Amid Sponsorship Of Lollapalooza Music Festival,positive,1,positive,1,False,positive,1.0,ai_agree,781ae568c3abe20d36ca7981a1e4a3e815c96cb6,other,2021-2022
+L0184,main,Bitcoin Cash Price Up 11% Following Post-Halving Rollercoaster Ride,positive,1,positive,1,False,positive,1.0,human100,8a21b58c607a80795960213c14db70dac41a001f,other,2024-2025
+L0185,main,Amazon CEO expresses optimism about the future of cryptocurrencies and NFTs,positive,0,positive,0,False,positive,0.0,human100,72ce48fc9d699c221befcc410acb9549522213bb,cointelegraph,2021-2022
+L0186,main,Bitcoin Reclaims Over 50% Market Dominance Following BlackRock ETF Filing,positive,0,positive,1,False,positive,1.0,adjudicated,1290e0f675e224cf49dca96ab2890c18c7a3986e,other,2023
+L0187,main,CMCC Global Raises $100M for Hong Kong-Based Blockchain Companies,positive,0,positive,0,False,positive,0.0,human100,27d715373dfc33f930e9e0d0ba3cc5b631b2903c,coindesk,2023
+L0188,main,First Mover Americas: BTC Little Changed as U.S. Election Enters Final Stretch,neutral,1,neutral,1,False,neutral,1.0,human100,52a2e904c472ec7ab17f272f307d4dc6dba85053,coindesk,2024-2025
+L0189,main,Bitcoin whales push ‘choreographed’ BTC price as Ether nears $2K,neutral,0,neutral,1,False,neutral,1.0,adjudicated,1382f3e22bf134e0348abe6297d877b954f80ca8,cointelegraph,2023
+L0190,main,"Aoki, Alameda Back Algorithmic Stablecoin on Arbitrum at $200M Valuation",neutral,0,positive,0,True,neutral,0.0,adjudicated,31426ca478eca01702c65380b1beee733c06d29e,coindesk,2021-2022
+L0191,main,Cheatsheet: MicroStrategy has now outperformed Nvidia this year,positive,0,positive,1,False,positive,1.0,adjudicated,6974357a1320acad2b60c4d30678a769b5af282c,other,2024-2025
+L0192,main,McHenry signals support for Grayscale ruling,positive,0,positive,0,False,positive,0.0,ai_agree,6ed335137af9695a46a0b84a50dbddfd6d495969,other,2023
+L0193,main,Fidelity Prodded SEC to Approve Bitcoin ETF in Private Meeting,positive,0,positive,0,False,positive,0.0,ai_agree,c8099312c9f05364a7710ee1ebb3b33c8df6c1c3,coindesk,2021-2022
+L0194,main,Coinbase Layer-2 Success Shows Power of Marketing Over Cutting-Edge Tech,neutral,0,neutral,0,False,neutral,0.0,ai_agree,1fe9a2321635e7d89e373a1e3b341ec1035ecce1,coindesk,2024-2025
+L0195,main,Ethereum’s short-term price action ‘may take traders by surprise’ — Here’s why,neutral,0,neutral,0,False,neutral,0.0,ai_agree,36706cf8ddada838a6c201f6d6761f9d6e3b8d89,cointelegraph,2024-2025
+L0196,main,VanEck lists PYTH ETN in Europe,neutral,0,neutral,0,False,neutral,0.0,ai_agree,d0fc14fb76f1785718f1e1fb58ee3f355053ee3b,cointelegraph,2024-2025
+L0197,main,Cardano’s ADA Rockets 35% as Hoskinson Says He’s Helping U.S. Crypto Policy,positive,1,positive,1,False,positive,1.0,ai_agree,22c66d8e7375ae720801a2d5fa6058ed7fa6e840,coindesk,2024-2025
+L0198,main,Hoops Game 'Rumble Kong League' Ditches Avalanche for Ethereum and Ronin,neutral,0,neutral,0,False,neutral,0.0,ai_agree,dfeef62159204b3c2c8589a6f43abf28e897e2ec,other,2024-2025
+L0199,main,"New York Banks Now Need Approval Before Engaging with Crypto, Regulator Says",negative,0,negative,0,False,negative,0.0,ai_agree,88f2382051d81213c74aa224e9b25d7cb4ff107f,other,2021-2022
+L0200,main,Ethereum eyes $3.5K as ETH price reclaims pandemic-era support with 40% rebound,positive,1,positive,1,False,positive,1.0,ai_agree,410d162e2618fa6d3d3f94a500dd49d0ecb2a8ae,cointelegraph,2021-2022
+L0201,main,Bitcoin salary: Employees choose crypto paychecks amid economic instability,positive,0,positive,0,False,neutral,0.0,human100,0f99ac75ef1f3d88b57fc2a5acc6936570becd09,cointelegraph,2023
+L0202,main,‘The social benefits are huge’: Web3 gaming to shift digital ownership,neutral,0,positive,0,True,neutral,0.0,adjudicated,2defc1c684afb4828194b5b3ef3199e5f028fffa,cointelegraph,2021-2022
+L0203,main,Bitcoin price slides 5% in 60 minutes amid Silvergate uncertainty,negative,1,negative,1,False,negative,1.0,ai_agree,a79712bc766c5f0e3f4783530b4718787567551f,cointelegraph,2023
+L0204,main,South Korea's National Pension Service Invested $20M in Coinbase Shares in Q3,neutral,0,positive,0,True,positive,0.0,adjudicated,46b7abb45d11fe9a0c5090d026684ce600e96d7e,other,2023
+L0205,main,Multiple Mining Pools Are Facing Connectivity Issues,negative,0,negative,0,False,negative,0.0,ai_agree,08d06a95d0598f5200e957f283e6c2bf3ace522c,coindesk,2021-2022
+L0206,main,Crypto.com sues Nevada gaming body over block on sports event contracts,neutral,0,neutral,0,False,negative,0.0,human100,62465aa4cb2427d7035def42bad88e376c2022db,cointelegraph,2024-2025
+L0207,main,Electric Capital Partners: ‘Yellow Flags’ Kept Us Away From SBF,neutral,0,neutral,0,False,neutral,0.0,ai_agree,c164793caf7e954dbcbc3cae5be2c4e8ef8b1391,other,2021-2022
+L0208,main,Trust in crypto remains strong despite bear market: Bitstamp survey,positive,0,positive,0,False,positive,0.0,ai_agree,d535124608cc6ec045ce82c271303b3069612673,cointelegraph,2021-2022
+L0209,main,"Protocol Village: Food DePIN Bistroo Moves to Peaq, ApeChain Releases 'The Blueprint'",neutral,0,neutral,0,False,neutral,0.0,ai_agree,6174fefd72ebe3a2d50085ef22a039c620b05f6d,coindesk,2024-2025
+L0210,main,Celsius token surges 300% a month after $2.5B payment to creditors,positive,1,positive,1,False,positive,1.0,ai_agree,e506d8b1c4da3b5e156cd52e639adc8624e7f428,cointelegraph,2024-2025
+L0211,main,Firms managing $27T in assets are embracing crypto: CoinShares CSO,positive,0,positive,0,False,positive,0.0,human100,3ca0559cac7e9ead4e1b1737c08e008b17978a30,cointelegraph,2023
+L0212,main,Diginex's crypto custody arm receives green light from UK financial watchdog,positive,0,positive,0,False,positive,0.0,ai_agree,74b801ffe4a6968ea5e7a0bbc2bb2e1d8cf278ef,cointelegraph,2021-2022
+L0213,main,The Blocksize Wars Revisited: How Bitcoin’s Civil War Still Resonates Today,neutral,0,neutral,0,False,neutral,0.0,human100,e0d0c6322829bc8f8aabba97fee8b003de4b815d,coindesk,2023
+L0214,main,"Bitcoin Facing Selling Pressure From New Whales as BTC Hovers at $57,000",negative,0,negative,0,False,negative,0.0,ai_agree,c71ac4e7173e757938f3027ecc58a4153d53ee7b,other,2024-2025
+L0215,main,Ether Sets New All-Time High of More Than $3.8K,positive,1,positive,1,False,positive,1.0,ai_agree,d9b311c57b96d910569e956456397aba10f8da99,coindesk,2021-2022
+L0216,main,"Investors want crypto, but not without TradFi backing: Nomura survey",neutral,0,neutral,0,False,neutral,0.0,ai_agree,a95b9bbc185524bd2f6104e22d00877b12affa59,cointelegraph,2023
+L0217,main,The Algorithmic Life Is Not Worth Living,neutral,0,neutral,0,False,neutral,0.0,ai_agree,feb99b06db8383b31c880928d3aad23b72046b5b,coindesk,2021-2022
+L0218,main,Dune partners with Snowflake to make blockchain data more accessible,neutral,0,positive,0,True,neutral,0.0,adjudicated,d3a6e73de67ae81de32e23493764105ffd98d67e,other,2024-2025
+L0219,main,A Financial Professional's Guide to Consensus 2024,neutral,0,neutral,0,False,neutral,0.0,human100,a8372dbb901f37265510df62be2eb2d42885dc72,coindesk,2024-2025
+L0220,main,Pudgy Penguins Ethereum NFT Collection Sold to Netz Capital for $2.5 Million,neutral,0,neutral,0,False,neutral,0.0,human100,875e1f49606d2ecc1640fd6efe9008bc08367fb7,other,2021-2022
+L0221,main,Crypto Startup Monad Labs Aims to Create Next ‘Ethereum Killer’ After Raising $19M,neutral,0,neutral,0,False,neutral,0.0,ai_agree,e8b17a32873cce94d95cb1cfa84d66034e76daaa,coindesk,2023
+L0222,main,Over $600K Vanishes From DeFi Project Blur Finance; Developers Disappear,negative,0,negative,0,False,negative,0.0,ai_agree,6c990cf06b5b79ec41361293432af04ef1319456,coindesk,2021-2022
+L0223,main,Argentina elects pro-Bitcoin president Javier Milei,positive,0,positive,0,False,positive,0.0,ai_agree,7ed791245a032a621c7dab4d407926dd5730ec11,other,2023
+L0224,main,Ronin Adds 'Kaidro' Role-Playing Game Following 'Pixels' Ethereum Token Launch,neutral,0,positive,0,True,neutral,0.0,adjudicated,b3599b3474152d948ddab719f0de2d0df01d04c1,other,2024-2025
+L0225,main,Bitcoin Holds Above 200-Week Average as Dollar Index Rallies Most Since February,neutral,1,neutral,1,False,neutral,1.0,ai_agree,171c7df526a908f5ef3fc3f4f82c0b18675f9217,coindesk,2023
+L0226,main,El Salvador Has Thousands More Bitcoins Than Previously Known,positive,0,positive,0,False,positive,0.0,ai_agree,6ed1abb2cd8a4350aec5a40398a10759b77c2de0,coindesk,2024-2025
+L0227,main,Ethereum’s London hard fork sets ETH on a more deflationary path,positive,0,positive,0,False,positive,0.0,ai_agree,77253ef557d833d0412bf51698d7091025683b6a,cointelegraph,2021-2022
+L0228,main,NY Fed: Stablecoins Are Not the Future of Payments,neutral,0,negative,0,True,negative,0.0,adjudicated,94a49181e0001d94b49097cf04aba5b61bdabf8c,coindesk,2021-2022
+L0229,main,Cathie Wood's Ark Invest Refiles Bitcoin ETF Application—Here's What's New,neutral,0,positive,0,True,neutral,0.0,adjudicated,bff32251efa0f360955604f68cbf0ce9d95fdc30,other,2023
+L0230,main,Bitget launches BitEXC customized crypto exchange in Vietnam,neutral,0,neutral,0,False,neutral,0.0,ai_agree,c23242df190ee955ece1575be07ad87ed9af3d66,cointelegraph,2024-2025
+L0231,main,"S&P Faults Biggest Stablecoin, Tether's USDT, as It Debuts New Industry Ranking",neutral,0,negative,0,True,negative,0.0,adjudicated,f0cc1751430228652d89edf87d6d17b59670951d,coindesk,2023
+L0232,main,You Can Now Invest in a Bitcoin Fund and Earn Yield—In Nordic Countries,positive,0,positive,0,False,positive,0.0,ai_agree,525d993bab54f05f61e8b78553f83da4af437151,other,2024-2025
+L0233,main,Why the NFT Boom Feels So Much Like Gambling,neutral,0,negative,0,True,negative,0.0,adjudicated,efab6fabceb3f4ba914cf742827b5595193d2891,other,2021-2022
+L0234,main,"Ether, Bitcoin Open Asia Trading Week Flat as ETH ETF Decision, Nvidia Earnings Loom",neutral,1,neutral,1,False,neutral,1.0,ai_agree,bf51e345eeb45c8f0180d30dd5720ec935b0959a,coindesk,2024-2025
+L0235,main,Venn Network Aims to Solve DeFi's Hacking Problem With More Decentralized Tech,neutral,0,neutral,0,False,neutral,0.0,ai_agree,1035f389a9d511387c699207915e02926b062b92,coindesk,2024-2025
+L0236,main,US Authorities Are Releasing Seized Bitcoin Mining Hardware: Reuters,neutral,0,neutral,0,False,neutral,0.0,ai_agree,d841e7f71f4f4e93604ce1bed35d0fa513e7996f,other,2024-2025
+L0237,main,Binance Buying FTX? News Enough To Pull Crypto Back,positive,1,positive,1,False,positive,1.0,ai_agree,932520be13903c8e54ffc584432ed0cdab84bdf5,other,2021-2022
+L0238,main,Polymarket Is World's Largest 2024 Presidential Election Prediction Pool: Bernstein,neutral,0,neutral,0,False,neutral,0.0,ai_agree,8d4a2c7ee8fa2c3d9d2e2e12acbd57e60ab0d9df,other,2024-2025
+L0239,main,Bitcoin Is 3rd Largest World Currency: Deutsche Bank,positive,0,positive,0,False,positive,0.0,human100,a2a92f821fc9b1dbbc04bf6d24a0c1e660bea127,other,2021-2022
+L0240,main,Sommelier Launches New ETH Liquid Staking Token Vault,neutral,0,neutral,0,False,neutral,0.0,ai_agree,e1f9ee4817a4fdef68c9f9cf1b47d80c192b60f4,other,2023
+L0241,main,"Goldman Sachs Clients Not Interested in Crypto, Says Chief Investment Officer: WSJ",negative,0,negative,0,False,negative,0.0,ai_agree,377f338a2f9dea55d95a2eb70e09c5a7d135c4d4,coindesk,2024-2025
+L0242,main,"Terra Investor Mike Novogratz Breaks Silence on UST, LUNA Collapse",neutral,0,neutral,0,False,negative,0.0,human100,952b2841374def328ca98ecbb11810e58d91d7da,other,2021-2022
+L0243,main,Mastercard Adds Crypto Startups to Engagement Program,positive,0,positive,0,False,positive,0.0,ai_agree,ae66b27ecfb4c6ba59a4ba1ab744f2b83ff22d01,other,2021-2022
+L0244,main,Will Polymarket Launch a Token? Why Some Traders Are Betting on an Airdrop,neutral,0,neutral,0,False,neutral,0.0,ai_agree,856871b3dcf624ff92adc087db5c4f5fc5a9d6f7,other,2024-2025
+L0245,main,"BlackRock Seeing Only 'A Little Bit' of Demand for Ethereum from Clients, Head of Digital Assets Says",negative,0,negative,0,False,negative,0.0,ai_agree,1135a31e5e404947af85ea8fb32331bd2c2721ff,coindesk,2024-2025
+L0246,main,"Riot Platforms (RIOT) Hits Post-Halving BTC Production High, Expands AI/HPC Strategy",positive,0,positive,0,False,positive,0.0,ai_agree,c19dbf243a128a4dc72bfbbb4586273f44286e87,coindesk,2024-2025
+L0247,main,CoW Swap seeks to solve the MEV problem in decentralized trading,neutral,0,neutral,0,False,neutral,0.0,human100,3a8abc19b61884d8d52fc684ba7a1fc2ae414f4f,other,2023
+L0248,main,Redefining blockchain through crypto-biometrics and DAO approach | AMA with Occam DAO and Humanode,neutral,0,neutral,0,False,neutral,0.0,ai_agree,3df001c18983c7ecf4964fea55ea4a9f1f3f25e5,cointelegraph,2021-2022
+L0249,main,Hong Kong to enhance digital asset regulation in 18 months,neutral,0,neutral,0,False,neutral,0.0,ai_agree,3869127cc07356810ed1eb7191a9f865d8fa4bc8,cointelegraph,2024-2025
+L0250,main,Investment Firm Kryptoin Files for Ether ETF,neutral,0,positive,0,True,neutral,0.0,adjudicated,2fca95f1fb33ad8588e56f22dbcd1370744ef639,coindesk,2021-2022
+L0251,main,Filecoin storage utilization surpasses 7% in Q2: Report,positive,0,positive,0,False,positive,0.0,ai_agree,5718950b94becf92b10a3253b32be601379d68db,cointelegraph,2023
+L0252,main,Warner Bros. is Creating 6 Million DC Comics Trading Cards With Redeemable NFTs,neutral,0,positive,0,True,neutral,0.0,adjudicated,83497d07feb13552490d65e5694c5c83816be352,other,2021-2022
+L0253,main,US must embrace Bitcoin to counter Chinese 'financial attack' — Pomp,positive,0,positive,0,False,positive,0.0,ai_agree,aa36c23ba1f4b5019e365adf32affe17f22b356b,cointelegraph,2021-2022
+L0254,main,Hashdex files amended S-1 for Nasdaq Crypto Index US ETF,neutral,0,neutral,0,False,neutral,0.0,ai_agree,02238dd96ce5580c09748d1dd558ee0b60efd1c9,cointelegraph,2024-2025
+L0255,main,Crypto Industry Cheers as SEC Must Pay $1.8 Million for ‘Gross Abuse’ of Power,positive,0,positive,0,False,positive,0.0,ai_agree,c9666ae5be24fdbc2a5f21075336784eb1b2d594,other,2024-2025
+L0256,main,"Bitcoin NFTs Explode in Popularity as BitMEX Research Shows 13,000 Ordinals",positive,0,positive,0,False,positive,0.0,ai_agree,8b7b1f2fc558a0964d93f540cef295c516606d10,coindesk,2023
+L0257,main,"Uniswap Weighs Proposal to Enrich Token Holders, Switch on Liquidity Pool Fees",positive,0,positive,0,False,positive,0.0,human100,01b35b1114cdf58ea6ecb1354a6b01b215bd4ec4,coindesk,2023
+L0258,main,China Central Television airs crypto segment in rare move,positive,0,neutral,0,True,neutral,0.0,adjudicated,8ea0666b6e384a18b0eefdd06c99c9109d78f268,cointelegraph,2023
+L0259,main,Why analysts are upping price targets for MSTR and COIN,positive,0,positive,0,False,positive,0.0,ai_agree,80b488588d1e916025cdb444dd5e1160f838dfe1,other,2024-2025
+L0260,main,Bakkt Shares Fall After Crypto Firm Posts Third-Quarter Loss,negative,0,negative,0,False,negative,0.0,ai_agree,b6b7890096a509733abc61351727ba2aa2b26db5,coindesk,2021-2022
+L0261,main,Bitcoin Advocate Jack Dorsey Steps Down as Twitter CEO,neutral,0,neutral,0,False,neutral,0.0,ai_agree,460ad145a0730232eb5dab271fbb116f446b4862,other,2021-2022
+L0262,main,Bitcoin DeFi surge may boost BTC demand and adoption — Binance,positive,0,positive,0,False,positive,0.0,ai_agree,7f089a83cbc3fe00cb687f9fd9458ce32dcf9213,cointelegraph,2024-2025
+L0263,main,"Price analysis 5/2: BTC, ETH, BNB, SOL, XRP, LUNA, ADA, DOGE, AVAX, DOT",neutral,0,neutral,0,False,neutral,0.0,ai_agree,a263ae3eaf8f1c21e4806a1ae5fe02cbac8bdec8,cointelegraph,2021-2022
+L0264,main,Crypto Crystal Ball 2024: Bitcoin Meets TradFi—For Real,neutral,0,positive,0,True,neutral,0.0,adjudicated,d7ff6b127ad211788e5156402fa26f2e0fcd8309,other,2023
+L0265,main,Bitcoin hash rate marks all-time high as BTC price drops below $25K,negative,1,neutral,1,True,neutral,1.0,adjudicated,eefd08d5e89adfd2b539c86661d7acbb9f5daae5,cointelegraph,2021-2022
+L0266,main,Bitcoin social sentiment decline may signal market bottom,neutral,0,positive,0,True,neutral,0.0,adjudicated,5661b6bf79028d9e6342eff851c546b87cfdeb8b,cointelegraph,2024-2025
+L0267,main,Retail could undergo ‘real adoption’ this cycle: WisdomTree,positive,0,positive,0,False,positive,0.0,ai_agree,d5d0c67754c523c717a0c873bfe3c4d972ab93d4,other,2024-2025
+L0268,main,"Bitcoin, Ether Diverging Paths Show Resilience and Opportunity",neutral,0,positive,0,True,positive,0.0,adjudicated,9acaa0940585bc37be7aebb14476546dc43d597a,coindesk,2023
+L0269,main,"Bitcoin miner Cipher receives takeover offer, considers sale: Report",neutral,0,neutral,0,False,neutral,0.0,ai_agree,db30dea7e3db42d0348d4c12b558f357e95486e3,cointelegraph,2024-2025
+L0270,main,Anchorage’s Jennifer Lee on the Shrinking Digital Assets Divide,neutral,0,neutral,0,False,neutral,0.0,ai_agree,b4b01ef86cc70e780371ca9a112bd4a128e11066,other,2021-2022
+L0271,main,"This Week In Coins: Bitcoin Unmoved, But Proof-of-Work Classics Bitcoin Cash and Litecoin Moon",positive,1,positive,1,False,positive,1.0,ai_agree,28df8f315c165ab9334aee70442f37dd671af321,other,2023
+L0272,main,Privacy-focused Aleo users concerned after KYC documents leak,negative,0,negative,0,False,negative,0.0,ai_agree,b45ba7e398209a9a2b77b85fa105c3128c2f1c53,cointelegraph,2024-2025
+L0273,main,Fortune debuts ‘Crypto 40’; Ethereum takes top honors for protocol category,positive,0,positive,0,False,positive,0.0,ai_agree,bbba6e9495ba2987f0c354e16526356133da52cf,cointelegraph,2023
+L0274,main,Bitcoin Miner Iris Energy Signs Up to $100M Equity Deal With B. Riley,neutral,0,positive,0,True,neutral,0.0,adjudicated,64ad930b0c671ab9d2e26901286f209456e72ade,coindesk,2021-2022
+L0275,main,Texas proof-of-reserve bill passes through the Senate,neutral,0,positive,0,True,neutral,0.0,adjudicated,ebcc9d04ae22ee8f75e84d1fd9ba464dfb0e585c,cointelegraph,2023
+L0276,main,Pension fund for Texas firefighters reportedly allocates $25M to Bitcoin and Ether,positive,0,positive,0,False,positive,0.0,ai_agree,d0658246e31a55831ac560e295b5ec228bc82757,cointelegraph,2021-2022
+L0277,main,Trump Tariffs: What They Mean for Bitcoin and Why Crypto May Turn Bullish,positive,0,positive,0,False,positive,0.0,ai_agree,e4d9fd386f7811c344cf5c06442a4894df932d8b,other,2024-2025
+L0278,main,What’s Going On With Ethereum’s MEV-Boost?,neutral,0,neutral,0,False,neutral,0.0,human100,dcc50e188d0d8b3a5d80e6406ed8738c4dc2605c,coindesk,2021-2022
+L0279,main,Vitalik Buterin sells another $1.6M in memecoins promised for charity,neutral,0,neutral,0,False,neutral,0.0,ai_agree,00890ad298f75725dc2a310954c1d8c92ed91be9,cointelegraph,2024-2025
+L0280,main,U.S. Senate Finance Committee Asks Crypto Industry for Tax Guidance,neutral,0,neutral,0,False,neutral,0.0,ai_agree,01569ccc1de91e2a31909d8979052a18cd3834c2,coindesk,2023
+L0281,main,Bank collapses are spurring interest in self-custody startups,neutral,0,neutral,0,False,neutral,0.0,ai_agree,d84b6e953d2c63e015263d6da5b29ed8824daa1b,cointelegraph,2023
+L0282,main,Indian Survey Reveals Impact of Crypto Taxes and Anti-Money Laundering Rules on Investors,neutral,0,neutral,0,False,neutral,0.0,human100,cc5d78bb16e96b3f549e5c6d1d466836062c3c62,coindesk,2024-2025
+L0283,main,US gov’t transfers $1.9B BTC seized from Silk Road to Coinbase Prime,negative,0,negative,0,False,negative,0.0,ai_agree,64f53da6e50b737f47a77ec41affe82a9f155868,cointelegraph,2024-2025
+L0284,main,"Jack Dorsey's Block Bitcoin Wallet Opens Beta, Announces Coinbase Support",positive,0,positive,0,False,positive,0.0,ai_agree,fdfcfa98fdc99bb5099f748fe12069ce9da709ad,other,2023
+L0285,main,"SEC Hits Kraken With $30 Million Fine, Orders Crypto Exchange to Halt Staking in US",negative,0,negative,0,False,negative,0.0,ai_agree,aefc5393c924c7f6f2e74ac2645cc26e4cfb6a2f,other,2023
+L0286,main,Kryptoin Re-files for Bitcoin ETF as SEC Reviews WisdomTree Proposal,neutral,0,neutral,0,False,neutral,0.0,ai_agree,68dea00ff42e86420d117d913a7de8dabf651ea7,other,2021-2022
+L0287,main,Bitcoin's Options Market Has Overtaken Its Futures Market in a Sign of Growing Sophistication,neutral,0,positive,0,True,positive,0.0,adjudicated,fc23bc790028dda5870dda85423f405d21871817,coindesk,2023
+L0288,main,This Startup Wants to Use Your GameBoy as a Cold Wallet,neutral,0,neutral,0,False,neutral,0.0,ai_agree,77a4c17002ac3180650033c7a5c9a3dd6dc2948f,other,2023
+L0289,main,Mango Markets Faces Regulatory 'Inquiry' Ahead of Eisenberg Crypto Fraud Trial,negative,0,neutral,0,True,negative,0.0,adjudicated,4acacdcbd29ae9c9309772e9c1c6cc8c4a5672df,coindesk,2024-2025
+L0290,main,"Nayib Bukele sticks to ‘Bitcoin piggy bank’ strategy, but is it working?",neutral,0,neutral,0,False,neutral,0.0,ai_agree,97fd84f7632df454ebc6db30fd07818df6e3861d,cointelegraph,2024-2025
+L0291,main,Bitcoin ditches $16K dip as ‘Leeroy Jenkins’ Bank of Japan flattens dollar,positive,1,positive,1,False,positive,1.0,ai_agree,6e68a71619b54e6ff37fbf91d2399793d485b11f,cointelegraph,2021-2022
+L0292,main,"Coinbase (COIN), MetaMask Wallets at Risk of Malware, Says MicroSoft",negative,0,negative,0,False,negative,0.0,ai_agree,9322c98dc07737d2df71d8e44d424da957111631,coindesk,2024-2025
+L0293,main,'Preying on Human Weakness': Why Investors Are Nervous About Robinhood,neutral,0,neutral,0,False,neutral,0.0,ai_agree,7af5215e2812ade8b0e4e99641246aae47123c61,coindesk,2021-2022
+L0294,main,Binance Releases Wallet Addresses of $69B Crypto Reserve,neutral,0,positive,0,True,positive,0.0,adjudicated,c150204cd265b72398417039da6d0b9d4e751d55,coindesk,2021-2022
+L0295,main,Miners Eye Ethereum Classic Activity as Merge Nears,neutral,0,neutral,0,False,neutral,0.0,human100,fa65e906b2b45282922cc0db84083cb7d5a859e3,other,2021-2022
+L0296,main,Ether Overshadows Bitcoin in Volume on HyperLiquid as Platform Activity Hits $500B Milestone,neutral,0,positive,0,True,neutral,0.0,adjudicated,bd3235a609c5956c4a7c5f63cc29c00070ad64ff,coindesk,2024-2025
+L0297,main,How Cryptoasset Markets Have Changed Since Terra Crash,neutral,0,neutral,0,False,neutral,0.0,ai_agree,dd6ba011267a0411cadb0c32a8e1ee14ac22c133,other,2021-2022
+L0298,main,DOGE News: Dogecoin Unfazed as Elon Musk Rubbishes Reports of Tesla Exit,neutral,0,neutral,0,False,neutral,0.0,ai_agree,661b8075dba8a7caf179985135bf06ef59d8c475,coindesk,2024-2025
+L0299,main,"Facebook, Instagram go down on Super Tuesday, take Meta stock price with them",neutral,0,neutral,0,False,neutral,0.0,ai_agree,24024e2dd97e574a91333f9175c5172ec54d836b,cointelegraph,2024-2025
+L0300,main,"Lend Ethereum, Earn Stablecoins With New Vesper Finance Update",neutral,0,positive,0,True,neutral,0.0,adjudicated,cb2db888bfba0594d4dfe14abfec2ed198c46156,other,2021-2022
+L0301,main,Arbitrum Users Can Now Trade Bitcoin Mining Power With Each Other,neutral,0,neutral,0,False,neutral,0.0,ai_agree,e00e5ee83ca3c5b4d91a2cb72d89557d906e3611,coindesk,2023
+L0302,main,Vitalik Buterin Now Owns More Than $1 Billion in Ethereum,neutral,0,neutral,0,False,neutral,0.0,ai_agree,ab4276cc0e1f258a4cb1830e84258c87fb9e6351,other,2021-2022
+L0303,main,The Fed Will Tell Us Soon If Bitcoin Is at a New Baseline,neutral,0,neutral,0,False,neutral,0.0,ai_agree,172b8d2aec00fa9710d86d160be20aa53b80cb9f,coindesk,2024-2025
+L0304,main,What it’s going to take to hit $100K,neutral,0,neutral,0,False,neutral,0.0,ai_agree,fcbeca5c2a27dab247ab70a95959b227eafede18,other,2024-2025
+L0305,main,Decentralized Exchange Maverick Rolls Out Liquidity Incentives for Price Stability,neutral,0,neutral,0,False,neutral,0.0,human100,75b94db8195e609150fcf5edc6836afdf0d58b53,coindesk,2023
+L0306,main,Unstoppable Domains adds .eth domains through Ethereum Name Service,neutral,0,positive,0,True,neutral,0.0,adjudicated,d39f8203510b2f33bee818480217cf99e4d556d0,cointelegraph,2023
+L0307,main,G20 Set to Crystalize Global Crypto Rules as India Wraps Up Presidency,neutral,0,neutral,0,False,neutral,0.0,ai_agree,8555918c6c94de04814cfe14485f112bad9ac072,coindesk,2023
+L0308,main,U.S. Bank to Launch Crypto Custody,positive,0,positive,0,False,positive,0.0,human100,8abbde966a76f0f427136fa2ed81253f831e4f0b,other,2021-2022
+L0309,main,Blockticity Mints Hemp and Cannabis Certifications on Avalanche,neutral,0,neutral,0,False,neutral,0.0,ai_agree,6f807e5694344d2198b5eecb8aca6f6ebc01c748,coindesk,2023
+L0310,main,Bitcoin bulls aim for $25K price on Friday's $510M options expiry,neutral,0,positive,0,True,neutral,0.0,adjudicated,7bd91ea2ccddd2db09813899ef5fad7101b6e142,cointelegraph,2021-2022
+L0311,main,"Trump isn’t the only ‘story’ driving Bitcoin’s price higher, says exec",positive,0,positive,1,False,positive,1.0,adjudicated,bdab10ddcdc3b86789877474b71553e177edc928,cointelegraph,2024-2025
+L0312,main,"Total crypto market cap reclaims $1 trillion as Bitcoin, Ethereum and altcoins breakout",positive,1,positive,1,False,positive,1.0,ai_agree,a16ba3c2737ef6f5c07d62361d263b41523d8e1a,cointelegraph,2021-2022
+L0313,main,"Bitcoin Slides to $80,000, Ethereum at Year-Long Lows as Risk-Off Sentiment Mounts",negative,1,negative,1,False,negative,1.0,ai_agree,1752487e900051d3ea2b9602b577f8409067f3f4,other,2024-2025
+L0314,main,Grayscale Eyeing Expansion Into European Crypto Fund Market: Report,neutral,0,positive,0,True,neutral,0.0,adjudicated,74712aeedb7d2822db11cadc0dfc83315fb6aced,coindesk,2021-2022
+L0315,main,Hash-based zero-knowledge tech can quantum-proof Ethereum — XinXin Fan,neutral,0,positive,0,True,neutral,0.0,adjudicated,c86de7ed00e7a0f88de214c51a4ed3932967e70c,cointelegraph,2024-2025
+L0316,main,Crypto user fat fingers $90K fee for a $2K ETH transfer,neutral,0,neutral,0,False,neutral,0.0,human100,cb7757551a82f1be066b5cfd93a577c1223305d8,cointelegraph,2024-2025
+L0317,main,Empire Newsletter: There’s a whole wide world outside of US ETFs,neutral,0,neutral,0,False,neutral,0.0,ai_agree,889d83e39f7cf7e879da087555f07c194236c585,other,2024-2025
+L0318,main,Crypto Funds See Largest Inflows Since Mid-December,positive,0,positive,0,False,positive,0.0,ai_agree,0a44a4d1ec54adf74a3d1e3854b3b0c75d5acace,coindesk,2021-2022
+L0319,main,Stablecoin Issuer Tether Invests in Sustainable Bitcoin Mining in Uruguay,neutral,0,positive,0,True,neutral,0.0,adjudicated,5fd9c3c004636dbad9db764ebbe41ddaf0fe7ea4,coindesk,2023
+L0320,main,"Fed Hikes Rate at Fastest Pace in 22 Years, Will Start Shrinking Balance Sheet",negative,0,negative,0,False,negative,0.0,ai_agree,09d91c52f9c6bafd5d9493e1deb92ebd50355950,coindesk,2021-2022
+L0321,main,"Not Your Keys, Not Your Crypto: What to Know Before the Next FTX-type Meltdown",neutral,0,neutral,0,False,neutral,0.0,ai_agree,0b4078b2d40b81225e1c678916ad1658c3754adc,other,2023
+L0322,main,"First Mover Asia: Crypto Traders Laying Low While Fed Ponders; Bitcoin, Ether Gain",positive,1,positive,1,False,positive,1.0,ai_agree,ffbedc3dc66f9dae777878da7e3adf735119f3fc,coindesk,2021-2022
+L0323,main,Elon Musk's Tesla Still Holds $387 Million in Bitcoin,neutral,0,neutral,0,False,neutral,0.0,ai_agree,11948b295f01e78044e39202c5c2d1f76a55faf3,other,2024-2025
+L0324,main,"More Than Half of Crypto Tokens, Memecoins Launched in 2024 Were Malicious: Blockaid",negative,0,negative,0,False,negative,0.0,ai_agree,8609718f4290eafc42707d29499cac6368d124f5,coindesk,2024-2025
+L0325,main,What You Need to Know About Exchange Tokens After FTX's FTT Meltdown of 2022,neutral,0,neutral,0,False,neutral,0.0,ai_agree,b7f6b7df510b85ff9029e56aca3135c734c74363,other,2023
+L0326,main,Bitcoin price skirts $19.3K amid fear over ‘mother of all rug pulls’,neutral,1,negative,1,True,negative,1.0,adjudicated,79980c264930eb6f9050c52b45785cd42e73f59a,cointelegraph,2021-2022
+L0327,main,"Bitcoin, Ethereum and select altcoins set to resume rally despite February slump",positive,0,positive,0,False,positive,0.0,ai_agree,51c0c2b75c299f07804f93ef63a336eec5cb4f29,cointelegraph,2023
+L0328,main,Bitcoin ETFs Bleed Badly as Skittish Investors Cash Out $218 Million,negative,0,negative,0,False,negative,0.0,ai_agree,1c03ea39f60834118ab7e6406b8dede9c65ebddf,other,2024-2025
+L0329,main,Mark Cuban Loses Nearly $1M to Crypto Scam,neutral,0,negative,0,True,negative,0.0,adjudicated,d070c934fd0e358e6c45e7571ee689c389133bcd,coindesk,2023
+L0330,main,Green ‘light:’ The EU’s approach to crypto balances eco-values with regulatory relevance,neutral,0,neutral,0,False,neutral,0.0,ai_agree,13031f5bab0f883188710ef24f2c6b8ab5397eba,cointelegraph,2021-2022
+L0331,main,"Bitcoin Slides Below $62K as Consolidation Drags on, but Traders Eye Possible Parabolic Rally",neutral,1,negative,1,True,negative,1.0,adjudicated,baf355c8d01297a1ace3572a15bb64d84c73b0c7,coindesk,2024-2025
+L0332,main,"Ethereum ETF Approval Coming Sooner Rather Than Later, Says Coinbase",positive,0,positive,0,False,positive,0.0,ai_agree,493c52d9dc36124979ab9e2fb4fdee4c18307fa2,other,2024-2025
+L0333,main,US Sanctions Iranian Operator of Nemesis Darknet Marketplace,neutral,0,neutral,0,False,neutral,0.0,ai_agree,458428fa5ff0d50b5900179837e6a6ef48e97c95,other,2024-2025
+L0334,main,Bitcoin News: Hackers Are Stealing BTC from Malicious GitHub Code Bases,negative,0,negative,0,False,negative,0.0,ai_agree,90061462de5d54b8cae59395440ce0cf58f1d132,coindesk,2024-2025
+L0335,main,Crypto Crystal Ball 2024: Will a Bitcoin ETF Be a Game-Changer?,neutral,0,neutral,0,False,neutral,0.0,human100,4f06f7a3f579feb193c8670f3edc4554d3c30a65,other,2023
+L0336,main,Singapore Regulator Reprimands Three Arrows Capital for 'Providing False Information',neutral,0,neutral,0,False,neutral,0.0,ai_agree,655afc050028cf6ee9b63e68a5e3a1e48b437357,other,2021-2022
+L0337,main,BTC ETFs Finally Snap Eight-Day $3.2B Outflow Streak With $94.3M Inflows,neutral,0,positive,0,True,positive,0.0,adjudicated,ec9f2185ed1882633815fcff2e298f7730a20b00,coindesk,2024-2025
+L0338,main,MicroStrategy Targeting $2B Perpetual Preferred Stock Offering: Benchmark,positive,0,neutral,0,True,neutral,0.0,adjudicated,bacfe772a3cfc5e75f96493d87810c0d0d186c6e,coindesk,2024-2025
+L0339,main,"TRUMP, Dogecoin and Cardano Down Bad as Market Continues to Bleed",neutral,0,negative,1,True,negative,1.0,adjudicated,a943c31c8e76749d727b483ac67981849a93e93e,other,2024-2025
+L0340,main,Ex-Ethereum Miners Token Hop to Stay Alive After the Merge,negative,1,neutral,0,True,neutral,0.0,adjudicated,bd7e394ed669654f38c39fd96d973ab4c2ea2881,coindesk,2021-2022
+L0341,main,"JPMorgan, Apollo Tokenize Funds in 'Proof of Concept' With Axelar, Oasis, Provenance",neutral,0,positive,0,True,positive,0.0,adjudicated,b18a431b8414d888cb6b8f9056c6de7b1d448da0,coindesk,2023
+L0342,main,Tornado Cash ban could spell disaster for other privacy protocols — Manta co-founder,neutral,0,negative,0,True,negative,0.0,adjudicated,db4eca7a3261a3320bd203603dca1579c02819b9,cointelegraph,2021-2022
+L0343,main,Greenidge Generation Shares Jump 30% After Analyst Sees Potential 200% Upside,negative,0,positive,1,True,positive,1.0,adjudicated,9586cda9ae7e8d360d15ee51da67113028f15f0f,coindesk,2021-2022
+L0344,main,"Allianz, Germany’s biggest insurer, buys 24% of MicroStrategy’s $600M notes",positive,1,positive,0,False,positive,0.0,adjudicated,f46a744c55b018d3360064409a8cbbfeec07c1a9,cointelegraph,2024-2025
+L0345,main,"Strategy bags 4,020 Bitcoin as price briefly breaks $110K",positive,0,positive,0,False,positive,0.0,ai_agree,e0c9d7921b1ee822694dec60894f31a5672bdee8,cointelegraph,2024-2025
+L0346,main,Crypto set for a new era of apps over infrastructure,positive,1,neutral,0,True,neutral,0.0,adjudicated,0da904e557bf0931609e2817c3ad628d5384b203,other,2024-2025
+L0347,main,Bitcoin macro indicator that predicted 2022 bottom flashes 'buy signal',neutral,0,positive,0,True,positive,0.0,adjudicated,c5b9734a97fa45270e6ac83b360fb11a524fe4d6,cointelegraph,2024-2025
+L0348,main,"Bitcoin at $26.4K Set for Weekly Gain, but Rallies Might Continue to be Sold",positive,0,neutral,1,True,neutral,1.0,adjudicated,47818893e4964ec30095c556fe4bc2836de324cb,coindesk,2023
+L0349,main,"Bitcoin Momentum Improves, Faces Resistance at $34K",neutral,1,neutral,1,False,neutral,1.0,human100,5081a68394df14ed164344cb57db237a3e7ddf2b,coindesk,2021-2022
+L0350,main,Bitcoin 2021: A Cult of Money?,neutral,0,neutral,0,False,neutral,0.0,ai_agree,8a17054e0f842330d3b0d37f86a1d7bf39c10b40,other,2021-2022
+L0351,main,Let’s pour one out for the first-day spot bitcoin ETF investors,neutral,0,negative,0,True,negative,0.0,adjudicated,a631989ff3d5df2e29b49e3385c47b089768d21f,other,2024-2025
+L0352,main,Fed’s Powell says US on ‘unsustainable fiscal path’ as debt burden grows,negative,0,neutral,0,True,neutral,0.0,adjudicated,59b752b0f3d8346e3870f08106b77fde43408012,cointelegraph,2024-2025
+L0353,main,Bitcoin bulls overtake the $40K barrier ahead of Friday’s $625M options expiry,neutral,0,positive,1,True,positive,1.0,adjudicated,0df71a1d168b4516a7a300f46ccfc76cb2b6c4c5,cointelegraph,2021-2022
+L0354,main,Bitcoin Shrugs Off Fed Decision to Keep Rates Unchanged,positive,1,neutral,1,True,positive,1.0,adjudicated,d9c3bb9d67c33b29a1385adc3b32be9d3221582e,other,2024-2025
+L0355,main,Ethereum Is No Longer a One-Chain Ecosystem,neutral,1,neutral,0,False,neutral,0.0,adjudicated,7e8deaf513fbee16d605ea9a38a2f25c6df2a5b3,coindesk,2021-2022
+L0356,main,Morgan Creek Digital to Raise up to $500M for New Web3 Venture Capital Fund,neutral,0,positive,0,True,positive,0.0,adjudicated,9f22f172f3a95b5246c3d5a2d3e454219c468412,coindesk,2024-2025
+L0357,main,Meme Coin Frenzy Drives Ethereum Network Fees to Nearly 2-Year High: IntoTheBlock,positive,0,neutral,0,True,positive,0.0,adjudicated,f3781387a5b496360112f166de3779dc3905dacc,coindesk,2024-2025
+L0358,main,Government Sanctions on Tornado Cash Don't Fit The Law: Coinbase Legal Officer,neutral,0,neutral,0,False,neutral,0.0,ai_agree,5ef586d2f61936c2b1c5c4e41b35f05c3d2d6252,other,2023
+L0359,main,"As BTC passes $66K, is ‘Uptober’ finally upon us?",neutral,0,positive,1,True,positive,1.0,adjudicated,12b70b6aca8d2759626817014f945fd695a9f267,other,2024-2025
+L0360,main,DeFi Project Aave to Launch Decentralized Social Media Platform on Polygon,positive,1,positive,0,False,neutral,0.0,adjudicated,11dbb41cc823ccf749185b109e249882ee00b898,other,2021-2022
+L0361,main,Bitcoin Tumbles to $26.9K on Hawkish Remarks by Federal Reserve's Powell,neutral,0,negative,1,True,negative,1.0,adjudicated,7d9b241f01c9a89f9c4e95755eaa7fbc9e001896,coindesk,2023
+L0362,main,"BTC, ETH, XRP Set for a Near-Term Bounce as Attention Turns to Rate Cuts",negative,1,positive,0,True,positive,0.0,adjudicated,8acc777b50cf4de52cb4d2aa8dbe857d502c98a7,coindesk,2024-2025
+L0363,main,"Web3 Watch: Rarible Revamps Marketplace, ApeCoin DAO Adds Bug Bounty",positive,0,neutral,0,True,neutral,0.0,adjudicated,ece46d730a5e2d4ad6d4cff28e89e6e030da5bee,other,2021-2022
+L0364,main,Bitcoin On-chain Pattern Shows Potential for Further Price Gains,neutral,0,positive,0,True,positive,0.0,adjudicated,43f423b6c4755c3a5f18a1aff0bc6e35b3c8c42c,other,2023
+L0365,main,Bitcoin Maxi Jack Dorsey Slams Facebook Over 'Wasted Effort and Time' on Diem,positive,0,neutral,0,True,neutral,0.0,adjudicated,c95f0ddaea7be8b526c96c156f4c205189b4d3fb,other,2021-2022
+L0366,main,Ethereum Token Platform Zora Sues Deloitte Over AI Trademark Dispute,neutral,0,neutral,0,False,neutral,0.0,human100,116fb9435539ae98efee86b7cbf4df19edc6da54,other,2024-2025
+L0367,main,"SEC expands Binance lawsuit: AXS, FIL, ATOM now securities",neutral,0,negative,0,True,negative,0.0,adjudicated,c2b1ab0e37a523034a1f11a92224e65cd2d02327,cointelegraph,2024-2025
+L0368,main,"Bitcoin Price Falls Under $60,000 as $150 Million in Crypto Longs Get Rekt",negative,0,negative,1,False,negative,1.0,adjudicated,d73af46981356211725aedc4f4d798e31e2855f8,other,2024-2025
+L0369,main,NFT Marketplace Nifty Gateway Plans to Go Carbon Neutral,negative,1,neutral,0,True,neutral,0.0,adjudicated,3c031df65ab049f36d5fc6da73efbd3deae14f46,other,2021-2022
+L0370,main,What Are Moonbirds? These Ethereum Owl NFTs Are Soaring,neutral,0,positive,1,True,positive,1.0,adjudicated,49235823a0baed7ad6eb1ed1fad95c1789f0fd41,other,2021-2022
+L0371,main,DBS Launches Crypto Trust in a First for Asia,neutral,0,positive,0,True,positive,0.0,adjudicated,15a1fc605540e58d7e4082de2989daf3008a00e4,other,2021-2022
+L0372,main,Lido’s Staked Ether Surges Closest to Ether Since Terra Crash,positive,0,positive,0,False,positive,0.0,ai_agree,7e70f54291e56bff611e96444d0cd01f31cac1d3,coindesk,2021-2022
+L0373,main,Did regulators intentionally cause a run on banks?,positive,0,neutral,0,True,neutral,0.0,adjudicated,eca526b1cfc508ebf535ef55f8c281cb985a5259,cointelegraph,2023
+L0374,main,When Brigitte Macron Came to NFT Paris,neutral,0,neutral,0,False,neutral,0.0,ai_agree,00c7e60aa817e1eb5789b695e93fe9da549a2ded,other,2023
+L0375,main,Silicon Valley: The Mecca for Venture Capital May Be Cooling on Crypto,neutral,0,negative,0,True,negative,0.0,adjudicated,c340d13eec6269b6fc3d489abaebef60059747e6,coindesk,2023
+L0376,main,When meme? Top crypto memes and their meaning,negative,0,neutral,0,True,neutral,0.0,adjudicated,10ed96331244d4510342efa9badad313ee3f095e,cointelegraph,2023
+L0377,main,Stablecoin dominance slides as market cap falls to near 2-year lows: CCData,neutral,0,negative,0,True,negative,1.0,adjudicated,a50853ffd0a5cae2bb04d8a242086bb41084e61a,cointelegraph,2023
+L0378,main,Valkyrie Backs Off Ether Futures Purchases Until SEC ETF Approval Officially Effective,neutral,0,neutral,0,False,neutral,0.0,ai_agree,92f389afb957815e0c102be0e661676cd9e9e66b,coindesk,2023
+L0379,main,US Senate Majority Leader to speak at crypto event for Kamala Harris,neutral,0,positive,0,True,neutral,0.0,adjudicated,e98b9a773455cb155bf92d865e71e1ab63b647d8,cointelegraph,2024-2025
+L0380,main,"Enforcement goes on with Bitzlato action: Law Decoded, Jan. 16–23",neutral,0,negative,0,True,negative,0.0,adjudicated,0dec066da137ea4ae094d8230b9c04f2fb922015,cointelegraph,2023
+L0381,main,"ConsenSys Acquires MyCrypto, Plans to Merge It With Ethereum Wallet MetaMask",negative,0,positive,0,True,neutral,0.0,adjudicated,a8d81ef2a3126dd39f3164df05e2693740e8a5ed,other,2021-2022
+L0382,main,Aptos Token Price Doubles in Two Weeks Amid Strong NFT Interest,positive,0,positive,1,False,positive,1.0,adjudicated,7fb34e3d022a8b1b8ddbc4fc6fcbf7e5b46cd27a,coindesk,2023
+L0383,main,Digital-Asset Funds Reach $50B Despite Outflows,positive,1,neutral,0,True,neutral,0.0,adjudicated,016bc7e35fd95b26a1fa91fd61cef938799a4aa9,coindesk,2021-2022
+L0384,main,Why Ethereum Mergers Love Lido,neutral,0,neutral,0,False,neutral,0.0,human100,38baebf3011141be462823311ce8512cbba1c0c2,other,2021-2022
+L0385,main,"Fireblocks, Zodia Markets Partner to Improve Cross-Border Payments",neutral,0,positive,0,True,neutral,0.0,adjudicated,4889c1d2d26e4dffa35e65194726eb549dde5471,coindesk,2024-2025
+L0386,main,Bitcoin ETFs Remove Nearly Five Times Daily Supply as Ethereum ETFs See Strong Rebound,neutral,0,positive,0,True,positive,0.0,adjudicated,03958495424e85e715ddbc9e79d44bbf95e3e6c2,coindesk,2024-2025
+L0387,main,VanEck Joins Bitcoin ETF Ad War With New Teaser Trailer,positive,0,neutral,0,True,neutral,0.0,adjudicated,d5dfef4e965dcf54c8060033b282f116c3bfc22a,other,2023
+L0388,main,Crypto Issuance Startup Tokensoft Brings Its Token Launchpad On-Chain,neutral,0,neutral,0,False,neutral,0.0,ai_agree,b5734f923f562a8160cbdb63d81018866331f575,coindesk,2023
+L0389,main,GBTC premium matches Bitcoin price crash levels as unlocking fear fades,neutral,0,neutral,0,False,neutral,0.0,human100,bc4b78238b18f4767190a9e4d94d26db160fc9cb,cointelegraph,2021-2022
+L0390,main,"Bybit to End Korean Language Support on Official Platforms, Social Media",neutral,0,neutral,0,False,negative,0.0,human100,7fdbf6f0269887bc5e36c753c412be34369e202c,coindesk,2021-2022
+L0391,main,Judge Orders Tether to Produce Records Showing Backing of USDT,neutral,0,negative,0,True,negative,0.0,adjudicated,f14d851b3fd0173e6e1cc40177d9657e46286b1e,other,2021-2022
+L0392,main,Bitcoin 2021 Panelists: The Cost of Capital is Broken,neutral,0,neutral,0,False,neutral,0.0,ai_agree,8c85d43dc7790f55e9db8bcbfdf4151c669b1930,other,2021-2022
+L0393,main,What the Next Level of Bitcoin Mining Difficulty Will Bring,neutral,0,neutral,0,False,neutral,0.0,ai_agree,957d876260367c48a91ed0bbbbcb1ac12a974c81,other,2023
+L0394,main,Derivatives data highlights crypto traders’ positive sentiment and belief in further upside,neutral,0,positive,0,True,positive,0.0,adjudicated,5d226f08ac837a167b7df839eef99c4cf99f30ce,cointelegraph,2023
+L0395,main,You Can Now Trade Bitcoin Mining Hashpower on Arbitrum,positive,0,neutral,0,True,neutral,0.0,adjudicated,29299859c21d14b6bf29ce203ead753745809922,other,2023
+L0396,main,"Crypto whales suffer huge losses due to USDC depeg, SVB collapse",neutral,0,negative,0,True,negative,0.0,adjudicated,9459b37e232f2b7a4116b830e2443d1a06181fec,cointelegraph,2023
+L0397,main,First Mover Americas: Binance Sells Russian Unit,negative,0,neutral,0,True,neutral,0.0,adjudicated,f24c06e5744c3684a4c744246a171aa6a1bb5a74,coindesk,2023
+L0398,main,"Bitcoin miner CleanSpark purchases 45,000 ASICs for $145M",neutral,0,positive,0,True,neutral,0.0,adjudicated,4ca1bb5cd2003ba0463f934e063de35a69992e7e,cointelegraph,2023
+L0399,main,Alibaba Cloud Builds Metaverse Launchpad on Avalanche,positive,0,positive,0,False,positive,0.0,ai_agree,44778171454716b8f197c514d3c80e54762e5bf7,coindesk,2023
+L0400,main,Bitcoin price could hit $63K amid $3.9B futures expiry,neutral,0,positive,0,True,neutral,0.0,adjudicated,11862c1d7448782af3c1f5dadf835aa92bd3f630,cointelegraph,2024-2025
+L0401,main,U.S. SEC Said to Open Talks with Grayscale on Spot Bitcoin ETF Push,neutral,0,positive,0,True,positive,0.0,adjudicated,82a59a8e9de298882d24d57bf06ed84bb16d1ab7,coindesk,2023
+L0402,main,"Bitcoin Falls After 517,000 Jobs Added in January, Beating Expectations",positive,0,negative,1,True,negative,1.0,adjudicated,2bf64826b2b0c6e87092a07b98d4cee2d8d00182,coindesk,2023
+L0403,main,"Fidelity reportedly amends Ether ETF S-1 filing, removes ETH staking",negative,1,negative,0,False,negative,0.0,adjudicated,177bd35b04feb756a0f2b3adb44e103bcdeacf9f,cointelegraph,2024-2025
+L0404,main,BUSD Drama Sets Stage for Stablecoin Market Reshuffling,neutral,0,neutral,0,False,negative,0.0,human100,b602cce38659e928b018818f0565bc5c125dadf4,coindesk,2023
+L0405,main,What is Celestia (TIA)? The Coin Created by a CIA Hacker Spikes 800%,neutral,0,positive,1,True,positive,1.0,adjudicated,a94a25fdd728e4f04649591034dd9dc421ff00b6,other,2024-2025
+L0406,main,"Compound adds Ethena, Mantle tokens to lending platform",positive,1,neutral,0,True,neutral,0.0,adjudicated,d28e84b50864e091ff471177f5e77c8c85650505,cointelegraph,2024-2025
+L0407,main,"Verkle trees promise superior Ethereum solo staking benefits, says Vitalik Buterin",neutral,0,positive,0,True,neutral,0.0,adjudicated,31e390512b2df8319cbe5c8ea6f11311cf009821,cointelegraph,2024-2025
+L0408,main,"BlackRock, VanEck, Valkyrie file last-minute Bitcoin ETF amendments",neutral,0,positive,0,True,neutral,0.0,adjudicated,269259a988755178408cc7dc4572be5ebb1287f0,cointelegraph,2023
+L0409,main,Grayscale CEO pleads Bitcoin spot ETF as SEC backs third BTC Futures ETF,neutral,0,neutral,0,False,positive,0.0,human100,fd21a961d497ffe73a23085f98d0160b93bad119,cointelegraph,2021-2022
+L0410,main,Bitcoin (BTC) Price in Standstill at $85K as Trump Increases Pressure on Fed's Powell,neutral,0,neutral,1,False,neutral,1.0,adjudicated,ffcdc541980e8c58c94afa6cbafb65bdb58661d7,coindesk,2024-2025
+L0411,main,Solo miner bags entire block reward with just 1PH of power,neutral,1,neutral,0,False,neutral,0.0,adjudicated,84cb6b277d4449450bc9c5721017c34c5bf6f547,other,2023
+L0412,main,Whales Grab $50M of Chainlink’s LINK as Price Climbs 40% in a Month,neutral,0,positive,1,True,positive,1.0,adjudicated,78f77ec9e1f69c9b785218ae3cf2d286c183fb97,coindesk,2024-2025
+L0413,main,"For Millennials, Bitcoin Is the New Real Estate",positive,1,positive,0,False,positive,0.0,adjudicated,9adee2952bae415da25bb3a4da4f1084605a3f3d,coindesk,2024-2025
+L0414,main,Budweiser Launching Ethereum NFTs as ‘Key to the Budverse’,neutral,0,positive,0,True,neutral,0.0,adjudicated,1c147eb84a8de90ca844ef23aa6a9a01e2da1d8b,other,2021-2022
+L0415,main,Biden and Trump-Themed Meme Coins Take Center Stage on Solana,neutral,0,neutral,0,False,neutral,0.0,human100,db6045bb39872bd2456d3c7b5ee87411ef7c287d,coindesk,2024-2025
+L0416,main,Sam Altman's Worldcoin Integrates With Identity Management Software Okta as It Pushes Into Germany,neutral,0,neutral,0,False,neutral,0.0,ai_agree,232a1534d34be9a881d9f2fc1d9136e3b7f2850c,coindesk,2023
+L0417,main,Sovereign Rollups Carve a Path for Blockchain Scaling,neutral,0,neutral,0,False,neutral,0.0,human100,ad6bc4b8762132a215b80ea48effc1146bb0a2b1,other,2023
+L0418,main,"Price analysis 5/15: SPX, DXY, BTC, ETH, BNB, XRP, ADA, DOGE, SOL, MATIC",neutral,0,neutral,0,False,neutral,0.0,ai_agree,225cdce73c5dad5afeabbaa5ca45446667aa214f,cointelegraph,2023
+L0419,main,Bitcoin ETF Race: Ark Amends SEC Filing to Match BlackRock,neutral,0,neutral,0,False,neutral,0.0,ai_agree,37b2202f3f8d2df2d475e68b41516b889a5f53fa,other,2023
+L0420,main,Ribbon Finance Settles First On-Chain Ether 'Autocallable' With Marex and MEV Capital,neutral,0,neutral,0,False,neutral,0.0,ai_agree,ad057962a8250e52dcb4971c081ad98aefdbd475,coindesk,2023
+L0421,main,BlackRock Launches Bitcoin Fund in Europe Following Roaring IBIT Success,neutral,0,positive,0,True,positive,0.0,adjudicated,67280bcf5ca8af66d5afecaae5d6801ee787a0b2,other,2024-2025
+L0422,main,Vitalik Buterin offers rosy views on Twitter’s Community Notes,positive,0,neutral,0,True,neutral,0.0,adjudicated,14891f8916e8cec3d35ca1fc3796d6aad5ae765b,other,2023
+L0423,main,CME Group to Launch Ethereum-to-Bitcoin Ratio Futures Next Month,neutral,0,neutral,0,False,neutral,0.0,ai_agree,1ffcc5fcb67dad80ae5025456099ae66f634f0bb,other,2023
+L0424,main,Binance reaches 200M users with $100B in assets under custody,neutral,0,positive,0,True,positive,0.0,adjudicated,b9e44afcdd3f765bdae418030d302e270e2c899a,cointelegraph,2024-2025
+L0425,main,Bitcoin Billionaire Arthur Hayes Is Bearish on the Halving—Here's Why,positive,0,negative,0,True,negative,0.0,adjudicated,3d4b7218c173361d9b57d9b2fdb8973520577d34,other,2024-2025
+L0426,main,"Former Kraken execs acquire real estate firm Janover, disclose SOL treasury plans",negative,0,neutral,0,True,neutral,0.0,adjudicated,c9482701ce1f4e4eeec4ce8b7ec42e1d4f285ec0,cointelegraph,2024-2025
+L0427,main,Canada to Prohibit Crypto Firms From Offering Leveraged Trading to Citizens,neutral,0,negative,0,True,negative,0.0,adjudicated,357f8131c4eb3bbf9889bb159df705cc973d1e48,other,2021-2022
+L0428,main,New DeFi protocol Nudge aims to unlock hidden value in users’ wallets,negative,0,neutral,0,True,neutral,0.0,adjudicated,a07b0731bc7c03b5856464e9eac418fec460830a,cointelegraph,2024-2025
+L0429,main,It’s time to stop theorizing about Satoshi Nakamoto,neutral,0,neutral,0,False,neutral,0.0,ai_agree,fa721657f992a17b898c356dbfa3206986e141c7,other,2024-2025
+L0430,main,"DeFi Tokens Curve, Lido, ChainLink Jump Double Digits as Crypto Market Rebounds",neutral,0,positive,1,True,positive,1.0,adjudicated,7e279e1425c9476441e29b4b57ed0c8cc62cdcbf,other,2021-2022
+L0431,main,The limitations of the EU’s new cryptocurrency regulations,positive,1,neutral,0,True,neutral,0.0,adjudicated,967bad85e2188d92bed1a9a258c79e636c3f5575,cointelegraph,2023
+L0432,main,The biggest Ethereum upgrade ever goes live,neutral,0,positive,0,True,positive,0.0,adjudicated,d31ef2c88ba2311ad8779b970bf192ae541e3a27,other,2024-2025
+L0433,main,"Bitcoin Slips Below $45K as S&P 500 Futures Drop, Stablecoin Regulation Fears Resurface",positive,0,negative,1,True,negative,1.0,adjudicated,5a39d5d045e2f042dcd4142c2368f810fe532c47,coindesk,2021-2022
+L0434,main,A semi-centralized exchange to provide a ‘trade-to-own’ feature to engage users,negative,1,neutral,0,True,neutral,0.0,adjudicated,b1dd50aafad2cffa2f2e1b7756efe6a521d52fce,cointelegraph,2023
+L0435,main,"What Is the Ethereum Blockchain’s Shanghai Hard Fork, and Why Does It Matter?",neutral,0,neutral,0,False,neutral,0.0,ai_agree,ca0419fc499fe231baa93d62074ccc0f76f03263,coindesk,2023
+L0436,main,Podcast: Alliance DAO on Raising $50M and This Year’s Biggest DeFi Trends | Qiao Wang & Imran Khan,neutral,0,neutral,0,False,neutral,0.0,ai_agree,672fd5a58eeb1bdae07680849288fe3d52083dbc,other,2021-2022
+L0437,main,"Bankrupt Crypto Lender Celsius Network's CEO, Alex Mashinsky, Resigns",neutral,0,neutral,0,False,negative,0.0,human100,3e2f1a410c2974992ed2e031c019e0e106e06087,coindesk,2021-2022
+L0438,main,Yield protocol infiniFi replicates fractional reserve banking onchain,neutral,0,neutral,0,False,neutral,0.0,human100,088a02820caa187c7be2583407b1ef26f2d7bff2,other,2024-2025
+L0439,main,Standard Chartered China Offering Exchange Services for Digital Yuan,neutral,0,neutral,0,False,neutral,0.0,ai_agree,7a056d759e8eace25875b934edb9e859fff51c2d,coindesk,2023
+L0440,main,"Bitcoin Retests $35,000 as Dogecoin, XRP Prices Jump 10%",neutral,0,neutral,1,False,neutral,1.0,adjudicated,a5f47abdcee16e34fcb92e588ff80fb328e3b903,other,2021-2022
+L0441,main,"Why are BTC, ETH, XRP, SOL Down Today? Traders Eye $70,000 Bitcoin as U.S. Treasuries Nosedive",positive,1,negative,1,True,negative,1.0,adjudicated,5d3b7b5000b365a885a97efd80bad71f6b209832,coindesk,2024-2025
+L0442,main,First Mover Asia: Some Bitcoin Whales Appear Content to Wait for the Next Price Catalyst,negative,1,neutral,0,True,neutral,0.0,adjudicated,adc4acc8837ee63518e0a0d3b92761aea076cf69,coindesk,2023
+L0443,main,Bitcoin L2s set to explode as Runes congest BTC network,neutral,0,positive,0,True,neutral,0.0,adjudicated,da3815e4880b4e85991caa23329d8b7e0b6d2477,cointelegraph,2024-2025
+L0444,main,Cardano price fake-out? ADA's 45% rebound in two days could trap bulls,neutral,0,neutral,1,False,neutral,1.0,adjudicated,810e6be290ae510f3c88872dfc55607fc2d0d464,cointelegraph,2021-2022
+L0445,main,Jailhouse Block: Elvis Digital Art Collection Will Inscribe on the Bitcoin Network,neutral,1,neutral,0,False,neutral,0.0,adjudicated,c3db40983087691c6fea0b48b0336c601ccb55bf,coindesk,2024-2025
+L0446,main,Terra’s Bitcoin purchase and BlackRock comments back ETH’s surge to $3.1K,neutral,0,positive,1,True,positive,1.0,adjudicated,095f3eb3218f003c06c2de56df64afffe80aae6a,cointelegraph,2021-2022
+L0447,main,Connext founder proposes ‘Sovereign Bridged Token’ standard after Multichain incident,positive,1,neutral,0,True,neutral,0.0,adjudicated,9534f30dac012cc3c48783f1b352139cdccee8ff,cointelegraph,2023
+L0448,main,"Weeks Before Trial, Tornado Cash’s Roman Storm Sounds Alarm: ‘If I Lose, DeFi Dies With Me’",neutral,0,negative,0,True,negative,0.0,adjudicated,c64993e0c459b44a8725e35633cb328f34009dbd,other,2024-2025
+L0449,main,Ledger hardware wallet provider sees 500% revenue surge in Q1,negative,0,positive,0,True,positive,0.0,adjudicated,2a7bdff2ee558ce18d24a1ee215ca5a78bd83ead,cointelegraph,2021-2022
+L0450,main,Mercado Libre Launches Its Own Ethereum Cashback Token,positive,0,positive,0,False,positive,0.0,ai_agree,3a7d5994b9ce9f8e5fe2a40a9413aa8f8599af3e,other,2021-2022
+L0451,main,Bitcoin active addresses ‘concern’ analyst despite 50% BTC price gains,neutral,0,neutral,0,False,neutral,0.0,ai_agree,86b2c9ec5b98c3213d4ab7dce0e138b1e57f7eea,cointelegraph,2023
+L0452,main,Namibia signs crypto exchange regulation bill into law,neutral,0,positive,0,True,neutral,0.0,adjudicated,2d0ce2b723f66e8fe1bc13cb1a7ceb169269896f,cointelegraph,2023
+L0453,main,Riot Platforms (RIOT) Up 6% After Starboard Takes Stake,neutral,0,neutral,1,False,positive,1.0,adjudicated,bb058e028c32f0175e6d7723294b9cd5f161ae1e,coindesk,2024-2025
+L0454,main,ICO Hype Man Ian Balina Launches GoFundMe to Tackle SEC Lawsuit,positive,1,neutral,0,True,neutral,0.0,adjudicated,b641e2c5c6432651a5e2e8dc3d6fbee429edec25,other,2021-2022
+L0455,main,Why Is Everyone Suddenly Bearish About Bitcoin?,neutral,0,negative,0,True,negative,0.0,adjudicated,c4de98736aae59f7c451fae79c0faf27d704ad09,coindesk,2024-2025
+L0456,main,It’s Vitalik’s birthday today — and he’s optimistic on crypto-AI integrations,negative,0,positive,0,True,positive,0.0,adjudicated,d09eda27fa4decde752a404cb4aacda8fbadf98f,other,2024-2025
+L0457,main,"Crypto Catalyst Watch: FOMC Minutes, Jobs Numbers Lead Busy Slate of Economic Releases",neutral,0,neutral,0,False,neutral,0.0,human100,baa03126d00913b3a5e6ea8b752140b49e685822,coindesk,2023
+L0458,main,The Asia-Pacific market is heating up for Bitcoin and Ethereum ETFs,neutral,0,positive,0,True,positive,0.0,adjudicated,967f46028bb3357fa225b00d7affda782cd16b7e,cointelegraph,2024-2025
+L0459,main,BurgerSwap Hit by Flash Loan Attack Netting Over $7M,positive,0,negative,0,True,negative,0.0,adjudicated,0cbd52410f3bfa45c50d3d361d6e3102b5372cc6,coindesk,2021-2022
+L0460,main,Bitcoin options traders say $80K is a given as Trump victory odds spike,negative,0,positive,0,True,positive,0.0,adjudicated,20214b96ec9527f8bc11eb36e873fe0d22bb0158,cointelegraph,2024-2025
+L0461,main,"Bitcoin Sinks Below $27K as Federal Reserve, Powell Keep Focus on Inflation",positive,0,negative,1,True,negative,1.0,adjudicated,07719268a1ebdbdb2e7a9d8f7aadd218b946d99e,coindesk,2023
+L0462,main,"Immutable, King River Capital, Polygon Labs Set Up $100M Web3 Gaming Fund",negative,1,positive,0,True,positive,0.0,adjudicated,52c927434e2834d879c8e61e30252c1474e7a003,coindesk,2024-2025
+L0463,main,Bitcoin price hits $70K all-time high as US jobs data squashes US dollar,positive,0,positive,1,False,positive,1.0,adjudicated,33931f488e6e8136ba63d5879257e5164dd7894f,cointelegraph,2024-2025
+L0464,main,Nike Unveils First .Swoosh NFT Digital Sneaker Drop,positive,1,positive,0,False,neutral,0.0,adjudicated,61291c4591b45731b010110a77be488533701fa3,other,2023
+L0465,main,"DCG chief Barry Silbert pens letter to shareholders, community reacts",neutral,0,neutral,0,False,neutral,0.0,ai_agree,78b9f62fa5fce4215e7af33052862dbcb4ca563a,cointelegraph,2023
+L0466,main,Strategy Adds $180 Million in Bitcoin Ahead of Expanding BTC Push,neutral,0,positive,0,True,positive,0.0,adjudicated,cee75f5c6ad27000c9c92383dc665e1afd6f7966,other,2024-2025
+L0467,main,Nifty News: BAYC hodler loses 100 ETH in ‘joke’ domain sale gone wrong,positive,0,neutral,0,True,neutral,0.0,adjudicated,b5399624ef62fee09a2e65fa1337f733f652ee1b,cointelegraph,2021-2022
+L0468,main,France Wants EU to Give ‘Greater Powers’ to ESMA in Overseeing Crypto: Report,neutral,0,neutral,0,False,neutral,0.0,ai_agree,82404e0076ebc1ae4919fb4a17af9a5668e6f707,coindesk,2021-2022
+L0469,main,Voyager Digital Issues Default Notice to Three Arrows Capital,neutral,0,negative,0,True,negative,0.0,adjudicated,7ccc2c688fca707f03ed717d33936628f52db69c,coindesk,2021-2022
+L0470,main,Interactive Brokers Reveals Plan to Offer Crypto Trading,neutral,0,positive,0,True,positive,0.0,adjudicated,fef6bcf131bf6e9c36426e04bc919bd6f0c00ab4,other,2021-2022
+L0471,main,"Inflation Rate, Closely Tracked by Bitcoin Traders, Probably Accelerated in February",positive,0,neutral,0,True,neutral,0.0,adjudicated,7e5b397182d8b6f9c428b9907a2ff59c5ed4a9d0,coindesk,2021-2022
+L0472,main,DeFi projects face a painful dilemma right now as they seek ‘the holy grail’,neutral,0,neutral,0,False,negative,0.0,human100,e0f8b128dfb0694c2b05c6ace65ac4a7373bdae5,cointelegraph,2021-2022
+L0473,main,Shanghai Update Could Brighten Outlook for Coinbase: JP Morgan,neutral,0,positive,0,True,positive,0.0,adjudicated,3e43b278119cb20fef965e695447624ea88082a5,other,2023
+L0474,main,"CrowdStrike, Windows BSoD Meme Tokens Populate Solana and Ethereum Amid Global Internet Outage",positive,0,neutral,0,True,neutral,0.0,adjudicated,56717faa024ac2d8e201e4e02436a2e0d811189c,coindesk,2024-2025
+L0475,main,Bitcoin Loses 10% on the Week as Memecoins Tumble,neutral,0,negative,1,True,negative,1.0,adjudicated,aaa27a2e9fb3ba83fc4892a7b0ce6babf2d74179,coindesk,2023
+L0476,main,Binance Exec May Be Called to Testify in Brazil Over Alleged Pyramid Schemes,negative,1,negative,0,False,negative,0.0,adjudicated,74205a55ac3b5fceff19328376eefc6beba5221f,other,2023
+L0477,main,First Mover Americas: Bitcoin Stays Near $17K Ahead of Jobs Report,negative,0,neutral,1,True,neutral,1.0,adjudicated,bb0c8583d7bfcf9c226271f63ec10be4b83a0e73,coindesk,2021-2022
+L0478,main,"State digital currency to get more trust than crypto, says Russian ex-PM",neutral,1,negative,0,True,negative,0.0,adjudicated,cf4185c40b084d9fb7b4f6ebc8ed3f70c119a0ea,cointelegraph,2021-2022
+L0479,main,'Elemental Knights' Spinoff Leads New Games Coming to Immutable zkEVM,neutral,0,neutral,0,False,neutral,0.0,ai_agree,4f6986b2ef390bcf9afee702490f0cd7a18b49f0,other,2023
+L0480,main,"Bitcoin ETFs Are Fine Despite Suffering Their Worst String of Outflows, Says Expert",neutral,0,neutral,0,False,neutral,0.0,ai_agree,e3f90105676b6858a5343371c12b665ecd8248b4,coindesk,2024-2025
+L0481,main,Web3 Watch: EigenLayer announces 86M token airdrop for Season 2,neutral,0,neutral,0,False,neutral,0.0,ai_agree,ab7abcd87e9b420d677d92798027802e385316f2,other,2024-2025
+L0482,main,"Sen. Elizabeth Warren's Pro-Crypto Opponent, John Deaton, Has a Plan to Beat Her",neutral,0,neutral,0,False,neutral,0.0,ai_agree,04dd59a042a968ae435e3e16b1a0d3c32b4b9b41,coindesk,2024-2025
+L0483,main,Avalanche (AVAX) and DogWifHat (WIF) Defy Gravity Amidst a Flat to Bearish Crypto Market,neutral,1,neutral,1,False,neutral,1.0,ai_agree,574179556526fbf01b5fd82fb147b475b51619ca,other,2024-2025
+L0484,main,DeFi Firm Usual Labs Raises $7M Round Led by Kraken Ventures and IOSG Ventures,positive,0,positive,0,False,positive,0.0,ai_agree,33e2f1b25d7fce40ed44247aad1bcc2b3e7a7fe1,coindesk,2024-2025
+L0485,main,Critical Hit? Dungeons & Dragons-Inspired Web3 Game Pivots Amid NFT Ban,neutral,0,neutral,0,False,neutral,0.0,ai_agree,24970012e1b7c433aa81bc906a4e960452ee43a1,other,2023
+L0486,main,Biggest fears about Bitcoin’s future: Industry weighs in,neutral,0,neutral,0,False,neutral,0.0,ai_agree,3db934430720447ef3f1f7674935d69d736187e1,cointelegraph,2024-2025
+L0487,main,Deutsche Börse exchange debuts crypto platform for institutions,positive,0,positive,0,False,positive,0.0,ai_agree,0f363f7fc4707c50764a7b255685db9298641483,other,2024-2025
+L0488,main,"FTX Sues Binance, Former CEO CZ for $1.8B",negative,0,negative,0,False,negative,0.0,ai_agree,5fd09191891317f78c97790c1279f5095f790fe6,coindesk,2024-2025
+L0489,main,NEAR to Hire Artificial-Intelligence Engineers as Part of AI Roadmap,neutral,0,neutral,0,False,neutral,0.0,ai_agree,d58b7055f5305f1062c1f41654e1fe6c9bc0b588,coindesk,2024-2025
+L0490,main,On the Margin Newsletter: A look at crypto’s performance halfway through 2024,neutral,0,neutral,0,False,neutral,0.0,ai_agree,2498cb543fbb345287c9bf82c11199e1aee5007d,other,2024-2025
+L0491,main,"Binance Curb on Zero-Fee Trading May Cost Market Share, Boost TrueUSD Stablecoin: Kaiko Research Head",neutral,0,neutral,0,False,neutral,0.0,ai_agree,974e0f45a452bd50cff5f21cb245b354aa8aeea0,coindesk,2023
+L0492,main,"Ethereum DeFi Coins, Polygon Lead Crypto Market Recovery",positive,1,positive,1,False,positive,1.0,ai_agree,9bd1717ba804c2c3711f8db3bd6e72ff183fdebd,other,2021-2022
+L0493,main,What Is Terra? The Chaotic Algorithmic Stablecoin Protocol Explained,neutral,0,neutral,0,False,neutral,0.0,ai_agree,81d478c2a0a1a8d134614f8eb5887c91d83d925f,other,2023
+L0494,main,3 reasons why Bitcoin is struggling to flip $20K to support,negative,0,negative,0,False,negative,0.0,ai_agree,2591837bb4656074778e59f943e377e4d8ed2388,cointelegraph,2021-2022
+L0495,main,Solana price rally risks exhaustion after SOL’s 120% pump in 2 weeks,neutral,0,neutral,0,False,neutral,0.0,ai_agree,2f085661706f3a15a4e38608c38700e5e644e818,cointelegraph,2023
+L0496,main,"Price analysis 9/18: BTC, ETH, BNB, SOL, XRP, DOGE, TON, ADA, AVAX, SHIB",neutral,0,neutral,0,False,neutral,0.0,human100,e4c837f4bae5e67e4cb327f6c5418f97722b02a4,cointelegraph,2024-2025
+L0497,main,Fed Chair Powell: 'War Underscores Need' for Crypto Regulation,neutral,0,neutral,0,False,neutral,0.0,ai_agree,e9372f50117e4210ecc8b07c4371af537dad24dc,coindesk,2021-2022
+L0498,main,Chart of the Week: Tariff Carnage Starting to Fulfill BTC's 'Store of Value' Promise,positive,0,positive,0,False,positive,0.0,ai_agree,e696b9075473d95ebf4b0c7d731d5d1255e3c5d5,coindesk,2024-2025
+L0499,main,"China’s Global Bitcoin Hash Power Slips to 0%, Here’s Why",neutral,0,neutral,0,False,neutral,0.0,ai_agree,0b08f6d7520aa8ae4144bbe03efea97df1c4bfcc,other,2021-2022
+L0500,main,Bitcoin trader predicts end of dip within weeks as BTC price adds 3.5%,positive,1,positive,1,False,positive,1.0,ai_agree,0112ff8b0791a4f0aac1fec332fe9873d3bb107d,cointelegraph,2023
+L0501,main,Bitcoin Dips to $42.4K as Fed's Powell Pours Cold Water on March Rate Cut,negative,1,negative,1,False,negative,1.0,ai_agree,24cad2b941228c2555e179567a433c090afe2204,coindesk,2024-2025
+L0502,main,"Bitcoin Core's 'v26.0' Upgrade Aims to Impede Eavesdropping, Tampering",positive,0,positive,0,False,positive,0.0,ai_agree,c74a954a3d02015d94d8cc9785acb5e6c2a6c110,coindesk,2023
+L0503,main,Food fraud costs $50B yearly — Can blockchain stop it?,neutral,0,neutral,0,False,neutral,0.0,ai_agree,9f816b6ee69f2914f47797ff932aebc3e2dd888f,cointelegraph,2024-2025
+L0504,main,Crypto makes history in 2022: Five instances of governments embracing digital assets,positive,0,positive,0,False,positive,0.0,ai_agree,c2f70d1abaa9ebff2e16d71fbb6fed7b815bce8e,cointelegraph,2023
+L0505,main,Bitcoin Rangebound Between $55K Support and $60K Resistance,neutral,0,neutral,1,False,neutral,1.0,adjudicated,8f66147a10525a3a2ce59d92ceb2538268999244,coindesk,2021-2022
+L0506,main,World Cup Shocker Sinks Argentina Football Fan Token,negative,1,neutral,1,True,negative,1.0,adjudicated,6f0aaf8301e8af11244577982636188181497d44,other,2021-2022
+L0507,main,MetaMask allows moving tokens on multiple blockchains with new DApp,positive,0,positive,0,False,positive,0.0,ai_agree,1c330d4fdebcb864825557e1575878f3e85a1b4d,cointelegraph,2021-2022
+L0508,main,Ethereum traders show uncertainty ahead of Apr 12’s Shapella hard fork: Report,neutral,0,neutral,0,False,neutral,0.0,ai_agree,d5fa52ce75bd9b222dd431969ee78578fe5b4891,cointelegraph,2023
+L0509,main,"Wintermute transfers $75M FDUSD since depegs, in $3M arbitrage opportunity",neutral,0,neutral,0,False,neutral,0.0,ai_agree,5a3a5c54afc1e5b272d4a22b0ddaa57a854ce331,cointelegraph,2024-2025
+L0510,main,MicroStrategy announces debt buyback amid potential tax on BTC gains,neutral,0,neutral,0,False,neutral,0.0,human100,6ca5c89f31916209405e29b6dba3de5b088560a7,cointelegraph,2024-2025
+L0511,main,ZKasino Gives Users 72 Hours to Retrieve Their Ether,neutral,0,neutral,0,False,negative,0.0,human100,4aa2bede513e273f564d43a8d774135133a4b45c,coindesk,2024-2025
+L0512,main,Neon Labs deploys cross-chain Ethereum Virtual Machine on Solana,neutral,0,neutral,0,False,neutral,0.0,ai_agree,a108f87a15a822470e7bf96b461546ffd9129fc6,cointelegraph,2021-2022
+L0513,main,What Is Crypto Contagion? How It’s Spreading After FTX Collapse,negative,0,negative,0,False,negative,0.0,ai_agree,a81ae4655c7de9b3605ad788425436747b24632f,other,2021-2022
+L0514,main,"Wall Street Gets Ethereum's 'Digital Oil', Says Etherealize Co-Founder Vivek Raman",positive,0,positive,0,False,positive,0.0,ai_agree,3a8c9b5f6e002eeb6e8781f1b50365a03fe8209d,other,2024-2025
+L0515,main,Crypto Exchange Injective Pro Rolls Out BAYC Perpetuals Amid Heated NFT Market,neutral,0,neutral,0,False,neutral,0.0,ai_agree,984e044ec25ab1754d13586e0c7336c052c685fa,other,2021-2022
+L0516,main,‘Vast majority’ of ETF flows could be driven by arbitrage — Raoul Pal,neutral,0,neutral,0,False,neutral,0.0,human100,e8aeb4d957ed114c2c3f6be21ca8e0ccf090647c,cointelegraph,2024-2025
+L0517,main,What Is Fantasy Top? The Ethereum Game on Blast Turning Crypto Twitter Into a Fantasy Sport,neutral,0,neutral,0,False,neutral,0.0,human100,cdc1482ba563831a067479683e64bd071087d7a4,other,2024-2025
+L0518,main,Bitmain Partner Antalpha Unveils Lending Products for Miners,neutral,0,neutral,0,False,neutral,0.0,ai_agree,57d0f9fa5fac4b85dc96187b868e9480a49feab8,coindesk,2021-2022
+L0519,main,Bitcoin Tops $58K With Focus on Omicron and Fed’s Powell Speech,positive,1,positive,1,False,positive,1.0,ai_agree,f50b78ed65a14a4ddee9bf56c307b7b74d6ded3c,coindesk,2021-2022
+L0520,main,Technical Analysis Basics: A Beginner's Guide to Bollinger Bands and Bitcoin,neutral,0,neutral,0,False,neutral,0.0,ai_agree,a6ef7c8dcd944c13188fe9c7db59e7c59fb2958e,other,2024-2025
+L0521,main,Bitcoin Core Developer Luke Dashjr Calls Out Unauthorized Ordinal NFT With His Name,neutral,0,neutral,0,False,neutral,0.0,ai_agree,7037b31a7bdb705f139e610930c9ee163030f0cd,coindesk,2023
+L0522,main,Israeli crypto entrepreneur joins privacy-focused project amid fraud allegations,neutral,0,neutral,0,False,neutral,0.0,ai_agree,9ca7387b00c140c8e20c9b073804d5a1454eff53,cointelegraph,2023
+L0523,main,El Salvador’s Heavy-Handed Bitcoin Adoption Violates 'Crypto Ethos': Blockchain.com Exec,neutral,0,neutral,0,False,neutral,0.0,ai_agree,80941038f7befd9f1af9df6074f0254d80e463a0,other,2021-2022
+L0524,main,"DCG can’t change Genesis ownership during bankruptcy, orders judge",neutral,0,neutral,0,False,neutral,0.0,ai_agree,283d34983fa4f6ce2b8ff1a89f384f7dac782dc7,other,2023
+L0525,main,Market Wrap Year-End Review: When Institutions Cashed Out of Bitcoin,negative,0,negative,0,False,negative,0.0,ai_agree,249d18827403a16ec733784d7ec4b35771a06a97,coindesk,2021-2022
+L0526,main,Ethereum Staking Provider Lido to Incorporate NFTs Into Unstaking Process,neutral,0,neutral,0,False,neutral,0.0,ai_agree,79e42aa890d37af8e0910b577f6856864653d695,coindesk,2023
+L0527,main,"Euro, Bitcoin News: Euro Stablecoins' Market Cap Surges to Nearly $500M as EUR/USD Rivals BTC's H1 Gains",neutral,0,neutral,0,False,neutral,0.0,ai_agree,14711a0a892973789c38240254c18b807478c4b0,coindesk,2024-2025
+L0528,main,How Miners Are Preparing for the Next Bitcoin Halving,neutral,0,neutral,0,False,neutral,0.0,human100,7d27d0894e06a2114b1f0e592cec15aa95b70834,coindesk,2023
+L0529,main,Swan Bitcoin purchasing miners to bolster institutional offering,positive,0,positive,0,False,neutral,0.0,human100,4448ea3361b3d5a8054a6b8b30fc0c00a69f69a9,other,2024-2025
+L0530,main,"Gaming Tokens GALA, Axie Infinity, and ApeCoin Post Huge Gains",positive,1,positive,1,False,positive,1.0,ai_agree,ef9cded0b3852afc3b4f27498f3f8e038aa873fd,other,2023
+L0531,main,I Spent a Month Inside Vitalik Buterin’s Social Experiment—Here’s What It Was Really Like,neutral,0,neutral,0,False,neutral,0.0,ai_agree,b8414492aec6fe193cdf5703016ce2425bd21b35,other,2023
+L0532,main,"Bitcoin Rangebound, Support Between $58K-$60K Could Stabilize Pullback",neutral,0,neutral,1,False,neutral,1.0,adjudicated,4e93b310a13409e68495db4b89ef9da7d7ed8fc8,coindesk,2021-2022
+L0533,main,"Bitcoin Edges Towards $28,000 as Grayscale's ETF Hopes Stay Alive",neutral,1,positive,1,True,positive,1.0,adjudicated,360b30cd7960cf1dfd5b6cc85c9ffab3b3da48a2,other,2023
+L0534,main,"First Mover Americas: VanEck’s ETF Volume Surges, Fairshake Raises Another $5M",positive,0,positive,0,False,positive,0.0,ai_agree,9a3b3d4e5dee172655a56d1ecd02e4745ba07774,coindesk,2024-2025
+L0535,main,Is the UK Falling Behind in the Global Crypto Race?,neutral,0,neutral,0,False,neutral,0.0,ai_agree,539614daec367017269fbb593dabe8c4b13848bb,other,2021-2022
+L0536,main,"SafeMoon Execs Arrested by DOJ in Fraud Investigation, Charged by SEC",negative,0,negative,0,False,negative,0.0,ai_agree,ee885a999dc8b40b8c036340c6972c8f152bbf45,coindesk,2023
+L0537,main,Volatility Shares not giving up on ETH futures ETF effort,neutral,0,neutral,0,False,neutral,0.0,ai_agree,4d92cc46850f535b34cbbbca17991c234f4174fb,other,2023
+L0538,main,"With mainnet launch, Namada makes a bid for multichain privacy",neutral,0,neutral,0,False,neutral,0.0,human100,4a9af3ca4fafcc7e06debc17c14d03f5eb6079ff,other,2023
+L0539,main,Ether poised for 'significant breakout' as ETH price strengthens vs BTC,positive,0,positive,0,False,positive,1.0,human100,17921082ca58db4b6929a67feb8f81a9b9a9130c,cointelegraph,2024-2025
+L0540,main,Major Philippine e-wallet GCash eyes crypto trading,positive,0,positive,0,False,positive,0.0,ai_agree,1238cbb1249034de0897ef926dedaf03bc2d9516,cointelegraph,2021-2022
+L0541,main,"Nahmii Raises $8M, Launches Solution to Boost Ethereum Accessibility for Institutions",positive,0,positive,0,False,positive,0.0,human100,5ba1313fd69fd4d0d474655de59480b0830d529c,other,2021-2022
+L0542,main,"Russian crypto market worth $500B despite bad regulation, says exec",positive,0,neutral,0,True,neutral,0.0,adjudicated,61394df8f75d252f5fb45fcf34dd6d23eae782c5,cointelegraph,2021-2022
+L0543,main,"Compound, Celer attack may have been caused by faulty migration system — DNS experts",neutral,0,negative,0,True,negative,0.0,adjudicated,e15ebfa9108fe08252e2a9216fb8dafa4114eb60,cointelegraph,2024-2025
+L0544,main,How Crypto Is Changing Philanthropy,neutral,0,neutral,0,False,neutral,0.0,ai_agree,e0048693553742ef08826de15e761c52687e4726,coindesk,2021-2022
+L0545,main,Tron's TRX Jumps 140% Amid 1:1 FTX Redemption of Tron-Based Tokens,positive,1,positive,1,False,positive,1.0,ai_agree,da39223bc915293aae632343d8c8e52f9d6156e1,coindesk,2021-2022
+L0546,main,Bidding on NFT of First-Ever Tweet Ends Today; Top Offer Remains at $2.5M,neutral,0,neutral,0,False,neutral,0.0,ai_agree,d592203f2913daad6a2c9559c3d4b55ce445e845,coindesk,2021-2022
+L0547,main,"BlackRock receives memecoins, NFTs after depositing $100M USDC onchain",neutral,0,neutral,0,False,neutral,0.0,human100,7688682ab296829c1eebbe203dfff5658dad980a,cointelegraph,2024-2025
+L0548,main,Is a housing crisis underway? Why crypto investors should care,neutral,0,neutral,0,False,neutral,0.0,ai_agree,c9109937ce5bd1aa7fb047117a5e50d0c6c49c15,cointelegraph,2023
+L0549,main,Societe Generale Introduces Services for Asset Managers Developing Crypto Funds,neutral,0,positive,0,True,positive,0.0,adjudicated,2bf11b71d11546088ca5a62cf69a3494fb4856e5,coindesk,2021-2022
+L0550,main,Reddit Just Dropped Thousands More NFTs on Polygon From Over 100 Artists,neutral,0,neutral,0,False,neutral,0.0,ai_agree,6a3a806bbc18a556f19f612c30408a2d08cc67ca,other,2023
+L0551,main,China’s digital yuan nears $250B transaction volume — Central bank governor,neutral,0,neutral,0,False,neutral,0.0,ai_agree,d4bddc20b4e32002c9bad72d4001a4a2a1c48bb0,cointelegraph,2023
+L0552,main,SEC opens to comments on whether to approve VanEck Bitcoin ETF,neutral,0,neutral,0,False,neutral,0.0,ai_agree,7bf0fee4193bed930d65f3b9f6429d88a46c7722,cointelegraph,2021-2022
+L0553,main,First Mover Americas: Bitcoin Ticks Along Above $34K,neutral,1,neutral,1,False,neutral,1.0,ai_agree,76f3a6626f0ff439ee1937c85478bedd80d3d087,coindesk,2023
+L0554,main,Ethereum Steps Up as ‘Rails’ for New Capital Markets,positive,0,positive,0,False,positive,0.0,ai_agree,32cf0916241f30cd8c50c1a3530f4771a1df4b3f,other,2021-2022
+L0555,main,OKX to Offer Ordinals Trading Within its Wallet by June,neutral,0,positive,0,True,neutral,0.0,adjudicated,5dc1f76461de97bbef396e3896d86840ad9ef1d3,other,2023
+L0556,main,Leveraged bitcoin futures ETF launch set for Tuesday,neutral,0,neutral,0,False,neutral,0.0,ai_agree,378237f2a1283530512804407fbe92b8e4a7f679,other,2023
+L0557,main,Developer Inserts 'Bug' in Bitcoin Ordinals—How Bad Is It?,neutral,0,negative,0,True,negative,0.0,adjudicated,724dcad7431c2b913bb5edca0feca27783b1d22b,other,2023
+L0558,main,Some DeFi Yield Could Still Be Higher Than 10-year US Treasurys,neutral,0,neutral,0,False,neutral,0.0,ai_agree,fc8c305b730fa82e2ba7f2b1f569172eec773985,other,2023
+L0559,main,Aptos Jumps 10% Overnight as South Korea Trading Volumes Spike,positive,1,positive,1,False,positive,1.0,ai_agree,cd8329f71f99e8b30ab4db61cb167d56c1b88647,other,2023
+L0560,main,Coinbase's SEC Documents Reveal NY Attorney General Wanted ETH Declared Security,negative,0,negative,0,False,negative,0.0,ai_agree,b14dcb6bd13d3c6552d57b2e7bdb4a41fd22e2fc,coindesk,2024-2025
+L0561,main,Bitcoin 'Bullish Sentiment' Is Back Among Institutional Investors: Report,positive,0,positive,0,False,positive,0.0,ai_agree,2bc82c34d5404035b99494d76480e10cf538cd71,other,2021-2022
+L0562,main,Binance Delists Sanctioned Russian Banks From Peer-to-Peer Service,neutral,0,neutral,0,False,neutral,0.0,human100,17ccd605930deae0d10462e3a3b26d360faf6824,coindesk,2023
+L0563,main,"3 reasons why Lido DAO price jumped 40% in a week — Outperforming Bitcoin, Ethereum",positive,1,positive,1,False,positive,1.0,ai_agree,df45f10c9493c5f0a349c1e3f50df4421932aec4,cointelegraph,2023
+L0564,main,Andreessen Horowitz Leads $5M Bet on Euro Stablecoin Startup Angle,neutral,0,neutral,0,False,positive,0.0,human100,c55ff87ba433f074058d4fb1d4c0d48221e3f335,coindesk,2021-2022
+L0565,main,Aptos co-founder and CEO Mo Shaikh steps down to ‘start new chapter’,neutral,0,neutral,0,False,neutral,0.0,ai_agree,0936f011c00b56f03447def1f45d369af2aca3b1,cointelegraph,2024-2025
+L0566,main,Paul Tudor Jones’ Hedge Fund Holds $230 Million Worth of BlackRock Bitcoin ETF,positive,0,positive,0,False,positive,0.0,ai_agree,8fcd16897babebe1cedcf85dd39ac28933733000,other,2024-2025
+L0567,main,A Ripple Reckoning at the SEC,neutral,0,neutral,0,False,neutral,0.0,ai_agree,53bba983986b49859c1210d474f6684ffa2db9e5,other,2021-2022
+L0568,main,FTX US ex-president reportedly seeks $6M funding to launch crypto startup,neutral,0,neutral,0,False,neutral,0.0,ai_agree,efb0c8d3fbad2b66fd6cfcb5d2fc685b4310f65b,cointelegraph,2021-2022
+L0569,main,Modular lending infrastructure boosts DeFi borrowing with multi-collateral solutions,neutral,0,neutral,0,False,neutral,0.0,ai_agree,bd64c781cca554fd1c67617c7a055419de931e08,cointelegraph,2024-2025
+L0570,main,Circle moves native USDC offering to Cosmos mainnet,neutral,0,neutral,0,False,neutral,0.0,ai_agree,5d721c28ac29328a5096a4934f1c9e2c0d0b946a,other,2023
+L0571,main,First Mover Asia: Cryptos Slide in Weekend Trading; Did Ethereum Pick the Wrong Time to Merge?,negative,1,negative,1,False,negative,1.0,ai_agree,eb2c35d89d00ba811f26aab57916432a030f6a22,coindesk,2021-2022
+L0572,main,Solana Trading Aggregator Jupiter Sees Trading Volumes Jump Ahead of JUP Issuance,neutral,0,neutral,0,False,neutral,0.0,ai_agree,2b1ccbefd5c9d52543af433cc9409b8ad42528b9,coindesk,2024-2025
+L0573,main,"20% drop in the S&P 500 puts stocks in a bear market, Bitcoin and altcoins follow",negative,1,negative,1,False,negative,1.0,ai_agree,04c8a03c535c5d9756fd468f523fd96a331e8185,cointelegraph,2021-2022
+L0574,main,US banks experience volatility and trading halts amid bank failures and presidential assurances,neutral,0,negative,0,True,negative,0.0,adjudicated,39924b241e9999ecc1675ddb30b3d4b92dd573f7,cointelegraph,2023
+L0575,main,Elon Musk Weighs in After Warren Buffett Says He Wouldn't Pay $25 for Every Bitcoin,neutral,0,neutral,0,False,neutral,0.0,human100,42969c3e08a224616d945fb799ded0f300ecf7fd,other,2021-2022
+L0576,main,"DeFi is possible on Bitcoin, but does anybody want it?",neutral,0,neutral,0,False,neutral,0.0,ai_agree,531e5f4037b7d3e33f69c61e204ef9fc9c98c941,other,2023
+L0577,main,Peter Thiel-backed Crypto Exchange Bullish Inks Trading Deal With B2C2,neutral,0,neutral,0,False,neutral,0.0,ai_agree,faf552550e715a52d05ec1d2e710f615801fc181,other,2023
+L0578,main,"Coinbase, Kraken Back Crypto Lending Platform CLST Seed Round",neutral,0,positive,0,True,neutral,0.0,adjudicated,ac928c72621df1bdd00ec62fe6d9d6cfe94cd4d7,coindesk,2021-2022
+L0579,main,"Bitcoin (BTC) Stack at Strategy (MSTR) Rises to 553,555 With Latest Purchase.",positive,0,positive,0,False,positive,0.0,human100,51041544e12080f0cf87ef39db6774dfa3548336,coindesk,2024-2025
+L0580,main,Arbitrum Walks Back $1B Proposal — But It Already Used Some of It,neutral,0,neutral,0,False,neutral,0.0,ai_agree,1b2216788c4cf1a1edfe922bb85f7b8ac0d3a41f,other,2023
+L0581,main,"Singapore Strives to be Home for Stablecoins, but Challenges Lie Ahead",neutral,0,neutral,0,False,neutral,0.0,ai_agree,eeaefa67e917aba53f806ee672d13a4c4ba7c7e6,other,2021-2022
+L0582,main,Bitcoin Bulls Hold Breath as BTC Tumbles Below $46k but Bounces,neutral,1,neutral,1,False,neutral,1.0,ai_agree,77b78563c1040c3977581b871856c9ee9dd03271,other,2021-2022
+L0583,main,Crypto adoption in 2022: What events moved the industry forward?,positive,0,positive,0,False,positive,0.0,ai_agree,d598defaa689cae6ebed5e60e74830eafe87f235,cointelegraph,2023
+L0584,main,"XRP up 35%, altcoins make explosive gains after judge’s Ripple case ruling",positive,1,positive,1,False,positive,1.0,human100,64f353ef411935fb6ab2f6148b88c688f4fe54e1,other,2023
+L0585,main,SEC complaint hints at why Brian Brooks resigned as Binance​.US CEO,neutral,0,neutral,0,False,neutral,0.0,ai_agree,4e188028f12e58e8506713ccb6652a52019e24c6,cointelegraph,2023
+L0586,main,"Bitcoin Ordinals Token Ecosystem Emerges as Latest Crypto Play, Led by ORDI Hype",neutral,0,positive,0,True,neutral,0.0,adjudicated,669338bc9fc5db1e9e92503d08f1d1f0b9ccea86,coindesk,2023
+L0587,main,From $318K to $0: Bitcoin price predictions for 2021,neutral,0,neutral,0,False,neutral,0.0,ai_agree,43cb12ff1cb9b803db7ba4d4b7540c058d5b3f7c,cointelegraph,2021-2022
+L0588,main,Stripe Enables Fiat-to-crypto On-ramp,positive,0,positive,0,False,positive,0.0,ai_agree,24892881bd81bd95d945b39c1d478afe6b7b2d84,other,2021-2022
+L0589,main,Why True Decentralization at Scale Is Hard and Rare: Gnosis Co-Founder,neutral,0,neutral,0,False,neutral,0.0,ai_agree,f83b57933ea83a6222f5023825d047040a01c98d,other,2023
+L0590,main,"Optimism reaches ‘Stage 1’ decentralization, implementing fault proofs",positive,0,positive,0,False,positive,0.0,ai_agree,124d04da914d4d670b059c8b12bdac5a012bdecc,cointelegraph,2024-2025
+L0591,main,FBI Says North Korean Hackers May Try to Sell $40M of Bitcoin,negative,0,negative,0,False,negative,0.0,ai_agree,af5bba690abb7b71ee9b9b94a4473605b4a95699,coindesk,2023
+L0592,main,Worldcoin launches its own ‘human-centric’ blockchain network,neutral,0,neutral,0,False,neutral,0.0,ai_agree,b1da11cc9803c716c9fdf930d4e336982d0a008a,cointelegraph,2024-2025
+L0593,main,How do DeFi projects generate profit?,neutral,0,neutral,0,False,neutral,0.0,human100,04a3c0cd559f326fa9e6a226adda1f2b67aafce9,cointelegraph,2023
+L0594,main,Largest ‘illicit online marketplace’ has grown 51% in 6 months: Elliptic,neutral,0,negative,0,True,negative,0.0,adjudicated,0dd3ae1fba695c12c213e35e824685490878b3d1,cointelegraph,2024-2025
+L0595,main,"This Week in Coins: More Flat Prices, Bitcoin Less Volatile Than Stocks",neutral,1,neutral,1,False,neutral,1.0,ai_agree,28d7831764f7c47cd50fcc45b9ed2f866ca09346,other,2021-2022
+L0596,main,"Bitcoin price is down, but data signals that $30K and above is the path of least resistance",neutral,0,neutral,0,False,neutral,0.0,ai_agree,64b6b9ffa7bcc418cac3db19ea95b848cf45a1d2,cointelegraph,2023
+L0597,main,Bitcoin Price (BTC) Rises After Strong U.S. Employment Data,positive,1,positive,1,False,positive,1.0,ai_agree,87340decb19586ed4c63cb50f93320ac8634d145,coindesk,2024-2025
+L0598,main,Bitcoin mining company follows Tesla by setting up shop in Austin,neutral,0,positive,0,True,neutral,0.0,adjudicated,0590461680390925506da342df4bb6b82983f6a1,cointelegraph,2021-2022
+L0599,main,How to stake Polygon (MATIC),neutral,0,neutral,0,False,neutral,0.0,human100,85a073c1486325ae4920d795d42131e4c0ac1a80,cointelegraph,2023
+L0600,main,"Celsius exodus: $320M in crypto sent to FTX, user withdrawals paused",negative,0,negative,0,False,negative,0.0,ai_agree,f8644a6f7e924913bc5c31b72104a3d76b4993d5,cointelegraph,2021-2022
+L0601,main,Asset Manager VanEck Joins Tokenization Race With U.S. Treasury Fund Token,neutral,0,positive,0,True,neutral,0.0,adjudicated,be09ac8be14988df966f0b350ecf21501cac4358,coindesk,2024-2025
+L0602,main,How the Crypto Industry Responded to the IRS Proposed Broker Rule,neutral,0,neutral,0,False,neutral,0.0,ai_agree,46839fedcb00a90021144b9047c7c71c65550cac,coindesk,2023
+L0603,main,Nayib Bukele Is Not the Bitcoin Hero We Need,neutral,0,negative,0,True,negative,0.0,adjudicated,fe19454908c6f08cf710f8492b29b174fa896c85,coindesk,2021-2022
+L0604,main,Aave’s proposal to launch on zkEVM passes ‘temperature check’ vote,neutral,0,positive,0,True,neutral,0.0,adjudicated,e2f48072ecb1f748c701b55c21e4ef717e93c36e,cointelegraph,2023
+L0605,main,"AVAX, NEAR Beat Ether and Bitcoin as Wall of Red Continues in Asia",negative,1,negative,1,False,negative,1.0,human100,7058fbccfd4a4a41f6f4f0695a570aac8a390e60,coindesk,2023
+L0606,main,"World Cup Fan Tokens, NFTs See Heavy Volume After Argentine Victory",neutral,0,neutral,0,False,neutral,0.0,ai_agree,c4e0a53d14f88d886aac525f2c614c0d8d769049,other,2021-2022
+L0607,main,Voyager Digital’s Estimated Quarterly Revenue Doubles to $165M,neutral,0,positive,0,True,positive,0.0,adjudicated,a19415c9ef3009df869c691c5cf8789309d082ab,coindesk,2021-2022
+L0608,main,Paradigm releases 'Ethereum for Rust' to help ensure network stability,neutral,0,positive,0,True,neutral,0.0,adjudicated,01ce7598fe5d16d49589602d2168b728df8839f9,cointelegraph,2021-2022
+L0609,main,"Stronghold Digital wants to burn tires for fuel, environmental groups strike back",neutral,0,negative,0,True,negative,0.0,adjudicated,87ef4e059f517278a2e54019e1525db1d1471818,other,2023
+L0610,main,How Western Sanctions on Russia Could Make Crypto an International Reserve Currency,positive,0,positive,0,False,positive,0.0,ai_agree,a006682295899a265344fbdb2930ba937b958b01,coindesk,2021-2022
+L0611,main,Empire Newsletter: Counting Farcaster users while Uniswap spills the SEC beans,neutral,0,neutral,0,False,neutral,0.0,ai_agree,bcfbcc0085ef15d881c34ee5e1d5a283b63d01f5,other,2024-2025
+L0612,main,‘Kwontitative easing’ — BTC price hits $43K in UST as Terra empties $2.2B BTC bag,neutral,1,positive,1,True,neutral,1.0,adjudicated,f062a898a7a306fe02921d8182756de655308a32,cointelegraph,2021-2022
+L0613,main,Tim Draper recommends founders hold ’at least’ two payrolls ‘worth of cash’ in crypto,positive,0,positive,0,False,positive,0.0,human100,93b48bc37cc4e51dd4211e0b6017080439f9f3de,cointelegraph,2023
+L0614,main,EU expensing $843k to pull back the curtain on crypto’s climate impact,neutral,0,neutral,0,False,neutral,0.0,ai_agree,7048d0896b301b2a76dcbb1b99c619d77ff8a3c3,other,2023
+L0615,main,Samson Mow’s new company JAN3 helping build Bitcoin City in El Salvador,neutral,0,positive,0,True,neutral,0.0,adjudicated,7c4419caf2367a0f884f5b8ef1c0903dc05ae6ae,cointelegraph,2021-2022
+L0616,main,ETHW Token Surges and Plummets Before Its Launch,neutral,1,neutral,1,False,neutral,1.0,human100,11d3517501039ac0b26afb3acc40f39e17fdc6fd,other,2021-2022
+L0617,main,Ukraine central bank now officially allowed to issue digital currency,neutral,0,neutral,0,False,neutral,0.0,ai_agree,05acc7910bfa54cb3f1cdc773320d8184b73ccd8,cointelegraph,2021-2022
+L0618,main,First Mover Asia: Mark Karpeles’ UnGox Wants to Help Investors Assess the Risks of Crypto Products; Bitcoin Drops Below $40K,negative,1,negative,0,False,negative,1.0,adjudicated,4b5ebf9f47a6f3bf92f367e385d8e9ae3350c28c,coindesk,2021-2022
+L0619,main,SEC pushes deadline for decision on Invesco Galaxy spot Ethereum ETF to 2024,neutral,0,neutral,0,False,neutral,0.0,ai_agree,095052da670bf08347cd0afc5d77a2d63fba57ed,cointelegraph,2023
+L0620,main,Here’s how ChatGPT-4 spends $100 in crypto trading,neutral,0,neutral,0,False,neutral,0.0,human100,33e699cadfa3be8393964df418ca48a05c2d1f07,cointelegraph,2023
+L0621,main,InComm Payments merchants can now accept crypto through Flexa,positive,0,positive,0,False,positive,0.0,human100,f23263e27407765b31c41bfc54696cb252d2048a,cointelegraph,2021-2022
+L0622,main,RFK Jr is ‘happy’ about Trump’s crypto commitment,positive,0,positive,0,False,positive,0.0,ai_agree,734a79bc90c9d6213bb2ce509f99a79f9dd0abd9,other,2024-2025
+L0623,main,ECB Official Calls for ‘Less Tolerant’ Approach to Bitcoin ‘Gambling’,negative,0,negative,0,False,negative,0.0,ai_agree,a007eef69c8ef2e5d48a07a98ff6701668f61eb8,coindesk,2021-2022
+L0624,main,"US lawmaker reports AERO, GRT and VELO investments in 2024",neutral,0,neutral,0,False,neutral,0.0,human100,d4d2e2499623360fbd8c3692c679418792c5de54,cointelegraph,2024-2025
+L0625,main,First Mover Americas: Bitcoin Flat as Crypto Winter Deepens,negative,1,negative,0,False,negative,1.0,adjudicated,002ba5942b4c7f586dabd354e69b0258424a2a37,coindesk,2023
+L0626,main,Liquidation cascade puts crypto market into shock: Report,negative,1,negative,1,False,negative,1.0,human100,bcbcb6c0b26211daccbf57aa89170fdd13b4b948,cointelegraph,2023
+L0627,main,Robinhood’s crypto trade volume rose 10% in February,positive,0,positive,0,False,positive,0.0,ai_agree,2b4bfc24a92fdd57247e74592bfcea51b2eda3ff,other,2024-2025
+L0628,main,Crypto Shorts Get Rekt as Bitcoin Rises Following Trump Attack on 'Loser' Fed Chair,positive,1,positive,1,False,positive,1.0,ai_agree,57d411178bdd1eeecabbaf17f86725d1ea82ea13,other,2024-2025
+L0629,main,"Gemini's Creditor Committee Presents Plan to Resolve Genesis, DCG ‘Liquidity Issues’",neutral,0,neutral,0,False,neutral,0.0,ai_agree,0b0bbdd51ca1e5f556a456425971803ee3ae7cc2,other,2021-2022
+L0630,main,OpenBazaar marketplace says it’s set to ‘grow again from the ashes’,neutral,0,positive,0,True,neutral,0.0,adjudicated,1fd5a754621b69461020701f63f37c8c846198e6,cointelegraph,2023

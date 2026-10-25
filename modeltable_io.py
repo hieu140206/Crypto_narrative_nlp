@@ -86,12 +86,14 @@ def load_model_table(
     drop_embargo: bool = True,
     root: Path | None = None,
     paths: dict | None = None,
+    table_path: Path | str | None = None,
 ) -> pd.DataFrame:
     """Tải model_table_{spec} lọc theo split.
 
     - split='test' → raise TestSplitLockedError trừ khi os.environ['ALLOW_TEST']=='1'.
     - Spec B: nếu drop_embargo và horizon cho trước → bỏ hàng embargo_drop_{h}==True;
       nếu horizon=None → bỏ hàng nếu bất kỳ embargo_drop_* True.
+    - table_path: override đường dẫn parquet (vd. LOSO / temp check); không đụng defaults.
     """
     split = str(split).lower()
     if split == "test" and os.environ.get("ALLOW_TEST") != "1":
@@ -103,7 +105,12 @@ def load_model_table(
     if split == "validation":
         split = "valid"
 
-    path = model_table_path(spec, panel=panel, root=root, paths=paths)
+    if table_path is not None:
+        path = Path(table_path)
+        if not path.is_absolute():
+            path = (root or project_root()) / path
+    else:
+        path = model_table_path(spec, panel=panel, root=root, paths=paths)
     if not path.exists():
         raise FileNotFoundError(path)
     df = pd.read_parquet(path)

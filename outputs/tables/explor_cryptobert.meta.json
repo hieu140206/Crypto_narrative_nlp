@@ -1,0 +1,89 @@
+{
+  "timestamp": "2026-10-25T03:50:17Z",
+  "seed": 42,
+  "family": "explor_cryptobert",
+  "cryptobert_id": "ElKulako/cryptobert",
+  "cryptobert_revision": "9e37c910fe87727cb842a9ac55c6388256fe0f15",
+  "date_end_est": "2023-12-31",
+  "A": {
+    "n": 630,
+    "seed": 42,
+    "n_boot": 5000,
+    "finbert_truncated": 0,
+    "finbert_env": {
+      "torch": "2.14.1+cpu",
+      "transformers": "5.20.2",
+      "device": "cpu",
+      "cuda_name": null,
+      "dtype": "fp32",
+      "finbert_id": "ProsusAI/finbert",
+      "finbert_revision": "0bc2ac10dda6929bcb1f77ccc43c7ec5c424f031",
+      "text_variant": "title"
+    },
+    "cryptobert_meta": {
+      "checkpoint": "ElKulako/cryptobert@9e37c910fe87",
+      "cached": 0,
+      "todo": 630,
+      "env": {
+        "torch": "2.14.1+cpu",
+        "transformers": "5.20.2",
+        "device": "cpu",
+        "cuda_name": null,
+        "dtype": "fp32",
+        "model_id": "ElKulako/cryptobert",
+        "revision": "9e37c910fe87727cb842a9ac55c6388256fe0f15",
+        "revision_sha": "9e37c910fe87727cb842a9ac55c6388256fe0f15",
+        "id2label": {
+          "0": "Bearish",
+          "1": "Neutral",
+          "2": "Bullish"
+        },
+        "label_map": {
+          "Bullish": "positive",
+          "Bearish": "negative",
+          "Neutral": "neutral"
+        },
+        "truncated_new": 0
+      }
+    },
+    "label_mapping": {
+      "CryptoBERT": "Bullish→positive, Bearish→negative, Neutral→neutral",
+      "human": "positive/negative/neutral (label_final)"
+    }
+  },
+  "cryptobert_revision_sha": "9e37c910fe87727cb842a9ac55c6388256fe0f15",
+  "B_n_pool": 40037,
+  "B_n_subsample": 10007,
+  "B_cryptobert_score": {
+    "cached": 630,
+    "todo": 9907,
+    "seconds": 272.95026229999985,
+    "per_doc_sec": 0.02755125288180073,
+    "checkpoint": "ElKulako/cryptobert@9e37c910fe87",
+    "env": {
+      "torch": "2.14.1+cpu",
+      "transformers": "5.20.2",
+      "device": "cpu",
+      "cuda_name": null,
+      "dtype": "fp32",
+      "model_id": "ElKulako/cryptobert",
+      "revision": "9e37c910fe87727cb842a9ac55c6388256fe0f15",
+      "revision_sha": "9e37c910fe87727cb842a9ac55c6388256fe0f15",
+      "id2label": {
+        "0": "Bearish",
+        "1": "Neutral",
+        "2": "Bullish"
+      },
+      "label_map": {
+        "Bullish": "positive",
+        "Bearish": "negative",
+        "Neutral": "neutral"
+      },
+      "truncated_new": 0
+    }
+  },
+  "B_panel_rows": 3108,
+  "registry_before": 433,
+  "registry_added": 24,
+  "registry_after": 457
+}
