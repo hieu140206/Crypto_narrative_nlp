@@ -1,0 +1,136 @@
+{
+  "asset": "ETH",
+  "h": 1,
+  "model_kind": "xgboost",
+  "stage": "valid",
+  "grid_version": "v2",
+  "macro_mode": "diff",
+  "hp_market": {
+    "max_depth": 1,
+    "n_estimators": 400,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 20.0,
+    "reg_lambda": 1.0,
+    "tree_method": "hist",
+    "n_jobs": 1,
+    "random_state": 42
+  },
+  "hp_text": {
+    "max_depth": 2,
+    "n_estimators": 200,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 20.0,
+    "reg_lambda": 1.0,
+    "tree_method": "hist",
+    "n_jobs": 1,
+    "random_state": 42
+  },
+  "cv_mse_market": 0.6139836851509619,
+  "cv_mse_text": 0.6154901943281001,
+  "n_folds": 5,
+  "features_market": [
+    "har_d",
+    "har_w",
+    "har_m",
+    "ret_t",
+    "logvol_t",
+    "dow_Tue",
+    "dow_Wed",
+    "dow_Thu",
+    "dow_Fri",
+    "dow_Sat",
+    "dow_Sun",
+    "fred_VIXCLS_d5",
+    "fred_DGS10_d5",
+    "fred_DTWEXBGS_d5"
+  ],
+  "features_text": [
+    "all_finbert_Sent_t",
+    "all_finbert_PosSent",
+    "all_finbert_NegSent",
+    "all_finbert_MeanProb_t",
+    "all_vader_Sent_t",
+    "all_finbert_AbnAttention_t",
+    "AbnAtt_regulation",
+    "AbnAtt_etf",
+    "AbnAtt_institutional_adoption",
+    "AbnAtt_hacks_security",
+    "AbnAtt_defi",
+    "AbnAtt_stablecoins",
+    "AbnAtt_monetary_policy"
+  ],
+  "xgb_gain": {
+    "har_d": 38.847110748291016,
+    "har_w": 45.35376739501953,
+    "har_m": 56.35190963745117,
+    "ret_t": 4.914829254150391,
+    "logvol_t": 16.762514114379883,
+    "dow_Tue": 3.9918293952941895,
+    "dow_Thu": 2.724424123764038,
+    "dow_Fri": 14.415254592895508,
+    "dow_Sat": 5.515802383422852,
+    "dow_Sun": 4.516253471374512,
+    "fred_VIXCLS_d5": 4.336446762084961,
+    "fred_DGS10_d5": 3.2820844650268555,
+    "fred_DTWEXBGS_d5": 3.891836404800415,
+    "all_finbert_Sent_t": 4.085714340209961,
+    "all_finbert_PosSent": 3.4907021522521973,
+    "all_finbert_NegSent": 3.263981342315674,
+    "all_finbert_MeanProb_t": 2.8039984703063965,
+    "all_vader_Sent_t": 3.6498281955718994,
+    "all_finbert_AbnAttention_t": 4.585959434509277,
+    "AbnAtt_regulation": 3.2924301624298096,
+    "AbnAtt_etf": 3.4400017261505127,
+    "AbnAtt_institutional_adoption": 3.745587110519409,
+    "AbnAtt_hacks_security": 3.2089290618896484,
+    "AbnAtt_defi": 2.60504150390625,
+    "AbnAtt_stablecoins": 3.274345874786377,
+    "AbnAtt_monetary_policy": 3.8063242435455322
+  },
+  "xgb_gain_top10": [
+    [
+      "har_m",
+      56.35190963745117
+    ],
+    [
+      "har_w",
+      45.35376739501953
+    ],
+    [
+      "har_d",
+      38.847110748291016
+    ],
+    [
+      "logvol_t",
+      16.762514114379883
+    ],
+    [
+      "dow_Fri",
+      14.415254592895508
+    ],
+    [
+      "dow_Sat",
+      5.515802383422852
+    ],
+    [
+      "ret_t",
+      4.914829254150391
+    ],
+    [
+      "all_finbert_AbnAttention_t",
+      4.585959434509277
+    ],
+    [
+      "dow_Sun",
+      4.516253471374512
+    ],
+    [
+      "fred_VIXCLS_d5",
+      4.336446762084961
+    ]
+  ]
+}

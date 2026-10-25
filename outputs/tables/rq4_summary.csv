@@ -1,0 +1,17 @@
+asset,panel,label,family,direction,sent_col,p,coef_sum,se_sum,wald_stat,p_raw,n,nw_bandwidth,scale,note,p_holm,confirmed,text_leads_price
+BTC,noprice,main_noprice,rq4_main,sent_to_ret,all_finbert_Sent_t,1,0.005346473790713311,0.007454425950011712,0.5144065317398209,0.47323749891569766,959,5,raw,calendar_lag,0.47323749891569766,False,False
+BTC,noprice,main_noprice,rq4_main,ret_to_sent,all_finbert_Sent_t,1,0.41876532605736605,0.13373447043611233,9.805160451103012,0.0017402285242131832,907,5,raw,calendar_lag,0.0034804570484263664,True,False
+ETH,noprice,robust_ETH_noprice,rq4_robust,sent_to_ret,all_finbert_Sent_t,1,0.00950090035508275,0.009674667730036404,0.9644004619382323,0.32608066918013456,959,5,raw,calendar_lag,0.32608066918013456,False,False
+ETH,noprice,robust_ETH_noprice,rq4_robust,ret_to_sent,all_finbert_Sent_t,1,0.21552807299461255,0.0983427010442687,4.803119892478381,0.028408248078548692,907,5,raw,calendar_lag,0.056816496157097385,False,False
+BTC,title,robust_full_panel,rq4_robust,sent_to_ret,all_finbert_Sent_t,2,0.001738980956202208,0.008130254419416777,0.0457489762148582,0.8306327582088509,1027,5,raw,calendar_lag,0.8306327582088509,False,False
+BTC,title,robust_full_panel,rq4_robust,ret_to_sent,all_finbert_Sent_t,2,1.276286554913026,0.2583822905071673,24.398936719357295,7.83119043501479e-07,1024,5,raw,calendar_lag,1.566238087002958e-06,True,False
+BTC,noprice,robust_MeanProb,rq4_robust,sent_to_ret,all_finbert_MeanProb_t,1,0.00669547115025589,0.008706157184539843,0.591438073423814,0.44186356282902284,959,5,raw,calendar_lag,0.44186356282902284,False,False
+BTC,noprice,robust_MeanProb,rq4_robust,ret_to_sent,all_finbert_MeanProb_t,1,0.42055060082487744,0.11123077659106421,14.295079559223327,0.00015627283365959865,907,5,raw,calendar_lag,0.0003125456673191973,True,False
+BTC,noprice,robust_AbnAttention,rq4_robust,sent_to_ret,all_finbert_AbnAttention_t,1,0.006207935824363482,0.0030464068414894443,4.152585979483064,0.04157099053855118,1005,5,raw,calendar_lag,0.08314198107710236,False,False
+BTC,noprice,robust_AbnAttention,rq4_robust,ret_to_sent,all_finbert_AbnAttention_t,1,-0.22725535871306776,0.22760055659809544,0.9969689344146693,0.3180450502221215,1005,5,raw,calendar_lag,0.3180450502221215,False,False
+BTC,noprice,robust_p1,rq4_robust,sent_to_ret,all_finbert_Sent_t,1,0.005346473790713311,0.007454425950011712,0.5144065317398209,0.47323749891569766,959,5,raw,calendar_lag,0.47323749891569766,False,False
+BTC,noprice,robust_p1,rq4_robust,ret_to_sent,all_finbert_Sent_t,1,0.41876532605736605,0.13373447043611233,9.805160451103012,0.0017402285242131832,907,5,raw,calendar_lag,0.0034804570484263664,True,False
+BTC,noprice,robust_p3,rq4_robust,sent_to_ret,all_finbert_Sent_t,3,0.005188418047536645,0.01109278389200491,0.21877052964360644,0.6399783140325022,853,5,raw,calendar_lag,0.6399783140325022,False,False
+BTC,noprice,robust_p3,rq4_robust,ret_to_sent,all_finbert_Sent_t,3,0.8713055523281836,0.26421411113778537,10.874991989809415,0.0009747145063501161,801,5,raw,calendar_lag,0.0019494290127002323,True,False
+BTC,noprice,robust_p7,rq4_robust,sent_to_ret,all_finbert_Sent_t,7,-0.0017509611884401147,0.021328343165801886,0.006739672598869297,0.9345707643653656,665,5,raw,calendar_lag,0.9345707643653656,False,False
+BTC,noprice,robust_p7,rq4_robust,ret_to_sent,all_finbert_Sent_t,7,1.2088773134227677,0.3640869205845018,11.024383171216027,0.0008992119526538556,648,5,raw,calendar_lag,0.0017984239053077111,True,False

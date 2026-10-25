@@ -1,0 +1,380 @@
+timestamp,script,model,asset,h,split,n_oos,p_raw,baseline,family,scale,note,grid_version,macro_mode
+2026-10-24T17:31:30Z,models/har_text.py,M_fin,BTC,1.0,valid,352,0.3477152272066567,har_plain,,,,,
+2026-10-24T17:31:30Z,models/har_text.py,M_vad,BTC,1.0,valid,352,0.9592468616692794,har_plain,,,,,
+2026-10-24T17:31:30Z,models/har_text.py,M_att,BTC,1.0,valid,356,0.2699696809640681,har_plain,,,,,
+2026-10-24T17:31:30Z,models/har_text.py,M_fin,ETH,1.0,valid,352,0.9715549942926996,har_plain,,,,,
+2026-10-24T17:31:30Z,models/har_text.py,M_vad,ETH,1.0,valid,352,0.900356668331237,har_plain,,,,,
+2026-10-24T17:31:30Z,models/har_text.py,M_att,ETH,1.0,valid,356,0.6938108102153899,har_plain,,,,,
+2026-10-24T17:31:30Z,models/har_text.py,M_fin,BTC,3.0,valid,350,0.7223644105029473,har_plain,,,,,
+2026-10-24T17:31:30Z,models/har_text.py,M_vad,BTC,3.0,valid,350,0.3652157064052528,har_plain,,,,,
+2026-10-24T17:31:30Z,models/har_text.py,M_att,BTC,3.0,valid,354,0.0017688701572872,har_plain,,,,,
+2026-10-24T17:31:30Z,models/har_text.py,M_fin,ETH,3.0,valid,350,0.3365487495311398,har_plain,,,,,
+2026-10-24T17:31:30Z,models/har_text.py,M_vad,ETH,3.0,valid,350,0.622338665689153,har_plain,,,,,
+2026-10-24T17:31:30Z,models/har_text.py,M_att,ETH,3.0,valid,354,0.0671754446798846,har_plain,,,,,
+2026-10-24T17:31:30Z,models/har_text.py,M_fin,BTC,7.0,valid,346,0.3820616767735298,har_plain,,,,,
+2026-10-24T17:31:30Z,models/har_text.py,M_vad,BTC,7.0,valid,346,0.9513726007417792,har_plain,,,,,
+2026-10-24T17:31:30Z,models/har_text.py,M_att,BTC,7.0,valid,350,0.0053758798669333,har_plain,,,,,
+2026-10-24T17:31:30Z,models/har_text.py,M_fin,ETH,7.0,valid,346,0.3096994073877859,har_plain,,,,,
+2026-10-24T17:31:30Z,models/har_text.py,M_vad,ETH,7.0,valid,346,0.8573504552730542,har_plain,,,,,
+2026-10-24T17:31:30Z,models/har_text.py,M_att,ETH,7.0,valid,350,0.0160607778819895,har_plain,,,,,
+2026-10-24T17:51:43Z,models/har_text.py,M_fin,BTC,1.0,valid,352,0.9531501508546818,har_dow,,,,,
+2026-10-24T17:51:43Z,models/har_text.py,M_vad,BTC,1.0,valid,352,0.9679970728767407,har_dow,,,,,
+2026-10-24T17:51:43Z,models/har_text.py,M_att,BTC,1.0,valid,356,0.0822168967010408,har_dow,,,,,
+2026-10-24T17:51:43Z,models/har_text.py,M_att_des_dow,BTC,1.0,valid,356,0.0865266171368637,har_dow,,,,,
+2026-10-24T17:51:43Z,models/har_text.py,M_fin,ETH,1.0,valid,352,0.3209118204943093,har_dow,,,,,
+2026-10-24T17:51:43Z,models/har_text.py,M_vad,ETH,1.0,valid,352,0.7095356885911275,har_dow,,,,,
+2026-10-24T17:51:43Z,models/har_text.py,M_att,ETH,1.0,valid,356,0.2089170756110171,har_dow,,,,,
+2026-10-24T17:51:43Z,models/har_text.py,M_att_des_dow,ETH,1.0,valid,356,0.1687414775713764,har_dow,,,,,
+2026-10-24T17:51:43Z,models/har_text.py,M_fin,BTC,3.0,valid,350,0.6498128821535604,har_dow,,,,,
+2026-10-24T17:51:43Z,models/har_text.py,M_vad,BTC,3.0,valid,350,0.6726975445751096,har_dow,,,,,
+2026-10-24T17:51:43Z,models/har_text.py,M_att,BTC,3.0,valid,354,0.7264757541429001,har_dow,,,,,
+2026-10-24T17:51:43Z,models/har_text.py,M_att_des_dow,BTC,3.0,valid,354,0.7396862811652767,har_dow,,,,,
+2026-10-24T17:51:43Z,models/har_text.py,M_fin,ETH,3.0,valid,350,0.2102044404190799,har_dow,,,,,
+2026-10-24T17:51:43Z,models/har_text.py,M_vad,ETH,3.0,valid,350,0.7097362357123457,har_dow,,,,,
+2026-10-24T17:51:43Z,models/har_text.py,M_att,ETH,3.0,valid,354,0.6253745361841809,har_dow,,,,,
+2026-10-24T17:51:43Z,models/har_text.py,M_att_des_dow,ETH,3.0,valid,354,0.6382203043602551,har_dow,,,,,
+2026-10-24T17:51:43Z,models/har_text.py,M_fin,BTC,7.0,valid,346,0.4248850397769959,har_dow,,,,,
+2026-10-24T17:51:43Z,models/har_text.py,M_vad,BTC,7.0,valid,346,0.8522676387494947,har_dow,,,,,
+2026-10-24T17:51:43Z,models/har_text.py,M_att,BTC,7.0,valid,350,0.4015104515402062,har_dow,,,,,
+2026-10-24T17:51:43Z,models/har_text.py,M_att_des_dow,BTC,7.0,valid,350,0.5924772364622501,har_dow,,,,,
+2026-10-24T17:51:43Z,models/har_text.py,M_fin,ETH,7.0,valid,346,0.3664856611669645,har_dow,,,,,
+2026-10-24T17:51:43Z,models/har_text.py,M_vad,ETH,7.0,valid,346,0.7673048005809412,har_dow,,,,,
+2026-10-24T17:51:43Z,models/har_text.py,M_att,ETH,7.0,valid,350,0.2295849945111637,har_dow,,,,,
+2026-10-24T17:51:43Z,models/har_text.py,M_att_des_dow,ETH,7.0,valid,350,0.3415067558214488,har_dow,,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,regulation|y_log_rv|contemporaneous|main,BTC,,train+valid,996,0.0373736335034376,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,regulation|y_abvol|contemporaneous|main,BTC,,train+valid,1001,0.5506646343648343,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,regulation|y_ret|contemporaneous|main,BTC,,train+valid,1001,0.0418368528120366,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,etf|y_log_rv|contemporaneous|main,BTC,,train+valid,996,0.2777745455428411,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,etf|y_abvol|contemporaneous|main,BTC,,train+valid,1001,0.015454003181346,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,etf|y_ret|contemporaneous|main,BTC,,train+valid,1001,0.0259149159284898,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,institutional_adoption|y_log_rv|contemporaneous|main,BTC,,train+valid,996,0.573734835206898,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,institutional_adoption|y_abvol|contemporaneous|main,BTC,,train+valid,1001,0.0643775401655197,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,institutional_adoption|y_ret|contemporaneous|main,BTC,,train+valid,1001,0.1691829865837771,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,hacks_security|y_log_rv|contemporaneous|main,BTC,,train+valid,996,0.2007680437365819,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,hacks_security|y_abvol|contemporaneous|main,BTC,,train+valid,1001,0.0468679141719272,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,hacks_security|y_ret|contemporaneous|main,BTC,,train+valid,1001,0.9020075767770618,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,defi|y_log_rv|contemporaneous|main,BTC,,train+valid,996,0.8535270337541959,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,defi|y_abvol|contemporaneous|main,BTC,,train+valid,1001,0.7678003611124842,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,defi|y_ret|contemporaneous|main,BTC,,train+valid,1001,0.8322879402869008,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,stablecoins|y_log_rv|contemporaneous|main,BTC,,train+valid,996,0.0219005702728659,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,stablecoins|y_abvol|contemporaneous|main,BTC,,train+valid,1001,0.0074556585747266,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,stablecoins|y_ret|contemporaneous|main,BTC,,train+valid,1001,0.2973325674929846,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,monetary_policy|y_log_rv|contemporaneous|main,BTC,,train+valid,996,0.0253328142214709,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,monetary_policy|y_abvol|contemporaneous|main,BTC,,train+valid,1001,0.0175345683369116,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,monetary_policy|y_ret|contemporaneous|main,BTC,,train+valid,1001,0.7315656188454431,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,regulation|y_log_rv|contemporaneous|main,ETH,,train+valid,996,0.0372273550916802,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,regulation|y_abvol|contemporaneous|main,ETH,,train+valid,1001,0.1745134730126993,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,regulation|y_ret|contemporaneous|main,ETH,,train+valid,1001,0.1964026796811215,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,etf|y_log_rv|contemporaneous|main,ETH,,train+valid,996,0.4775216399212324,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,etf|y_abvol|contemporaneous|main,ETH,,train+valid,1001,0.1281381021329811,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,etf|y_ret|contemporaneous|main,ETH,,train+valid,1001,0.2491548141619883,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,institutional_adoption|y_log_rv|contemporaneous|main,ETH,,train+valid,996,0.8724078497466032,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,institutional_adoption|y_abvol|contemporaneous|main,ETH,,train+valid,1001,0.2468704776987006,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,institutional_adoption|y_ret|contemporaneous|main,ETH,,train+valid,1001,0.3510673103858591,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,hacks_security|y_log_rv|contemporaneous|main,ETH,,train+valid,996,0.5131247031332726,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,hacks_security|y_abvol|contemporaneous|main,ETH,,train+valid,1001,0.5535244099976719,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,hacks_security|y_ret|contemporaneous|main,ETH,,train+valid,1001,0.4529589232641984,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,defi|y_log_rv|contemporaneous|main,ETH,,train+valid,996,0.7506083139379554,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,defi|y_abvol|contemporaneous|main,ETH,,train+valid,1001,0.7557560658824642,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,defi|y_ret|contemporaneous|main,ETH,,train+valid,1001,0.5532469758673766,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,stablecoins|y_log_rv|contemporaneous|main,ETH,,train+valid,996,0.0448673759228551,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,stablecoins|y_abvol|contemporaneous|main,ETH,,train+valid,1001,0.0059138764817673,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,stablecoins|y_ret|contemporaneous|main,ETH,,train+valid,1001,0.2232001549752952,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,monetary_policy|y_log_rv|contemporaneous|main,ETH,,train+valid,996,0.0170815212693793,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,monetary_policy|y_abvol|contemporaneous|main,ETH,,train+valid,1001,0.0039526803613643,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,monetary_policy|y_ret|contemporaneous|main,ETH,,train+valid,1001,0.7574958693059483,,rq3_main,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,regulation|y_log_rv|lag_t-1|diagnostic,BTC,,train+valid,995,0.6547954744438984,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,regulation|y_log_rv|lead_t+1|diagnostic,BTC,,train+valid,996,0.2937825598449758,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,regulation|y_abvol|lag_t-1|diagnostic,BTC,,train+valid,1000,0.6770215492392158,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,regulation|y_abvol|lead_t+1|diagnostic,BTC,,train+valid,1001,0.9556669170217008,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,regulation|y_ret|lag_t-1|diagnostic,BTC,,train+valid,1000,0.9362309329878328,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,regulation|y_ret|lead_t+1|diagnostic,BTC,,train+valid,1001,0.3992882448029744,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,etf|y_log_rv|lag_t-1|diagnostic,BTC,,train+valid,995,0.0362350821576867,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,etf|y_log_rv|lead_t+1|diagnostic,BTC,,train+valid,996,0.1537599206146051,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,etf|y_abvol|lag_t-1|diagnostic,BTC,,train+valid,1000,0.1910490155363697,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,etf|y_abvol|lead_t+1|diagnostic,BTC,,train+valid,1001,0.0291304119536977,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,etf|y_ret|lag_t-1|diagnostic,BTC,,train+valid,1000,0.0343350663874835,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,etf|y_ret|lead_t+1|diagnostic,BTC,,train+valid,1001,0.0101932505796843,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,institutional_adoption|y_log_rv|lag_t-1|diagnostic,BTC,,train+valid,995,0.8709364303980908,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,institutional_adoption|y_log_rv|lead_t+1|diagnostic,BTC,,train+valid,996,0.9487237715364976,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,institutional_adoption|y_abvol|lag_t-1|diagnostic,BTC,,train+valid,1000,0.3537289647893306,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,institutional_adoption|y_abvol|lead_t+1|diagnostic,BTC,,train+valid,1001,0.2647776497318609,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,institutional_adoption|y_ret|lag_t-1|diagnostic,BTC,,train+valid,1000,0.5233880305976699,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,institutional_adoption|y_ret|lead_t+1|diagnostic,BTC,,train+valid,1001,0.2747916912243076,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,hacks_security|y_log_rv|lag_t-1|diagnostic,BTC,,train+valid,995,0.9279312150777824,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,hacks_security|y_log_rv|lead_t+1|diagnostic,BTC,,train+valid,996,0.2757486147802228,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,hacks_security|y_abvol|lag_t-1|diagnostic,BTC,,train+valid,1000,0.4579207814775274,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,hacks_security|y_abvol|lead_t+1|diagnostic,BTC,,train+valid,1001,0.0243307510785348,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,hacks_security|y_ret|lag_t-1|diagnostic,BTC,,train+valid,1000,0.2666888692866781,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,hacks_security|y_ret|lead_t+1|diagnostic,BTC,,train+valid,1001,0.4194434964414991,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,defi|y_log_rv|lag_t-1|diagnostic,BTC,,train+valid,995,0.7670845298275155,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,defi|y_log_rv|lead_t+1|diagnostic,BTC,,train+valid,996,0.2463114295759536,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,defi|y_abvol|lag_t-1|diagnostic,BTC,,train+valid,1000,0.7270779153629803,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,defi|y_abvol|lead_t+1|diagnostic,BTC,,train+valid,1001,0.5748486580811563,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,defi|y_ret|lag_t-1|diagnostic,BTC,,train+valid,1000,0.0665742215841934,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,defi|y_ret|lead_t+1|diagnostic,BTC,,train+valid,1001,0.944881535237888,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,stablecoins|y_log_rv|lag_t-1|diagnostic,BTC,,train+valid,995,0.1960357613275947,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,stablecoins|y_log_rv|lead_t+1|diagnostic,BTC,,train+valid,996,0.316225512948101,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,stablecoins|y_abvol|lag_t-1|diagnostic,BTC,,train+valid,1000,0.2032515424875037,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,stablecoins|y_abvol|lead_t+1|diagnostic,BTC,,train+valid,1001,0.0995383329366143,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,stablecoins|y_ret|lag_t-1|diagnostic,BTC,,train+valid,1000,0.2494093744311848,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,stablecoins|y_ret|lead_t+1|diagnostic,BTC,,train+valid,1001,0.8441003826603735,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,monetary_policy|y_log_rv|lag_t-1|diagnostic,BTC,,train+valid,995,0.4620766663912441,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,monetary_policy|y_log_rv|lead_t+1|diagnostic,BTC,,train+valid,996,0.9439364918449674,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,monetary_policy|y_abvol|lag_t-1|diagnostic,BTC,,train+valid,1000,0.5555360044539526,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,monetary_policy|y_abvol|lead_t+1|diagnostic,BTC,,train+valid,1001,0.2134097100711216,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,monetary_policy|y_ret|lag_t-1|diagnostic,BTC,,train+valid,1000,0.1122256511467032,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,monetary_policy|y_ret|lead_t+1|diagnostic,BTC,,train+valid,1001,0.2958138924964105,,rq3_diag,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,regulation|y_log_rv|contemporaneous|robust_total_abn,BTC,,train+valid,996,0.4445020838859868,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,regulation|y_abvol|contemporaneous|robust_total_abn,BTC,,train+valid,1001,0.6715057693967108,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,regulation|y_ret|contemporaneous|robust_total_abn,BTC,,train+valid,1001,0.0449300331492016,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,etf|y_log_rv|contemporaneous|robust_total_abn,BTC,,train+valid,996,0.7411973307805286,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,etf|y_abvol|contemporaneous|robust_total_abn,BTC,,train+valid,1001,0.2384107768712325,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,etf|y_ret|contemporaneous|robust_total_abn,BTC,,train+valid,1001,0.0291902665191844,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,institutional_adoption|y_log_rv|contemporaneous|robust_total_abn,BTC,,train+valid,996,0.6674843271285563,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,institutional_adoption|y_abvol|contemporaneous|robust_total_abn,BTC,,train+valid,1001,0.3112046170788207,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,institutional_adoption|y_ret|contemporaneous|robust_total_abn,BTC,,train+valid,1001,0.1723006385002606,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,hacks_security|y_log_rv|contemporaneous|robust_total_abn,BTC,,train+valid,996,0.0210606230761716,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,hacks_security|y_abvol|contemporaneous|robust_total_abn,BTC,,train+valid,1001,0.0038016538339535,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,hacks_security|y_ret|contemporaneous|robust_total_abn,BTC,,train+valid,1001,0.8537324731264606,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,defi|y_log_rv|contemporaneous|robust_total_abn,BTC,,train+valid,996,0.1696451521077138,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,defi|y_abvol|contemporaneous|robust_total_abn,BTC,,train+valid,1001,0.3525582784925737,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,defi|y_ret|contemporaneous|robust_total_abn,BTC,,train+valid,1001,0.7569595028267698,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,stablecoins|y_log_rv|contemporaneous|robust_total_abn,BTC,,train+valid,996,0.5327374538176464,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,stablecoins|y_abvol|contemporaneous|robust_total_abn,BTC,,train+valid,1001,0.1597346239431686,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,stablecoins|y_ret|contemporaneous|robust_total_abn,BTC,,train+valid,1001,0.2388406001626739,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,monetary_policy|y_log_rv|contemporaneous|robust_total_abn,BTC,,train+valid,996,0.1143028759546511,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,monetary_policy|y_abvol|contemporaneous|robust_total_abn,BTC,,train+valid,1001,0.0783033216369211,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,monetary_policy|y_ret|contemporaneous|robust_total_abn,BTC,,train+valid,1001,0.760978558692959,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,regulation|y_log_rv|contemporaneous_joint|robust_joint7,BTC,,train+valid,996,0.0922286391722144,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,etf|y_log_rv|contemporaneous_joint|robust_joint7,BTC,,train+valid,996,0.3882330399237572,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,institutional_adoption|y_log_rv|contemporaneous_joint|robust_joint7,BTC,,train+valid,996,0.6467764481493234,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,hacks_security|y_log_rv|contemporaneous_joint|robust_joint7,BTC,,train+valid,996,0.1278514911000243,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,defi|y_log_rv|contemporaneous_joint|robust_joint7,BTC,,train+valid,996,0.7748966169011737,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,stablecoins|y_log_rv|contemporaneous_joint|robust_joint7,BTC,,train+valid,996,0.0459076409115413,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,monetary_policy|y_log_rv|contemporaneous_joint|robust_joint7,BTC,,train+valid,996,0.0270668563719123,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,regulation|y_abvol|contemporaneous_joint|robust_joint7,BTC,,train+valid,1001,0.9822879323076646,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,etf|y_abvol|contemporaneous_joint|robust_joint7,BTC,,train+valid,1001,0.0146156182471638,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,institutional_adoption|y_abvol|contemporaneous_joint|robust_joint7,BTC,,train+valid,1001,0.1280329998734515,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,hacks_security|y_abvol|contemporaneous_joint|robust_joint7,BTC,,train+valid,1001,0.0163738106234506,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,defi|y_abvol|contemporaneous_joint|robust_joint7,BTC,,train+valid,1001,0.9238025708660748,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,stablecoins|y_abvol|contemporaneous_joint|robust_joint7,BTC,,train+valid,1001,0.012749510886394,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,monetary_policy|y_abvol|contemporaneous_joint|robust_joint7,BTC,,train+valid,1001,0.0134853051523755,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,regulation|y_ret|contemporaneous_joint|robust_joint7,BTC,,train+valid,1001,0.067476408825187,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,etf|y_ret|contemporaneous_joint|robust_joint7,BTC,,train+valid,1001,0.0660213395445787,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,institutional_adoption|y_ret|contemporaneous_joint|robust_joint7,BTC,,train+valid,1001,0.1613141893945348,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,hacks_security|y_ret|contemporaneous_joint|robust_joint7,BTC,,train+valid,1001,0.8750739845526049,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,defi|y_ret|contemporaneous_joint|robust_joint7,BTC,,train+valid,1001,0.6056187088662809,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,stablecoins|y_ret|contemporaneous_joint|robust_joint7,BTC,,train+valid,1001,0.1899506458784906,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,monetary_policy|y_ret|contemporaneous_joint|robust_joint7,BTC,,train+valid,1001,0.6363478532341342,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,regulation|y_log_rv|contemporaneous|robust_drop_zgt4,BTC,,train+valid,996,0.0373736335034376,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,regulation|y_abvol|contemporaneous|robust_drop_zgt4,BTC,,train+valid,1001,0.5506646343648343,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,regulation|y_ret|contemporaneous|robust_drop_zgt4,BTC,,train+valid,1001,0.0418368528120366,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,etf|y_log_rv|contemporaneous|robust_drop_zgt4,BTC,,train+valid,996,0.2777745455428411,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,etf|y_abvol|contemporaneous|robust_drop_zgt4,BTC,,train+valid,1001,0.015454003181346,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,etf|y_ret|contemporaneous|robust_drop_zgt4,BTC,,train+valid,1001,0.0259149159284898,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,institutional_adoption|y_log_rv|contemporaneous|robust_drop_zgt4,BTC,,train+valid,996,0.573734835206898,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,institutional_adoption|y_abvol|contemporaneous|robust_drop_zgt4,BTC,,train+valid,1001,0.0643775401655197,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,institutional_adoption|y_ret|contemporaneous|robust_drop_zgt4,BTC,,train+valid,1001,0.1691829865837771,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,hacks_security|y_log_rv|contemporaneous|robust_drop_zgt4,BTC,,train+valid,996,0.2007680437365819,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,hacks_security|y_abvol|contemporaneous|robust_drop_zgt4,BTC,,train+valid,1001,0.0468679141719272,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,hacks_security|y_ret|contemporaneous|robust_drop_zgt4,BTC,,train+valid,1001,0.9020075767770618,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,defi|y_log_rv|contemporaneous|robust_drop_zgt4,BTC,,train+valid,996,0.8535270337541959,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,defi|y_abvol|contemporaneous|robust_drop_zgt4,BTC,,train+valid,1001,0.7678003611124842,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,defi|y_ret|contemporaneous|robust_drop_zgt4,BTC,,train+valid,1001,0.8322879402869008,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,stablecoins|y_log_rv|contemporaneous|robust_drop_zgt4,BTC,,train+valid,996,0.0219005702728659,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,stablecoins|y_abvol|contemporaneous|robust_drop_zgt4,BTC,,train+valid,1001,0.0074556585747266,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,stablecoins|y_ret|contemporaneous|robust_drop_zgt4,BTC,,train+valid,1001,0.2973325674929846,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,monetary_policy|y_log_rv|contemporaneous|robust_drop_zgt4,BTC,,train+valid,996,0.0253328142214709,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,monetary_policy|y_abvol|contemporaneous|robust_drop_zgt4,BTC,,train+valid,1001,0.0175345683369116,,rq3_robust,,,,
+2026-10-24T18:20:45Z,models/rq3_narratives.py,monetary_policy|y_ret|contemporaneous|robust_drop_zgt4,BTC,,train+valid,1001,0.7315656188454431,,rq3_robust,,,,
+2026-10-24T18:47:08Z,models/rq1_rq2_sentiment.py,H1a|main|y_ret,BTC,,train+valid,1026,0.0,,rq1_main,,,,
+2026-10-24T18:47:08Z,models/rq1_rq2_sentiment.py,H1b|main|y_log_rv,BTC,,train+valid,1020,0.374,,rq1_main,,,,
+2026-10-24T18:47:08Z,models/rq1_rq2_sentiment.py,H2_A|main|y_ret,BTC,0.0,train+valid,1026,0.557986385889356,,rq2_main,,,,
+2026-10-24T18:47:08Z,models/rq1_rq2_sentiment.py,H2_B_h1|main|y_ret_1,BTC,1.0,train+valid,1006,0.3243690641218121,,rq2_main,,,,
+2026-10-24T18:47:08Z,models/rq1_rq2_sentiment.py,H2_B_h3|main|y_ret_3,BTC,3.0,train+valid,994,0.3747844729456601,,rq2_main,,,,
+2026-10-24T18:47:08Z,models/rq1_rq2_sentiment.py,H2_B_h7|main|y_ret_7,BTC,7.0,train+valid,975,0.4300044140229114,,rq2_main,,,,
+2026-10-24T18:47:08Z,models/rq1_rq2_sentiment.py,H1a|robust_ETH|y_ret,ETH,,train+valid,1026,0.0,,rq1_robust,,,,
+2026-10-24T18:47:08Z,models/rq1_rq2_sentiment.py,H1b|robust_ETH|y_log_rv,ETH,,train+valid,1020,0.0488,,rq1_robust,,,,
+2026-10-24T18:47:08Z,models/rq1_rq2_sentiment.py,H2_A|robust_ETH|y_ret,ETH,0.0,train+valid,1026,0.1416383120198184,,rq2_robust,,,,
+2026-10-24T18:47:08Z,models/rq1_rq2_sentiment.py,H2_B_h1|robust_ETH|y_ret_1,ETH,1.0,train+valid,1006,0.6718360083176387,,rq2_robust,,,,
+2026-10-24T18:47:08Z,models/rq1_rq2_sentiment.py,H2_B_h3|robust_ETH|y_ret_3,ETH,3.0,train+valid,994,0.6880947870151007,,rq2_robust,,,,
+2026-10-24T18:47:08Z,models/rq1_rq2_sentiment.py,H2_B_h7|robust_ETH|y_ret_7,ETH,7.0,train+valid,975,0.2471031065248602,,rq2_robust,,,,
+2026-10-24T18:47:08Z,models/rq1_rq2_sentiment.py,H1a|robust_MeanProb|y_ret,BTC,,train+valid,1026,0.0,,rq1_robust,,,,
+2026-10-24T18:47:08Z,models/rq1_rq2_sentiment.py,H1b|robust_MeanProb|y_log_rv,BTC,,train+valid,1020,0.6596,,rq1_robust,,,,
+2026-10-24T18:47:08Z,models/rq1_rq2_sentiment.py,H1a|robust_nlp_text|y_ret,BTC,,train+valid,1026,0.0,,rq1_robust,,,,
+2026-10-24T18:47:08Z,models/rq1_rq2_sentiment.py,H1b|robust_nlp_text|y_log_rv,BTC,,train+valid,1020,0.3536,,rq1_robust,,,,
+2026-10-24T18:47:08Z,models/rq1_rq2_sentiment.py,H1a|robust_drop_nv_bot5|y_ret,BTC,,train+valid,989,0.0,,rq1_robust,,,,
+2026-10-24T18:47:08Z,models/rq1_rq2_sentiment.py,H1b|robust_drop_nv_bot5|y_log_rv,BTC,,train+valid,983,0.3572,,rq1_robust,,,,
+2026-10-24T18:47:08Z,models/rq1_rq2_sentiment.py,H2_A|robust_drop_nv_bot5|y_ret,BTC,0.0,train+valid,989,0.8667662359038146,,rq2_robust,,,,
+2026-10-24T18:47:08Z,models/rq1_rq2_sentiment.py,H2_B_h1|robust_drop_nv_bot5|y_ret_1,BTC,1.0,train+valid,969,0.5187940247296003,,rq2_robust,,,,
+2026-10-24T18:47:08Z,models/rq1_rq2_sentiment.py,H2_B_h3|robust_drop_nv_bot5|y_ret_3,BTC,3.0,train+valid,957,0.8078628320158496,,rq2_robust,,,,
+2026-10-24T18:47:08Z,models/rq1_rq2_sentiment.py,H2_B_h7|robust_drop_nv_bot5|y_ret_7,BTC,7.0,train+valid,938,0.5674105356497869,,rq2_robust,,,,
+2026-10-24T19:05:35Z,models/rq4_leadlag.py,sent_to_ret|main_noprice|p1,BTC,1.0,train+valid,959,0.9081983314550648,,rq4_main,raw,,,
+2026-10-24T19:05:35Z,models/rq4_leadlag.py,ret_to_sent|main_noprice|p1,BTC,1.0,train+valid,959,0.0002122547364674,,rq4_main,raw,,,
+2026-10-24T19:05:35Z,models/rq4_leadlag.py,sent_to_ret|robust_ETH_noprice|p1,ETH,1.0,train+valid,959,0.7617204656242,,rq4_robust,raw,,,
+2026-10-24T19:05:35Z,models/rq4_leadlag.py,ret_to_sent|robust_ETH_noprice|p1,ETH,1.0,train+valid,959,0.0078112905048325,,rq4_robust,raw,,,
+2026-10-24T19:05:35Z,models/rq4_leadlag.py,sent_to_ret|robust_full_panel|p2,BTC,2.0,train+valid,1030,0.8366995446582832,,rq4_robust,raw,,,
+2026-10-24T19:05:35Z,models/rq4_leadlag.py,ret_to_sent|robust_full_panel|p2,BTC,2.0,train+valid,1030,9.169731497449264e-07,,rq4_robust,raw,,,
+2026-10-24T19:05:35Z,models/rq4_leadlag.py,sent_to_ret|robust_MeanProb|p1,BTC,1.0,train+valid,959,0.897215064589002,,rq4_robust,raw,,,
+2026-10-24T19:05:35Z,models/rq4_leadlag.py,ret_to_sent|robust_MeanProb|p1,BTC,1.0,train+valid,959,1.59082202831895e-05,,rq4_robust,raw,,,
+2026-10-24T19:05:35Z,models/rq4_leadlag.py,sent_to_ret|robust_AbnAttention|p1,BTC,1.0,train+valid,1005,0.0415709905385511,,rq4_robust,raw,,,
+2026-10-24T19:05:35Z,models/rq4_leadlag.py,ret_to_sent|robust_AbnAttention|p1,BTC,1.0,train+valid,1005,0.3180450502221215,,rq4_robust,raw,,,
+2026-10-24T19:05:35Z,models/rq4_leadlag.py,sent_to_ret|robust_p1|p1,BTC,1.0,train+valid,959,0.9081983314550648,,rq4_robust,raw,,,
+2026-10-24T19:05:35Z,models/rq4_leadlag.py,ret_to_sent|robust_p1|p1,BTC,1.0,train+valid,959,0.0002122547364674,,rq4_robust,raw,,,
+2026-10-24T19:05:35Z,models/rq4_leadlag.py,sent_to_ret|robust_p3|p3,BTC,3.0,train+valid,957,0.9394243836513464,,rq4_robust,raw,,,
+2026-10-24T19:05:35Z,models/rq4_leadlag.py,ret_to_sent|robust_p3|p3,BTC,3.0,train+valid,957,6.8208554007132e-05,,rq4_robust,raw,,,
+2026-10-24T19:05:35Z,models/rq4_leadlag.py,sent_to_ret|robust_p7|p7,BTC,7.0,train+valid,953,0.7632689380378833,,rq4_robust,raw,,,
+2026-10-24T19:05:35Z,models/rq4_leadlag.py,ret_to_sent|robust_p7|p7,BTC,7.0,train+valid,953,5.534245922877989e-05,,rq4_robust,raw,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H1a|main|y_ret,BTC,,train+valid,1026,0.0001999600079984,,rq1_main,1sd,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H1b|main|y_log_rv,BTC,,train+valid,1020,0.374,,rq1_main,1sd,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H2_A|main|y_ret,BTC,0.0,train+valid,1026,0.7476509532573462,,rq2_main,raw,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H2_B_h1|main|y_ret_1,BTC,1.0,train+valid,1006,0.32171997723849,,rq2_main,raw,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H2_B_h3|main|y_ret_3,BTC,3.0,train+valid,994,0.3805082056719702,,rq2_main,raw,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H2_B_h7|main|y_ret_7,BTC,7.0,train+valid,975,0.4327432621265686,,rq2_main,raw,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H1a|robust_ETH|y_ret,ETH,,train+valid,1026,0.0001999600079984,,rq1_robust,1sd,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H1b|robust_ETH|y_log_rv,ETH,,train+valid,1020,0.0488,,rq1_robust,1sd,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H2_A|robust_ETH|y_ret,ETH,0.0,train+valid,1026,0.2281267814388684,,rq2_robust,raw,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H2_B_h1|robust_ETH|y_ret_1,ETH,1.0,train+valid,1006,0.6662270417652247,,rq2_robust,raw,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H2_B_h3|robust_ETH|y_ret_3,ETH,3.0,train+valid,994,0.7000324425810707,,rq2_robust,raw,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H2_B_h7|robust_ETH|y_ret_7,ETH,7.0,train+valid,975,0.2523584735011555,,rq2_robust,raw,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H1a|robust_MeanProb|y_ret,BTC,,train+valid,1026,0.0001999600079984,,rq1_robust,1sd,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H1b|robust_MeanProb|y_log_rv,BTC,,train+valid,1020,0.6596,,rq1_robust,1sd,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H1a|robust_nlp_text|y_ret,BTC,,train+valid,1026,0.0001999600079984,,rq1_robust,1sd,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H1b|robust_nlp_text|y_log_rv,BTC,,train+valid,1020,0.3536,,rq1_robust,1sd,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H1a|robust_drop_nv_bot5|y_ret,BTC,,train+valid,989,0.0001999600079984,,rq1_robust,1sd,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H1b|robust_drop_nv_bot5|y_log_rv,BTC,,train+valid,983,0.3572,,rq1_robust,1sd,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H2_A|robust_drop_nv_bot5|y_ret,BTC,0.0,train+valid,989,0.7423465761879664,,rq2_robust,raw,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H2_B_h1|robust_drop_nv_bot5|y_ret_1,BTC,1.0,train+valid,969,0.5202268293924885,,rq2_robust,raw,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H2_B_h3|robust_drop_nv_bot5|y_ret_3,BTC,3.0,train+valid,957,0.8147991045945137,,rq2_robust,raw,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H2_B_h7|robust_drop_nv_bot5|y_ret_7,BTC,7.0,train+valid,938,0.5614517801518392,,rq2_robust,raw,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H1a|robust_noprice|y_ret,BTC,,train+valid,954,0.0001999600079984,,rq1_robust_noprice,1sd,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H1b|robust_noprice|y_log_rv,BTC,,train+valid,948,0.7408,,rq1_robust_noprice,1sd,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H2_A|robust_noprice|y_ret,BTC,0.0,train+valid,954,0.5180272130809189,,rq2_robust_noprice,raw,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H2_B_h1|robust_noprice|y_ret_1,BTC,1.0,train+valid,934,0.4154923856765542,,rq2_robust_noprice,raw,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H2_B_h3|robust_noprice|y_ret_3,BTC,3.0,train+valid,922,0.9626998178498816,,rq2_robust_noprice,raw,,,
+2026-10-24T19:06:19Z,models/rq1_rq2_sentiment.py,H2_B_h7|robust_noprice|y_ret_7,BTC,7.0,train+valid,903,0.4718375563453356,,rq2_robust_noprice,raw,,,
+2026-10-24T19:29:29Z,models/rq4_leadlag.py,sent_to_ret|main_noprice|p1,BTC,1.0,train+valid,959,0.4732374989156976,,rq4_main,raw,calendar_lag,,
+2026-10-24T19:29:29Z,models/rq4_leadlag.py,ret_to_sent|main_noprice|p1,BTC,1.0,train+valid,907,0.0017402285242131,,rq4_main,raw,calendar_lag,,
+2026-10-24T19:29:29Z,models/rq4_leadlag.py,sent_to_ret|robust_ETH_noprice|p1,ETH,1.0,train+valid,959,0.3260806691801345,,rq4_robust,raw,calendar_lag,,
+2026-10-24T19:29:29Z,models/rq4_leadlag.py,ret_to_sent|robust_ETH_noprice|p1,ETH,1.0,train+valid,907,0.0284082480785486,,rq4_robust,raw,calendar_lag,,
+2026-10-24T19:29:29Z,models/rq4_leadlag.py,sent_to_ret|robust_full_panel|p2,BTC,2.0,train+valid,1027,0.8306327582088509,,rq4_robust,raw,calendar_lag,,
+2026-10-24T19:29:29Z,models/rq4_leadlag.py,ret_to_sent|robust_full_panel|p2,BTC,2.0,train+valid,1024,7.83119043501479e-07,,rq4_robust,raw,calendar_lag,,
+2026-10-24T19:29:29Z,models/rq4_leadlag.py,sent_to_ret|robust_MeanProb|p1,BTC,1.0,train+valid,959,0.4418635628290228,,rq4_robust,raw,calendar_lag,,
+2026-10-24T19:29:29Z,models/rq4_leadlag.py,ret_to_sent|robust_MeanProb|p1,BTC,1.0,train+valid,907,0.0001562728336595,,rq4_robust,raw,calendar_lag,,
+2026-10-24T19:29:29Z,models/rq4_leadlag.py,sent_to_ret|robust_AbnAttention|p1,BTC,1.0,train+valid,1005,0.0415709905385511,,rq4_robust,raw,calendar_lag,,
+2026-10-24T19:29:29Z,models/rq4_leadlag.py,ret_to_sent|robust_AbnAttention|p1,BTC,1.0,train+valid,1005,0.3180450502221215,,rq4_robust,raw,calendar_lag,,
+2026-10-24T19:29:29Z,models/rq4_leadlag.py,sent_to_ret|robust_p1|p1,BTC,1.0,train+valid,959,0.4732374989156976,,rq4_robust,raw,calendar_lag,,
+2026-10-24T19:29:29Z,models/rq4_leadlag.py,ret_to_sent|robust_p1|p1,BTC,1.0,train+valid,907,0.0017402285242131,,rq4_robust,raw,calendar_lag,,
+2026-10-24T19:29:29Z,models/rq4_leadlag.py,sent_to_ret|robust_p3|p3,BTC,3.0,train+valid,853,0.6399783140325022,,rq4_robust,raw,calendar_lag,,
+2026-10-24T19:29:29Z,models/rq4_leadlag.py,ret_to_sent|robust_p3|p3,BTC,3.0,train+valid,801,0.0009747145063501,,rq4_robust,raw,calendar_lag,,
+2026-10-24T19:29:29Z,models/rq4_leadlag.py,sent_to_ret|robust_p7|p7,BTC,7.0,train+valid,665,0.9345707643653656,,rq4_robust,raw,calendar_lag,,
+2026-10-24T19:29:29Z,models/rq4_leadlag.py,ret_to_sent|robust_p7|p7,BTC,7.0,train+valid,648,0.0008992119526538,,rq4_robust,raw,calendar_lag,,
+2026-10-24T20:05:20Z,models/ml_forecast.py,elastic_net|market|h1|cv,BTC,1.0,train,5,,,ml_cv,,"{""cv_mse"": 0.7784887336183128, ""hyperparams"": {""alpha"": 0.1, ""l1_ratio"": 0.1}, ""n_folds"": 5}",v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,elastic_net|text|h1|cv,BTC,1.0,train,5,,,ml_cv,,"{""cv_mse"": 0.77721153515139, ""hyperparams"": {""alpha"": 0.1, ""l1_ratio"": 0.1}, ""n_folds"": 5}",v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,elastic_net|text_vs_market|h1,BTC,1.0,valid,352,0.4869390650298943,market_ml,ml_main,,clark_west,v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,xgboost|market|h1|cv,BTC,1.0,train,5,,,ml_cv,,"{""cv_mse"": 0.9556505175924045, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.03, ""max_depth"": 2, ""min_child_weight"": 5.0, ""n_estimators"": 200, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,xgboost|text|h1|cv,BTC,1.0,train,5,,,ml_cv,,"{""cv_mse"": 0.9511393169524791, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.03, ""max_depth"": 2, ""min_child_weight"": 5.0, ""n_estimators"": 200, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,xgboost|text_vs_market|h1,BTC,1.0,valid,352,0.9424502144144876,market_ml,ml_main,,dm_hln,v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,elastic_net|market|h3|cv,BTC,3.0,train,5,,,ml_cv,,"{""cv_mse"": 0.55265817040565, ""hyperparams"": {""alpha"": 0.1, ""l1_ratio"": 0.1}, ""n_folds"": 5}",v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,elastic_net|text|h3|cv,BTC,3.0,train,5,,,ml_cv,,"{""cv_mse"": 0.5702461045691753, ""hyperparams"": {""alpha"": 0.1, ""l1_ratio"": 0.1}, ""n_folds"": 5}",v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,elastic_net|text_vs_market|h3,BTC,3.0,valid,350,0.3179004813859347,market_ml,ml_main,,clark_west,v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,xgboost|market|h3|cv,BTC,3.0,train,5,,,ml_cv,,"{""cv_mse"": 0.8803443868347103, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.03, ""max_depth"": 2, ""min_child_weight"": 5.0, ""n_estimators"": 200, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,xgboost|text|h3|cv,BTC,3.0,train,5,,,ml_cv,,"{""cv_mse"": 0.8129920124501016, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.03, ""max_depth"": 2, ""min_child_weight"": 5.0, ""n_estimators"": 200, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,xgboost|text_vs_market|h3,BTC,3.0,valid,350,0.4734441770932833,market_ml,ml_main,,dm_hln,v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,elastic_net|market|h7|cv,BTC,7.0,train,5,,,ml_cv,,"{""cv_mse"": 0.5104766497843968, ""hyperparams"": {""alpha"": 0.1, ""l1_ratio"": 0.1}, ""n_folds"": 5}",v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,elastic_net|text|h7|cv,BTC,7.0,train,5,,,ml_cv,,"{""cv_mse"": 0.5160329700485642, ""hyperparams"": {""alpha"": 0.1, ""l1_ratio"": 0.5}, ""n_folds"": 5}",v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,elastic_net|text_vs_market|h7,BTC,7.0,valid,346,0.2196677407572158,market_ml,ml_main,,clark_west,v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,xgboost|market|h7|cv,BTC,7.0,train,5,,,ml_cv,,"{""cv_mse"": 0.8455692057745339, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.03, ""max_depth"": 2, ""min_child_weight"": 5.0, ""n_estimators"": 200, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,xgboost|text|h7|cv,BTC,7.0,train,5,,,ml_cv,,"{""cv_mse"": 0.7947123978185879, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.03, ""max_depth"": 2, ""min_child_weight"": 5.0, ""n_estimators"": 200, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,xgboost|text_vs_market|h7,BTC,7.0,valid,346,0.2428947387747635,market_ml,ml_main,,dm_hln,v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,elastic_net|market|h1|cv,ETH,1.0,train,5,,,ml_cv,,"{""cv_mse"": 0.6005839888074964, ""hyperparams"": {""alpha"": 0.1, ""l1_ratio"": 0.5}, ""n_folds"": 5}",v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,elastic_net|text|h1|cv,ETH,1.0,train,5,,,ml_cv,,"{""cv_mse"": 0.6005299747224409, ""hyperparams"": {""alpha"": 0.1, ""l1_ratio"": 0.5}, ""n_folds"": 5}",v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,elastic_net|text_vs_market|h1,ETH,1.0,valid,352,0.9918018851585444,market_ml,ml_main,,clark_west,v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,xgboost|market|h1|cv,ETH,1.0,train,5,,,ml_cv,,"{""cv_mse"": 0.6343917076191634, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.03, ""max_depth"": 2, ""min_child_weight"": 5.0, ""n_estimators"": 200, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,xgboost|text|h1|cv,ETH,1.0,train,5,,,ml_cv,,"{""cv_mse"": 0.6134894498429648, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.03, ""max_depth"": 2, ""min_child_weight"": 5.0, ""n_estimators"": 200, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,xgboost|text_vs_market|h1,ETH,1.0,valid,352,0.7882597852264371,market_ml,ml_main,,dm_hln,v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,elastic_net|market|h3|cv,ETH,3.0,train,5,,,ml_cv,,"{""cv_mse"": 0.45591173065123713, ""hyperparams"": {""alpha"": 0.1, ""l1_ratio"": 0.1}, ""n_folds"": 5}",v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,elastic_net|text|h3|cv,ETH,3.0,train,5,,,ml_cv,,"{""cv_mse"": 0.4586289323199564, ""hyperparams"": {""alpha"": 0.1, ""l1_ratio"": 0.5}, ""n_folds"": 5}",v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,elastic_net|text_vs_market|h3,ETH,3.0,valid,350,0.8359154003434132,market_ml,ml_main,,clark_west,v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,xgboost|market|h3|cv,ETH,3.0,train,5,,,ml_cv,,"{""cv_mse"": 0.6241390967103735, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.03, ""max_depth"": 2, ""min_child_weight"": 5.0, ""n_estimators"": 200, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,xgboost|text|h3|cv,ETH,3.0,train,5,,,ml_cv,,"{""cv_mse"": 0.598934583944193, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.03, ""max_depth"": 2, ""min_child_weight"": 5.0, ""n_estimators"": 200, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,xgboost|text_vs_market|h3,ETH,3.0,valid,350,0.6816399366848127,market_ml,ml_main,,dm_hln,v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,elastic_net|market|h7|cv,ETH,7.0,train,5,,,ml_cv,,"{""cv_mse"": 0.4444052806429578, ""hyperparams"": {""alpha"": 0.1, ""l1_ratio"": 0.5}, ""n_folds"": 5}",v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,elastic_net|text|h7|cv,ETH,7.0,train,5,,,ml_cv,,"{""cv_mse"": 0.44168779320910767, ""hyperparams"": {""alpha"": 0.1, ""l1_ratio"": 0.5}, ""n_folds"": 5}",v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,elastic_net|text_vs_market|h7,ETH,7.0,valid,346,0.0125363343773238,market_ml,ml_main,,clark_west,v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,xgboost|market|h7|cv,ETH,7.0,train,5,,,ml_cv,,"{""cv_mse"": 0.6296787623415161, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.03, ""max_depth"": 2, ""min_child_weight"": 5.0, ""n_estimators"": 200, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,xgboost|text|h7|cv,ETH,7.0,train,5,,,ml_cv,,"{""cv_mse"": 0.6042609703494769, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.03, ""max_depth"": 2, ""min_child_weight"": 5.0, ""n_estimators"": 200, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v1,level
+2026-10-24T20:05:20Z,models/ml_forecast.py,xgboost|text_vs_market|h7,ETH,7.0,valid,346,0.2129987984690737,market_ml,ml_main,,dm_hln,v1,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,elastic_net|market|h1|cv,BTC,1.0,train,5,,,ml_cv,,"{""cv_mse"": 0.7784887336183128, ""hyperparams"": {""alpha"": 0.1, ""l1_ratio"": 0.1}, ""n_folds"": 5}",v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,elastic_net|text|h1|cv,BTC,1.0,train,5,,,ml_cv,,"{""cv_mse"": 0.77721153515139, ""hyperparams"": {""alpha"": 0.1, ""l1_ratio"": 0.1}, ""n_folds"": 5}",v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,elastic_net|text_vs_market|h1,BTC,1.0,valid,352,0.4869390650298943,market_ml,ml_main,,clark_west,v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,xgboost|market|h1|cv,BTC,1.0,train,5,,,ml_cv,,"{""cv_mse"": 0.9556505175924045, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.03, ""max_depth"": 2, ""min_child_weight"": 5.0, ""n_estimators"": 200, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,xgboost|text|h1|cv,BTC,1.0,train,5,,,ml_cv,,"{""cv_mse"": 0.9511393169524791, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.03, ""max_depth"": 2, ""min_child_weight"": 5.0, ""n_estimators"": 200, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,xgboost|text_vs_market|h1,BTC,1.0,valid,352,0.9424502144144876,market_ml,ml_main,,dm_hln,v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,elastic_net|market|h3|cv,BTC,3.0,train,5,,,ml_cv,,"{""cv_mse"": 0.55265817040565, ""hyperparams"": {""alpha"": 0.1, ""l1_ratio"": 0.1}, ""n_folds"": 5}",v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,elastic_net|text|h3|cv,BTC,3.0,train,5,,,ml_cv,,"{""cv_mse"": 0.5702461045691753, ""hyperparams"": {""alpha"": 0.1, ""l1_ratio"": 0.1}, ""n_folds"": 5}",v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,elastic_net|text_vs_market|h3,BTC,3.0,valid,350,0.3179004813859347,market_ml,ml_main,,clark_west,v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,xgboost|market|h3|cv,BTC,3.0,train,5,,,ml_cv,,"{""cv_mse"": 0.8031300466896285, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.05, ""max_depth"": 1, ""min_child_weight"": 5.0, ""n_estimators"": 200, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,xgboost|text|h3|cv,BTC,3.0,train,5,,,ml_cv,,"{""cv_mse"": 0.7935808788166394, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.05, ""max_depth"": 1, ""min_child_weight"": 20.0, ""n_estimators"": 200, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,xgboost|text_vs_market|h3,BTC,3.0,valid,350,0.3169297037453951,market_ml,ml_main,,dm_hln,v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,elastic_net|market|h7|cv,BTC,7.0,train,5,,,ml_cv,,"{""cv_mse"": 0.4999584921929053, ""hyperparams"": {""alpha"": 0.3, ""l1_ratio"": 0.1}, ""n_folds"": 5}",v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,elastic_net|text|h7|cv,BTC,7.0,train,5,,,ml_cv,,"{""cv_mse"": 0.5047934039386768, ""hyperparams"": {""alpha"": 0.3, ""l1_ratio"": 0.1}, ""n_folds"": 5}",v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,elastic_net|text_vs_market|h7,BTC,7.0,valid,346,0.1025526170855468,market_ml,ml_main,,clark_west,v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,xgboost|market|h7|cv,BTC,7.0,train,5,,,ml_cv,,"{""cv_mse"": 0.6899761887679661, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.01, ""max_depth"": 1, ""min_child_weight"": 20.0, ""n_estimators"": 400, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,xgboost|text|h7|cv,BTC,7.0,train,5,,,ml_cv,,"{""cv_mse"": 0.6763735688697935, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.05, ""max_depth"": 1, ""min_child_weight"": 20.0, ""n_estimators"": 100, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,xgboost|text_vs_market|h7,BTC,7.0,valid,346,0.1674424463778188,market_ml,ml_main,,dm_hln,v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,elastic_net|market|h1|cv,ETH,1.0,train,5,,,ml_cv,,"{""cv_mse"": 0.6005839888074964, ""hyperparams"": {""alpha"": 0.1, ""l1_ratio"": 0.5}, ""n_folds"": 5}",v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,elastic_net|text|h1|cv,ETH,1.0,train,5,,,ml_cv,,"{""cv_mse"": 0.6005299747224409, ""hyperparams"": {""alpha"": 0.1, ""l1_ratio"": 0.5}, ""n_folds"": 5}",v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,elastic_net|text_vs_market|h1,ETH,1.0,valid,352,0.9918018851585444,market_ml,ml_main,,clark_west,v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,xgboost|market|h1|cv,ETH,1.0,train,5,,,ml_cv,,"{""cv_mse"": 0.620298557030445, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.03, ""max_depth"": 2, ""min_child_weight"": 20.0, ""n_estimators"": 200, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,xgboost|text|h1|cv,ETH,1.0,train,5,,,ml_cv,,"{""cv_mse"": 0.6134894498429648, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.03, ""max_depth"": 2, ""min_child_weight"": 5.0, ""n_estimators"": 200, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,xgboost|text_vs_market|h1,ETH,1.0,valid,352,0.8718876147508172,market_ml,ml_main,,dm_hln,v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,elastic_net|market|h3|cv,ETH,3.0,train,5,,,ml_cv,,"{""cv_mse"": 0.45541813126847047, ""hyperparams"": {""alpha"": 0.3, ""l1_ratio"": 0.1}, ""n_folds"": 5}",v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,elastic_net|text|h3|cv,ETH,3.0,train,5,,,ml_cv,,"{""cv_mse"": 0.4586289323199564, ""hyperparams"": {""alpha"": 0.1, ""l1_ratio"": 0.5}, ""n_folds"": 5}",v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,elastic_net|text_vs_market|h3,ETH,3.0,valid,350,0.641612804774707,market_ml,ml_main,,clark_west,v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,xgboost|market|h3|cv,ETH,3.0,train,5,,,ml_cv,,"{""cv_mse"": 0.572266166239953, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.05, ""max_depth"": 2, ""min_child_weight"": 20.0, ""n_estimators"": 100, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,xgboost|text|h3|cv,ETH,3.0,train,5,,,ml_cv,,"{""cv_mse"": 0.570949956809281, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.03, ""max_depth"": 2, ""min_child_weight"": 20.0, ""n_estimators"": 200, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,xgboost|text_vs_market|h3,ETH,3.0,valid,350,0.7496999294335341,market_ml,ml_main,,dm_hln,v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,elastic_net|market|h7|cv,ETH,7.0,train,5,,,ml_cv,,"{""cv_mse"": 0.4438855599497913, ""hyperparams"": {""alpha"": 0.3, ""l1_ratio"": 0.1}, ""n_folds"": 5}",v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,elastic_net|text|h7|cv,ETH,7.0,train,5,,,ml_cv,,"{""cv_mse"": 0.44168779320910767, ""hyperparams"": {""alpha"": 0.1, ""l1_ratio"": 0.5}, ""n_folds"": 5}",v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,elastic_net|text_vs_market|h7,ETH,7.0,valid,346,0.4410345926510617,market_ml,ml_main,,clark_west,v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,xgboost|market|h7|cv,ETH,7.0,train,5,,,ml_cv,,"{""cv_mse"": 0.4960457577244144, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.01, ""max_depth"": 1, ""min_child_weight"": 5.0, ""n_estimators"": 400, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,xgboost|text|h7|cv,ETH,7.0,train,5,,,ml_cv,,"{""cv_mse"": 0.492530134422704, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.05, ""max_depth"": 1, ""min_child_weight"": 5.0, ""n_estimators"": 100, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v2,level
+2026-10-24T20:56:16Z,models/ml_forecast.py,xgboost|text_vs_market|h7,ETH,7.0,valid,346,0.0835692664819216,market_ml,ml_main,,dm_hln,v2,level
+2026-10-24T21:04:30Z,models/ml_forecast.py,elastic_net|market|h1|cv,BTC,1.0,train,5,,n/a,ml_cv,,"{""cv_mse"": 0.7752307155686353, ""hyperparams"": {""alpha"": 0.1, ""l1_ratio"": 0.1}, ""n_folds"": 5}",v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,elastic_net|text|h1|cv,BTC,1.0,train,5,,n/a,ml_cv,,"{""cv_mse"": 0.7754013224243199, ""hyperparams"": {""alpha"": 0.1, ""l1_ratio"": 0.1}, ""n_folds"": 5}",v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,elastic_net|text_vs_market|h1,BTC,1.0,valid,352,0.46470714688436066,market_ml,ml_main,,clark_west,v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,xgboost|market|h1|cv,BTC,1.0,train,5,,n/a,ml_cv,,"{""cv_mse"": 0.9753175657831596, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.03, ""max_depth"": 1, ""min_child_weight"": 20.0, ""n_estimators"": 400, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,xgboost|text|h1|cv,BTC,1.0,train,5,,n/a,ml_cv,,"{""cv_mse"": 0.9647213974456388, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.05, ""max_depth"": 1, ""min_child_weight"": 5.0, ""n_estimators"": 200, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,xgboost|text_vs_market|h1,BTC,1.0,valid,352,0.9990844668104749,market_ml,ml_main,,dm_hln,v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,elastic_net|market|h3|cv,BTC,3.0,train,5,,n/a,ml_cv,,"{""cv_mse"": 0.570398663598413, ""hyperparams"": {""alpha"": 0.1, ""l1_ratio"": 0.1}, ""n_folds"": 5}",v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,elastic_net|text|h3|cv,BTC,3.0,train,5,,n/a,ml_cv,,"{""cv_mse"": 0.5958180876639576, ""hyperparams"": {""alpha"": 0.1, ""l1_ratio"": 0.1}, ""n_folds"": 5}",v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,elastic_net|text_vs_market|h3,BTC,3.0,valid,350,0.23916446526727841,market_ml,ml_main,,clark_west,v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,xgboost|market|h3|cv,BTC,3.0,train,5,,n/a,ml_cv,,"{""cv_mse"": 0.7671237673721111, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.05, ""max_depth"": 1, ""min_child_weight"": 20.0, ""n_estimators"": 400, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,xgboost|text|h3|cv,BTC,3.0,train,5,,n/a,ml_cv,,"{""cv_mse"": 0.7731004120184906, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.03, ""max_depth"": 1, ""min_child_weight"": 20.0, ""n_estimators"": 400, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,xgboost|text_vs_market|h3,BTC,3.0,valid,350,0.6522994735953325,market_ml,ml_main,,dm_hln,v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,elastic_net|market|h7|cv,BTC,7.0,train,5,,n/a,ml_cv,,"{""cv_mse"": 0.5417081531387, ""hyperparams"": {""alpha"": 0.3, ""l1_ratio"": 0.1}, ""n_folds"": 5}",v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,elastic_net|text|h7|cv,BTC,7.0,train,5,,n/a,ml_cv,,"{""cv_mse"": 0.5540631336709398, ""hyperparams"": {""alpha"": 0.3, ""l1_ratio"": 0.1}, ""n_folds"": 5}",v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,elastic_net|text_vs_market|h7,BTC,7.0,valid,346,0.010670407379590574,market_ml,ml_main,,clark_west,v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,xgboost|market|h7|cv,BTC,7.0,train,5,,n/a,ml_cv,,"{""cv_mse"": 0.6675706476097296, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.05, ""max_depth"": 1, ""min_child_weight"": 20.0, ""n_estimators"": 400, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,xgboost|text|h7|cv,BTC,7.0,train,5,,n/a,ml_cv,,"{""cv_mse"": 0.6767549050769763, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.03, ""max_depth"": 1, ""min_child_weight"": 20.0, ""n_estimators"": 200, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,xgboost|text_vs_market|h7,BTC,7.0,valid,346,0.13195552663231558,market_ml,ml_main,,dm_hln,v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,elastic_net|market|h1|cv,ETH,1.0,train,5,,n/a,ml_cv,,"{""cv_mse"": 0.5467722637769058, ""hyperparams"": {""alpha"": 0.01, ""l1_ratio"": 0.1}, ""n_folds"": 5}",v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,elastic_net|text|h1|cv,ETH,1.0,train,5,,n/a,ml_cv,,"{""cv_mse"": 0.5474468487905072, ""hyperparams"": {""alpha"": 0.01, ""l1_ratio"": 0.1}, ""n_folds"": 5}",v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,elastic_net|text_vs_market|h1,ETH,1.0,valid,352,0.7716027727852874,market_ml,ml_main,,clark_west,v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,xgboost|market|h1|cv,ETH,1.0,train,5,,n/a,ml_cv,,"{""cv_mse"": 0.6139836851509619, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.05, ""max_depth"": 1, ""min_child_weight"": 20.0, ""n_estimators"": 400, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,xgboost|text|h1|cv,ETH,1.0,train,5,,n/a,ml_cv,,"{""cv_mse"": 0.6154901943281001, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.05, ""max_depth"": 2, ""min_child_weight"": 20.0, ""n_estimators"": 200, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,xgboost|text_vs_market|h1,ETH,1.0,valid,352,0.6155484007812042,market_ml,ml_main,,dm_hln,v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,elastic_net|market|h3|cv,ETH,3.0,train,5,,n/a,ml_cv,,"{""cv_mse"": 0.4115070791837557, ""hyperparams"": {""alpha"": 0.01, ""l1_ratio"": 0.5}, ""n_folds"": 5}",v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,elastic_net|text|h3|cv,ETH,3.0,train,5,,n/a,ml_cv,,"{""cv_mse"": 0.4390920183252295, ""hyperparams"": {""alpha"": 0.01, ""l1_ratio"": 0.5}, ""n_folds"": 5}",v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,elastic_net|text_vs_market|h3,ETH,3.0,valid,350,0.6372455337432784,market_ml,ml_main,,clark_west,v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,xgboost|market|h3|cv,ETH,3.0,train,5,,n/a,ml_cv,,"{""cv_mse"": 0.5258286510979439, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.05, ""max_depth"": 1, ""min_child_weight"": 20.0, ""n_estimators"": 400, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,xgboost|text|h3|cv,ETH,3.0,train,5,,n/a,ml_cv,,"{""cv_mse"": 0.5532070988465656, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.05, ""max_depth"": 1, ""min_child_weight"": 20.0, ""n_estimators"": 400, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,xgboost|text_vs_market|h3,ETH,3.0,valid,350,0.7502001407426219,market_ml,ml_main,,dm_hln,v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,elastic_net|market|h7|cv,ETH,7.0,train,5,,n/a,ml_cv,,"{""cv_mse"": 0.43354608666369404, ""hyperparams"": {""alpha"": 0.1, ""l1_ratio"": 0.1}, ""n_folds"": 5}",v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,elastic_net|text|h7|cv,ETH,7.0,train,5,,n/a,ml_cv,,"{""cv_mse"": 0.4458219198975225, ""hyperparams"": {""alpha"": 0.3, ""l1_ratio"": 0.1}, ""n_folds"": 5}",v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,elastic_net|text_vs_market|h7,ETH,7.0,valid,346,0.66852845488454,market_ml,ml_main,,clark_west,v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,xgboost|market|h7|cv,ETH,7.0,train,5,,n/a,ml_cv,,"{""cv_mse"": 0.4765949629199916, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.03, ""max_depth"": 1, ""min_child_weight"": 5.0, ""n_estimators"": 400, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,xgboost|text|h7|cv,ETH,7.0,train,5,,n/a,ml_cv,,"{""cv_mse"": 0.47651652942111744, ""hyperparams"": {""colsample_bytree"": 0.8, ""learning_rate"": 0.03, ""max_depth"": 1, ""min_child_weight"": 5.0, ""n_estimators"": 400, ""n_jobs"": 1, ""random_state"": 42, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""tree_method"": ""hist""}, ""n_folds"": 5}",v2,diff
+2026-10-24T21:04:30Z,models/ml_forecast.py,xgboost|text_vs_market|h7,ETH,7.0,valid,346,0.5391434015334329,market_ml,ml_main,,dm_hln,v2,diff

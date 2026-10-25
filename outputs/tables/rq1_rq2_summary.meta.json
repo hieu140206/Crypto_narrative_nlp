@@ -1,0 +1,9 @@
+{
+  "seed": 42,
+  "n_boot": 5000,
+  "block_len": 10,
+  "rq1_holm": "2 tests (H1a,H1b) per asset family",
+  "rq2_holm": "4 tests (A + B×3) per asset family",
+  "n_registry_appended": 28,
+  "summary_path": "D:\\Projects\\Crypto_narrative_nlp\\outputs\\tables\\rq1_rq2_summary.csv"
+}
