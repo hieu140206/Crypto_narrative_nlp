@@ -1,0 +1,498 @@
+# Narrative title samples v4 (kiểm tay)
+
+Mỗi narrative: 30 tiêu đề ngẫu nhiên (seed 42); other: 30 tiêu đề.
+
+## regulation [core] (n=4120)
+
+- Not Just Grayscale: BlackRock Also Met With SEC to Talk Bitcoin ETF
+- Judge Denies Motion to Seal Hinman Documents in Ripple SEC Case
+- Coinbase's CEO Cites 'Rumors' the SEC May Ban Crypto Staking for Retail Customers
+- Binance founder CZ sees positive shift in crypto regulation worldwide
+- SEC Further Delays WisdomTree Bitcoin ETF Decision
+- SEC Chairman Hints at More Lawsuits Against Stock Token Issuers
+- Indian Government Submits Bill to Ban Most Cryptocurrencies, Dashing Hopes for Friendlier Measure
+- Does Hong Kong’s slow approach to crypto regulation risk stifling digital asset growth?
+- SEC Commissioner Mark Uyeda calls agency’s approach to crypto filings ‘problematic’
+- SEC Objects to Terraform’s $166M Retainer of Law Firm Dentons: Reuters
+- Coinbase Falls After Disclosing Regulatory Inquiries Over Lending Product
+- Pro-Bitcoin Senator Lummis to Propose New Crypto Regulator
+- Man Who Hacked SEC's X Account to Pump Bitcoin Gets 14 Months in Prison
+- SEC crackdown on crypto staking in the US could boost decentralization
+- Hong Kong to license more crypto exchanges by end of year
+- Solana ETF possible with a change in POTUS, SEC: Balchunas
+- SEC rejects WisdomTree’s application for a spot Bitcoin ETF... again
+- EU DeFi regulations set to welcome big banks, challenge crypto natives
+- Judge orders CFTC to serve Ooki DAO founders with lawsuit
+- Regulating Crypto by Enforcement and Stealth Will Set the US Back
+- Stablecoin Markets Pick Winners and Losers Ahead of SEC Paxos Lawsuit
+- Picking and Choosing Tokens to Prosecute Is 'Pretty Unfair,' Says Former SEC Cyber Chief
+- How Hong Kong Is Gearing Up to Regulate Stablecoins
+- Gary Gensler refuses to answer if ETH is a security: SEC hearing
+- Hong Kong crypto exchange license applications cost less than expected
+- Thailand regulator approves USDT, USDC stablecoins
+- Litecoin Price Spikes After CFTC Calls It Commodity Alongside Bitcoin and Ethereum
+- The SEC continues meeting with bitcoin ETF hopefuls. Here’s what they’re discussing
+- Argentine Congressman Proposes Crypto Salary Bill
+- Ethereum ETF Approval Is Likely Say Sources Close to SEC: Report
+
+## etf [core] (n=2642)
+
+- ETF approval will help Solana break the ‘memechain’ narrative
+- VanEck Adds to ETF Applications With Ether Futures Filing
+- Market Wrap: From GBTC Discount to Short Bitcoin ETF, Traders See Reasons for Optimism
+- Bitcoin ETF inflows top 500 times 2025 average in 'significant deviation'
+- BlackRock Bitcoin ETF could unlock $30 trillion worth of wealth, Bloomberg analyst says
+- BlackRock’s Fink notes ‘pent-up interest’ after fake bitcoin ETF news
+- Bitcoin Spot ETF Approval Could Help Power up a New Crypto Cycle: Bernstein
+- SEC Denies WisdomTree’s Application in Latest Bitcoin ETF Rejection
+- Bitcoin ETF 'FOMO Rally' Could Send Price to All-Time High: Bernstein
+- SEC Provides Comments on Latest Bitcoin ETF Filings: Report
+- Bitcoin traders back in profit even as price slows alongside spot BTC ETF inflows
+- Grayscale Seeks Cardano ETF Approval After Filing for Solana, XRP and Dogecoin Funds
+- Australian Monochrome spot Bitcoin ETF expected to launch within 2 months, says CEO
+- As the CME’s Volume Gets Pumped, the Bitcoin ETF’s Quirky Structure Could Explain Some of It
+- Crypto ETF issuer Bitwise moving into Europe via acquisition
+- First Mover Americas: Bitcoin Regains $66K Following Bullish ETF Data
+- Traders rush to short Ether as Grayscale pulls its futures ETF plan
+- Bitcoin Jumps to Near $28K as Bulls Bet on ETF Approval
+- Trump Media to Team Up With Crypto.com In ETF Push
+- T-Rex files for ‘ghost pepper’ 2X leveraged MicroStrategy ETF
+- Bitcoin Traders Pare Bullish Bias as Spot ETF Deadline Nears
+- Empire Newsletter: SEC about-face fires up ETH ETF hype-loop
+- BlackRock Files Spot Ethereum ETF Application with SEC
+- Bitcoin ETF Approval Odds Just Got Better: Bloomberg Analysts
+- 'Study Never Giving Up': Crypto Twitter Reacts to Ethereum ETF Win
+- First Mover Americas: It’s ETF Deadline Week
+- Bitcoin-related altcoins surge as BTC ETF rumors spread across the sector
+- New Bitwise ad reflects expected bitcoin ETF marketing blitz
+- VanEck Launches Crypto Mining ETF
+- Record BTC price in sight as bitcoin ETF flows surge
+
+## institutional_adoption [core] (n=1802)
+
+- MicroStrategy Should Continue to Rally as Bitcoin Halving Nears: Benchmark
+- MicroStrategy listing in the S&P 500 index could expose millions to Bitcoin
+- Michael Saylor's Bitcoin Holdings May Now Be Worth Over $1 Billion
+- MicroStrategy’s stock price more than doubles in 2023 in lockstep with Bitcoin
+- MicroStrategy Makes Largest-Ever Bitcoin Buy, Adding $5.4 Billion Worth
+- Loka Launches Bitcoin Mining Pool for Institutional Investors With Support From Hashlabs
+- MicroStrategy Buys $191M Worth of Bitcoin
+- Institutional Bitcoin Buying Spiked Around Wednesday's Crash
+- Hedge Fund Volatility Vets Launch Crypto Fund as Investors Look to TradFi Pros
+- MicroStrategy buys 2,138 Bitcoin for $209M, yield reaches 74% in 2024
+- Bitcoin Decoupled From Stocks in Q1 as Institutional Demand Strengthened: CoinDesk Research
+- European Hedge Fund Reveals $420 Million in Bitcoin ETF Investments
+- Institutional inflows into crypto hit lowest levels since October
+- Bitcoin ETF race gets hotter as ARK Invest adds surveillance agreement to application
+- Saylor signals impending Bitcoin purchase amid Israel-Iran conflict
+- ARK Invest Swaps Nearly $9M of Its Own Bitcoin ETF (ARKB) for Coinbase (COIN) Stock
+- Ark Invest Jumps Into Crypto SMA Arena
+- Michael Saylor will step down as MicroStrategy CEO but remain as executive chair
+- CIO of $2.1 Trillion Asset Manager Amundi: Bitcoin Is A ‘Farce’
+- Cathie Wood’s Ark Invest Has Bought Almost $20M in Coinbase Stock Since January
+- Big shorters are betting $6.9B against MicroStrategy stocks
+- Tesla selling Bitcoin last year turned out to be a $500M mistake
+- MicroStrategy Bitcoin Stash Swells to $10.28 Billion as Firm Buys More BTC
+- Crypto Biz: MicroStrategy doubles down on Bitcoin, Ether ETFs delayed, and more
+- If You’re Selling Bitcoin Over War Fears, You Don’t Get It, Says Hedge Fund Manager
+- Michael Saylor pushes US gov’t to purchase up to 25% of Bitcoin supply
+- Digital Asset Manager Onramp Invest Integrates CoinDesk 20 Index for RIAs
+- MicroStrategy Buys Additional $25M Worth of Bitcoin During Market Dip
+- Crypto asset manager Valkyrie raises $10M in Series A round
+- Institutional crypto asset products saw record weekly outflows of $423M
+
+## hacks_security [core] (n=1283)
+
+- Craig Wright's Tulip Trading Must Prove Ownership of Bitcoin in Hacking Case, English Court Rules
+- Hacker moves $10M from 2023 phishing incident to Tornado Cash
+- DeFi Hacks Usually Come Down to Poor Security: Halborn COO
+- Crypto hacking losses decline in Q1 2024 — Immunefi
+- Vesting Contract for Polygon DeFi Protocol QiDAO Exploited for $13 Million
+- Crypto Exchange Binance Freezes $450,000 From Curve Finance Hack
+- MetaMask Moves To Help Crypto Scam Victims Recover Stolen Digital Assets
+- THORChain swap volume explodes past $1B after Bybit hack
+- Wormhole Parent Commits $320M Ether to Replace Massive DeFi Hack Losses
+- DeFi Lender Euler Finance Drained of $197M In Flash Loan Exploit
+- A Hacker Has Stolen $10 Million in Ethereum and No One Knows How
+- Bybit: 89% of stolen $1.4B crypto still traceable post-hack
+- Bitfinex hack recovery spurs crypto community responses
+- $364 Million Lost in April to Crypto Hacks, Scams: CertiK
+- DeFi Exchange Mango's $114M Exploit Was 'Market Manipulation,' Not a Hack, Ex-FBI Special Agent Says
+- Curve Finance awards dev $250K for finding reentrancy vulnerability
+- Hundred Finance loses $7 million in Optimism hack
+- German Prosecutors, Police Close Down Platform Suspected of Laundering Stolen Crypto
+- Friendsies 'Rug Pull' NFT Holders—Could the Community Take Over?
+- India Prime Minister Suffers Another Twitter Hack; Fake Tweet Sent Promising Bitcoin to All Indians
+- Bitcoin, XRP and Dogecoin Sink Amid Inflation Fears and Bybit Hack Fallout
+- $25M MEV Exploit Teaches a Valuable Lesson About Relay Providers
+- LiveArtX's Seven Treasuries NFT Collection Stolen, Exploiter Breaks Floor Price
+- NFTs, Crypto Stolen After Web3 Gaming CEO Gabriel Leydon’s Twitter Hacked
+- Ethereum fork token ETHPoW climbs 150% after smart contract hack — A fakeout rally?
+- Avalanche DeFi Platform Vee Finance Suffers $35M Hack
+- Hackers Nab $8M in Ethereum via Uniswap Phishing Attack
+- MEVbots backdoor drains users’ Ethereum funds via arbitrage trading bot
+- Tether blacklists validator address that drained MEV bots for $25M
+- $235M WazirX exchange hack has implications for India’s crypto industry
+
+## defi [core] (n=3039)
+
+- Aave launches v3 liquidity pool following unanimous governance decision
+- What is SmarDex? The DeFi Disruptor Poised to Take Over the DEX Market
+- Fidelity reportedly amends Ether ETF S-1 filing, removes ETH staking
+- EU DeFi regulations set to welcome big banks, challenge crypto natives
+- Bitcoin Drops Below $28K as Options Expire, Traders Borrow WBTC From Aave
+- ‘Blast radius’ of new users joining Solana DeFi for the points, liquidity is ‘snowballing’
+- Missing DeFi security layer found in a new company release
+- Terra Is Now DeFi's Network of Choice After Ethereum
+- DeFi Platform Synthetix's Founder Proposes Capping Token Supply at 300M; Here’s Why
+- Solana-Based Prediction Market Uses DeFi Yields to Finance ‘No Loss’ Betting
+- With another crypto exchange set to halt US staking, what’s next for the segment?
+- DeFi Platform Lido to Cease Staking on Polkadot, Kusama in August
+- Dapp for upcoming Diem blockchain raises $4.5M in seed investments
+- SEC Charges So-Called DeFi Company for Allegedly Fraudulent $30M Offering
+- Coinbase to Bring Ethereum 2.0 Staking to UK Customers
+- Thorchain Surges 17% Leaving DeFi Tokens In Its Wake
+- Gaming and DeFi lead DApp sector as AI gains traction — DappRadar
+- Coinbase’s Ethereum Staking Token Is Trading at a Discount—Here’s Why
+- Solana's DeFi Projects are Raising Millions of Dollars
+- SynFutures raises $14M for derivatives DEX supporting ‘anything with a price feed’
+- Europe gears up to regulate DeFi in 2026 as MiCA leaves sector in limbo
+- Nashville Couple Sues IRS Over Tezos Staking Rewards Tax
+- DEX Aggregator ParaSwap Deploys on Avalanche
+- Aave V2 Users Temporarily Unable to Access $120M on Polygon After Governance Bug
+- Shared Web3 user base could power new social app integrations — Aave CEO
+- Blockchain Project Interlay Wants its New Platform to Become a ‘One-Stop-Shop for Bitcoin DeFi’
+- Adoption of DeFi, ZK Tech, NFTs and More Will Continue to Increase in 2023
+- The many layers of crypto staking in the DeFi ecosystem
+- Ethereum Staking Protocol Swell Unveils Layer-2 Rollup With $1B Total Value Locked
+- Thailand's Fourth-Largest Bank by Assets Exploring DeFi Offering: Report
+
+## stablecoins [core] (n=1916)
+
+- Back to Square One? Circle's USDC Market Cap Drops Below $50B for First Time Since Terra's Collapse
+- Crypto Rally Foiled by Report of DOJ Probe of Tether
+- Curve Stablecoin Is in the Works, Despite Regulatory Scrutiny
+- Secure America’s Financial Strength With Stablecoins, Not Central Banks
+- US Rep. Josh Gottheimer Introduces Bill for Government-Backed Stablecoin Insurance
+- Tether logs $1.6B in bitcoin in Q2 attestation
+- BlackRock receives memecoins, NFTs after depositing $100M USDC onchain
+- Tether's $100M Investment in LatAm Agriculture Firm May Be a Tokenization Play
+- Tether Promotes Paolo Ardoino to CEO
+- Binance's BUSD Stablecoin Suffers $500M Outflows After CFTC Lawsuit
+- Tron Network USDD Stablecoin Wobbles From Dollar Peg Amid Latest Crypto Crisis
+- Cantor Teams With SoftBank, Tether, Bitfinex on Possible $3B Bitcoin Deal: Report
+- Stripe rolls out stablecoin accounts in over 100 countries
+- During Bitcoin's Latest Price Crash, 'Tether Premium' Shows Where Money Went
+- MakerDAO and Aave’s DeFi conflict reopens over DAI’s perceived risk growth
+- India's Market Regulator Suggests Shared Crypto Oversight Even as RBI Seeks Stablecoin Ban: Reuters
+- Asia Crypto News: Asia's Banks Look to Stablecoins (USDC, USDT) to Prevent Deposit Flight
+- Banks Will Dominate Stablecoins, and 2 Other Predictions About the Future of Money
+- Stablecoins Increasingly Used for Savings, Payments in Emerging Countries, but Crypto Trading Still Leads: Report
+- Stablecoin market cap rises to 2-year highs as dominance slides to 6%: CCData
+- Binance to Offer 'T+3' Daily BNB/USDT Options
+- Fed Vice Chair Brainard Calls for Crypto-Specific Regulations, Notes Stablecoin Risks
+- Ethereum Rollup Hermez Network, to Be Used by Tether, Goes Live
+- Wyoming State Gears Towards Stablecoin Launch in July
+- Tether Fraud Investigation Gets New Leader: Bloomberg
+- Stablecoin Tether Crashes on Indian Exchanges, Traders Buy The Dip
+- Crypto Exchange Binance to Benefit From Increased Supply of Its Own Stablecoin, BofA Says
+- BTC volatility hits record low, stablecoin transaction value tops Visa — ARK
+- Stablecoins may be safer than bank deposits: Proof of Talk panel
+- USDC market cap is up 80% from 2023 lows
+
+## monetary_policy [core] (n=1124)
+
+- US election vs. Fed rate cut — 5 things to know in Bitcoin this week
+- Fed Chair Powell’s Hawkish Stance on Inflation Could Hurt Crypto
+- Bitcoin correlation with Nasdaq soars as CPI fears intensify
+- Bitcoin, Ethereum Down 6% as Uncertainty Around Fed Taper Lingers
+- Crypto Exchange FTX Freezes Under Strain of CPI Volatility
+- How markets are reacting to the latest inflation print
+- Bitcoin Price Holds Steady Ahead of Trump's 'Liberation Day', Jobs Report
+- Bitcoin, Ethereum Trade Sideways as Fed Skips Rate Hike
+- Bitcoin sellers wait at $104K as Fed faces Trump rates pressure at FOMC
+- Bitcoin price targets include new $14K dip as Fed’s Powell avoids inflation
+- Bitcoin rallies to $104.7K after Fed FOMC ‘nothing burger’ lines up with market expectations
+- Bitcoin, Ethereum Trade Sideways as Market Mulls Mixed CPI Report
+- Fed Keeps Interest Rates at Zero, Says Hike Appropriate ‘Soon’
+- Bitcoin price hits 1-week lows as Fed rate hike rumors unsettle market
+- First Mover Americas: Bitcoin Pulls Back Before Probable Fed Rate Cut
+- Fears of Rising Interest Rates Tanks Bitcoin and European markets
+- Bitcoin sees new 4-month high as US PPI, retail data post ‘big misses’
+- Bitcoin Tanks After Powell Says Fed May Keep Raising Interest Rates
+- Bitcoin price gains $1K in minutes as CPI data deals DXY fresh 2% dip
+- Janet Yellen Says Interest Rates May Rise, Bitcoin Dips
+- Bitcoin double top ‘invalidated’ amid fear CPI may fuel macro comedown
+- US Inflation Slowed to 8.5% in July, CPI Report Shows; Bitcoin Jumps
+- Bitcoin hovers near $48K ahead of fresh key US inflation data
+- CPI report spurs $932M inflows into crypto investment funds
+- BTC News: Bitcoin Price Hovers at $85K as Fed’s Waller Suggests 'Bad News' Rate Cuts if Tariffs Resume
+- First Mover Americas: BTC Treads Water Ahead of U.S. Jobs Report
+- Crypto Markets Poised for Resurgence as Fed Signals Looming Rate Cuts: Analysts
+- Bitcoin could rally regardless of what the Federal Reserve FOMC decides this week: Here’s why
+- Analysts eye Bitcoin rally after bullish CPI print
+- DXY Hits 3-Year Low of 99.25, BTC Steady as U.S-China Trade Tussle Worsens
+
+## cbdc [exploratory] (n=362)
+
+- China’s CBDC Has Been Used for $9.7B of Transactions
+- Central Banks of Israel, Norway and Sweden Team Up to Explore Retail CBDC
+- Foreign trade and pensions: What’s next for Russia’s CBDC project?
+- Hong Kong Monetary Authority Releases CBDC White Paper to Study Prospect of e-HKD
+- Jamaica's Central Bank to Pilot CBDC Beginning in May
+- As Trump Stumps Against CBDC, Fed Chair Says 'Nothing New' With Digital Dollar
+- Bank of Israel Unveils Possible Design of "Multipurpose" Digital Shekel CBDC
+- House Passes Anti-CBDC Bill to Prevent Chinese-Style Surveillance of America
+- Mastercard’s CBDC pilot ventures into Ethereum and NFTs
+- About 80% of Central Banks Are Exploring CBDC Use Cases, Bison Trails Report Says
+- Iran to reportedly pilot central bank digital currency soon
+- Norway’s Central Bank to Test Technical Solutions for a CBDC Over Next Two Years
+- Ant Group Has Been Working With China’s Central Bank on Its CBDC Since 2017: Report
+- Digital Dollar Would Have to Coexist With Cash: Fed Chairman
+- Reserve Bank of India mulls first steps toward an eventual CBDC
+- Central Bank of Brazil Selects Partners to Assist With CBDC
+- UK Bitcoin community reacts to incoming CBDC and digital pound rollout
+- Australia marks first FX transaction using a CBDC as eAUD pilot continues
+- Germany's 2021: New regulations, the digital euro and NFTs on the rise
+- China's CBDC Could Give Beijing 'Leeway for Economic Retaliation,' Says National Security Expert
+- Australia Pushes Ahead With Central Bank Digital Currency, Announces Pilot Timeline
+- OKex embraces Brazil’s official fast payments system PIX, as CBDC draws nearer
+- Wyoming Stablecoin Is Just a State-Issued CBDC by Another Name: Rep. Tom Emmer
+- CBDC activity heats up, but few projects move beyond pilot stage
+- What Is a Central Bank Digital Currency? A Brief Guide to CBDCs
+- Canada Moves Away From Retail CBDC, Shifts Focus to Broader Payments
+- State governor and US presidential hopeful calls for CBDC ban in Florida
+- ‘Learning by Doing’ is Critical to Digital Dollar Development, Visa Exec Says
+- Digital yuan conceived to counter Alipay-like platforms, says former PBoC executive
+- Largest Bank in Southeast Asia Is Adding Support for China's CBDC
+
+## ai_general [exploratory] (n=108)
+
+- SPX6900 Sets Record Highs While Trendy ‘AI Agents’ See Profit-Taking
+- Almost all AI agents are just ‘memecoins that talk’
+- Asia Crypto News: Institutional Buying Makes $3K ETH Likely, While AI Agents Seek Crypto Rails
+- AI Agents Could Form Nation on Crypto Rails
+- Ethereum Game 'Nifty Island' Now Lets Creators Drop AI Agents Into 3D Worlds
+- Crypto AI Tokens in Focus as DOGE, SHIB Rally Starts to Ease
+- AI tokens record double-digit gains as market cap doubles in a month
+- AI Tokens Lead Crypto Market Ahead of Nvidia Earnings, Bitcoin Under $64K
+- Crypto startup Axal automates trading with AI agents
+- AI Tokens Up After Meta Beats Analyst Expectations
+- Fully onchain AI agents can be the key to a more open AI future — Here’s why
+- Crypto whale up $11.5M on AI token position in 19 days
+- Coinbase Won't Handle AI Token Merger for Users
+- Move-to-Earn Game 'Sweat' Reveals AI Agent Amid Multi-Chain Expansion
+- These AI Tokens Are All Up Over 30% This Week Amid Plans to Merge
+- AI tokens are more hype than value right now, says Coinbase analyst
+- AI Tokens Lead Crypto-Market Recovery as Nvidia Hits One-Month High
+- Can We Ever Trust AI Agents?
+- Nvidia's (NVDA) Conference Fails to Reverse Crypto AI Token Downswing
+- Nvidia's stock price forms ’death cross’ — Will AI crypto tokens follow?
+- Crypto Payment Network for AI Agents Launched by Former Ripple Execs
+- AI Tokens Lead Crypto Rebound Amid Strong U.S. Economy
+- Fetch.ai Token Has Volatile First Day on Coinbase, Listing Still 'Groundbreaking,' CEO Says
+- Coinbase exec uses ChatGPT ‘jailbreak’ to get odds on wild crypto scenarios
+- AI Tokens ICP, FET Buck Crypto Market Drop as Apple Flags Artificial Intelligence Foray
+- AI Agents Could Be Important 'Buyers' of Crypto, Says Palantir Co-Founder Joe Lonsdale
+- Fetch.ai, SingularityNET, Ocean Protocol Set Date for Artificial Superintelligence Alliance Token Merger
+- Render Network Eyes Solana Migration Ahead of Network Changes
+- Starknet to bring on AI agents that can carry out on-chain activity
+- Nasdaq-listed Interactive Strength launches $500M AI token treasury with Fetch.ai
+
+## market_failure [exploratory] (n=2164)
+
+- FTX Pledges Up to $1 Billion for Philanthropic Fund to 'Improve Humanity'
+- FTX.US Brings Crypto Derivatives to Users with LedgerX Acquisition
+- Coinbase Reports Revenue Increase in Q4 Despite FTX Collapse
+- Ledn Makes Competing Bid for Troubled Crypto Lender BlockFi: Report
+- FTX collapse won’t impact everyday use of crypto in Brazil: Transfero CEO
+- FTX’s $1.4B bid on Voyager Digital assets: A gambit or a way out for users?
+- 'Staked Ether' Becomes Focus of Crypto Stress, From Celsius to Three Arrows
+- Australian Crypto Exchange Digital Surge to Pay Back Creditors After Losing $33M on FTX
+- Could a Grayscale Bitcoin Trust collapse be the next black swan event? Watch The Market Report
+- Ethereum Privacy Platform Aztec Responds to FTX 'Freezing' User Accounts
+- 3AC co-founder rejects jurisdiction of bankruptcy court, claiming he renounced US citizenship
+- FTX collapse is Trust Wallet Token’s gain — Why did TWT price soar 150% in six days?
+- Tron to Create Algorithmic Stablecoin to Be More Like Terra
+- Trezor reports 300% surge in sales revenue due to FTX contagion
+- Genesis Digital Assets opens three new facilities in South Carolina in US expansion
+- BlockFi Management Hasn't Withdrawn Any Crypto Since October, Lawyer Tells Court
+- Market Wrap: Bitcoin Returns to Red, Tumbling 7% on FTX Collapse
+- FTX and Everstake Launch Crypto Fundraising Site for Ukraine
+- FTX’s $1.2B repayments mark key moment in crypto industry recovery
+- BitMEX Joins FTX Exchange in Commitment to Carbon Neutrality
+- Celsius seeks to convert alts to Bitcoin and Ether under reorganization plan
+- Terra's LUNA Sets New All-Time High Following $135 Million Bitcoin Buy
+- Terra's Do Kwon Admits to Faking Trading Volume in Leaked Chat: Court Docs
+- Voyager Token Jumps 20% as $7.3M VGX Sent to Burn Address
+- Core Scientific Hopes to Emerge from Bankruptcy by September, Lawyers Say
+- Hong Kong-based Chiron Partners launches $50M Terra fund
+- FTX Files for Bankruptcy Protection in US; CEO Bankman-Fried Resigns
+- First Mover Asia: Alameda Research, FTX Are Bound to Each Other; Bitcoin Trades Sideways, Dogecoin Plunges Late as Twitter Halts Work on Crypto Wallet
+- Solana and Terra Soar, Equities Advance Following Fed’s Taper Talk: Markets Wrap
+- FTX to deploy $1B through Future Fund for safer AI, reduced biorisk
+
+## nft_meme_web3 [exploratory] (n=2638)
+
+- BONK, POPCAT and Solana memecoins stay green even as Bitcoin price drops
+- Bitcoin Ordinals Has a New Leader—And He's Ready to Be Its Creator's 'Shield'
+- NFT Marketplace Blur Delays Native Token Launch
+- NFT stamp collecting is a dud
+- Sky Mavis, Creator of Web3 Game Axie Infinity, Cuts One-Fifth of Its Staff
+- Chainalysis report finds most NFT wash traders unprofitable
+- Meme Coin Rally May Signal Impending Altcoin Season; This Is the Sign to Watch
+- Reddit Users Open 2.5 Million Crypto Wallets After Launch of NFT Marketplace
+- Binance drops Bitcoin Ordinals, medical tourism in the metaverse: Nifty Newsletter
+- Solana NFTs Can Now Be Traded on OpenSea
+- OpenSea Gets SEC 'Wells Notice' – Industry Reaction
+- KilroyPunk NFT Drop Mashes Up Iconic Meme With a CryptoPunk
+- Paradigm, 3LAU Back $7.6M Raise for ‘NFT Social Network’ Showtime
+- NFT News: Solana-Based NFT Marketplace Magic Eden Acquires Slingshot
+- Bitcoin Ordinals NFTs Coming to Binance in Late May
+- NFT Creators Stole $1.3M From Investors Then Vanished, Sources Say
+- Ghibli memecoins surge as internet flooded with Studio Ghibli-style AI images
+- Lionel Messi promotes Solana memecoin on Instagram
+- Ticketmaster Goes Live With NFT-gated Features
+- Meme Coins Brett, Bonk and Pepe Top Gainers Amid Market Lull
+- OpenSea enables support for ERC-721C programmable earnings standard
+- Bud Light Owns a Nouns Ethereum NFT—And May Use It in Super Bowl Ad
+- Solana NFT Marketplace Magic Eden Raises $130M at $1.6B Valuation
+- Pepe-Themed ‘Bitcoin Frogs’ Becomes Most Traded NFT Amid Bitcoin Ordinals Hype
+- Fantom bets on ‘safer memecoins’ with launch of $6.5M dev fund
+- NFT Backers Paid up to $200 in Gas Fees in Delayed Blur Airdrop
+- Bitcoin Ordinals, Token Incentives, and the Future of OpenSea: CEO Devin Finzer Dishes
+- OpenSea Enables NFT Purchases With Credit Cards, Apple Pay
+- Games Maker Animoca Brands to Acquire Majority Stake in NFT Platform Bondly
+- Doja Cat Releases NFT Collection With OneOf Marketplace
+
+## mining_energy [exploratory] (n=2832)
+
+- Public Keys: GameStop Wants Bitcoin, Miners Face Shrinkage, Robinhood Gets a Time Out
+- Crypto mining stocks surge to yearly highs after Bitcoin bounces back
+- Crypto Miners Marathon Digital, Hut 8 Rally as Bitcoin Tops $50K
+- Google now offering $1M crypto mining attack protection
+- Bitcoin ETFs are sucking up 10X more BTC than miners can produce
+- Bitcoin hashrate recovers after big freeze shuts down miners
+- Bitcoin Mining Firm TeraWulf Raised $17M of Capital in Q3, But Cash Reserves Remain Low
+- Bitcoin Miners Earning $40M Daily Revenue as Ordinals Debate Splits Devs
+- DOJ charges duo for crypto mining in school district amid US energy scrutiny
+- Bitcoin’s Mining Difficulty Has Hit an All-Time High
+- Bitcoin mining will thrive under a Trump administration — MARA CEO
+- Paraguay’s proposed Bitcoin mining ban could cost $200M a year
+- Bitcoin Miner Core Scientific Files for Bankruptcy, Expects Support From Some Debt Holders
+- How this mining pool strives to make Bitcoin greener
+- Wall Street Analyst ‘Pulling the Plug’ on Bitcoin Miners Owing to Bear Market Woes
+- Galaxy's Head of Mining Amanda Fabiano Departed to Start Consulting Company
+- Upstream Data Sues Crusoe Energy Over Waste Gas Mining Patent
+- Bitcoin Mining Difficulty Increases for 8th Time Since China’s Crypto Ban
+- Democratic National Committee Chair Met With Bitcoin Miner Marathon, Exec Says
+- Nvidia Says Crypto Adds Nothing to Society, Despite Profiting From Mining
+- What the Next Level of Bitcoin Mining Difficulty Will Bring
+- US firm splashes out on 4,800 Bitcoin miners worth $34M
+- You can now buy gold-backed NFTs with the mining carbon footprint offset
+- Bitcoin hashrate taps all-time high
+- GoMining CEO bullish on Bitcoin: “The mining business remains profitable”
+- Chinese Bitcoin Mining Firm Relocates Machines to Kazakhstan
+- ‘A Bounty on Bitcoin Miners’: Industry Slams Biden’s 30% Tax
+- 7 lessons learned from building and scaling Bitcoin mining operations
+- UCL Centre for Blockchain Research Associate: Crypto Miners ‘Need More Scrutiny’
+- Bitcoin miner Luxor eyes North American expansion with $5M funding round
+
+## politics_geopolitics [exploratory] (n=2415)
+
+- The road to the US election is paved with political memecoins — now down 90%
+- Can Trump’s pro-crypto policies survive beyond his administration?
+- Tariff fears wipe out SOL’s weekend gains
+- Industry calls for urgent crypto law reforms after Australian election
+- Guns, Ammo and Crypto: How A Ukraine Minister May Have Forever Altered Wars
+- Biden Issues Long-Awaited US Executive Order on Crypto
+- Bitcoin Bullishness Continues as ETFs Add Nearly $1 Billion Ahead of Election
+- Bitcoin, Gold Could Benefit From Rising Geopolitical Tension and U.S. Election: JPMorgan
+- Russia Passes Bill to Legalize Crypto to Dodge International Sanctions
+- Lawmakers Raise Alarm on Crypto for Sanctions Evasion as Experts Cast Doubt
+- Crypto markets rebound as Trump puts Canada, Mexico tariffs on hold
+- Crypto Investor Arthur Hayes Doubts Trump Will Get Around to Doing a Bitcoin Reserve
+- XRP, Solana and Cardano News: XRP, SOL, ADA's Coinbase Premium Surges to One-Month High After Trump's Crypto Reserve News
+- Trump crypto push could hurt Europe’s financial stability: Top EU official
+- Eric Trump Backs New Bitcoin Mining Venture With Hut 8, Plans to Go Public
+- Judge issues temporary stay in Kalshi v. CFTC election betting case
+- How Long Will Trump Tariffs Rattle Bitcoin and Stocks?
+- Ukraine Now Accepts Dogecoin Donations Amid Russian Invasion
+- Trump's Solana Meme Coin Launch Marks 'New Crypto Regulatory Era': Bernstein
+- Bitcoin hinges on $93K support, risks $1.3B liquidation on trade war concerns
+- Banks must adopt crypto or be extinct in 10 years, Eric Trump says
+- Crypto Hiring: The post-election people moves
+- Institution Takes $25M Hedge Bet on Derive's Bitcoin Options Market as U.S. Election Looms
+- $200 Billion Wiped From Crypto Market Cap Following Russia’s Invasion of Ukraine
+- Bitcoin News: BTC Price Poised for Strongest Weekly Price Gain Since Trump Win Amid $2.7B ETF Inflow
+- 4 reasons why Trump’s Bitcoin reserve is actually bullish: Crypto execs
+- Ethereum Options Volatility Outstrips Bitcoin’s as US Election Looms. Why it Matters
+- Trump Pledges to Free Silk Road Creator Ross Ulbricht If Re-Elected
+- Treasury Must Clarify Tornado Cash Sanctions, Congressman Says
+- Gold-Backed Cryptocurrencies Shine as Precious Metal Hits Record High Amid Trade War Worry
+
+## tech_upgrade [exploratory] (n=2005)
+
+- Ethereum layer 2 SOON raises $22M via NFT sale for mainnet launch
+- Ethereum L2 development is ‘double-edged sword’ for ETH value
+- Ethereum Mainstay Hudson Jameson on What Makes the Merge Monumental
+- Ether price hits 2-week high as London hard fork momentum builds
+- Crypto Market in Zen Mode as Bitcoin Remains Stable at $70K Ahead of Halving
+- Celo Migration to Layer-2 Network Is Done, Bringing in New Era for the Blockchain
+- Bitcoin's Halving May Be Here Sooner Than You Know (Again)
+- Satoshi-era Bitcoin code idea gets a boost from Taproot Wizards
+- NFTs at the heart of major upgrade for decentralized virtual city
+- Cardano Developers Delay Vasil Upgrade, Citing Bugs
+- Algorand Upgrade Set to Allow for Easy Creation of Complex Dapps
+- Only a Tiny Amount of ETH Is Poised to Be Withdrawn After Ethereum Shanghai Upgrade, Nansen Says
+- Bitcoin price predictions abound as traders focus on the next BTC halving cycle
+- Blast launches Ethereum L2 mainnet unlocking $2.3B in staked crypto
+- Ethereum Layer-2 Fees Should Be Under $0.05 to Be ‘Truly Acceptable’: Vitalik Buterin
+- The Dencun Upgrade is not enough to scale Ethereum
+- Bitcoin Transactions Plummet Following Absurd Runes and Halving Surge
+- Understanding the Economics of Ethereum Layer 2s
+- Bitcoin Layer-2 Social Network Offers Rewards for 'Touching Grass' in NFT Game
+- A year after Taproot, Bitcoin community works to unlock its DeFi potential
+- Ethereum Merge makes network more vulnerable to attack — Security researcher
+- 1inch, Aggregator of Decentralized Crypto Exchanges, to Launch on Ethereum Rollup zkSync Era
+- ‘Huge testing milestone’ for Ethereum: Ropsten testnet Merge set for June 8
+- Ether hits new all-time high above $2,200 hours ahead of Berlin hard fork
+- Ethereum Staking Tokens Jump Double Digits as Shanghai Upgrade Gets a Date
+- From BTC to HPC: Miners signal evolving focus after the halving
+- A16z Says It's Working on an Optimism-Based Rollup Client Called Magi
+- Post-halving profitability challenges to the mining industry
+- Shiba Inu Layer 2 Blockchain Shibarium to Release Beta Version This Week
+- Coinbase L2 Base hosts 80% of active Uniswap traders — Token Terminal
+
+## other (n=37852)
+
+- Price predictions 5/30: BTC, ETH, XRP, BNB, SOL, DOGE, ADA, SUI, HYPE, LINK
+- AMC Theatres Begin Accepting Dogecoin for Gift Cards
+- Sens. Lummis, Scott say Republican sweep in November is the push crypto needs
+- NFTs Can Bring the Real World On-Chain
+- Bitcoin tests traders’ nerves as analyst reissues $400K BTC price forecast
+- Ethereum fees are skyrocketing — But traders have alternatives
+- GTA 6 Preview: What We Know About the New Grand Theft Auto and Crypto Rumors
+- The Investor’s Guide to Avalanche (AVAX)
+- Price analysis 12/23: BTC, ETH, BNB, XRP, DOGE, ADA, MATIC, DOT, LTC, UNI
+- Crypto in ‘extreme fear’ as Arthur Hayes tips ‘sub $50K’ Bitcoin weekend
+- 4 Reasons Privacy Coins Haven't Taken Off
+- Google releases production-ready Gemini 1.5 for developers
+- Solana Hits Lowest Price in 2025, Down Over 50% Since January Peak
+- Fed’s Brainard Says Balance Sheet Reduction to Happen Rapidly
+- Ethereum Price Surges to Hit New All-Time High Above $2,000
+- 'Nifty Island' Ends Play-to-Airdrop Push—Here's When to Expect the ISLAND Token
+- Bitcoin analyst PlanB predicts 10 months of ‘face melting FOMO’
+- Swiss smart wallet turns a new page: Interview with Youhodler
+- SatoshiVM Marred by Controversy Days After SAVM Issuance
+- Binance Founder CZ Discloses Private Portfolio Loaded With BNB, A Little Bitcoin
+- El Salvador President Nayib Bukele Calls Off Bitcoin 2022 Conference Appearance
+- Bitcoin Briefly Spikes on Fed Announcement—Before Traders Realize Nothing Changed
+- Bitcoin breaks new all-time high above $63K: What are traders saying?
+- US government selling Bitcoin is a ‘huge strategic mistake,’ say observers
+- Bitcoin Bulls Face Setback as Monthly Stochastic Indicator Turns Lower: Analyst
+- Bitcoin price at 11x S&P 500 signals BTC is ‘rolling over’ — Analyst
+- Bitcoin price stalls in April, but $4.2B options expiry may revive run
+- Basketball billionaires form NBA blockchain use case committee
+- Ethereum needs more blockchain activity, adoption, to recapture $4K
+- Bitcoin Tumbles Most Since May and El Salvador Buys the Dip
