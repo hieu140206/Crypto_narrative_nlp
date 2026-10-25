@@ -28,7 +28,12 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from modeltable_io import TestSplitLockedError, load_model_table  # noqa: E402
+from modeltable_io import (  # noqa: E402
+    TestSplitLockedError,
+    assert_no_hard_cap_dates,
+    load_model_table,
+    load_splits_with_override,
+)
 from models.calendar_features import (  # noqa: E402
     DOW_DUMMY_COLS,
     add_dow_dummies,
@@ -338,6 +343,8 @@ def run_all(
     include_deseason_robust: bool = True,
     register: bool = True,
     stage: str = "valid",
+    split_override: dict[str, tuple[str, str]] | None = None,
+    registry_path: Path | None = None,
 ) -> pd.DataFrame:
     root = root or project_root()
     params = load_params(root)
@@ -347,19 +354,29 @@ def run_all(
     stage = str(stage).lower()
     if stage not in ("valid", "test"):
         raise ValueError("stage ∈ {'valid','test'}, nhận %r" % stage)
-    if stage == "test" and os.environ.get("ALLOW_TEST") != "1":
+    # split_override (pseudo-test): nhánh test nhưng không đọc test thật → không cần ALLOW_TEST
+    if stage == "test" and split_override is None and os.environ.get("ALLOW_TEST") != "1":
         raise TestSplitLockedError("stage='test' cần ALLOW_TEST=1")
     random.seed(seed)
     np.random.seed(seed)
 
     out_dir = out_dir or (root / "outputs" / "tables")
     out_dir.mkdir(parents=True, exist_ok=True)
-    reg_path = out_dir / "test_registry.csv"
+    # registry_path tách khỏi out_dir (vd. real → outputs/test, registry → tables/)
+    reg_path = Path(registry_path) if registry_path is not None else (out_dir / "test_registry.csv")
     if register:
         ensure_registry_baseline_column(reg_path)
 
-    train0 = load_model_table("B", "train", horizon=1, drop_embargo=True, root=root, panel=panel)
-    valid0 = load_model_table("B", "valid", horizon=1, drop_embargo=True, root=root, panel=panel)
+    if split_override is not None:
+        sp0 = load_splits_with_override(
+            "B", panel=panel, horizon=1, drop_embargo=True,
+            root=root, split_override=split_override,
+        )
+        train0, valid0 = sp0["train"], sp0["valid"]
+        assert_no_hard_cap_dates(pd.concat([train0, valid0, sp0["test"]], ignore_index=True))
+    else:
+        train0 = load_model_table("B", "train", horizon=1, drop_embargo=True, root=root, panel=panel)
+        valid0 = load_model_table("B", "valid", horizon=1, drop_embargo=True, root=root, panel=panel)
     abn_note = check_abn_attention_identical(train0, valid0)
     print("AbnAttention vader vs finbert (all):", abn_note)
 
@@ -369,25 +386,34 @@ def run_all(
     registry_rows: list[dict] = []
 
     for h in horizons:
-        train = load_model_table("B", "train", horizon=h, drop_embargo=True, root=root, panel=panel)
-        valid = load_model_table("B", "valid", horizon=h, drop_embargo=True, root=root, panel=panel)
-        test = None
-        if stage == "test":
-            test = load_model_table("B", "test", horizon=h, drop_embargo=True, root=root, panel=panel)
+        if split_override is not None:
+            sp = load_splits_with_override(
+                "B", panel=panel, horizon=h, drop_embargo=True,
+                root=root, split_override=split_override,
+            )
+            train, valid, test = sp["train"], sp["valid"], sp["test"]
+            assert_no_hard_cap_dates(pd.concat([train, valid, test], ignore_index=True))
+        else:
+            train = load_model_table("B", "train", horizon=h, drop_embargo=True, root=root, panel=panel)
+            valid = load_model_table("B", "valid", horizon=h, drop_embargo=True, root=root, panel=panel)
+            test = None
+            if stage == "test":
+                test = load_model_table("B", "test", horizon=h, drop_embargo=True, root=root, panel=panel)
         run_models = dict(models)
-        # Deseason robust chỉ trên valid (train↔valid); không áp cho stage=test
-        if include_deseason_robust and stage == "valid" and "M_att" in models:
+        # Deseason robust chỉ trên valid (train↔valid); không áp cho stage=test / override
+        if include_deseason_robust and stage == "valid" and split_override is None and "M_att" in models:
             train_d, valid_d = attach_deseason_abn(train, valid)
         else:
             train_d = valid_d = None
 
         for asset in assets:
             for model_name, text_col in run_models.items():
-                if stage == "valid":
+                if stage == "valid" and split_override is None:
                     oos, summary = run_asset_model(
                         train, valid, asset, h, model_name, text_col
                     )
                 else:
+                    # nhánh test: prior=valid, eval=test (gồm pseudo-test)
                     oos, summary = run_asset_model(
                         train, test, asset, h, model_name, text_col, prior=valid
                     )
@@ -471,15 +497,21 @@ def run_all(
         "seed": seed,
         "panel": panel,
         "stage": stage,
+        "split_override": split_override,
         "prereg_family": 5,
         "primary_baseline": "har_dow",
         "robustness_baseline": "har_plain",
         "holm": "per asset, 9 PREREG tests (3 models × 3 h) on CW vs har_dow",
         "abn_attention_note": abn_note,
         "models": models,
-        "extra_robust": list(ROBUST_EXTRA) if include_deseason_robust and stage == "valid" else [],
+        "extra_robust": (
+            list(ROBUST_EXTRA)
+            if include_deseason_robust and stage == "valid" and split_override is None
+            else []
+        ),
         "summary_path": str(sum_path),
         "register": register,
+        "registry_path": str(reg_path) if register else None,
     }
     (out_dir / "har_text_summary.meta.json").write_text(
         json.dumps(meta, indent=2, ensure_ascii=False, default=str), encoding="utf-8"

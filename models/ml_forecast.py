@@ -32,7 +32,12 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from modeltable_io import TestSplitLockedError, load_model_table  # noqa: E402
+from modeltable_io import (  # noqa: E402
+    TestSplitLockedError,
+    assert_no_hard_cap_dates,
+    load_model_table,
+    load_splits_with_override,
+)
 from models.calendar_features import DOW_DUMMY_COLS, add_dow_dummies  # noqa: E402
 from models.har_baseline import (  # noqa: E402
     FEATURES,
@@ -604,14 +609,22 @@ def load_stage_frames(
     *,
     root: Path | None = None,
     panel: str = "title",
+    split_override: dict[str, tuple[str, str]] | None = None,
 ) -> pd.DataFrame:
     """stage='valid': train+valid cho CV-select trên train, eval trên valid.
-    stage='test': yêu cầu ALLOW_TEST=1.
+    stage='test': yêu cầu ALLOW_TEST=1 trừ khi có ``split_override`` (pseudo).
     """
     root = root or project_root()
     stage = str(stage).lower()
+    if split_override is not None:
+        sp = load_splits_with_override(
+            "B", panel=panel, horizon=h, drop_embargo=True,
+            root=root, split_override=split_override,
+        )
+        out = pd.concat([sp["train"], sp["valid"], sp["test"]], ignore_index=True)
+        assert_no_hard_cap_dates(out)
+        return out
     if stage == "test":
-        # load_model_table sẽ raise nếu thiếu ALLOW_TEST
         train = load_model_table("B", "train", horizon=h, drop_embargo=True, root=root, panel=panel)
         valid = load_model_table("B", "valid", horizon=h, drop_embargo=True, root=root, panel=panel)
         test = load_model_table("B", "test", horizon=h, drop_embargo=True, root=root, panel=panel)
@@ -634,6 +647,8 @@ def run_evaluation(
     register: bool = True,
     grid: str = "v1",
     macro_mode: str = "level",
+    split_override: dict[str, tuple[str, str]] | None = None,
+    registry_path: Path | None = None,
 ) -> pd.DataFrame:
     """Chạy đánh giá (valid hoặc test). Không gọi mặc định từ main."""
     root = root or project_root()
@@ -645,7 +660,7 @@ def run_evaluation(
     random.seed(seed)
     np.random.seed(seed)
 
-    if stage == "test" and os.environ.get("ALLOW_TEST") != "1":
+    if stage == "test" and split_override is None and os.environ.get("ALLOW_TEST") != "1":
         raise TestSplitLockedError("stage='test' cần ALLOW_TEST=1")
 
     cols_m, cols_f = feature_lists(ml, macro_mode=macro_mode)
@@ -653,6 +668,7 @@ def run_evaluation(
     horizons = horizons or list(ml["_horizons"])
     out_dir = out_dir or (root / "outputs" / "tables")
     out_dir.mkdir(parents=True, exist_ok=True)
+    reg_path = Path(registry_path) if registry_path is not None else (out_dir / "test_registry.csv")
     ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     tag = output_tag(grid, macro_mode)
 
@@ -661,14 +677,18 @@ def run_evaluation(
     for asset in assets:
         asset_rows = []
         for h in horizons:
-            raw = load_stage_frames(stage, h, root=root, panel=panel)
+            raw = load_stage_frames(
+                stage, h, root=root, panel=panel, split_override=split_override,
+            )
+            if split_override is not None:
+                assert_no_hard_cap_dates(raw)
             raw = raw.loc[raw["asset"] == asset].copy()
             raw = prepare_ml_frame(raw, h, cols_f)
             mask = common_complete_mask(raw, h, cols_m, cols_f)
             df = raw.loc[mask].reset_index(drop=True)
 
-            # CV pool: train (+valid nếu stage=test)
-            if stage == "valid":
+            # CV pool: train (+valid nếu stage=test / pseudo)
+            if stage == "valid" and split_override is None:
                 cv_pool = df.loc[df["split"] == "train"].reset_index(drop=True)
                 eval_df = df.loc[df["split"] == "valid"].reset_index(drop=True)
             else:
@@ -796,7 +816,7 @@ def run_evaluation(
     summary_df.to_csv(out_dir / f"ml_summary_{stage}{tag}.csv", index=False)
     if register:
         append_ml_registry(
-            reg_rows, out_dir / "test_registry.csv",
+            reg_rows, reg_path,
             grid_version=grid, macro_mode=macro_mode,
         )
     (out_dir / f"ml_summary_{stage}{tag}.meta.json").write_text(
@@ -804,6 +824,7 @@ def run_evaluation(
             "stage": stage,
             "grid_version": grid,
             "macro_mode": macro_mode,
+            "split_override": split_override,
             "seed": seed,
             "backend": XGB_BACKEND,
             "params_sha256": params_sha256(root),
