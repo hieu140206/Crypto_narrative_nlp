@@ -54,20 +54,21 @@ DROP_URL_MISMATCH = False     # True: bỏ luôn bài lệch ngày URL (nhóm qu
 # chỉ bỏ bài ngoài chủ đề ở các nguồn đăng cả tin công nghệ chung (Decrypt).
 OFF_TOPIC_FILTER_SOURCES = {"decrypt"}
 
-# Từ khóa nhận biết bài về crypto (so khớp không phân biệt hoa thường)
+# Từ khóa crypto (đã thu hẹp: bỏ bank/fed/cpi/inflation/quantum/treasury/exchange chung)
 CRYPTO_PATTERN = re.compile(
     r"crypto|bitcoin|\bbtc\b|ethereum|\beth\b|\bether\b|blockchain|stablecoin|"
     r"\bdefi\b|\bnft|token|altcoin|solana|\bsol\b|\bxrp\b|ripple|dogecoin|binance|"
-    r"coinbase|\bsec\b|\bcftc\b|etf|wallet|mining|miner|halving|web3|memecoin|"
-    r"airdrop|ledger|tether|\busdt\b|\busdc\b|exchange|on-chain|onchain|"
-    r"digital asset|satoshi|cardano|polkadot|avalanche|chainlink|layer[- ]?2|"
-    r"tokeniz|treasury|market cap|bull run|bear market|liquidat|perpetual|"
-    r"saylor|vitalik|hoskinson|fairshake|super pac|quantum|monero|zcash|"
-    r"mt\.? ?gox|kalshi|polymarket|prediction market|proof-of-human|worldcoin|"
-    r"privacy coin|\bdao\b|staking|validator|rollup|metamask|gensler|"
-    r"\bbank|payments?|\bfed\b|interest rate|\bcpi\b|inflation",
+    r"coinbase|\bsec\b|\bcftc\b|bitcoin etf|crypto etf|spot etf|wallet|mining|miner|"
+    r"halving|web3|memecoin|airdrop|ledger|tether|\busdt\b|\busdc\b|"
+    r"crypto exchange|on-chain|onchain|digital asset|satoshi|cardano|polkadot|"
+    r"avalanche|chainlink|layer[- ]?2|tokeniz|market cap|bull run|bear market|"
+    r"liquidat|perpetual|saylor|vitalik|hoskinson|fairshake|monero|zcash|"
+    r"mt\.? ?gox|kalshi|polymarket|prediction market|worldcoin|privacy coin|"
+    r"\bdao\b|staking|validator|rollup|metamask|gensler|cryptocurrency",
     re.IGNORECASE,
 )
+BTC_PATTERN = re.compile(r"bitcoin|\bbtc\b", re.IGNORECASE)
+ETH_PATTERN = re.compile(r"ethereum|\beth\b|\bether\b", re.IGNORECASE)
 URL_DATE_PATTERN = re.compile(r"/(20\d\d)/(\d\d)/(\d\d)/")
 
 
@@ -114,6 +115,22 @@ def normalize_title(title):
     return re.sub(r"\s+", " ", t).strip()
 
 
+def title_digits(title_norm):
+    """Chuỗi số trong tiêu đề - dùng để không gộp nhầm bài chỉ khác con số."""
+    return "".join(re.findall(r"\d+", title_norm))
+
+
+def tag_currencies(title, summary):
+    """Gắn thẻ BTC/ETH cho RSS bằng từ khóa (tương đương Coin Type của CryptoVision)."""
+    text = "%s %s" % (title or "", summary or "")
+    tags = []
+    if BTC_PATTERN.search(text):
+        tags.append("BTC")
+    if ETH_PATTERN.search(text):
+        tags.append("ETH")
+    return tags
+
+
 def step_load(raw_dir):
     """Bước 1: gộp file .jsonl, bỏ dòng trùng khóa."""
     files = sorted(raw_dir.glob("2*.jsonl"))
@@ -153,20 +170,30 @@ def step_dedup(df):
     df = df.drop_duplicates(subset="_url_norm", keep="first").reset_index(drop=True)
     dropped_url = before - len(df)
 
-    # Lớp 2: tiêu đề gần giống nhau trong cửa sổ 48 giờ (giữ bài đăng sớm hơn)
+    # Lớp 2: tiêu đề gần giống trong 48 giờ; không gộp nếu chuỗi số khác nhau
+    try:
+        from rapidfuzz.fuzz import ratio as fast_ratio
+
+        def similar(a, b):
+            return fast_ratio(a, b) / 100 >= TITLE_SIMILARITY
+    except ImportError:
+        def similar(a, b):
+            m = difflib.SequenceMatcher(None, a, b)
+            return (m.real_quick_ratio() >= TITLE_SIMILARITY
+                    and m.quick_ratio() >= TITLE_SIMILARITY
+                    and m.ratio() >= TITLE_SIMILARITY)
+
     df = df.sort_values("published_at").reset_index(drop=True)
     df["_title_norm"] = df["title"].map(normalize_title)
     window = pd.Timedelta(hours=DEDUP_WINDOW_HOURS)
-    keep, recent = [], []  # recent: (giờ đăng, tiêu đề chuẩn hóa) của các bài đã giữ
+    keep, recent = [], []  # recent: (giờ, title_norm, digits)
     for pub, title in zip(df["published_at"], df["_title_norm"]):
-        recent = [(t, s) for t, s in recent if pub - t <= window]
-        is_dup = any(
-            difflib.SequenceMatcher(None, title, s).ratio() >= TITLE_SIMILARITY
-            for _, s in recent
-        )
+        recent = [r for r in recent if pub - r[0] <= window]
+        digits = title_digits(title)
+        is_dup = any(r[2] == digits and similar(title, r[1]) for r in recent)
         keep.append(not is_dup)
         if not is_dup:
-            recent.append((pub, title))
+            recent.append((pub, title, digits))
     dropped_title = keep.count(False)
     df = df[keep].drop(columns=["_url_norm", "_title_norm"]).reset_index(drop=True)
     return df, dropped_url, dropped_title
@@ -204,14 +231,23 @@ def clean(raw_dir):
     # Bước 6: dedup
     df, log["dropped_dup_url"], log["dropped_dup_title"] = step_dedup(df)
 
-    # Bước 7: available_at, use_date, nlp_text
+    # Bước 7: available_at, news_date, use_date, nlp_text, currencies
     df["available_at"] = df[["published_at", "collected_at_utc"]].max(axis=1)
+    # news_date = ngày UTC của published_at (spec); use_date holdout theo available_at + 1
+    df["news_date"] = (
+        df["published_at"].dt.tz_convert("UTC").dt.tz_localize(None).dt.normalize()
+    )
     df["use_date"] = df["available_at"].dt.normalize() + pd.Timedelta(days=1)
-    df["use_date"] = df["use_date"].dt.tz_localize(None)  # lưu dạng ngày, không kèm múi giờ
+    df["use_date"] = df["use_date"].dt.tz_localize(None)
     df["nlp_text"] = (df["title"] + ". " + df["summary"]).str.strip()
+    empty_sum = df["summary"].fillna("").str.strip() == ""
+    df.loc[empty_sum, "nlp_text"] = df.loc[empty_sum, "title"]
+    df["currencies"] = [
+        tag_currencies(t, s) for t, s in zip(df["title"], df["summary"])
+    ]
 
-    cols = ["source", "title", "summary", "nlp_text", "link", "categories",
-            "published_at", "collected_at_utc", "available_at", "use_date",
+    cols = ["source", "title", "summary", "nlp_text", "link", "categories", "currencies",
+            "published_at", "news_date", "collected_at_utc", "available_at", "use_date",
             "lag_minutes", "published_missing", "url_date_mismatch", "crypto_relevant"]
     df = df[cols].sort_values("available_at").reset_index(drop=True)
     log["rows_final"] = len(df)

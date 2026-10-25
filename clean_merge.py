@@ -2,49 +2,21 @@
 
 Mục đích
     Đọc file CryptoVision (Mendeley) và tạo MỘT bảng văn bản sạch: mỗi dòng là một
-    bài, không trùng, giờ UTC, có cột use_date cho biết bài được dùng cho ngày nào.
-    Đầu ra giao cho TV3 chạy sentiment. Khung thời gian lấy dữ liệu: 01/01/2020 ->
-    17/08/2025 (ngày cuối có dữ liệu thật của CryptoVision). Việc chia train/valid/test
-    nằm ở config của bước mô hình, không nằm trong file này.
+    bài, không trùng, giờ UTC, có news_date và use_date. Đầu ra giao cho TV3.
+    Mốc thời gian lấy từ config/params.yaml (không hard-code): đọc từ
+    robustness_start → t_end; in_main_sample chỉ True trong [sample.start, t_end],
+    trừ nguồn exclude_sources_main và ngày dump.
 
-Cách chạy (cần: pip install pandas pyarrow rapidfuzz). Không có rapidfuzz vẫn chạy
-được nhưng bước so tiêu đề gần giống chậm hơn nhiều (có thể hàng chục phút):
+Cách chạy (cần: pip install pandas pyarrow pyyaml rapidfuzz):
     python clean_merge.py                          # dùng đường dẫn mặc định
     python clean_merge.py duong_dan_file.csv       # chỉ định file CryptoVision
 
 Quy định của nhóm:
     - KHÔNG đưa RSS holdout vào file này (RSS có clean_rss.py riêng).
-    - Không import vào master_pipeline.ipynb.
-    - Đường dẫn lấy từ config/paths.yaml (khóa: cryptovision_path, text_clean_path);
-      thiếu thì dùng mặc định bên dưới. Seed 42.
-    - Không bao giờ đọc các cột giá và Market_Move (Open, High, Low, Close, Volume,
-      Movement_OpenClose_%, Movement_HighLow_%, Market_Move).
-    - Hai cột sentiment có sẵn của CryptoVision (sentiment_label, sentiment_score) được
-      giữ lại với TIỀN TỐ cv_ref_ (cv_ref_sentiment_label, cv_ref_sentiment_score,
-      cv_ref_coin_type) CHỈ để đối chiếu với điểm sentiment nhóm tự tính. Các cột cv_ref_*
-      KHÔNG được dùng làm đặc trưng hay biến giải thích trong bất kỳ mô hình nào, và
-      phải bị loại khỏi bảng đưa vào mô hình. Kiểm tra cuối: mọi cột có chữ "sentiment"
-      phải bắt đầu bằng cv_ref_.
-    - Nhãn lấy từ dòng sớm nhất của mỗi URL (bài bị nhân bản theo coin); cv_ref_coin_type
-      cho biết dòng đó thuộc coin nào, nhãn có thể khác giữa các coin.
-    - Dữ liệu 2019-2020 của CryptoPanic/CoinDesk có thể lệch giờ ~6 tiếng: xem cờ
-      ts_regime_risk.
-
-Các bước (theo thứ tự):
-    1. Đọc theo từng khối, chỉ lấy cột cần dùng, đổi giờ về UTC, ghi Max date,
-       cắt theo khung mẫu.
-    2. Lọc coin BTC/ETH (theo cột Coin Type).
-    3. Gộp tag asset theo URL (mỗi bài bị nhân bản theo coin), giữ bản sớm nhất.
-    4. Gắn cờ và lọc tiếng Anh (tỷ lệ ký tự ASCII), bỏ thông cáo báo chí.
-    5. Dedup lớp 2: tiêu đề gần giống trong cửa sổ 48 giờ (không gộp nhầm các
-       tiêu đề chỉ khác con số, ví dụ "Price analysis 5/12" và "5/19").
-    6. Gắn cờ timestamp (ts_regime_risk, ts_bulk_flag, ts_minute_only).
-    7. Tạo nlp_text, doc_id, use_date theo quy tắc chống look-ahead; xuất parquet.
-
-Quy tắc gán ngày (look-ahead):
-    Bài đăng trước 00:00 UTC của ngày t thì dùng cho ngày t; bài đăng từ 00:00 UTC
-    trở đi trong ngày t thì dùng cho ngày t+1. Nghĩa là use_date = (ngày UTC của
-    published_at_utc) + 1 ngày.
+    - Đường dẫn: config/paths.yaml; tham số: config/params.yaml. Seed 42.
+    - Không bao giờ đọc cột giá / Market_Move. Sentiment sẵn có chỉ dưới tiền tố cv_ref_.
+    - nlp_text = title + ". " + description (cùng công thức với RSS).
+    - news_date = ngày UTC của published_at_utc; use_date = news_date + 1.
 """
 import difflib
 import hashlib
@@ -59,25 +31,23 @@ import pandas as pd
 
 random.seed(42)
 
-# ---- Tham số (nhóm trưởng chốt; có thể chuyển sang config/params.yaml) ------
-# Khung lấy dữ liệu: 01/01/2020 -> 17/08/2025.
-# CryptoVision chỉ có dữ liệu thật đến cuối 08/2025, nên theo dòng rủi ro trong Excel
-# ("cắt mẫu ở ngày cuối cùng có dữ liệu thật, ghi rõ trong Limitations") T_END đặt
-# ở 2025-08-17: đây là tuần đầy đủ cuối cùng theo hướng dẫn nguồn dữ liệu (tuần
-# 18-24/08 chỉ có 41 bài, 25-27/08 chỉ có 12 bài). Muốn giữ đến hết dữ liệu thì
-# đổi thành "2025-12-31"; bộ lọc tự dừng ở ngày cuối có trong file (Max date).
-SAMPLE_START = "2020-01-01"
-T_END = "2025-08-17"                 # tính hết ngày này (đến 23:59:59 UTC)
-ROBUSTNESS_START = None              # ví dụ "2021-01-01" để giữ thêm các năm trước làm robustness
-COIN_KEEP = {"bitcoin", "ethereum", "btc", "eth"}  # so khớp chữ thường, cột Coin Type
-ASCII_MIN_RATIO = 0.90               # dưới mức này gắn non_en
+# ---- Tham số mặc định (bị ghi đè bởi config/params.yaml khi có) -------------
+SAMPLE_START = "2021-03-01"
+T_END = "2025-06-30"
+ROBUSTNESS_START = "2020-01-01"
+EXCLUDE_SOURCES_MAIN = ["cryptonews"]
+DUMP_MAX_PER_SOURCE_DAY = 300
+MIN_TITLE_CHARS = 20
+JUNK_TITLES = ["x icon", "error 500", "page not found", "just a moment"]
+COIN_KEEP = {"bitcoin", "ethereum", "btc", "eth"}
+ASCII_MIN_RATIO = 0.90
 DROP_NON_EN = True
-DROP_PRESS_RELEASE = True            # bỏ bài có /press-releases/ trong URL
+DROP_PRESS_RELEASE = True
 DEDUP_WINDOW_HOURS = 48
 TITLE_SIMILARITY = 0.92
-BULK_TS_MIN_ROWS = 10                # từ ngần này bài trở lên cùng giây/cùng nguồn = nạp hàng loạt
+BULK_TS_MIN_ROWS = 10
 MINUTE_ONLY_SOURCES = {"coindesk", "cointelegraph"}
-REGIME_RISK_SOURCES = {"cryptopanic", "coindesk"}   # trước 2021 timestamp có thể lệch
+REGIME_RISK_SOURCES = {"cryptopanic", "coindesk"}
 CHUNK_ROWS = 50_000
 
 DEFAULT_CSV_CANDIDATES = ["data/raw/cryptovision/cryptovision_v1.csv", "cryptovision_v1.csv"]
@@ -104,6 +74,37 @@ def project_root():
         if (p / "config").exists():
             return p
     return here.parent
+
+
+def load_params(root):
+    """Đọc mốc thời gian / ngưỡng từ config/params.yaml vào biến module."""
+    global SAMPLE_START, T_END, ROBUSTNESS_START
+    global EXCLUDE_SOURCES_MAIN, DUMP_MAX_PER_SOURCE_DAY, MIN_TITLE_CHARS, JUNK_TITLES
+    cfg = root / "config" / "params.yaml"
+    if not cfg.exists():
+        return
+    try:
+        import yaml
+        data = yaml.safe_load(cfg.read_text(encoding="utf-8")) or {}
+    except Exception:
+        return
+    sample = data.get("sample") or {}
+    if sample.get("start"):
+        SAMPLE_START = sample["start"]
+    if sample.get("t_end"):
+        T_END = sample["t_end"]
+    if sample.get("robustness_start"):
+        ROBUSTNESS_START = sample["robustness_start"]
+    if "exclude_sources_main" in data:
+        EXCLUDE_SOURCES_MAIN = list(data["exclude_sources_main"])
+    if "dump_max_per_source_day" in data:
+        DUMP_MAX_PER_SOURCE_DAY = int(data["dump_max_per_source_day"])
+    if "min_title_chars" in data:
+        MIN_TITLE_CHARS = int(data["min_title_chars"])
+    if "junk_titles" in data:
+        JUNK_TITLES = [str(j).lower() for j in data["junk_titles"]]
+    seed = data.get("seed", 42)
+    random.seed(seed)
 
 
 def load_paths(root, cli_csv=None):
@@ -175,7 +176,7 @@ def parse_utc(series):
 
 
 def step_read(csv_path, log):
-    """Bước 1 và 2: đọc theo khối, đổi UTC, cắt khung mẫu, lọc coin."""
+    """Bước 1 và 2: đọc theo khối, đổi UTC, cắt khung (robustness→t_end), lọc coin."""
     start = pd.Timestamp(ROBUSTNESS_START or SAMPLE_START, tz="UTC")
     end = pd.Timestamp(T_END, tz="UTC") + pd.Timedelta(days=1)  # hết ngày T_END
     header = pd.read_csv(csv_path, nrows=0).columns.tolist()
@@ -200,9 +201,58 @@ def step_read(csv_path, log):
     log["max_date_in_file"] = str(max_ts)   # điền vào source log (Max date)
     log["min_date_in_file"] = str(min_ts)
     log["coin_type_counts_in_window"] = dict(sorted(coin_counts.items(), key=lambda kv: -kv[1])[:15])
+    log["read_window"] = {"start": str(start), "end_exclusive": str(end),
+                          "main_start": SAMPLE_START, "t_end": T_END}
     df = pd.concat(parts, ignore_index=True) if parts else pd.DataFrame(columns=USE_COLS + ref_cols)
     log["rows_after_window_and_coin"] = len(df)
     return df
+
+
+def step_filter_titles(df, log):
+    """Bỏ tiêu đề rác / quá ngắn; bỏ trùng tiêu đề chuẩn hóa (giữ bản sớm nhất)."""
+    low = df["title"].str.strip().str.lower()
+    junk = low.isin(JUNK_TITLES) | low.str.contains(r"server error", na=False)
+    log["dropped_junk_titles"] = int(junk.sum())
+    df = df[~junk].reset_index(drop=True)
+    short = df["title"].str.len() < MIN_TITLE_CHARS
+    log["dropped_short_titles"] = int(short.sum())
+    df = df[~short].reset_index(drop=True)
+    # Trùng tiêu đề chuẩn hóa toàn cục: giữ bài đăng sớm nhất
+    df = df.sort_values("published_at_utc").reset_index(drop=True)
+    before = len(df)
+    df["_title_norm"] = df["title"].map(normalize_title)
+    df = df.drop_duplicates(subset="_title_norm", keep="first").drop(columns=["_title_norm"])
+    log["dropped_exact_dup_title"] = before - len(df)
+    return df.reset_index(drop=True)
+
+
+def step_flag_main_sample(df, log):
+    """Gắn dump_day và in_main_sample theo params (cửa sổ chính, exclude, dump)."""
+    main_start = pd.Timestamp(SAMPLE_START, tz="UTC")
+    main_end = pd.Timestamp(T_END, tz="UTC") + pd.Timedelta(days=1)
+    df = df.copy()
+    df["day_utc"] = df["published_at_utc"].dt.tz_convert("UTC").dt.normalize()
+    df["articles_source_day"] = df.groupby(["source", "day_utc"])["source"].transform("size")
+    df["dump_day"] = df["articles_source_day"] > DUMP_MAX_PER_SOURCE_DAY
+    exclude = {s.lower() for s in EXCLUDE_SOURCES_MAIN}
+    in_window = (df["published_at_utc"] >= main_start) & (df["published_at_utc"] < main_end)
+    df["in_main_sample"] = (
+        in_window
+        & ~df["source"].str.lower().isin(exclude)
+        & ~df["dump_day"]
+    )
+    dump_keys = df.loc[df["dump_day"], ["source", "day_utc"]].drop_duplicates()
+    log["dump_days_flagged"] = int(df["dump_day"].sum())
+    log["dump_day_keys"] = [
+        [r.source, str(r.day_utc.date())] for r in dump_keys.itertuples(index=False)
+    ]
+    log["in_main_sample_true"] = int(df["in_main_sample"].sum())
+    log["in_main_sample_false"] = int((~df["in_main_sample"]).sum())
+    # Bỏ hẳn bài ngày dump khỏi text_clean (tránh AbnAttention giả; test_no_dump_days)
+    n_dump = int(df["dump_day"].sum())
+    df = df[~df["dump_day"]].reset_index(drop=True)
+    log["dropped_dump_day_rows"] = n_dump
+    return df.drop(columns=["day_utc", "articles_source_day", "dump_day"])
 
 
 def step_merge_tags(df, log):
@@ -255,12 +305,15 @@ def clean(csv_path):
         sys.exit("Không còn dòng nào sau khi cắt khung mẫu/lọc coin. Xem coin_type_counts trong log.")
     df = step_merge_tags(df, log)
 
-    # Làm sạch ô văn bản, tạo nguồn
+    # Làm sạch ô văn bản, tạo nguồn; nlp_text thống nhất với RSS
     df["title"] = df["Title"].map(clean_text_cell)
     df["description"] = df["Description"].map(clean_text_cell)
     df["source"] = df["URL"].map(source_of)
-    df["nlp_text"] = df["title"]   # theo Excel: sentiment chạy trên headline (title)
-    df["nlp_text_body"] = df["Full Text"].map(clean_text_cell)  # nội dung đầy đủ, TV3 tự chọn dùng
+    df["nlp_text"] = (df["title"] + ". " + df["description"]).str.strip().str.rstrip(".")
+    # nếu description rỗng thì chỉ còn title (không để ". " thừa)
+    empty_desc = df["description"] == ""
+    df.loc[empty_desc, "nlp_text"] = df.loc[empty_desc, "title"]
+    df["nlp_text_body"] = df["Full Text"].map(clean_text_cell)
 
     # Bước 4: tiếng Anh và thông cáo báo chí
     df["non_en"] = df["nlp_text"].map(ascii_ratio) < ASCII_MIN_RATIO
@@ -274,7 +327,9 @@ def clean(csv_path):
     df = df[df["title"] != ""].reset_index(drop=True)
     log["rows_after_language_and_press"] = len(df)
 
+    df = step_filter_titles(df, log)
     df = step_dedup_title(df, log)
+    df = step_flag_main_sample(df, log)
 
     # Bước 6: cờ timestamp
     year = df["published_at_utc"].dt.year
@@ -284,10 +339,8 @@ def clean(csv_path):
     ts = df["published_at_utc"]
     df["ts_minute_only"] = df["source"].isin(MINUTE_ONLY_SOURCES) & (ts.dt.second == 0)
 
-    # Bước 7: id, ngày dùng, cột đầu ra
+    # Bước 7: id, news_date, use_date, cột đầu ra
     df["doc_id"] = df["_url_norm"].map(lambda u: hashlib.sha1(u.encode("utf-8")).hexdigest())
-    # Cột tham chiếu sentiment có sẵn, tiền tố cv_ref_. Mỗi URL chỉ giữ dòng sớm nhất nên nhãn
-    # lấy từ dòng đó; cv_ref_coin_type cho biết dòng đó thuộc coin nào (nhãn có thể khác giữa các coin).
     present = [c for c in REF_COLS if c in df.columns]
     if present:
         df = df.rename(columns=REF_RENAME)
@@ -295,29 +348,39 @@ def clean(csv_path):
         if "cv_ref_sentiment_score" in df.columns:
             df["cv_ref_sentiment_score"] = pd.to_numeric(df["cv_ref_sentiment_score"], errors="coerce")
     ref_out = [c for c in REF_OUT_COLS if c in df.columns]
-    df["use_date"] = (ts.dt.normalize() + pd.Timedelta(days=1)).dt.tz_localize(None)
-    df["in_main_sample"] = ts >= pd.Timestamp(SAMPLE_START, tz="UTC")
+    # news_date = ngày UTC (naive) của published_at_utc; use_date = news_date + 1
+    news_date = ts.dt.tz_convert("UTC").dt.tz_localize(None).dt.normalize()
+    df["news_date"] = news_date
+    df["use_date"] = news_date + pd.Timedelta(days=1)
     df["dataset_origin"] = "cryptovision"
     df = df.rename(columns={"URL": "url"})
-    cols = ["doc_id", "url", "source", "published_at_utc", "use_date", "title", "description",
-            "nlp_text", "nlp_text_body", "currencies", "non_en", "ts_regime_risk",
-            "ts_bulk_flag", "ts_minute_only", "in_main_sample", "dataset_origin"] + ref_out
+    cols = ["doc_id", "url", "source", "published_at_utc", "news_date", "use_date", "title",
+            "description", "nlp_text", "nlp_text_body", "currencies", "non_en",
+            "ts_regime_risk", "ts_bulk_flag", "ts_minute_only",
+            "in_main_sample", "dataset_origin"] + ref_out
     df = df[cols].sort_values("published_at_utc").reset_index(drop=True)
 
-    # Kiểm tra cuối: không có cột rò rỉ, giờ không rỗng, URL không trùng
     leaked = LEAK_COLS & set(df.columns)
     assert not leaked, "Còn cột rò rỉ: %s" % leaked
     bad_sent = [c for c in df.columns if "sentiment" in c.lower() and not c.startswith("cv_ref_")]
     assert not bad_sent, "Cột sentiment phải có tiền tố cv_ref_: %s" % bad_sent
     assert df["published_at_utc"].notna().all(), "Có published_at_utc rỗng"
     assert df["doc_id"].is_unique, "Còn doc_id trùng"
+    assert df["published_at_utc"].max() < pd.Timestamp(T_END, tz="UTC") + pd.Timedelta(days=1)
+    assert df["in_main_sample"].dtype == bool
     log["rows_final"] = len(df)
     log["first_published"] = str(df["published_at_utc"].min())
     log["last_published"] = str(df["published_at_utc"].max())
     log["rows_by_source"] = df["source"].value_counts().to_dict()
     log["rows_by_year"] = df["published_at_utc"].dt.year.value_counts().sort_index().to_dict()
     log["ts_flags"] = {c: int(df[c].sum()) for c in ("ts_regime_risk", "ts_bulk_flag", "ts_minute_only")}
-    log["sample"] = {"start": ROBUSTNESS_START or SAMPLE_START, "main_start": SAMPLE_START, "t_end": T_END}
+    log["sample"] = {
+        "robustness_start": ROBUSTNESS_START or SAMPLE_START,
+        "main_start": SAMPLE_START,
+        "t_end": T_END,
+        "exclude_sources_main": EXCLUDE_SOURCES_MAIN,
+        "dump_max_per_source_day": DUMP_MAX_PER_SOURCE_DAY,
+    }
     if "cv_ref_sentiment_label" in df.columns:
         log["reference_label_counts"] = df["cv_ref_sentiment_label"].value_counts(dropna=False).to_dict()
     return df, log
@@ -326,8 +389,10 @@ def clean(csv_path):
 def main():
     cli_csv = sys.argv[1] if len(sys.argv) > 1 else None
     root = project_root()
+    load_params(root)
     csv_path, out_path = load_paths(root, cli_csv)
     print("Doc file: %s" % csv_path)
+    print("Khung: robustness=%s main=%s..%s" % (ROBUSTNESS_START, SAMPLE_START, T_END))
     df, log = clean(csv_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     df.to_parquet(out_path, index=False)
