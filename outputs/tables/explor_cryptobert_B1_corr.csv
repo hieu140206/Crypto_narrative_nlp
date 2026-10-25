@@ -1,0 +1,5 @@
+pair,n_days_overlap,pearson,spearman,articles_per_day_median,pct_days_lt3_articles
+finbert_vs_vader,996,0.30703524241736924,0.29629502412585,,
+finbert_vs_cryptobert,996,0.09732825902119012,0.13403648553414485,,
+vader_vs_cryptobert,996,0.07620219853519661,0.07883961676002631,,
+coverage,1036,,,10.0,0.166988416988417
