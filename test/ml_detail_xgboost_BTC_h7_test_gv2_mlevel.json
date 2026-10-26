@@ -1,0 +1,123 @@
+{
+  "asset": "BTC",
+  "h": 7,
+  "model_kind": "xgboost",
+  "stage": "test",
+  "grid_version": "v2",
+  "macro_mode": "level",
+  "hp_market": {
+    "max_depth": 1,
+    "n_estimators": 100,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 20.0,
+    "reg_lambda": 1.0,
+    "tree_method": "hist",
+    "n_jobs": 1,
+    "random_state": 42
+  },
+  "hp_text": {
+    "max_depth": 1,
+    "n_estimators": 100,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 20.0,
+    "reg_lambda": 1.0,
+    "tree_method": "hist",
+    "n_jobs": 1,
+    "random_state": 42
+  },
+  "cv_mse_market": 0.6459280659108668,
+  "cv_mse_text": 0.6351758139232664,
+  "n_folds": 5,
+  "features_market": [
+    "har_d",
+    "har_w",
+    "har_m",
+    "ret_t",
+    "logvol_t",
+    "dow_Tue",
+    "dow_Wed",
+    "dow_Thu",
+    "dow_Fri",
+    "dow_Sat",
+    "dow_Sun",
+    "fred_VIXCLS",
+    "fred_VIXCLS_d5",
+    "fred_DGS10",
+    "fred_DGS10_d5",
+    "fred_DTWEXBGS",
+    "fred_DTWEXBGS_d5"
+  ],
+  "features_text": [
+    "all_finbert_Sent_t",
+    "all_finbert_PosSent",
+    "all_finbert_NegSent",
+    "all_finbert_MeanProb_t",
+    "all_vader_Sent_t",
+    "all_finbert_AbnAttention_t",
+    "AbnAtt_regulation",
+    "AbnAtt_etf",
+    "AbnAtt_institutional_adoption",
+    "AbnAtt_hacks_security",
+    "AbnAtt_defi",
+    "AbnAtt_stablecoins",
+    "AbnAtt_monetary_policy"
+  ],
+  "xgb_gain": {
+    "har_d": 25.636465072631836,
+    "har_w": 65.38843536376953,
+    "har_m": 26.48408317565918,
+    "ret_t": 12.665755271911621,
+    "logvol_t": 8.525989532470703,
+    "fred_VIXCLS": 10.94227123260498,
+    "fred_VIXCLS_d5": 9.958324432373047,
+    "fred_DGS10": 75.38492584228516,
+    "fred_DTWEXBGS": 26.60269546508789,
+    "AbnAtt_monetary_policy": 11.007061004638672
+  },
+  "xgb_gain_top10": [
+    [
+      "fred_DGS10",
+      75.38492584228516
+    ],
+    [
+      "har_w",
+      65.38843536376953
+    ],
+    [
+      "fred_DTWEXBGS",
+      26.60269546508789
+    ],
+    [
+      "har_m",
+      26.48408317565918
+    ],
+    [
+      "har_d",
+      25.636465072631836
+    ],
+    [
+      "ret_t",
+      12.665755271911621
+    ],
+    [
+      "AbnAtt_monetary_policy",
+      11.007061004638672
+    ],
+    [
+      "fred_VIXCLS",
+      10.94227123260498
+    ],
+    [
+      "fred_VIXCLS_d5",
+      9.958324432373047
+    ],
+    [
+      "logvol_t",
+      8.525989532470703
+    ]
+  ]
+}
