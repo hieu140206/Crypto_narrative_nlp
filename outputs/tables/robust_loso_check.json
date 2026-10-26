@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "n_rebuilt": 2072,
+  "n_reference": 2072,
+  "n_cols": 89,
+  "max_abs_delta": 0.0,
+  "n_mismatch_cells": 0,
+  "worst_col": null,
+  "missing_in_ref": [],
+  "missing_in_reb": [],
+  "tol": 1e-09,
+  "rebuilt_path": "D:\\Projects\\Crypto_narrative_nlp\\data\\processed\\loso\\full\\model_table_B.parquet",
+  "reference_path": "D:\\Projects\\Crypto_narrative_nlp\\data\\processed\\model_table_B.parquet"
+}

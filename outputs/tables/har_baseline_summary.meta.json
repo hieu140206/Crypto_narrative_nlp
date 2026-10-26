@@ -1,0 +1,15 @@
+{
+  "seed": 42,
+  "panel": "title",
+  "baselines": [
+    "har_plain",
+    "har_dow"
+  ],
+  "dow": "6 dummies Tue-Sun from date t (Mon omitted); models.calendar_features",
+  "jensen_correction": false,
+  "note_rv": "rv_hat=exp(yhat_logrv); không +σ²/2",
+  "train_rule": "target_end_date_h <= t and ~embargo_drop_h",
+  "benchmarks": "B0=expanding mean y; B1=expanding const+har_m",
+  "clark_west": "har_dow vs har_plain; har_* vs B1; one-sided nested HAC",
+  "summary_path": "D:\\Projects\\Crypto_narrative_nlp\\outputs\\tables\\har_baseline_summary.csv"
+}

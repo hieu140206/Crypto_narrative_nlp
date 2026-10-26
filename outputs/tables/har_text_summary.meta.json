@@ -1,0 +1,22 @@
+{
+  "seed": 42,
+  "panel": "title",
+  "prereg_family": 5,
+  "primary_baseline": "har_dow",
+  "robustness_baseline": "har_plain",
+  "holm": "per asset, 9 PREREG tests (3 models × 3 h) on CW vs har_dow",
+  "abn_attention_note": {
+    "identical": true,
+    "corr": 0.9999999999999999,
+    "n_nonnull": 1984
+  },
+  "models": {
+    "M_fin": "all_finbert_Sent_t",
+    "M_vad": "all_vader_Sent_t",
+    "M_att": "all_finbert_AbnAttention_t"
+  },
+  "extra_robust": [
+    "M_att_des_dow"
+  ],
+  "summary_path": "D:\\Projects\\Crypto_narrative_nlp\\outputs\\tables\\har_text_summary.csv"
+}

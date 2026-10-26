@@ -1,0 +1,47 @@
+{
+  "seed": 42,
+  "spec": "A",
+  "split": "train+valid",
+  "nw_bandwidth": 5,
+  "narratives": [
+    "regulation",
+    "etf",
+    "institutional_adoption",
+    "hacks_security",
+    "defi",
+    "stablecoins",
+    "monetary_policy"
+  ],
+  "outcomes": [
+    "y_log_rv",
+    "y_abvol",
+    "y_ret"
+  ],
+  "controls": [
+    "ret_lag1",
+    "ret_lag2",
+    "har_d",
+    "har_w",
+    "har_m",
+    "logvol_lag1",
+    "fred_VIXCLS",
+    "fred_VIXCLS_d5",
+    "fred_DGS10",
+    "fred_DGS10_d5",
+    "fred_DTWEXBGS",
+    "fred_DTWEXBGS_d5",
+    "dow_Tue",
+    "dow_Wed",
+    "dow_Thu",
+    "dow_Fri",
+    "dow_Sat",
+    "dow_Sun"
+  ],
+  "holm": "21 tests per asset (7×3); BTC primary, ETH robustness",
+  "dow_note": "DOW dummies required (AbnAtt weekend seasonality; Sai khác 1)",
+  "n_main": 42,
+  "n_diag": 42,
+  "n_robust": 63,
+  "n_registry_appended": 147,
+  "summary_path": "D:\\Projects\\Crypto_narrative_nlp\\outputs\\tables\\rq3_summary.csv"
+}

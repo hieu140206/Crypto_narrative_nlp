@@ -1,0 +1,3 @@
+asset,panel,label,family,direction,sent_col,p,coef_sum,se_sum,wald_stat,p_raw,n,nw_bandwidth,scale,note,p_holm,confirmed,text_leads_price
+ETH,noprice,robust_ETH_noprice,rq4_robust,sent_to_ret,all_finbert_Sent_t,1,0.00950090035508275,0.009674667730036404,0.9644004619382323,0.32608066918013456,959,5,raw,calendar_lag,0.32608066918013456,False,False
+ETH,noprice,robust_ETH_noprice,rq4_robust,ret_to_sent,all_finbert_Sent_t,1,0.21552807299461255,0.0983427010442687,4.803119892478381,0.028408248078548692,907,5,raw,calendar_lag,0.056816496157097385,False,False

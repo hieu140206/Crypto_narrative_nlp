@@ -1,0 +1,64 @@
+{
+  "timestamp": "2026-10-25T07:05:52Z",
+  "seed": 42,
+  "n_boot": 5000,
+  "block_len": 10,
+  "family": "robust_loso",
+  "est_end": "2023-12-31",
+  "hard_cap": "2024-01-01",
+  "groups": [
+    {
+      "loso_id": "full",
+      "exclude_sources": []
+    },
+    {
+      "loso_id": "coindesk",
+      "exclude_sources": [
+        "coindesk"
+      ]
+    },
+    {
+      "loso_id": "cointelegraph",
+      "exclude_sources": [
+        "cointelegraph"
+      ]
+    },
+    {
+      "loso_id": "decrypt",
+      "exclude_sources": [
+        "decrypt"
+      ]
+    },
+    {
+      "loso_id": "blockworks",
+      "exclude_sources": [
+        "blockworks"
+      ]
+    }
+  ],
+  "check": {
+    "ok": true,
+    "n_rebuilt": 2072,
+    "n_reference": 2072,
+    "n_cols": 89,
+    "max_abs_delta": 0.0,
+    "n_mismatch_cells": 0,
+    "worst_col": null,
+    "missing_in_ref": [],
+    "missing_in_reb": [],
+    "tol": 1e-09,
+    "rebuilt_path": "D:\\Projects\\Crypto_narrative_nlp\\data\\processed\\loso\\full\\model_table_B.parquet",
+    "reference_path": "D:\\Projects\\Crypto_narrative_nlp\\data\\processed\\model_table_B.parquet"
+  },
+  "n_registry_before": 457,
+  "n_registry_after": 607,
+  "n_registry_added": 150,
+  "holm_A": "per loso_id × asset (6 tests: 2 models × 3 y)",
+  "holm_B": "per loso_id × asset (9 tests: 3 models × 3 h) via har_text",
+  "paths": {
+    "A": "D:\\Projects\\Crypto_narrative_nlp\\outputs\\tables\\robust_loso_A.csv",
+    "B": "D:\\Projects\\Crypto_narrative_nlp\\outputs\\tables\\robust_loso_B.csv",
+    "C": "D:\\Projects\\Crypto_narrative_nlp\\outputs\\tables\\robust_loso_C.csv"
+  },
+  "registry_note": "Dropped 150 duplicate robust_loso rows from prior partial run (ts<2026-10-25T07:05Z); kept this-run batch only."
+}

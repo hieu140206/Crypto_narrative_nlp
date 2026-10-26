@@ -1,0 +1,6 @@
+loso_id,exclude_source,n_docs,n_calendar_days,median_articles_per_day,pct_days_lt3,n_days_lt3,train_valid_start,train_valid_end,n_days_train_valid,median_articles_per_day_tv,pct_days_lt3_tv,n_days_lt3_tv,core_narratives
+full,,62758,1583,45.0,0.018951358180669616,30,2021-03-01,2023-12-31,1036,43.0,0.025096525096525095,26,"regulation,etf,institutional_adoption,hacks_security,defi,stablecoins,monetary_policy"
+coindesk,coindesk,41470,1583,29.0,0.022109917877447885,35,2021-03-01,2023-12-31,1036,26.5,0.029922779922779922,31,"regulation,etf,institutional_adoption,hacks_security,defi,stablecoins,monetary_policy"
+cointelegraph,cointelegraph,38286,1583,28.0,0.06759317751105495,107,2021-03-01,2023-12-31,1036,29.0,0.055984555984555984,58,"regulation,etf,institutional_adoption,hacks_security,defi,stablecoins,monetary_policy"
+decrypt,decrypt,52184,1583,37.0,0.033480732785849655,53,2021-03-01,2023-12-31,1036,36.0,0.0444015444015444,46,"regulation,etf,institutional_adoption,hacks_security,defi,stablecoins,monetary_policy"
+blockworks,blockworks,56334,1583,39.0,0.024636765634870498,39,2021-03-01,2023-12-31,1036,37.0,0.03185328185328185,33,"regulation,etf,institutional_adoption,hacks_security,defi,stablecoins,monetary_policy"
