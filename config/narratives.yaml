@@ -1,0 +1,255 @@
+# Narrative dictionary v4 (RQ3) — title, IGNORECASE, \b.
+# exploratory: true = nhóm khám phá (không vào VIF chính).
+# excludes: nếu khớp → không gán narrative đó.
+# flags: cờ phụ; is_template_price buộc về other (xoá mọi narrative).
+# VIF: AbnAtt_k của 7 narrative chính (không dùng Att_k).
+version: 4
+
+narratives:
+  regulation:
+    exploratory: false
+    # Chỉ giữ khi có cơ quan/luật: SEC, CFTC, regulator, ban, license, bill, MiCA, FCA, DOJ (+ Gensler).
+    patterns:
+      - "\\bsec\\b"
+      - "\\bcftc\\b"
+      - "\\bfca\\b"
+      - "\\bregulator"
+      - "\\bban(ned|s)?\\b"
+      - "\\blicen[cs]e"
+      - "\\bbill\\b"
+      - "\\bmica\\b"
+      - "regulat"
+      - "\\bgensler\\b"
+      - "\\bdoj\\b"
+    excludes:
+      - "sec filing"
+      - "files?\\b.{0,40}with (the )?sec\\b"
+      - "form\\s+s-?1"
+      - "\\bs-1\\b"
+      - "10-(k|q)\\b"
+      - "coinbase international launches?"
+      # lawsuit tư nhân (công ty–công ty / công ty–cá nhân) không kèm cơ quan ở pattern đã lọc
+      - "lawsuit.*(vs\\.?|versus|sues).{0,40}(inc\\.?|corp\\.?|ltd\\.?|llc\\b)"
+      - "(inc\\.?|corp\\.?|ltd\\.?|llc\\b).{0,40}lawsuit.*(vs\\.?|versus)"
+      - "\\bsues\\b.{0,40}\\b(ceo|founder|executive|individual)\\b"
+      - "\\b(ceo|founder)\\b.{0,40}\\bsued\\b"
+      - "doj charges?.{0,60}\\b(ceo|founder|executive)\\b"
+      - "\\b(ceo|founder|executive)\\b.{0,60}doj charges?"
+
+  etf:
+    exploratory: false
+    patterns:
+      - "\\betf\\b"
+      - "\\betp\\b"
+      - "exchange[- ]traded"
+
+  institutional_adoption:
+    exploratory: false
+    patterns:
+      - "\\binstitutional\\b"
+      - "\\bpension\\b"
+      - "\\bendowment\\b"
+      - "\\bhedge fund\\b"
+      - "\\basset manager\\b"
+      - "\\bcorporate treasury\\b"
+      - "\\bmicrostrategy\\b"
+      - "\\bsaylor\\b"
+      - "\\btesla\\b.*bitcoin"
+      - "\\bfortune 500\\b"
+      - "\\bwidespread adoption\\b"
+      - "\\bstrategy\\b.*\\b(bitcoin|btc)\\b"
+      - "\\bark invest\\b"
+      - "bitcoin treasury"
+      - "treasury (company|strategy)"
+    excludes:
+      - "microstrategy orange"
+      - "\\borange\\b.*microstrategy"
+      - "self[- ]custody"
+      - "\\bbitkey\\b"
+
+  hacks_security:
+    exploratory: false
+    patterns:
+      - "\\bhack(ed|s|ing)?\\b"
+      - "\\bexploit(ed|s|ation)?\\b"
+      - "\\bstolen\\b"
+      - "rug ?pull"
+      - "\\bdrain(ed|s)?\\b"
+      - "\\bvulnerability\\b"
+      - "\\bphishing\\b"
+      - "data breach"
+      - "security breach"
+      - "breached (exchange|protocol|wallet)"
+      - "\\bflash loan attack\\b"
+    excludes:
+      - "\\bhack\\s*vc\\b"
+      - "\\bhackvc\\b"
+
+  defi:
+    exploratory: false
+    patterns:
+      - "\\bdefi\\b"
+      - "\\buniswap\\b"
+      - "\\baave\\b"
+      - "compound (finance|labs|protocol)"
+      - "\\bdex\\b"
+      - "\\byield farm"
+      - "\\bliquidity pool\\b"
+      - "\\bstaking\\b"
+      - "\\bamm\\b"
+      - "\\bdapp\\b"
+      - "\\blending protocol\\b"
+
+  stablecoins:
+    exploratory: false
+    patterns:
+      - "\\bstablecoin"
+      - "\\busdt\\b"
+      - "\\btether\\b"
+      - "\\busdc\\b"
+      - "\\bdai\\b"
+      - "\\bcircle\\b.*\\b(usdc|stablecoin|issuer|ipo|crcl)\\b"
+      - "\\b(usdc|stablecoin|issuer)\\b.*\\bcircle\\b"
+      - "\\bcrcl\\b"
+      - "\\bdepeg"
+      - "\\bfiat[- ]backed\\b"
+
+  monetary_policy:
+    exploratory: false
+    patterns:
+      - "\\bfomc\\b"
+      - "interest rate"
+      - "rate cut"
+      - "rate hike"
+      - "\\bcpi\\b"
+      - "\\bppi\\b"
+      - "nonfarm"
+      - "payrolls?"
+      - "jobs report"
+      - "\\bpowell\\b"
+      - "\\bjay powell\\b"
+      - "fed chair"
+      - "inflation (data|print|report|reading)"
+      - "treasury yield"
+      - "\\bdxy\\b"
+      - "dollar index"
+      - "rate decision"
+      - "jackson hole"
+      - "\\bpce\\b"
+      - "\\btaper"
+      - "\\bqe\\b"
+      - "\\bquantitative easing\\b"
+      - "\\bmonetary policy\\b"
+    excludes:
+      - "\\bbrainard\\b"
+      - "ny fed paper"
+      - "\\btornado\\b"
+      - "executive order"
+
+  cbdc:
+    exploratory: true
+    patterns:
+      - "\\bcbdc\\b"
+      - "central bank digital"
+      - "digital dollar"
+      - "digital euro"
+      - "digital yuan"
+      - "\\be-?cny\\b"
+
+  ai_general:
+    exploratory: true
+    patterns:
+      - "\\bai token"
+      - "\\bai coin"
+      - "\\bai agent"
+      - "\\bai[- ]crypto\\b"
+      - "\\bartificial intelligence\\b.*\\b(token|coin|crypto)\\b"
+      - "\\brender\\b.*(token|network)"
+      - "\\bfetch\\.ai\\b"
+      - "\\bbittensor\\b"
+      # GPU chỉ khi kèm token hoặc agent
+      - "\\bgpu\\b.*\\b(token|agent)\\b"
+      - "\\b(token|agent)\\b.*\\bgpu\\b"
+      - "\\bgenerative ai\\b.*\\b(token|coin|crypto)\\b"
+      - "\\bopenai\\b.*\\b(token|coin|crypto)\\b"
+      - "\\bchatgpt\\b.*\\b(token|coin|crypto)\\b"
+    excludes:
+      - "\\bhow to\\b"
+      - "chatgpt picks?"
+      - "chatgpt prompt"
+      - "\\bprompt engineering\\b"
+
+  market_failure:
+    exploratory: true
+    patterns:
+      - "\\bftx\\b"
+      - "\\bcelsius\\b"
+      - "\\bterra\\b"
+      - "\\bluna\\b"
+      - "bankrupt"
+      - "insolven"
+      - "\\bcollapse\\b"
+      - "\\bcontagion\\b"
+      - "three arrows"
+      - "\\bvoyager\\b"
+      - "\\bblockfi\\b"
+      - "\\bgenesis\\b"
+
+  nft_meme_web3:
+    exploratory: true
+    patterns:
+      - "\\bnft\\b"
+      - "meme ?coin"
+      - "\\bmemecoin\\b"
+      - "web3 game"
+      - "\\bopensea\\b"
+      - "magic eden"
+      - "\\bordinals\\b"
+
+  mining_energy:
+    exploratory: true
+    patterns:
+      - "\\bmining\\b"
+      - "\\bminer"
+      - "hash ?rate"
+
+  politics_geopolitics:
+    exploratory: true
+    patterns:
+      - "\\btrump\\b"
+      - "\\bbiden\\b"
+      - "\\belection\\b"
+      - "\\btariff"
+      - "\\bsanction"
+      - "\\bukraine\\b"
+      - "\\brussia\\b"
+      - "\\bwar\\b"
+
+  tech_upgrade:
+    exploratory: true
+    patterns:
+      - "\\bmerge\\b"
+      - "\\bhalving\\b"
+      - "\\bupgrade\\b"
+      - "hard fork"
+      - "\\brollup\\b"
+      - "layer[- ]?2"
+      - "\\bl2\\b"
+      - "\\bdencun\\b"
+      - "\\bshapella\\b"
+      - "\\btaproot\\b"
+      - "op[_ ]?return"
+
+flags:
+  price_desc:
+    patterns:
+      - "\\bprice\\b"
+      - "\\brall(y|ies|ied)\\b"
+      - "\\bsurg"
+      - "\\bplunge"
+      - "\\bdrops?\\b"
+      - "\\bjumps?\\b"
+      - "\\btumbl"
+      - "all-time high"
+      - "\\bath\\b"
+      - "\\$\\d"
