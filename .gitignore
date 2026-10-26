@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Dữ liệu lớn + bản gốc pack (không commit)
+data/
+cursor_pack/
