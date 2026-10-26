@@ -1,0 +1,114 @@
+{
+  "asset": "ETH",
+  "h": 7,
+  "model_kind": "xgboost",
+  "stage": "valid",
+  "hp_market": {
+    "max_depth": 2,
+    "n_estimators": 200,
+    "learning_rate": 0.03,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 5.0,
+    "reg_lambda": 1.0,
+    "tree_method": "hist",
+    "n_jobs": 1,
+    "random_state": 42
+  },
+  "hp_text": {
+    "max_depth": 2,
+    "n_estimators": 200,
+    "learning_rate": 0.03,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 5.0,
+    "reg_lambda": 1.0,
+    "tree_method": "hist",
+    "n_jobs": 1,
+    "random_state": 42
+  },
+  "cv_mse_market": 0.6296787623415161,
+  "cv_mse_text": 0.6042609703494769,
+  "n_folds": 5,
+  "features_text": [
+    "all_finbert_Sent_t",
+    "all_finbert_PosSent",
+    "all_finbert_NegSent",
+    "all_finbert_MeanProb_t",
+    "all_vader_Sent_t",
+    "all_finbert_AbnAttention_t",
+    "AbnAtt_regulation",
+    "AbnAtt_etf",
+    "AbnAtt_institutional_adoption",
+    "AbnAtt_hacks_security",
+    "AbnAtt_defi",
+    "AbnAtt_stablecoins",
+    "AbnAtt_monetary_policy"
+  ],
+  "xgb_gain": {
+    "har_d": 14.743927001953125,
+    "har_w": 55.725120544433594,
+    "har_m": 17.78702163696289,
+    "ret_t": 3.730072259902954,
+    "logvol_t": 13.951200485229492,
+    "fred_VIXCLS": 6.561371326446533,
+    "fred_VIXCLS_d5": 2.800828218460083,
+    "fred_DGS10": 39.54114532470703,
+    "fred_DGS10_d5": 3.552504777908325,
+    "fred_DTWEXBGS": 11.32217025756836,
+    "fred_DTWEXBGS_d5": 3.626164436340332,
+    "all_finbert_Sent_t": 2.3227765560150146,
+    "all_finbert_PosSent": 2.326085090637207,
+    "all_finbert_NegSent": 3.2394142150878906,
+    "all_vader_Sent_t": 2.162257432937622,
+    "all_finbert_AbnAttention_t": 1.7289398908615112,
+    "AbnAtt_etf": 3.073681592941284,
+    "AbnAtt_institutional_adoption": 1.7991433143615723,
+    "AbnAtt_hacks_security": 2.609450101852417,
+    "AbnAtt_defi": 1.4281842708587646,
+    "AbnAtt_stablecoins": 3.5882608890533447,
+    "AbnAtt_monetary_policy": 3.3050622940063477
+  },
+  "xgb_gain_top10": [
+    [
+      "har_w",
+      55.725120544433594
+    ],
+    [
+      "fred_DGS10",
+      39.54114532470703
+    ],
+    [
+      "har_m",
+      17.78702163696289
+    ],
+    [
+      "har_d",
+      14.743927001953125
+    ],
+    [
+      "logvol_t",
+      13.951200485229492
+    ],
+    [
+      "fred_DTWEXBGS",
+      11.32217025756836
+    ],
+    [
+      "fred_VIXCLS",
+      6.561371326446533
+    ],
+    [
+      "ret_t",
+      3.730072259902954
+    ],
+    [
+      "fred_DTWEXBGS_d5",
+      3.626164436340332
+    ],
+    [
+      "AbnAtt_stablecoins",
+      3.5882608890533447
+    ]
+  ]
+}

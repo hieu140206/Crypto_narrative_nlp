@@ -1,0 +1,7 @@
+version,period,period_start,period_end,n_days_cn_ge3,n_overlap_AbnAttention,n_overlap_Sent_FinBERT,n_overlap_Sent_VADER
+raw,p1_2023h2,2023-06-27,2023-12-31,134,114,134,134
+raw,p2_2024_2025h1,2024-01-01,2025-06-30,453,453,453,453
+dow_resid,p1_2023h2,2023-06-27,2023-12-31,134,114,134,134
+dow_resid,p2_2024_2025h1,2024-01-01,2025-06-30,453,453,453,453
+noprice,p1_2023h2,2023-06-27,2023-12-31,111,97,111,111
+noprice,p2_2024_2025h1,2024-01-01,2025-06-30,405,405,405,405

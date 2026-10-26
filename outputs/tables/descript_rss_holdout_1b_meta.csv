@@ -1,0 +1,15 @@
+key,value
+sources,"{""cointelegraph"": 89, ""coindesk"": 67, ""decrypt"": 57}"
+time_fields,"[""published_at"", ""collected_at_utc"", ""available_at"", ""news_date"", ""use_date"", ""lag_minutes"", ""published_missing""]"
+time_resolution,"{""published_at"": ""datetime_UTC"", ""collected_at_utc"": ""datetime_UTC"", ""available_at"": ""datetime_UTC"", ""news_date"": ""date_UTC"", ""use_date"": ""date_UTC"", ""lag_minutes"": ""float64"", ""published_missing"": ""bool""}"
+pct_missing_title,0.000000
+n_dup_url_remaining,0
+n_dup_title_norm_remaining,0
+non_en_rate_ascii,0.000000
+non_en_n,0
+errors,[]
+limit_note,4 days RSS holdout; insufficient to conclude on distribution
+sha256_lf,78b5a05b559666b32599e246f153858abe355720c8f148b86941707302cd99d9
+sha256_crlf,7f33bbbf284dfc40fb60759f07539dd56a44cc01e65b191af4e9f1dcec17711b
+sha256_raw,7f33bbbf284dfc40fb60759f07539dd56a44cc01e65b191af4e9f1dcec17711b
+lf_matches_frozen,True
